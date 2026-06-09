@@ -1,0 +1,1 @@
+XXX_PROMPT = """Write a complete and testable Python function to solve the problem. Include a test function with assert statements to verify correctness."""

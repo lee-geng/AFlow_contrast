@@ -1,0 +1,1 @@
+Refine the prompt for the `custom` operator to better guide the model to extract numerical values and reasoning from the passage, addressing the `answer_mismatch` failures. This is a small, targeted patch that preserves the validated subworkflow and aligns with the guidance to apply a minimal local fix around the current workflow.

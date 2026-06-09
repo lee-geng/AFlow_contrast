@@ -15,7 +15,8 @@ class DataUtils:
     
     DEFAULT_ALPHA = 0.2
     DEFAULT_LAMBDA = 0.3
-    DEFAULT_LOG_SAMPLES = 3
+    DEFAULT_LOG_SAMPLES = 2
+    DEFAULT_LOG_FIELD_CHAR_LIMIT = 280
     
     def __init__(self, root_path: str):
         self.root_path = Path(root_path)
@@ -134,15 +135,124 @@ class DataUtils:
         if not data:
             return ""
 
-        sample_size = min(self.DEFAULT_LOG_SAMPLES, len(data))
-        random_samples = random.sample(data, sample_size)
+        return self._format_failure_entries(data, top_k=self.DEFAULT_LOG_SAMPLES)
 
-        log_entries = [
-            json.dumps(sample, indent=4, ensure_ascii=False) 
-            for sample in random_samples
-        ]
-        
-        return "\n\n".join(log_entries)
+    def summarize_failures(
+        self,
+        cur_round: int,
+        path: Optional[str] = None,
+        mode: str = "Graph",
+        top_k: int = DEFAULT_LOG_SAMPLES,
+    ) -> str:
+        if mode == "Graph":
+            log_dir = self.root_path / "workflows" / f"round_{cur_round}" / "log.json"
+        else:
+            log_dir = Path(path)
+
+        if not log_dir.exists():
+            logger.warning(f"Log file not found: {log_dir}")
+            return ""
+
+        try:
+            data = read_json_file(log_dir, encoding="utf-8")
+        except Exception as e:
+            logger.error(f"Error reading log file {log_dir}: {e}")
+            return ""
+
+        if isinstance(data, dict):
+            data = [data]
+        elif not isinstance(data, list):
+            data = list(data)
+
+        return self._format_failure_entries(data, top_k=top_k)
+
+    def build_failure_cards(
+        self,
+        log_data: List[Dict[str, Any]],
+        max_cases: int = 3,
+        max_chars_per_case: int = 1200,
+    ) -> List[Dict[str, Any]]:
+        if not log_data:
+            return []
+        sample_size = min(max(1, max_cases), len(log_data))
+        samples = random.sample(log_data, sample_size)
+        cards: List[Dict[str, Any]] = []
+        for sample in samples:
+            expected = self._truncate(sample.get("right_answer", ""), 220)
+            extracted = self._truncate(sample.get("extracted_output", ""), 180)
+            model_output = self._truncate(sample.get("model_output", ""), 240)
+            failure_type = self._infer_failure_type(sample)
+            mismatch_info = self._build_mismatch_info(expected, extracted)
+            card = {
+                "task_id": sample.get("task_id") or sample.get("_task_id") or "",
+                "node_name": sample.get("node_name") or sample.get("failed_node") or "",
+                "error_type": sample.get("error_type") or failure_type,
+                "failure_type": sample.get("failure_type") or failure_type,
+                "extract_result": extracted,
+                "mismatch_info": mismatch_info,
+                "expected_summary": expected,
+                "suspected_cause": sample.get("suspected_cause") or self._infer_suspected_cause(sample, failure_type),
+                "input_summary": self._truncate(sample.get("question", ""), 200),
+            }
+            if not extracted or "runtime" in failure_type or "error" in failure_type:
+                card["output_snippet"] = model_output
+            serialized = json.dumps(card, ensure_ascii=False)
+            if len(serialized) > max_chars_per_case:
+                card["output_snippet"] = self._truncate(card.get("output_snippet", ""), 80)
+                card["input_summary"] = self._truncate(card.get("input_summary", ""), 120)
+            cards.append(card)
+        return cards
+
+    def _format_failure_entries(self, entries: List[Dict[str, Any]], top_k: int) -> str:
+        cards = self.build_failure_cards(entries, max_cases=top_k, max_chars_per_case=900)
+        if not cards:
+            return ""
+        rows = []
+        for idx, card in enumerate(cards, start=1):
+            rows.append(
+                f"[FailureCard {idx}]\n"
+                f"task_id={card.get('task_id') or 'n/a'} node={card.get('node_name') or 'n/a'} "
+                f"failure_type={card.get('failure_type') or card.get('error_type') or 'unknown'}\n"
+                f"extract_result={card.get('extract_result', '')}\n"
+                f"mismatch_info={card.get('mismatch_info', '')}\n"
+                f"expected_summary={card.get('expected_summary', '')}\n"
+                f"suspected_cause={card.get('suspected_cause', '')}\n"
+                f"input_summary={card.get('input_summary', '')}"
+                + (f"\noutput_snippet={card.get('output_snippet', '')}" if card.get("output_snippet") else "")
+            )
+        return "\n\n".join(rows)
+
+    def _truncate(self, value: Any, limit: int = DEFAULT_LOG_FIELD_CHAR_LIMIT) -> str:
+        text = " ".join(str(value or "").split())
+        return text[:limit]
+
+    def _build_mismatch_info(self, expected: str, extracted: str) -> str:
+        if expected and extracted:
+            return f"expected={expected} vs extracted={extracted}"
+        if expected:
+            return f"expected={expected} vs extracted=<empty>"
+        return "mismatch_detected"
+
+    def _infer_failure_type(self, sample: Dict[str, Any]) -> str:
+        text = " ".join(
+            [
+                str(sample.get("model_output", "")),
+                str(sample.get("extracted_output", "")),
+                str(sample.get("question", "")),
+            ]
+        ).lower()
+        if "traceback" in text or "runtime error" in text or "attributeerror" in text:
+            return "runtime_error"
+        if "\\boxed" not in str(sample.get("model_output", "")) and sample.get("extracted_output", "") == "":
+            return "answer_extraction_failure"
+        return "answer_mismatch"
+
+    def _infer_suspected_cause(self, sample: Dict[str, Any], failure_type: str) -> str:
+        if failure_type == "runtime_error":
+            return "workflow execution error"
+        if failure_type == "answer_extraction_failure":
+            return "final answer formatting or extraction failure"
+        return "predicted answer does not align with ground truth"
 
     def get_results_file_path(self, graph_path: str) -> str:
         

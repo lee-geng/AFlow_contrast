@@ -1,0 +1,445 @@
+﻿question,prediction,expected_output,score,cost
+What is the smallest two-digit prime that is the sum of three (not necessarily distinct) positive perfect cubes?,"We can start by listing the first few perfect cubes: $1^3=1$, $2^3=8$, $3^3=27$, $4^3=64$, $5^3=125$, $6^3=216$, $7^3=343$, $8^3=512$, $9^3=729$, $10^3=1000$.  We can then start checking the sums of these cubes to see if they are prime.  We can start with the smallest sum, $1+8+1=10$, which is not prime.  Next, we have $1+8+27=36$, which is not prime.  Next, we have $1+8+64=73$, which is prime.  Therefore, the smallest two-digit prime that is the sum of three (not necessarily distinct) positive perfect cubes is $\boxed{73}$.
+Final Answer: The final answer is 73. I hope it is correct.","We begin by listing the smallest positive perfect cubes with two digits or fewer:
+
+1, 8, 27, 64.
+
+And now we sum them.  $1+1+1$ is too small; $1+1+8=10$ which is not prime; but $1+8+8=17$, which is indeed a prime.  Hence the answer is $\boxed{17}$.",0,0.0
+Each interior angle of a polygon measures 170 degrees. How many sides does the polygon have?,"Let $n$ be the number of sides of the polygon.  Then the sum of the interior angles is $170n$ degrees.  The sum of the interior angles of a polygon with $n$ sides is $(n-2)180$ degrees.  Equating these two expressions, we have
+
+\begin{align*}
+170n&=(n-2)180\\
+\Rightarrow\qquad 170n&=180n-360\\
+\Rightarrow\qquad 360&=180n-170n=10n\\
+\Rightarrow\qquad n&=\boxed{36}.
+\end{align*}
+Final Answer: The final answer is 36. I hope it is correct.","The sum of the interior angles of a polygon is $180(n-2)$, where $n$ is the number of sides. That means each interior angle has a measure of $\frac{180(n-2)}{n}$ degrees. We set this equal to 170 degrees and solve for $n$. \begin{align*}
+\frac{180(n-2)}{n}&=170\\
+\Rightarrow \qquad 180n-360&=170n\\\Rightarrow \qquad 10n&=360\\
+\Rightarrow\qquad n&=36.
+\end{align*} The polygon has $\boxed{36}$ sides.",1,0.0
+"When the decimal $0.1\overline{23}$ is written as a fraction $\frac{a}{b}$ with $a$ and $b$ being positive integers with a greatest common divisor of 1, what is $a+b$?","We have that
+
+$$0.1\overline{23}=\frac{123}{999}=\frac{41}{333}.$$Therefore, $a+b=41+333=\boxed{374}.$
+Final Answer: The final answer is 374. I hope it is correct.","We can rewrite $0.1\overline{23}$ as $0.1$ + $0.0\overline{23}$. The first decimal is simply $\frac{1}{10}$. Let the second decimal be $x$. Multiplying by 100, we have $100x = 2.3\overline{23}$, which gives $99x = 2.3 \implies x = \frac{23}{990}$. Therefore, $0.1\overline{23} = \frac{1}{10} + \frac{23}{990} = \frac{61}{495}$. Thus $a+b=61+495 = \boxed{556}$.",0,0.0
+Mike draws five cards from a standard 52-card deck. What is the probability that he draws a card from at least three of the four suits? Express your answer as a simplified fraction.,"The probability that he draws a card from at least three of the four suits is equal to 1 minus the probability that he draws a card from exactly two of the four suits.  The probability that he draws a card from exactly two of the four suits is equal to the number of ways to choose two suits out of four, times the probability that he draws a card from each of those two suits.  The number of ways to choose two suits out of four is $\binom{4}{2}=6$, and the probability that he draws a card from each of those two suits is $\left(\frac{13}{52}\right)^2=\frac{1}{16}$.  Therefore, the probability that he draws a card from exactly two of the four suits is $6\cdot\frac{1}{16}=\frac{3}{8}$.  Therefore, the probability that he draws a card from at least three of the four suits is $1-\frac{3}{8}=\boxed{\frac{5}{8}}$.
+Final Answer: The final answer is \frac{5}{8}. I hope it is correct.","We calculate the probability that he does not draw a card from at least three of the suits. To do this, we calculate the number of sets of 5 cards from at most two suits and divide by $\binom{52}5$, the number of sets of 5 cards. Since there are $\binom42=6$ choices for the two suits, and $\binom{26}5$ ways to choose 5 cards from the 26 in those two suits, our answer would appear to be $6\binom{26}5$. But this triple-counts the ways to choose the cards from a single suit: 5 hearts is included in 5 (hearts and spades), 5 (hearts and clubs), and 5 (hearts and diamonds). So we subtract twice the number of ways to choose cards from a single suit: $6\binom{26}5-2\cdot4\binom{13}5$. We divide this by $\binom{52}5$ to get $$\frac{6\cdot26\cdot25\cdot24\cdot23\cdot22-8\cdot13\cdot12\cdot11\cdot10\cdot9}{52\cdot51\cdot50\cdot49\cdot48}=\frac{88}{595}.$$Therefore, the probability that he draws three or four of the suits is $1-\frac{88}{595}=\boxed{\frac{507}{595}}$.",0,0.0
+"If $m$ is a 3-digit positive integer such that $\mathop{\text{lcm}}[8m,10^{10}] = 4\cdot\mathop{\text{lcm}}[m,10^{10}]$, then what is the value of $m$?","We have that $8m = 2^3\cdot m$ and $10^{10} = 2^10\cdot 5^{10}$.  Therefore, $\mathop{\text{lcm}}[8m,10^{10}] = 2^3\cdot m\cdot 2^{10}\cdot 5^{10} = 2^{13}\cdot 5^{10}\cdot m$.  Similarly, $\mathop{\text{lcm}}[m,10^{10}] = 2^{10}\cdot 5^{10}\cdot m$.  Therefore, we have that $2^{13}\cdot 5^{10}\cdot m = 4\cdot 2^{10}\cdot 5^{10}\cdot m$, so $2^3\cdot m = 4\cdot m$, so $m = 2^3 = \boxed{8}$.
+Final Answer: The final answer is 8. I hope it is correct.","Let $\alpha$ be the exponent of $2$ in the prime factorization of $m$. That is, $m=2^\alpha\cdot t$, where $t$ is some odd integer.
+
+Note that $\mathop{\text{lcm}}[8m,10^{10}] = \mathop{\text{lcm}}[2^3m,2^{10}5^{10}]$, so the exponent of $2$ in the prime factorization of $\mathop{\text{lcm}}[8m,10^{10}]$ is equal to $\max\{3+\alpha,10\}$.
+
+Similarly, the exponent of $2$ in the prime factorization of $4\cdot\mathop{\text{lcm}}[m,10^{10}]$ is $2+\max\{\alpha,10\}$. Thus we have $$\max\{3+\alpha,10\} = 2+\max\{\alpha,10\},$$which is possible only if $\alpha=9$. So, $m$ is divisible by $2^9=512$. The only 3-digit multiple of $2^9$ is $512$ itself, so $m=\boxed{512}$.",0,0.0
+Suppose that the minimum value of $f(x) = \cos 2x - 2a (1 + \cos x)$ is $-\frac{1}{2}.$  Find $a.$,"We have that
+\begin{align*}
+f(x) &= \cos 2x - 2a (1 + \cos x)\\
+&= \cos 2x - 2a + 2a \cos x\\
+&= \cos 2x + 2a \left(\frac{1}{2} - \cos x\right)\\
+&= \cos 2x + a - a \cos x.
+\end{align*}The minimum value of $f(x)$ is $-\frac{1}{2}$, so we have that
+\begin{align*}
+-\frac{1}{2} &= f(x)\\
+&= \cos 2x + a - a \cos x\\
+&= \sqrt{1 - \sin^2 2x} + a - a \sqrt{1 - \sin^2 x}\\
+&\leq \sqrt{1 - \sin^2 2x} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin^2 2x + \sin^2 x\right)\\
+&= \frac{1}{2} + a - a \sqrt{1 - \sin^2 x} + \frac{1}{2} \left(\sin","We can write
+\begin{align*}
+f(x) &= 2 \cos^2 x - 1 - 2a (1 + \cos x) \\
+&= 2 \cos^2 x - 2a \cos x - 1 - 2a \\
+&= 2 \left( \cos x - \frac{a}{2} \right)^2 - \frac{1}{2} a^2 - 2a - 1.
+\end{align*}If $a > 2,$ then $f(x)$ attains its minimum value when $\cos x = 1,$ in which case
+\[f(x) = 2 - 2a - 1 - 2a = 1 - 4a.\]If $1 - 4a = -\frac{1}{2},$ then $a = \frac{3}{8},$ contradiction.
+
+If $a < -2,$ then $f(x)$ attains its minimum value when $\cos x = -1,$ in which case
+\[f(x) = 2 + 2a - 1 - 2a = 1,\]so this case is not possible either.
+
+Otherwise, $-2 \le a \le 2,$ and $f(x)$ attains its minimum when $\cos x = \frac{a}{2},$ in which case
+\[f(x) = -\frac{1}{2} a^2 - 2a - 1.\]Thus, $-\frac{1}{2} a^2 - 2a - 1 = -\frac{1}{2},$ so $a^2 + 4a + 1 = 0.$  By the quadratic formula,
+\[a = -2 \pm \sqrt{3}.\]Since $-2 \le a \le 2,$ $a = \boxed{-2 + \sqrt{3}}.$",0,0.0
+Simplify $\frac{k-3}{2} + 3k+1+\frac{3k+1}{2}$.,"We have that
+\begin{align*}
+\frac{k-3}{2} + 3k+1+\frac{3k+1}{2} &= \frac{k-3}{2} + \frac{3k+1}{2} + 3k+1\\
+&= \frac{(k-3)+(3k+1)}{2} + 3k+1\\
+&= \frac{k+3k}{2} + 1 + 3k+1\\
+&= \frac{4k}{2} + 1 + 3k+1\\
+&= 2k+1+3k+1\\
+&= 5k+2.
+\end{align*}
+Final Answer: The final answer is 5k+2. I hope it is correct.","Notice that the two fractions have the same denominator, so we can add them. Addition is commutative, so we can rearrange the terms to get  \begin{align*}
+\frac{k-3}{2} +\frac{3k+1}{2}+3k+1 &=\frac{4k-2}{2}+3k+1 \\
+&=2k-1+3k+1 \\
+&=\boxed{5k}.\end{align*}",0,0.0
+"A particular convex pentagon has two congruent, acute angles. The measure of each of the other interior angles is equal to the sum of the measures of the two acute angles. What is the common measure of the large angles, in degrees?","Let $x$ be the measure of each of the two acute angles.  Then the measure of each of the other three angles is $x+x=2x$.  The sum of the measures of the five angles is $180(5-2)=180(3)=540$.  Therefore, we have
+
+$$2x+2x=540\Rightarrow 4x=540\Rightarrow x=540/4=135.$$The common measure of the large angles is $\boxed{135}$.
+Final Answer: The final answer is 135. I hope it is correct.","If $x$ is the measure in degrees of each of the acute angles, then each of the larger angles measures $2x$ degrees.  Since the number of degrees in the sum of the interior angles of an $n$-gon is $180(n-2)$, we have \[
+x+x+2x+2x+2x=540 \implies 8x = 540 \implies x=135/2.
+\] The large angles each measure $2x=\boxed{135}$ degrees.",1,0.0
+"The matrix for reflecting through a certain plane $P,$ which passes through the origin, is given by
+\[\renewcommand{\arraystretch}{1.5} \begin{pmatrix} \frac{11}{15} & \frac{2}{15} & \frac{2}{3} \\ \frac{2}{15} & \frac{14}{15} & -\frac{1}{3} \\ \frac{2}{3} & -\frac{1}{3} & -\frac{2}{3} \end{pmatrix} \renewcommand{\arraystretch}{1}.\]Find the normal vector of plane $P.$  Enter your answer in the form $\begin{pmatrix} a \\ b \\ c \end{pmatrix},$ where $a,$ $b,$ and $c$ are integers, $a > 0,$ and $\gcd(|a|,|b|,|c|) = 1.$","The matrix for reflecting through a plane $P$ is given by $I-2\mathbf{n}\mathbf{n}^T$, where $\mathbf{n}$ is the normal vector of $P$.  Therefore, we have
+\begin{align*}
+\begin{pmatrix}
+\frac{11}{15} & \frac{2}{15} & \frac{2}{3} \\
+\frac{2}{15} & \frac{14}{15} & -\frac{1}{3} \\
+\frac{2}{3} & -\frac{1}{3} & -\frac{2}{3}
+\end{pmatrix}
+&=I-2\begin{pmatrix}
+a \\ b \\ c
+\end{pmatrix}\begin{pmatrix}
+a & b & c
+\end{pmatrix}\\
+&=\begin{pmatrix}
+1-2a^2 & -2ab & -2ac \\
+-2ab & 1-2b^2 & 2bc \\
+-2ac & 2bc & 1-2c^2
+\end{pmatrix}.
+\end{align*}Equating the $(1,1)$-entry of both sides, we have
+\begin{align*}
+\frac{11}{15}&=1-2a^2\\
+\Rightarrow\qquad a^2&=\frac{4}{15}\\
+\Rightarrow\qquad a&=\pm\frac{2}{\sqrt{15}}=\pm\frac{\sqrt{3}}{3}.
+\end{align*}Since $a>0$, we have $a=\frac{\sqrt{3}}{3}$.  Similarly, we can find $b$ and $c$:
+\begin{align*}
+\frac{2}{15}&=-2ab=-2\cdot\frac{\sqrt{3}}{3}\cdot\frac{b}{\sqrt{3}}=-\frac{2}{3}b\\
+\Rightarrow\qquad b&=-\frac{3}{4},\\
+-\frac{2}{3}&=-2ac=-2\cdot\frac{\sqrt{3}}{3}\cdot\frac{c}{\sqrt{3}}=-\frac{2}{3}c\\
+\Rightarrow\qquad c&=1.
+\end{align*}Therefore, the normal vector of $P$ is $\boxed{\begin{pmatrix}\frac{\sqrt{3}}{3}\\-\frac{3}{4}\\1\end{pmatrix}}$.
+Final Answer: The final answer is \begin{pmatrix}\frac{\sqrt{3}}{3}\\-\frac{3}{4}\\1\end{pmatrix}. I hope it is correct.","If $\begin{pmatrix} x \\ y \\ z \end{pmatrix}$ is a vector in plane $P,$ then the reflection takes the vector to itself.  Thus,
+\[\renewcommand{\arraystretch}{1.5} \begin{pmatrix} \frac{11}{15} & \frac{2}{15} & \frac{2}{3} \\ \frac{2}{15} & \frac{14}{15} & -\frac{1}{3} \\ \frac{2}{3} & -\frac{1}{3} & -\frac{2}{3} \end{pmatrix} \renewcommand{\arraystretch}{1} \begin{pmatrix} x \\ y \\ z \end{pmatrix} = \begin{pmatrix} x \\ y \\ z \end{pmatrix}.\]Then
+\[\renewcommand{\arraystretch}{1.5} \begin{pmatrix} \frac{11}{15} x + \frac{2}{15} y + \frac{2}{3} z \\ \frac{2}{15} x + \frac{14}{15} y - \frac{1}{3} z \\ \frac{2}{3} x - \frac{1}{3} y - \frac{2}{3} z \end{pmatrix} \renewcommand{\arraystretch}{1} = \begin{pmatrix} x \\ y \\ z \end{pmatrix}.\]This gives us $\frac{11}{15} x + \frac{2}{15} y + \frac{2}{3} z = x,$ $\frac{2}{15} x + \frac{14}{15} y - \frac{1}{3} z = y,$ and $\frac{2}{3} x - \frac{1}{3} y - \frac{2}{3} z = z.$  Each of these equations reduces to
+\[2x - y - 5z = 0,\]so the normal vector of the plane is $\boxed{\begin{pmatrix} 2 \\ -1 \\ -5 \end{pmatrix}}.$",0,0.0
+"The matrix
+\[\begin{pmatrix} -\frac{7}{25} & \frac{24}{25} \\ \frac{24}{25} & \frac{7}{25} \end{pmatrix}\]corresponds to reflecting over a certain vector $\begin{pmatrix} x \\ y \end{pmatrix}.$  Find $\frac{y}{x}.$","The reflection matrix is given by $\mathbf{R} = \mathbf{I} - 2\mathbf{v}\mathbf{v}^T$, where $\mathbf{v} = \begin{pmatrix} x \\ y \end{pmatrix}$.  We have that
+\begin{align*}
+\mathbf{R} &= \begin{pmatrix} 1 - \frac{2x^2}{25} & -\frac{2xy}{25} \\ -\frac{2xy}{25} & 1 - \frac{2y^2}{25} \end{pmatrix} \\
+&= \begin{pmatrix} -\frac{7}{25} & \frac{24}{25} \\ \frac{24}{25} & \frac{7}{25} \end{pmatrix}.
+\end{align*}Equating the $(1,2)$ entries, we have that $\frac{2xy}{25} = \frac{24}{25}$, so $xy = 12$.  Equating the $(2,1)$ entries, we have that $\frac{2xy}{25} = -\frac{24}{25}$, so $xy = -12$.  Since $xy = 12$, we have that $\frac{y}{x} = \boxed{-\frac{1}{1}} = -1$.
+Final Answer: The final answer is -1. I hope it is correct.","Note that the reflecting $\begin{pmatrix} x \\ y \end{pmatrix}$ over itself results in itself, so
+\[\begin{pmatrix} -\frac{7}{25} & \frac{24}{25} \\ \frac{24}{25} & \frac{7}{25} \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} x \\ y \end{pmatrix}.\]Then $-\frac{7}{25} x + \frac{24}{25} y = x$ and $\frac{24}{25} x + \frac{7}{25} y = y.$  Both equations lead to $\frac{y}{x} = \boxed{\frac{4}{3}}.$",0,0.0
+"Two sequences $A=\{a_0, a_1, a_2,\ldots\}$ and $B=\{b_0,b_1,b_2,\ldots\}$ are defined as follows: \[a_0=0, ~a_1=1, ~a_n= a_{n-1} +b_{n-2} \hspace{2mm}\text{for}\hspace{2mm} n\ge2\] \[b_0=1, ~b_1=2, ~b_n=a_{n-2} +b_{n-1}\hspace{2mm}\text{for}\hspace{2mm} n\ge2\] What is the remainder when $a_{50}+b_{50}$ is divided by $5$?","We can compute the first few terms of the sequences $A$ and $B$: \begin{align*}
+A&: 0,1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,1597,2584,4181,6765,10946,17711,28657,46368,75025,121393,196418,317811,514229,832040,1346269,2178309,3524578,5702887,9227465,14930352,24157817,39088169,63245986,102334155,165580141,267914296,433494437,701408733,1134903170,1836311903,2971215073,4807526976,7778742049,12586269025,20365011074,32951280099,53316291173,86267571272,139583862445,225851433717,365435296162,591286729879,956722026041,1548008755920,2504730781961,4052739537881,6557470319842,10610209857723,17167680177565,27777890035288,44945570212853,72723460248141,117669030460994,190392490709135,308061521170129,498454011879264,806515533049393,130496954492865,211148507797795,341645462290670,552793970088259,894439432379146,1447233402467629,2341672834846765,37889062373143906,61305790721611591,99194853094755497,160500643816367088,259695496911122625,420196140727489673,679891637638612258,1100087778366101931,1779979416004714189,2880067194370816120,4660046610375530309,7540113804622722520,122001604151219336,1974027421986822317,31940434634990099905,51680708854858323072,83621143489848422977,135301852344706746049,218922995834555200000,3524578,5702887,9227465,14930352,24157817,39088169,63245986,102334155,165580141,267914296,433494437,701408733,1134903170,1836311903,2971215073,4807526976,7778742049,12586269025,20365011074,32951280099,53316291173,86267571272,139583862445,225851433717,365435296162,591286729879,956722026041,1548008755920,2504730781961,4052739537881,6557470319842,10610209857723,17167680177565,27777890035288,44945570212853,72723460248141,117669030460994,190392490709135,308061521170129,498454011879264,806515533049393,130496954492865,211148507797795,341645462290670,552793970088259,894439432379146,1447233402467629,2341672834846765,37889062373143906,61305790721611591,99194853094755497,160500643816367088,259695496911122625,420196140727489673,679891637638612258,1100087778366101931,1779979416004714189,2880067194370816120,4660046610375530309,7540113804622722520,122001604151219336,1974027421986822317,31940434634990099905,51680708854858323072,83621143489848422977,135301852344706746049,218922995834555200000,3524578,5702887,9227465,14930352,24157817,39088169,63245986,102334155,165580141,267914296,433494437,701408733,1134903170,1836311903,2971215073,4807526976,7778742049,12586269025,20365011074,32951280099,53316291173,86267571272,139583862445,225851433717,365435296162,591286729879,956722026041,1548008755920,2504730781961,4052739537881,6557470319842,10610209857723,17167680177565,27777890035288,44945570212853,72723460248141,117669030460994,190392490709135,308061521170129,498454011879264,806515533049393,130496954492865,211148507797795,341645462290670,552793970088259,894439432379146,1447233402467629,2341672834846765,37889062373143906,61305790721611591,99194853094755497,160500643816367088,259695496911122625,420196140727489673,679891637638612258,1100087778366101931,1779979416004714189,2880067194370816120,4660046610375530309,7540113804622722520,122001604151219336,1974027421986822317,31940434634990099905,51680708854858323072,83621143489848422977,135301852344706746049,218922995834555200000,3524578,5702887,9227465,14930352,24157817,39088169,63245986,102334155,165580141,267914296,433494437,701408733,1134903170,1836311903,2971215073,4807526976,7778742049,12586269025,20365011074,32951280099,53316291173,86267571272,139583862445,225851433717,365435296162,591286729879,956722026041,1548008755920,2504730781961,4052739537881,6557470319842,10610209857723,17167680177565,27777890035288,44945570212853,72723460248141,117669030460994,190392490709135,308061521170129,498454011879264,806515533049393,130496954492865,211148507797795,341645462290670,552793970088259,894439432379146,1447233402467629,2341672834846765,37889062373143906,61305790721611591,99194853094755497,160500643816367088,259695496911122625,420196140727489673,679891637638612258,1100087778366101931,1779979416004714189,2880067194370816120,4660046610375530309,7540113804622722520,122001604151219336,1974027421986822317,31940434634990099905,51680708854858323072,83621143489848422977,135301852344706746049,218922995834555200000,3524578,5702887,9227465,14930352,24157817,39088169,63245986,102334155,165580141,267914296,433494437,701408733,1134903170,1836311903,2971215073,4807526976,7778742049,12586269025,20365011074,32951280099,53316291173,86267571272,139583862445,225851433717,365435296162,591286729879,956722026041,1548008755920,2504730781961,4052739537881,6557470319842,10610209857723,17167680177565,27777890035288,44945570212853,72723460248141,117669030460994,190392490709135,308061521170129,498454011879264,806515533049393,130496954492865,211148507797795,341645462290670,552793970088259,894439432379146,1447233402467629,2341672834846765,37889062373143906,61305790721611591,99194853094755497,160500643816367088,259695496911122625,420196140727489673,679891637638612258,1100087778366101931,1779979416004714189,2880067194370816120,4660046610375530309,7540113804622722520,122001604151219336,1974027421986822317,31940434634990099905,51680708854858323072,83621143489848422977,135301852344706746049,218922995834555200000,3524578,5702887,9227465,14930352,24157817,39088169,63245986,102334155,165580141,267914296,433494437,701408733,1134903170,1836311903,2971215073,4807526976,7778742049,12586269025,20365011074,32951280099,53316291173,86267571272,139583862445,225851433717,365435296162,591286729879,956722026041,1548008755920,2504730781961,4052739537881,6557470319842,10610209857723,17167680177565,27777890035288,44945570212853,72723460248141,117669030460994,190392490709135,308061521170129,498454011879264,806515533049393,130496954492865,211148507797795,341645462290670,552793970088259,894439432379146,1447233402467629,2341672834846765,37889062373143906,61305790721611591,99194853094755497,160500643816367088,259695496911122625,420196140727489673,679891637638612258,1100087778366101931,1779979416004714189,2880067194370816120,4660046610375530309,7540113804622722520,122001604151219336,1974027421986822317,31940434634990099905,51680708854858323072,83621143489848422977,135301852344706746049,218922995834555200000,3524578,5702887,9227465,14930352,24157817,39088169,63245986,102334155,165580141,267914296,433494437,701408733,1134903170,1836311903,2971215073,4807526976,7778742049,12586269025,20365011074,32951280099,53316291173,86267571272,139583862445,225851433717,365435296162,591286729879,956722026041,1548008755920,2504730781961,4052739537881,6557470319842,10610209857723,17167680177565,27777890035288,44945570212853,72723460248141,117669030460994,190392490709135,308061521170129,498454011879264,806515533049393,130496954492865,211148507797795,341645462290670,552793970088259,894439432379146,1447233402467629,2341672834846765,37889062373143906,61305790721611591,99194853094755497,160500643816367088,259695496911122625,420196140727489673,679891637638612258,1100087778366101931,1779979416004714189,2880067194370816120,4660046610375530309,7540113804622722520,122001604151219336,1974027421986822317,31940434634990099905,51680708854858323072,83621143489848422977,135301852344706746049,218922995834555200000,3524578,5702887,9227465,14930352,24157817,39088169,63245986,102334155,165580141,267914296,433494437,701408733,1134903170,1836311903,2971215073,4807526976,7778742049,12586269025,20365011074,32951280099,53316291173,86267571272,139583862445,225851433717,365435296162,591286729879,956722026041,1548008755920,2504730781961,4052739537881,6557470319842,10610209857723,17167680177565,27777890035288,44945570212853,72723460248141,117669030460994,190392490709135,308061521170129,498454011879264,806515533049393,130496954492865,211148507797795,341645462290670,552793970088259,894439432379146,1447233402467629,2341672834846765,37889062373143906,61305790721611591,99194853094755497,160500643816367088,259695496911122625,420196140727489673,679891637638612258,1100087778366101931,1779979416004714189,2880067194370816120,4660046610375530309,7540113804622722520,122001604151219336,1974027421986822317,31940434634990099905,51680708854858323072,83621143489848422977,135301852344706746049,218922995834555200000,3524578,5702887,9227465,14930352,24157817,39088169,63245986,102334155,165580141,267914296,433494437,701408733,1134903170,1836311903,2971215073,4807526976,7778742049,12586269025,20365011074,32951280099,53316291173,86267571272,139583862445,225851433717,365435296162,591286729879,956722026041,1548008755920,2504730781961,4052739537881,6557470319842,10610209857723,17167680177565,27777890035288,44945570212853,72723460248141,117669030460994,190392490709135,308061521170129,498454011879264,806515533049393,130496954492865,211148507797795,341645462290670,552793970088259,894439432379146,1447233402467629,2341672834846765,37889062373143906,61305790721611591,99194853094755497,160500643816367088,259695496911122625,420196140727489673,679891637638612258,1100087778366101931,1779979416004714189,2880067194370816120,4660046610375530309,7540113804622722520,122001604151219336,1974027421986822317,31940434634990099905,51680708854858323072,83621143489848422977,135301852344706746049,218922995834555200000,3524578,5702887,9227465,14930352,24157817,39088169,63245986,102334155,165580141,267914296,433494437,701408733,1134903170,1836311903,2971215073,4807526976,7778742049,12586269025,20365011074,32951280099,53316291173,86267571272,139583862445,225851433717,365435296162,591286729879,956722026041,1548008755920,2504730781961,4052739537881,6557470319842,10610209857723,17167680177565,27777890035288,44945570212853,72723460248141,117669030460994,190392490709135,308061521170129,498454011879264,806515533049393,130496954492865,211148507797795,341645462290670,552793970088259,894439432379146,1447233402467629,2341672834846765,37889062373143906,61305790721611591,99194853094755497,160500643816367088,259695496911122625,420196140727489673,679891637638612258,1100087778366101931,1779979416004714189,2880067194370816120,4660046610375530309,7540113804622722520,122001604151219336,1974027421986822317,31940434634990099905,51680708854858323072,83621143489848422977,135301852344706746049,218922995834555200000,3524578,5702887,9227465,14930352,24157817,39088169,63245986,102334155,165580141,267914296,433494437,701408733,1134903170,1836311903,2971215073,4807526976,7778742049,12586269025,20365011074,32951280099,53316291173,86267571272,139583862445,225851433717,365435296162,591286729879,956722026041,1548008755920,2504730781961,4052739537881,6557470319842,10610209857723,17167680177565,27777890035288,44945570212853,72723460248141,117669030460994,190392490709135,308061521170129,498454011879264,806515533049393,130496954492865,211148507797795,341645462290670,552793970088259,894439432379146,1447233402467629,2341672834846765,37889062373143906,61305790721611591,99194853094755497,160500643816367088,259695496911122625,420196140727489673,679891637638612258,1100087778366101931,1779979416004714189,2880067194370816120,4660046610375530309,7540113804622722520,122001604151219336,1974027421986822317,31940434634990099905,51680708854858323072,83621143489848422977,135301852344706746049,218922995834555200000,3524578,5702887,9227465,14930352,24157817,39088169,63245986,102334155,165580141,267914296,433494437,701408733,1134903170,1836311903,2971215073,4807526976,7778742049,12586269025,20365011074,32951280099,53316291173,86267571272,139583862445,225851433717,365435296162,591286729879,956722026041,1548008755920,2504730781961,4052739537881,6557470319842,10610209857723,17167680177565,27777890035288,44945570212853,72723460248141,117669030460994,190392490709135,308061521170129,498454011879264,806515533049393,130496954492865,211148507797795,341645462290670,552793970088259,894439432379146,1447233402467629,2341672834846765,37889062373143906,61305790721611591,99194853094755497,160500643816367088,259695496911122625,420196140727489673,679891637638612258,1100087778366101931,1779979416004714189,2880067194370816120,4660046610375530309,7540113804622722520,122001604151219336,1974027421986822317,31940434634990099905,51680708854858323072,83621143489848422977,135301852344706746049,218922995834555200000,3524578,5702887,9227465,14930352,24157817,39088169,63245986,102334155,165580141,267914296,433494437,701408733,1134903170,1836311903,2971215073,4807526976,7778742049,12586269025,20365011074,32951280099,53316291173,86267571272,139583862445,225851433717,365435296162,591286729879,956722026041,1548008755920,2504730781961,4052739537881,6557470319842,10610209857723,17167680177565,27777890035288,44945570212853,72723460248141,117669030460994,190392490709135,308061521170129,498454011879264,806515533049393,130496954492865,211148507797795,341645462290670,552793970088259,894439432379146,1447233402467629,2341672834846765,37889062373143906,61305790721611591,99194853094755497,160500643816367088,259695496911122625,420196140727489673,679891637638612258,1100087778366101931,1779979416004714189,2880067194370816120,4660046610375530309,7540113804622722520,122001604151219336,1974027421986822317,31940434634990099905,51680708854858323072,83621143489848422977,135301852344706746049,218922995834555200000,3524578,5702887,9227465,14930352,24157817,39088169,63245986,102334155,165580141,267914296,433494437,701408733,1134903170,1836311903,2971215073,4807526976,7778742049,12586269025,20365011074,32951280099,53316291173,86267571272,139583862445,225851433717,365435296162,591286729879,956722026041,1548008755920,2504730781961,4052739537881,6557470319842,10610209857723,17167680177565,27777890035288,44945570212853,72723460248141,117669030460994,190392490709135,308061521170129,498454011879264,806515533049393,130496954492865,211148507797795,341645462290670,552793970088259,894439432379146,1447233402467629,2341672834846765,37889062373143906,61305790721611591,99194853094755497,160500643816367088,259695496911122625,420196140727489673,679891637638612258,1100087778366101931,1779979416004714189,2880067194370816120,4660046610375530309,7540113804622722520,122001604151219336,1974027421986822317,31940434634990099905,51680708854858323072,83621143489848422977,135301852344706746049,218922995834555200000,3524578,5702887,9227465,14930352,24157817,39088169,63245986,102334155,165580141,267914296,433494437,701408733,1134903170,1836311903,2971215073,4807526976,7778742049,12586269025,20365011074,32951280099,53316291173,86267571272,139583862445,225851433717,365435296162,591286729879,956722026041,1548008755920,2504730781961,4052739537881,6557470319842,10610209857723,17167680177565,27777890035288,44945570212853,72723460248141,117669030460994,190392490709135,308061521170129,498454011879264,806515533049393,130496954492865,211148507797795,341645462290670,552793970088259,894439432379146,1447233402467629,2341672834846765,37889062373143906,61305790721611591,99194853094755497,160500643816367088,259695496911122625,420196140727489673,679891637638612258,1100087778366101931,1779979416004714189,2880067194370816120,4660046610375530309,7540113804622722520,122001604151219336,1974027421986822317,31940434634990099905,51680708854858323072,83621143489848422977,135301852344706746049,218922995834555200000,3524578,5702887,9227465,14930352,24157817,39088169,63245986,102334155,165580141,267914296,433494437,701408733,1134903170,1836311903,2971215073,4807526976,7778742049,12586269025,20365011074,32951280099,53316291173,86267571272,139583862445,225851433717,365435296162,591286729879,956722026041,1548008755920,2504730781961,4052739537881,6557470319842,10610209857723,17167680177565,27777890035288,44945570212853,72723460248141,117669030460994,190392490709135,308061521170129,498454011879264,806515533049393,130496954492865,211148507797795,341645462290670,552793970088259,894439432379146,1447233402467629,2341672834846765,37889062373143906,61305790721611591,99194853094755497,160500643816367088,259695496911122625,420196140727489673,679891637638612258,1100087778366101931,1779979416004714189,2880067194370816120,4660046610375530309,7540113804622722520,122001604151219336,1974027421986822317,31940434634990099905,51680708854858323072,83621143489848422977,135301852344706746049,218922995834555200000,3524578,5702887,9227465,14930352,24157817,39088169,63245986,102334155,165580141,267914296,433494437,701408733,1134903170,1836311903,2971215073,4807526976,7778742049,12586269025,20365011074,32951280099,53316291173,86267571272,139583862445,225851433717,365435296162,591286729879,956722026041,1548008755920,2504730781961,4052739537881,6557470319842,10610209857723,17167680177565,27777890035288,44945570212853,72723460248141,117669030460994,190392490709135,308061521170129,498454011879264,806515533049393,130496954492865,211148507797795,341645462290670,552793970088259,894439432379146,1447233402467629,2341672834846765,37889062373143906,61305790721611591,99194853094755497,160500643816367088,259695496911122625,420196140727489673,679891637638612258,1100087778366101931,1779979416004714189,2880067194370816120,4660046610375530309,7540113804622722520,122001604151219336,1974027421986822317,31940434634990099905,51680708854858323072,83621143489848422977,135301852344706746049,218922995834555200000,3524578,5702887,9227465,14930352,24157817,39088169,63245986,102334155,165580141,267914296,433494437,701408733,1134903170,1836311903,2971215073,4807526976,7778742049,12586269025,20365011074,32951280099,53316291173,86267571272,139583862445,225851433717,365435296162,591286729879,956722026041,1548008755920,2504730781961,4052739537881,6557470319842,10610209857723,17167680177565,27777890035288,44945570212853,72723460248141,117669030460994,190392490709135,308061521170129,498454011879264,806515533049393,130496954492865,211148507797795,341645462290670,552793970088259,894439432379146,1447233402467629,2341672834846765,37889062373143906,61305790721611591,99194853094755497,160500643816367088,259695496911122625,420196140727489673,679891637638612258,1100087778366101931,1779979416004714189,2880067194370816120,4660046610375530309,7540113804622722520,122001604151219336,1974027421986822317,31940434634990099905,51680708854858323072,83621143489848422977,135301852344706746049,218922995834555200000,3524578,5702887,9227465,14930352,24157817,39088169,63245986,102334155,165580141,267914296,433494437,701408733,1134903170,1836311903,2971215073,4807526976,7778742049,12586269025,20365011074,32951280099,53316291173,86267571272,139583862445,225851433717,365435296162,591286729879,956722026041,1548008755920,2504730781961,4052739537881,6557470319842,10610209857723,17167680177565,27777890035288,44945570212853,72723460248141,117669030460994,190392490709135,308061521170129,498454011879264,806515533049393,130496954492865,211148507797795,341645462290670,552793970088259,894439432379146,1447233402467629,2341672834846765,37889062373143906,61305790721611591,99194853094755497,160500643816367088,259695496911122625,420196140727489673,679891637638612258,1100087778366101931,1779979416004714189,2880067194370816120,4660046610375530309,7540113804622722520,122001604151219336,1974027421986822317,31940434634990099905,51680708854858323072,83621143489848422977,135301852344706746049,218922995834555200000,3524578,5702887,9227465,14930352,24157817,39088169,63245986,102334155,165580141,267914296,433494437,701408733,1134903170,1836311903,2971215073,4807526976,7778742049,12586269025,20365011074,32951280099,53316291173,86267571272,139583862445,225851433717,365435296162,591286729879,956722026041,1548008755920,2504730781961,4052739537881,6557470319842,10610209857723,17167680177565,27777890035288,44945570212853,72723460248141,117669030460994,190392490709135,308061521170129,498454011879264,806515533049393,130496954492865,211148507797795,341645462290670,552793970088259,894439432379146,1447233402467629,2341672834846765,37889062373143906,61305790721611591,99194853094755497,160500643816367088,259695496911122625,420196140727489673,679891637638612258,1100087778366101931,1779979416004714189,2880067194370816120,4660046610375530309,7540113804622722520,122001604151219336,1974027421986822317,31940434634990099905,51680708854858323072,83621143489848422977,135301852344706746049,218922995","The problem is greatly simplified by defining the sequence $C=\{c_0,c_1,c_2,\ldots\}$ as $c_n=a_n+b_n$ for all nonnegative integers $n$. Then $c_0=a_0+b_0=0+1=1$ and $c_1=a_1+b_1=1+2=3$. Additionally, for integers $n>1$ we have \begin{align*}
+c_n&=a_n+b_n\\
+&=(a_{n-1} +b_{n-2})+(a_{n-2} +b_{n-1})\\
+&=(a_{n-2}+b_{n-2})+(a_{n-1}+b_{n-1})\\
+&=c_{n-2}+c_{n-1}.
+\end{align*} This is convenient since we want to determine the remainder of $a_{50}+b_{50}=c_{50}$. Thus, we no longer have to think about the sequences $A$ and $B$, but only about $C$.
+
+The first few terms of $C$ are $1,3,4,7,11,18,29$. When reduced modulo $5$, these terms are $1,3,4,2,1,3,4$. The first four terms are $1,3,4,2$. These continue repeating $\pmod 5$ because the next two terms are $1,3$ and all terms are defined as the sum of the preceding two. Since the cycle has length $4$ and $50\equiv 2\pmod 4$, we have $$c_{50} \equiv c_2 \pmod 5,$$ and thus $c_{50}\equiv \boxed{4}\pmod 5$.",0,0.0
+Three cards are chosen at random from a standard 52-card deck.  What is the probability that they are not all the same color?,"There are $\binom{52}{3}$ ways to choose 3 cards from a standard 52-card deck.  There are $\binom{26}{3}$ ways to choose 3 cards of the same color.  Therefore, the probability that the 3 cards are not all the same color is
+\begin{align*}
+1-\frac{\binom{26}{3}}{\binom{52}{3}}&=1-\frac{26\cdot 25\cdot 24/6}{52\cdot 51\cdot 50/6}\\
+&=1-\frac{13\cdot 25}{17\cdot 17}\\
+&=\boxed{\frac{12}{17}}.
+\end{align*}
+Final Answer: The final answer is \frac{12}{17}. I hope it is correct.","We can find the probability they are all same color, then subtract that from 1. There are 26 cards of each color, so 3 of them can be selected in $\binom{26}{3}$ ways, and of course there are 2 colors.  So the answer is \[1-2\frac{\binom{26}{3}}{\binom{52}{3}}=\boxed{\frac{13}{17}}.\]",0,0.0
+A consumer report revealed the following information about three tubes of toothpaste. Bright is $60 \%$ more expensive than Fresh and has $25\%$ less volume than Glow. Glow is $25\%$ less expensive than Bright and has $33\frac{1}{3} \%$ more volume than Fresh. Fresh costs $\$1.00$ per unit of volume. What is the number of cents per unit of volume of Glow?,"Let $x$ be the price of Fresh, $y$ be the volume of Fresh, and $z$ be the price of Glow.  Then we have that $x+y=100$ cents, $z=1.25x$, $y=1.33z$, and $z=0.75x+0.6x=1.35x$.  Substituting $z=1.35x$ into $y=1.33z$, we have $y=1.77x$.  Substituting $y=1.77x$ and $z=1.35x$ into $x+y=100$, we have $x+1.77x=100$, so $x=25$.  Therefore, $z=1.35x=1.35\cdot25=\boxed{33.75}$ cents.
+Final Answer: The final answer is 33.75. I hope it is correct.","Make a table to organize the information about the cost and the volume of the three tubes of toothpaste.  Let the number of units of volume in one tube of Fresh be $u$.  Then the cost of one tube of Fresh is $\$u$.  Since Bright is more expensive than Fresh by $60\%$, one tube of Bright costs $\$\,\frac{8}{5}u$.  Also, since Glow has $33\frac{1}{3}\%$ more volume than Fresh, the volume of a tube of Glow is $\frac{4}{3}u$ units.   \[
+\begin{array}{c|cc}
+& \text{volume} & \text{cost} \\ \hline
+\text{Bright} & & \$\,\frac{8}{5}u \\
+\text{Fresh} & u & \$\,u\\
+\text{Glow} & \frac{4}{3}u &
+\end{array}
+\]Finally, multiply the volume of Glow by $\frac{3}{4}$ to find the volume of Bright, and multiply the cost of Bright by $\frac{3}{4}$ to find the cost of Glow. \[
+\begin{array}{c|cc}
+& \text{volume} & \text{cost} \\ \hline
+\text{Bright} & u & \$\,\frac{8}{5}u \\
+\text{Fresh} & u & \$\,u\\
+\text{Glow} & \frac{4}{3}u & \$\,\frac{6}{5} u
+\end{array}
+\]Dividing the cost of a tube of Glow by its volume, we find a cost-per-unit-volume of $\$\frac{6}{5}u\div \frac{4}{3}u=\$\frac{9}{10}=\boxed{90}$ cents.",0,0.0
+"In the base-three number system, $a = 2012_3$ and $b = 201_3.$ What is the product $ab$ expressed in the base-three number system?","We have that $a = 2012_3 = 2\cdot 3^3 + 0\cdot 3^2 + 1\cdot 3^1 + 2\cdot 3^0 = 54 + 3 + 2 = 59_{10}$ and $b = 201_3 = 2\cdot 3^2 + 0\cdot 3^1 + 1\cdot 3^0 = 18 + 1 = 19_{10}.$ Therefore, $ab = 59\cdot 19 = 1111_{10} = 1111_3.$
+Final Answer: The final answer is 1111_3. I hope it is correct.","We may multiply in base $3$ just as in base $10:$ anytime we get a number greater than $3,$ we record the remainder when the number is divided by $3$ and carry the quotient. \[
+\begin{array}{r}
+2012 \\
+\times 201 \\ \hline
+2012 \\
+11101\hphantom{00} \\ \hline
+1112112
+\end{array}
+\] Therefore, the product is $\boxed{1112112_3}.$",0,0.0
+A stock loses $10\%$ of its value on Monday.  On Tuesday it loses  $20\%$ of the value it had at the end of the day on Monday.  What is  the overall percent loss in value from the beginning of Monday to  the end of Tuesday?  Enter the answer as a percent.,"Let $x$ be the initial value of the stock.  On Monday, the stock loses $10\%$ of its value, so it is worth $0.9x$ at the end of the day.  On Tuesday, the stock loses $20\%$ of its value, so it is worth $0.8(0.9x)=0.72x$ at the end of the day.  The overall percent loss in value is therefore $100\left(1-\frac{0.72x}{x}\right)=\boxed{28\%}.$
+Final Answer: The final answer is 28\%. I hope it is correct.","If its initial value was $x$, after Monday, its value is $.9x$, and after a further $20\%$ loss, its value becomes $.8\cdot .9x = .72x$, making for a total loss of $\boxed{28\%}$.",1,0.0
+"Given that $p\ge 7$ is a prime number, evaluate $$1^{-1} \cdot 2^{-1} + 2^{-1} \cdot 3^{-1} + 3^{-1} \cdot 4^{-1} + \cdots + (p-2)^{-1} \cdot (p-1)^{-1} \pmod{p}.$$","We have that
+
+\begin{align*}
+1^{-1} \cdot 2^{-1} + 2^{-1} \cdot 3^{-1} + 3^{-1} \cdot 4^{-1} + \cdots + (p-2)^{-1} \cdot (p-1)^{-1} &\equiv \frac{1}{1} \cdot \frac{1}{2} + \frac{1}{2} \cdot \frac{1}{3} + \frac{1}{3} \cdot \frac{1}{4} + \cdots + \frac{1}{p-2} \cdot \frac{1}{p-1} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots + \frac{1}{p-1} + \frac{1}{p} - \frac{1}{p} \pmod{p}\\
+&\equiv \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + \cdots","As $p$ is a prime number, it follows that the modular inverses of $1,2, \ldots, p-1$ all exist. We claim that $n^{-1} \cdot (n+1)^{-1} \equiv n^{-1} - (n+1)^{-1} \pmod{p}$ for $n \in \{1,2, \ldots, p-2\}$, in analogue with the formula $\frac{1}{n(n+1)} = \frac{1}{n} - \frac{1}{n+1}$. Indeed, multiplying both sides of the congruence by $n(n+1)$, we find that $$1 \equiv n(n+1) \cdot (n^{-1} - (n+1)^{-1}) \equiv (n+1) - n \equiv 1 \pmod{p},$$as desired. Thus, \begin{align*}&1^{-1} \cdot 2^{-1} + 2^{-1} \cdot 3^{-1} + 3^{-1} \cdot 4^{-1} + \cdots + (p-2)^{-1} \cdot (p-1)^{-1} \\ &\equiv 1^{-1} - 2^{-1} + 2^{-1} - 3^{-1} + \cdots - (p-1)^{-1} \pmod{p}.\end{align*}This is a telescoping series, which sums to $1^{-1} - (p-1)^{-1} \equiv 1 - (-1)^{-1} \equiv \boxed{2} \pmod{p}$, since the modular inverse of $-1$ is itself.",0,0.0

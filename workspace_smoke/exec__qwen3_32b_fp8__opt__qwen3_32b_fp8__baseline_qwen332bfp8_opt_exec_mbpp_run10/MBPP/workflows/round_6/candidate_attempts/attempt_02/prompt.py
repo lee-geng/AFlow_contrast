@@ -1,0 +1,1 @@
+# No new prompts are needed since the `ScEnsemble` operator is already described and does not require additional prompt text.

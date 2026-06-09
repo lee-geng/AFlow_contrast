@@ -1,0 +1,1 @@
+# No new prompts are added since the `ScEnsemble` operator is used directly without requiring a custom prompt.

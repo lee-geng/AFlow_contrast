@@ -1,0 +1,1 @@
+FINAL_ANSWER_PROMPT = """Provide only the final answer, boxed in \\boxed{} if applicable, and in the exact format expected by the question. Do not include any explanation, context, or intermediate steps."""

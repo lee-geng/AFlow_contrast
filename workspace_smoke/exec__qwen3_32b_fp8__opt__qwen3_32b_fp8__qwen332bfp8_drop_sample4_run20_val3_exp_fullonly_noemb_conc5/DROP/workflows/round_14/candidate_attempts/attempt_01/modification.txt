@@ -1,0 +1,1 @@
+Refine the XXX_PROMPT to ensure numerical answers are explicitly boxed and formatted correctly, addressing the mismatch between expected and extracted answers. This change is minimal and targeted, preserving all validated components of the workflow.

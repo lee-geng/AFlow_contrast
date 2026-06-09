@@ -1,0 +1,1 @@
+EXTRACT_ANSWER_PROMPT = "Extract the final answer from the following text. Only return the answer, no explanation or formatting."

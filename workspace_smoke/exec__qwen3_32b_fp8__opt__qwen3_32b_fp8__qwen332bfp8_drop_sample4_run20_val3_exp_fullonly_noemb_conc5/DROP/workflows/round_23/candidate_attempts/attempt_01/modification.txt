@@ -1,0 +1,1 @@
+Refine the XXX_PROMPT to better align numerical answers with expected formats, especially for decimal and fractional values, based on the mismatch evidence where .5 vs 0.5 and 2|3 vs 0 were observed. This patch is small, targeted, and preserves all validated subworkflows.

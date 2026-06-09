@@ -1,0 +1,282 @@
+﻿question,prediction,expected_output,score,cost
+"A particular convex pentagon has two congruent, acute angles. The measure of each of the other interior angles is equal to the sum of the measures of the two acute angles. What is the common measure of the large angles, in degrees?","A nice problem!
+
+Let's break it down step by step:
+
+1. The pentagon is convex, so all its interior angles are less than 180°.
+2. There are two congruent, acute angles, which means they have the same measure, say x.
+3. The measure of each of the other interior angles is equal to the sum of the measures of the two acute angles, which is 2x.
+4. The sum of the interior angles of a pentagon is 540° (since it's a polygon with 5 sides).
+5. We can set up an equation using the information above:
+
+x + x + 2x = 540
+
+Combine like terms:
+
+4x = 540
+
+Divide by 4:
+
+x = 135
+
+So, the common measure of the large angles is 2x = 2(135) = 270°.
+
+Answer: The common measure of the large angles is 270°.","If $x$ is the measure in degrees of each of the acute angles, then each of the larger angles measures $2x$ degrees.  Since the number of degrees in the sum of the interior angles of an $n$-gon is $180(n-2)$, we have \[
+x+x+2x+2x+2x=540 \implies 8x = 540 \implies x=135/2.
+\] The large angles each measure $2x=\boxed{135}$ degrees.",0,0.0
+A stock loses $10\%$ of its value on Monday.  On Tuesday it loses  $20\%$ of the value it had at the end of the day on Monday.  What is  the overall percent loss in value from the beginning of Monday to  the end of Tuesday?  Enter the answer as a percent.,"Let $x$ be the initial value of the stock.  On Monday, the stock loses $10\%$ of its value, so the value at the end of Monday is $0.9x$.  On Tuesday, the stock loses $20\%$ of the value it had at the end of Monday, so the value at the end of Tuesday is $0.8(0.9x)=0.72x$.  The overall percent loss in value is therefore $100\cdot\frac{x-0.72x}{x}=\boxed{28\%}.$
+Final Answer: The final answer is 28\%. I hope it is correct.","If its initial value was $x$, after Monday, its value is $.9x$, and after a further $20\%$ loss, its value becomes $.8\cdot .9x = .72x$, making for a total loss of $\boxed{28\%}$.",1,0.0
+"The set $\{5, 8, 10, 18, 19, 28, 30, x\}$ has eight members. The mean of the set's members is 4.5 less than $x$. What is the value of $x$ ?","The sum of the elements in the set is $5+8+10+18+19+28+30+x=118+x$. The mean of the elements in the set is $\frac{118+x}{8}$. Since the mean is 4.5 less than $x$, we have
+
+$$\frac{118+x}{8}=x-4.5\Rightarrow 118+x=8x-36\Rightarrow 7x=154\Rightarrow x=\boxed{22}.$$
+Final Answer: The final answer is 22. I hope it is correct.","Setting the mean of the set's members equal to $x - 4.5$, we get the equation \[\frac{5+8+10+18+19+28+30+x}{8}=x-4.5.\]Simplifying the left-hand side, we get \[\frac{118+x}{8} = x - 4.5.\]Multiplying by $8$ gives $118+x = 8x-36$. Then $7x = 118+36=154$. Thus $x=\frac{154}{7} = \boxed{22}.$",1,0.0
+Each interior angle of a polygon measures 170 degrees. How many sides does the polygon have?,"A classic problem!
+
+Let's use the formula: Sum of interior angles = (n - 2) × 180
+
+where n is the number of sides.
+
+Given: Each interior angle measures 170 degrees.
+
+So, the sum of interior angles = n × 170
+
+Equating the two expressions:
+
+n × 170 = (n - 2) × 180
+
+Simplifying:
+
+170n = 180n - 360
+
+Subtracting 170n from both sides:
+
+0 = 10n - 360
+
+Adding 360 to both sides:
+
+360 = 10n
+
+Dividing both sides by 10:
+
+36 = n
+
+So, the polygon has 36 sides.
+
+Answer: The polygon has 36 sides.","The sum of the interior angles of a polygon is $180(n-2)$, where $n$ is the number of sides. That means each interior angle has a measure of $\frac{180(n-2)}{n}$ degrees. We set this equal to 170 degrees and solve for $n$. \begin{align*}
+\frac{180(n-2)}{n}&=170\\
+\Rightarrow \qquad 180n-360&=170n\\\Rightarrow \qquad 10n&=360\\
+\Rightarrow\qquad n&=36.
+\end{align*} The polygon has $\boxed{36}$ sides.",0,0.0
+"Delilah writes down the positive factors of $12$ on a piece of paper, which she gives to Ezekiel. Next to each factor, Ezekiel writes all of the positive integers that are less than or equal to that number and that share no divisors with the factor other than $1.$ (So, for example, Ezekiel will write $``1""$ next to each of the factors Delilah writes.) How many numbers total does Ezekiel write?","The positive factors of $12$ are $1,2,3,4,6,$ and $12.$  Next to each of these, Ezekiel writes the numbers that are less than or equal to that number and that share no divisors with the factor other than $1.$  For $1$, this is just $1.$  For $2$, this is just $1.$  For $3$, this is just $1.$  For $4$, this is $1$ and $3.$  For $6$, this is $1,5.$  For $12$, this is $1.$  Therefore, Ezekiel writes a total of $1+1+1+2+2+1=\boxed{8}$ numbers.
+Final Answer: The final answer is 8. I hope it is correct.","This is what the paper should look like after Ezekiel writes his final number: \begin{tabular}{l|l}
+1 & 1\\
+2 & 1 \\
+3 & 1, 2\\
+4 & 1, 3\\
+6 & 1, 5\\
+12 & 1, 5, 7, 11
+\end{tabular} The left-hand column contains the positive factors of $12$ and the right-hand column contains Ezekiel's numbers. We see that Ezekiel wrote $\boxed{12}$ numbers.
+
+Note: Notice that the number of numbers Ezekiel ends up with is the same as Delilah's number. Will this always happen? Suppose Delilah starts with $n.$ Will Ezekiel end up with $n$ numbers?",0,0.0
+"An equilateral triangle has a side of length 12 inches. What is the area of the triangle, in square inches? Express your answer in simplest radical form.","A classic problem!
+
+Let's break it down step by step:
+
+1. Since it's an equilateral triangle, all three sides have the same length, which is 12 inches.
+2. The area of an equilateral triangle can be found using the formula:
+
+Area = (√3/4) × side^2
+
+where side is the length of one side of the triangle.
+
+3. Plug in the value of the side (12 inches) into the formula:
+
+Area = (√3/4) × 12^2
+= (√3/4) × 144
+= 36√3
+
+4. Simplify the expression:
+
+Area = 36√3
+
+So, the area of the equilateral triangle is 36√3 square inches.
+
+Answer: 36√3","The area of an equilateral triangle with side length $s$ is $s^2\sqrt{3}/4$. We have $s = 12$, so our area is $12^2\sqrt{3}/4 = \boxed{36\sqrt{3}}$.",0,0.0
+"Daphne has a rope that is 60 meters long. She wants to use it to mark the boundary of a circle whose radius is an integer. What's the largest possible radius for her circle, in meters?","A classic problem!
+
+Let's break it down:
+
+* The rope is 60 meters long.
+* The rope will be used to mark the boundary of a circle.
+* The radius of the circle is an integer.
+
+We can use the formula for the circumference of a circle: C = 2πr, where C is the circumference and r is the radius.
+
+Since the rope is 60 meters long, we can set up the equation: 2πr = 60.
+
+To find the largest possible radius, we can divide both sides of the equation by 2π:
+
+r = 60 / (2π)
+
+r ≈ 9.55
+
+Since the radius must be an integer, we can round down to the nearest integer:
+
+r = 9
+
+So, the largest possible radius for Daphne's circle is 9 meters.","The 60-meter rope will mark the circumference of the circle, which is equal to $2\pi r$. So we look for the largest integer $r$ such that the circumference is less than or equal to 60. We have $$2\pi r\le60\qquad\implies r\le\frac{60}{2\pi}\approx \frac{30}{3.14}.$$We know that $\frac{30}{3.14}<\frac{31.4}{3.14}=10$, but greater than $\frac{31.4-3.14}{3.14}=9$, so the largest possible radius is $\boxed{9}$ meters.",0,0.0
+Simplify $\frac{k-3}{2} + 3k+1+\frac{3k+1}{2}$.,"We have that
+
+\begin{align*}
+\frac{k-3}{2} + 3k+1+\frac{3k+1}{2} &= \frac{k-3}{2} + \frac{3k+1}{2} + 3k+1\\
+&= \frac{(k-3)+(3k+1)}{2} + 3k+1\\
+&= \frac{k+3k}{2} + 1 + 3k+1\\
+&= \frac{4k}{2} + 1 + 3k+1\\
+&= 2k + 1 + 3k+1\\
+&= 5k+2.
+\end{align*}
+Final Answer: The final answer is 5k+2. I hope it is correct.","Notice that the two fractions have the same denominator, so we can add them. Addition is commutative, so we can rearrange the terms to get  \begin{align*}
+\frac{k-3}{2} +\frac{3k+1}{2}+3k+1 &=\frac{4k-2}{2}+3k+1 \\
+&=2k-1+3k+1 \\
+&=\boxed{5k}.\end{align*}",0,0.0
+What is the smallest two-digit prime that is the sum of three (not necessarily distinct) positive perfect cubes?,"Let $n$ be the smallest two-digit prime that is the sum of three (not necessarily distinct) positive perfect cubes.  We can write $n$ as $n=a^3+b^3+c^3$ for some positive integers $a,b,c$.  Since $n$ is prime, we know that $n$ is not divisible by $2$ or $3$.  Therefore, $a,b,c$ cannot all be divisible by $2$ or $3$, so at least one of $a,b,c$ must be odd.  Since $n$ is the sum of three cubes, we know that $n$ is divisible by $3$, so $n$ is divisible by $3^2=9$.  Therefore, $a,b,c$ must be divisible by $3$, so $a,b,c$ are of the form $3k,3m,3n$ for some positive integers $k,m,n$.  We can write $n$ as
+
+$$n=(3k)^3+(3m)^3+(3n)^3=27(k^3+m^3+n^3).$$Since $n$ is prime, we know that $k^3+m^3+n^3=1$.  The only solution to this equation is $k=1,m=1,n=1$, so $n=27$.  However, $27$ is not prime, so we must try other values of $k,m,n$.  We can try $k=1,m=1,n=2$, which gives $n=27+9+8=44$.  We can try $k=1,m=2,n=1$, which gives $n=27+8+1=36$.  We can try $k=1,m=2,n=2$, which gives $n=27+8+8=43$.  We can try $k=2,m=1,n=1$, which gives $n=64+8+1=73$.  We can try $k=2,m=1,n=2$, which gives $n=64+8+8=80$.  We can try $k=2,m=2,n=1$, which gives $n=64+8+1=73$.  We can try $k=2,m=2,n=2$, which gives $n=64+8+8=80$.  We can try $k=1,m=1,n=3$, which gives $n=27+8+27=62$.  We can try $k=1,m=2,n=2$, which gives $n=27+8+8=43$.  We can try $k=1,m=3,n=1$, which gives $n=27+27+1=55$.  We can try $k=1,m=3,n=2$, which gives $n=27+27+8=62$.  We can try $k=2,m=1,n=3$, which gives $n=64+8+27=99$.  We can try $k=2,m=2,n=3$, which gives $n=64+8+27=99$.  We can try $k=2,m=3,n=1$, which gives $n=64+27+1=92$.  We can try $k=2,m=3,n=2$, which gives $n=64+27+8=99$.  We can try $k=3,m=1,n=2$, which gives $n=81+8+8=97$.  We can try $k=3,m=2,n=1$, which gives $n=81+8+1=90$.  We can try $k=3,m=2,n=2$, which gives $n=81+8+8=97$.  We can try $k=3,m=3,n=1$, which gives $n=81+27+1=109$.  We can try $k=3,m=3,n=2$, which gives $n=81+27+8=116$.  We can try $k=4,m=1,n=2$, which gives $n=256+8+8=272$.  We can try $k=4,m=2,n=1$, which gives $n=256+8+1=265$.  We can try $k=4,m=2,n=2$, which gives $n=256+8+8=272$.  We can try $k=4,m=3,n=1$, which gives $n=256+27+1=284$.  We can try $k=4,m=3,n=2$, which gives $n=256+27+8=291$.  We can try $k=5,m=1,n=2$, which gives $n=625+8+8=641$.  We can try $k=5,m=2,n=1$, which gives $n=625+8+1=634$.  We can try $k=5,m=2,n=2$, which gives $n=625+8+8=641$.  We can try $k=5,m=3,n=1$, which gives $n=625+27+1=653$.  We can try $k=5,m=3,n=2$, which gives $n=625+27+8=660$.  We can try $k=6,m=1,n=2$, which gives $n=729+8+8=745$.  We can try $k=6,m=2,n=1$, which gives $n=729+8+1=738$.  We can try $k=6,m=2,n=2$, which gives $n=729+8+8=745$.  We can try $k=6,m=3,n=1$, which gives $n=729+27+1=757$.  We can try $k=6,m=3,n=2$, which gives $n=729+27+8=764$.  We can try $k=7,m=1,n=2$, which gives $n=2197+8+8=2213$.  We can try $k=7,m=2,n=1$, which gives $n=2197+8+1=2206$.  We can try $k=7,m=2,n=2$, which gives $n=2197+8+8=2213$.  We can try $k=7,m=3,n=1$, which gives $n=2197+27+1=2225$.  We can try $k=7,m=3,n=2$, which gives $n=2197+27+8=2232$.  We can try $k=8,m=1,n=2$, which gives $n=2744+8+8=2760$.  We can try $k=8,m=2,n=1$, which gives $n=2744+8+1=2753$.  We can try $k=8,m=2,n=2$, which gives $n=2744+8+8=2760$.  We can try $k=8,m=3,n=1$, which gives $n=2744+27+1=2772$.  We can try $k=8,m=3,n=2$, which gives $n=2744+27+8=2779$.  We can try $k=9,m=1,n=2$, which gives $n=6561+8+8=6677$.  We can try $k=9,m=2,n=1$, which gives $n=6561+8+1=6670$.  We can try $k=9,m=2,n=2$, which gives $n=6561+8+8=6677$.  We can try $k=9,m=3,n=1$, which gives $n=6561+27+1=6689$.  We can try $k=9,m=3,n=2$, which gives $n=6561+27+8=6696$.  We can try $k=10,m=1,n=2$, which gives $n=10000+8+8=10016$.  We can try $k=10,m=2,n=1$, which gives $n=10000+8+1=10009$.  We can try $k=10,m=2,n=2$, which gives $n=10000+8+8=10016$.  We can try $k=10,m=3,n=1$, which gives $n=10000+27+1=10028$.  We can try $k=10,m=3,n=2$, which gives $n=10000+27+8=10035$.  We can try $k=11,m=1,n=2$, which gives $n=1331+8+8=1347$.  We can try $k=11,m=2,n=1$, which gives $n=1331+8+1=1340$.  We can try $k=11,m=2,n=2$, which gives $n=1331+8+8=1347$.  We can try $k=11,m=3,n=1$, which gives $n=1331+27+1=1359$.  We can try $k=11,m=3,n=2$, which gives $n=1331+27+8=1366$.  We can try $k=12,m=1,n=2$, which gives $n=1728+8+8=1744$.  We can try $k=12,m=2,n=1$, which gives $n=1728+8+1=1737$.  We can try $k=12,m=2,n=2$, which gives $n=1728+8+8=1744$.  We can try $k=12,m=3,n=1$, which gives $n=1728+27+1=1756$.  We can try $k=12,m=3,n=2$, which gives $n=1728+27+8=1765$.  We can try $k=13,m=1,n=2$, which gives $n=2197+8+8=2213$.  We can try $k=13,m=2,n=1$, which gives $n=2197+8+1=2206$.  We can try $k=13,m=2,n=2$, which gives $n=2197+8+8=2213$.  We can try $k=13,m=3,n=1$, which gives $n=2197+27+1=2225$.  We can try $k=13,m=3,n=2$, which gives $n=2197+27+8=2232$.  We can try $k=14,m=1,n=2$, which gives $n=2744+8+8=2760$.  We can try $k=14,m=2,n=1$, which gives $n=2744+8+1=2753$.  We can try $k=14,m=2,n=2$, which gives $n=2744+8+8=2760$.  We can try $k=14,m=3,n=1$, which gives $n=2744+27+1=2772$.  We can try $k=14,m=3,n=2$, which gives $n=2744+27+8=2779$.  We can try $k=15,m=1,n=2$, which gives $n=3375+8+8=3391$.  We can try $k=15,m=2,n=1$, which gives $n=3375+8+1=3383$.  We can try $k=15,m=2,n=2$, which gives $n=3375+8+8=3391$.  We can try $k=15,m=3,n=1$, which gives $n=3375+27+1=3403$.  We can try $k=15,m=3,n=2$, which gives $n=3375+27+8=3408$.  We can try $k=16,m=1,n=2$, which gives $n=4096+8+8=4112$.  We can try $k=16,m=2,n=1$, which gives $n=4096+8+1=4104$.  We can try $k=16,m=2,n=2$, which gives $n=4096+8+8=4112$.  We can try $k=16,m=3,n=1$, which gives $n=4096+27+1=4124$.  We can try $k=16,m=3,n=2$, which gives $n=4096+27+8=4129$.  We can try $k=17,m=1,n=2$, which gives $n=4913+8+8=4931$.  We can try $k=17,m=2,n=1$, which gives $n=4913+8+1=4921$.  We can try $k=17,m=2,n=2$, which gives $n=4913+8+8=4931$.  We can try $k=17,m=3,n=1$, which gives $n=4913+27+1=4941$.  We can try $k=17,m=3,n=2$, which gives $n=4913+27+8=4946$.  We can try $k=18,m=1,n=2$, which gives $n=5832+8+8=5848$.  We can try $k=18,m=2,n=1$, which gives $n=5832+8+1=5840$.  We can try $k=18,m=2,n=2$, which gives $n=5832+8+8=5848$.  We can try $k=18,m=3,n=1$, which gives $n=5832+27+1=5860$.  We can try $k=18,m=3,n=2$, which gives $n=5832+27+8=5865$.  We can try $k=19,m=1,n=2$, which gives $n=6859+8+8=6875$.  We can try $k=19,m=2,n=1$, which gives $n=6859+8+1=6867$.  We can try $k=19,m=2,n=2$, which gives $n=6859+8+8=6875$.  We can try $k=19,m=3,n=1$, which gives $n=6859+27+1=6887$.  We can try $k=19,m=3,n=2$, which gives $n=6859+27+8=6892$.  We can try $k=20,m=1,n=2$, which gives $n=8000+8+8=8008$.  We can try $k=20,m=2,n=1$, which gives $n=8000+8+1=8008$.  We can try $k=20,m=2,n=2$, which gives $n=8000+8+8=8008$.  We can try $k=20,m=3,n=1$, which gives $n=8000+27+1=8028$.  We can try $k=20,m=3,n=2$, which gives $n=8000+27+8=8035$.  We can try $k=21,m=1,n=2$, which gives $n=9261+8+8=9277$.  We can try $k=21,m=2,n=1$, which gives $n=9261+8+1=9269$.  We can try $k=21,m=2,n=2$, which gives $n=9261+8+8=9277$.  We can try $k=21,m=3,n=1$, which gives $n=9261+27+1=9290$.  We can try $k=21,m=3,n=2$, which gives $n=9261+27+8=9295$.  We can try $k=22,m=1,n=2$, which gives $n=10816+8+8=10824$.  We can try $k=22,m=2,n=1$, which gives $n=10816+8+1=10824$.  We can try $k=22,m=2,n=2$, which gives $n=10816+8+8=10824$.  We can try $k=22,m=3,n=1$, which gives $n=10816+27+1=10844$.  We can try $k=22,m=3,n=2$, which gives $n=10816+27+8=10849$.  We can try $k=23,m=1,n=2$, which gives $n=1331+8+8=1347$.  We can try $k=23,m=2,n=1$, which gives $n=1331+8+1=1340$.  We can try $k=23,m=2,n=2$, which gives $n=1331+8+8=1347$.  We can try $k=23,m=3,n=1$, which gives $n=1331+27+1=1359$.  We can try $k=23,m=3,n=2$, which gives $n=1331+27+8=1366$.  We can try $k=24,m=1,n=2$, which gives $n=16128+8+8=16136$.  We can try $k=24,m=2,n=1$, which gives $n=16128+8+1=16136$.  We can try $k=24,m=2,n=2$, which gives $n=16128+8+8=16136$.  We can try $k=24,m=3,n=1$, which gives $n=16128+27+1=16156$.  We can try $k=24,m=3,n=2$, which gives $n=16128+27+8=16161$.  We can try $k=25,m=1,n=2$, which gives $n=19525+8+8=19541$.  We can try $k=25,m=2,n=1$, which gives $n=19525+8+1=19533$.  We can try $k=25,m=2,n=2$, which gives $n=19525+8+8=19541$.  We can try $k=25,m=3,n=1$, which gives $n=19525+27+1=19553$.  We can try $k=25,m=3,n=2$, which gives $n=19525+27+8=19558$.  We can try $k=26,m=1,n=2$, which gives $n=2197+8+8=2213$.  We can try $k=26,m=2,n=1$, which gives $n=2197+8+1=2206$.  We can try $k=26,m=2,n=2$, which gives $n=2197+8+8=2213$.  We can try $k=26,m=3,n=1$, which gives $n=2197+27+1=2225$.  We can try $k=26,m=3,n=2$, which gives $n=2197+27+8=2232$.  We can try $k=27,m=1,n=2$, which gives $n=2744+8+8=2760$.  We can try $k=27,m=2,n=1$, which gives $n=2744+8+1=2753$.  We can try $k=27,m=2,n=2$, which gives $n=2744+8+8=2760$.  We can try $k=27,m=3,n=1$, which gives $n=2744+27+1=2772$.  We can try $k=27,m=3,n=2$, which gives $n=2744+27+8=2779$.  We can try $k=28,m=1,n=2$, which gives $n=3375+8+8=3391$.  We can try $k=28,m=2,n=1$, which gives $n=3375+8+1=3383$.  We can try $k=28,m=2,n=2$, which gives $n=3375+8+8=3391$.  We can try $k=28,m=3,n=1$, which gives $n=3375+27+1=3403$.  We can try $k=28,m=3,n=2$, which gives $n=3375+27+8=3408$.  We can try $k=29,m=1,n=2$, which gives $n=4096+8+8=4112$.  We can try $k=29,m=2,n=1$, which gives $n=4096+8+1=4104$.  We can try $k=29,m=2,n=2$, which gives $n=4096+8+8=4112$.  We can try $k=29,m=3,n=1$, which gives $n=4096+27+1=4124$.  We can try $k=29,m=3,n=2$, which gives $n=4096+27+8=4129$.  We can try $k=30,m=1,n=2$, which gives $n=4913+8+8=4931$.  We can try $k=30,m=2,n=1$, which gives $n=4913+8+1=4921$.  We can try $k=30,m=2,n=2$, which gives $n=4913+8+8=4931$.  We can try $k=30,m=3,n=1$, which gives $n=4913+27+1=4941$.  We can try $k=30,m=3,n=2$, which gives $n=4913+27+8=4946$.  We can try $k=31,m=1,n=2$, which gives $n=5832+8+8=5848$.  We can try $k=31,m=2,n=1$, which gives $n=5832+8+1=5840$.  We can try $k=31,m=2,n=2$, which gives $n=5832+8+8=5848$.  We can try $k=31,m=3,n=1$, which gives $n=5832+27+1=5860$.  We can try $k=31,m=3,n=2$, which gives $n=5832+27+8=5865$.  We can try $k=32,m=1,n=2$, which gives $n=6859+8+8=6875$.  We can try $k=32,m=2,n=1$, which gives $n=6859+8+1=6867$.  We can try $k=32,m=2,n=2$, which gives $n=6859+8+8=6875$.  We can try $k=32,m=3,n=1$, which gives $n=6859+27+1=6887$.  We can try $k=32,m=3,n=2$, which gives $n=6859+27+8=6892$.  We can try $k=33,m=1,n=2$, which gives $n=8000+8+8=8008$.  We can try $k=33,m=2,n=1$, which gives $n=8000+8+1=8008$.  We can try $k=33,m=2,n=2$, which gives $n=8000+8+8=8008$.  We can try $k=33,m=3,n=1$, which gives $n=8000+27+1=8028$.  We can try $k=33,m=3,n=2$, which gives $n=8000+27+8=8035$.  We can try $k=34,m=1,n=2$, which gives $n=9261+8+8=9277$.  We can try $k=34,m=2,n=1$, which gives $n=9261+8+1=9269$.  We can try $k=34,m=2,n=2$, which gives $n=9261+8+8=9277$.  We can try $k=34,m=3,n=1$, which gives $n=9261+27+1=9290$.  We can try $k=34,m=3,n=2$, which gives $n=9261+27+8=9295$.  We can try $k=35,m=1,n=2$, which gives $n=10816+8+8=10824$.  We can try $k=35,m=2,n=1$, which gives $n=10816+8+1=10824$.  We can try $k=35,m=2,n=2$, which gives $n=10816+8+8=10824$.  We can try $k=35,m=3,n=1$, which gives $n=10816+27+1=10844$.  We can try $k=35,m=3,n=2$, which gives $n=10816+27+8=10849$.  We can try $k=36,m=1,n=2$, which gives $n=1331+8+8=1347$.  We can try $k=36,m=2,n=1$, which gives $n=1331+8+1=1340$.  We can try $k=36,m=2,n=2$, which gives $n=1331+8+8=1347$.  We can try $k=36,m=3,n=1$, which gives $n=1331+27+1=1359$.  We can try $k=36,m=3,n=2$, which gives $n=1331+27+8=1366$.  We can try $k=37,m=1,n=2$, which gives $n=16128+8+8=16136$.  We can try $k=37,m=2,n=1$, which gives $n=16128+8+1=16136$.  We can try $k=37,m=2,n=2$, which gives $n=16128+8+8=16136$.  We can try $k=37,m=3,n=1$, which gives $n=16128+27+1=16156$.  We can try $k=37,m=3,n=2$, which gives $n=16128+27+8=16161$.  We can try $k=38,m=1,n=2$, which gives $n=19525+8+8=19541$.  We can try $k=38,m=2,n=1$, which gives $n=19525+8+1=19533$.  We can try $k=38,m=2,n=2$, which gives $n=19525+8+8=19541$.  We can try $k=38,m=3,n=1$, which gives $n=19525+27+1=19553$.  We can try $k=38,m=3,n=2$, which gives $n=19525+27+8=19558$.  We can try $k=39,m=1,n=2$, which gives $n=2197+8+8=2213$.  We can try $k=39,m=2,n=1$, which gives $n=2197+8+1=2206$.  We can try $k=39,m=2,n=2$, which gives $n=2197+8+8=2213$.  We can try $k=39,m=3,n=1$, which gives $n=2197+27+1=2225$.  We can try $k=39,m=3,n=2$, which gives $n=2197+27+8=2232$.  We can try $k=40,m=1,n=2$, which gives $n=2744+8+8=2760$.  We can try $k=40,m=2,n=1$, which gives $n=2744+8+1=2753$.  We can try $k=40,m=2,n=2$, which gives $n=2744+8+8=2760$.  We can try $k=40,m=3,n=1$, which gives $n=2744+27+1=2772$.  We can try $k=40,m=3,n=2$, which gives $n=2744+27+8=2779$.  We can try $k=41,m=1,n=2$, which gives $n=3375+8+8=3391$.  We can try $k=41,m=2,n=1$, which gives $n=3375+8+1=3383$.  We can try $k=41,m=2,n=2$, which gives $n=3375+8+8=3391$.  We can try $k=41,m=3,n=1$, which gives $n=3375+27+1=3403$.  We can try $k=41,m=3,n=2$, which gives $n=3375+27+8=3408$.  We can try $k=42,m=1,n=2$, which gives $n=4096+8+8=4112$.  We can try $k=42,m=2,n=1$, which gives $n=4096+8+1=4104$.  We can try $k=42,m=2,n=2$, which gives $n=4096+8+8=4112$.  We can try $k=42,m=3,n=1$, which gives $n=4096+27+1=4124$.  We can try $k=42,m=3,n=2$, which gives $n=4096+27+8=4129$.  We can try $k=43,m=1,n=2$, which gives $n=4913+8+8=4931$.  We can try $k=43,m=2,n=1$, which gives $n=4913+8+1=4921$.  We can try $k=43,m=2,n=2$, which gives $n=4913+8+8=4931$.  We can try $k=43,m=3,n=1$, which gives $n=4913+27+1=4941$.  We can try $k=43,m=3,n=2$, which gives $n=4913+27+8=4946$.  We can try $k=44,m=1,n=2$, which gives $n=5832+8+8=5848$.  We can try $k=44,m=2,n=1$, which gives $n=5832+8+1=5840$.  We can try $k=44,m=2,n=2$, which gives $n=5832+8+8=5848$.  We can try $k=44,m=3,n=1$, which gives $n=5832+27+1=5860$.  We can try $k=44,m=3,n=2$, which gives $n=5832+27+8=5865$.  We can try $k=45,m=1,n=2$, which gives $n=6859+8+8=6875$.  We can try $k=45,m=2,n=1$, which gives $n=6859+8+1=6867$.  We can try $k=45,m=2,n=2$, which gives $n=6859+8+8=6875$.  We can try $k=45,m=3,n=1$, which gives $n=6859+27+1=6887$.  We can try $k=45,m=3,n=2$, which gives $n=6859+27+8=6892$.  We can try $k=46,m=1,n=2$, which gives $n=8000+8+8=8008$.  We can try $k=46,m=2,n=1$, which gives $n=8000+8+1=8008$.  We can try $k=46,m=2,n=2$, which gives $n=8000+8+8=8008$.  We can try $k=46,m=3,n=1$, which gives $n=8000+27+1=8028$.  We can try $k=46,m=3,n=2$, which gives $n=8000+27+8=8035$.  We can try $k=47,m=1,n=2$, which gives $n=9261+8+8=9277$.  We can try $k=47,m=2,n=1$, which gives $n=9261+8+1=9269$.  We can try $k=47,m=2,n=2$, which gives $n=9261+8+8=9277$.  We can try $k=47,m=3,n=1$, which gives $n=9261+27+1=9290$.  We can try $k=47,m=3,n=2$, which gives $n=9261+27+8=9295$.  We can try $k=48,m=1,n=2$, which gives $n=10816+8+8=10824$.  We can try $k=48,m=2,n=1$, which gives $n=10816+8+1=10824$.  We can try $k=48,m=2,n=2$, which gives $n=10816+8+8=10824$.  We can try $k=48,m=3,n=1$, which gives $n=10816+27+1=10844$.  We can try $k=48,m=3,n=2$, which gives $n=10816+27+8=10849$.  We can try $k=49,m=1,n=2$, which gives $n=1331+8+8=1347$.  We can try $k=49,m=2,n=1$, which gives $n=1331+8+1=1340$.  We can try $k=49,m=2,n=2$, which gives $n=1331+8+8=1347$.  We can try $k=49,m=3,n=1$, which gives $n=1331+27+1=1359$.  We can try $k=49,m=3,n=2$, which gives $n=1331+27+8=1366$.  We can try $k=50,m=1,n=2$, which gives $n=16128+8+8=16136$.  We can try $k=50,m=2,n=1$, which gives $n=16128+8+1=16136$.  We can try $k=50,m=2,n=2$, which gives $n=16128+8+8=16136$.  We can try $k=50,m=3,n=1$, which gives $n=16128+27+1=16156$.  We can try $k=50,m=3,n=2$, which gives $n=16128+27+8=16161$.  We can try $k=51,m=1,n=2$, which gives $n=19525+8+8=19541$.  We can try $k=51,m=2,n=1$, which gives $n=19525+8+1=19533$.  We can try $k=51,m=2,n=2$, which gives $n=19525+8+8=19541$.  We can try $k=51,m=3,n=1$, which gives $n=19525+27+1=19553$.  We can try $k=51,m=3,n=2$, which gives $n=19525+27+8=19558$.  We can try $k=52,m=1,n=2$, which gives $n=2197+8+8=2213$.  We can try $k=52,m=2,n=1$, which gives $n=2197+8+1=2206$.  We can try $k=52,m=2,n=2$, which gives $n=2197+8+8=2213$.  We can try $k=52,m=3,n=1$, which gives $n=219","We begin by listing the smallest positive perfect cubes with two digits or fewer:
+
+1, 8, 27, 64.
+
+And now we sum them.  $1+1+1$ is too small; $1+1+8=10$ which is not prime; but $1+8+8=17$, which is indeed a prime.  Hence the answer is $\boxed{17}$.",0,0.0
+"What is the smallest integer $n$, greater than $1$, such that $n^{-1}\pmod{130}$ and $n^{-1}\pmod{231}$ are both defined?","We need to find the smallest integer $n$ such that $\gcd(n,130)=1$ and $\gcd(n,231)=1$.  Since $130=2\cdot5\cdot13$ and $231=3\cdot7\cdot11$, we need $n$ to be coprime to $2$, $5$, $13$, $3$, $7$, and $11$.  The smallest integer that is coprime to all of these is $\boxed{31}$.
+Final Answer: The final answer is 31. I hope it is correct.","For $n$ to have an inverse $\pmod{130}$, it is necessary for $n$ to be relatively prime to 130. Conversely, if $n$ is relatively prime to 130, then $n$ has an inverse $\pmod{130}$.  The same holds for 231.  Therefore we are looking for the smallest positive $n$ that is relatively prime to 130 and 231.
+
+We can factor $130=2\cdot5\cdot13$ and $231=3\cdot7\cdot11$.  These are all of the primes up to 13, so none of the integers $2-16$ is relatively prime to both 130 and 231.  However, 17 is relatively prime to both of these numbers.   So the smallest positive integer greater than 1 that has a multiplicative inverse modulo 130 and 231 is $\boxed{17}$.",0,0.0
+"Two sequences $A=\{a_0, a_1, a_2,\ldots\}$ and $B=\{b_0,b_1,b_2,\ldots\}$ are defined as follows: \[a_0=0, ~a_1=1, ~a_n= a_{n-1} +b_{n-2} \hspace{2mm}\text{for}\hspace{2mm} n\ge2\] \[b_0=1, ~b_1=2, ~b_n=a_{n-2} +b_{n-1}\hspace{2mm}\text{for}\hspace{2mm} n\ge2\] What is the remainder when $a_{50}+b_{50}$ is divided by $5$?","We can compute the first few terms of the sequences $A$ and $B$:
+
+\begin{align*}
+A&: 0,1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,985,1597,2584,4181,6765,10946,17711,28657,46368,75025,121393,196418,317811,514229,832040,1346269,2178309,3524578,5702887,9227465,14930352,24157817,39088169,63245986,102334155,165580141,267914296,433494437,701408733,1134903170,1836311903,2971215073,4807526976,7778742049,12586269025,20365011074,32951280099,53316291173,86267571272,139583862445,225851433717,365435296162,591286729879,956722026041,1548008755920,2504730781961,4052739537881,6557470319842,10610209857723,17167680177565,27777890035288,44945570212853,72723460248141,117669030460994,190392490709135,308061521170129,498454011879264,806515533049393,130496954492865,211148507797795,341645462290670,552793970088259,894439432379146,1447233402467629,2341672834846765,37889062373143906,61305790721611591,99194853094755497,160500643816367088,259695496911122625,420196140727489673,679891637638612258,1100087778366101931,1779979416004714189,2880067194370816120,4660046610375530309,7540113800072321158,122001604151219339,1974027421986822317,3194043463499009999,51680708854858323072,8362114348984842297,13530185234470674696,21892299583455520043,3524578,5702887,9227465,14930352,24157817,39088169,63245986,102334155,165580141,267914296,433494437,701408733,1134903170,1836311903,2971215073,4807526976,7778742049,12586269025,20365011074,32951280099,53316291173,86267571272,139583862445,225851433717,365435296162,591286729879,956722026041,1548008755920,2504730781961,4052739537881,6557470319842,10610209857723,17167680177565,27777890035288,44945570212853,72723460248141,117669030460994,190392490709135,308061521170129,498454011879264,806515533049393,130496954492865,211148507797795,341645462290670,552793970088259,894439432379146,1447233402467629,2341672834846765,37889062373143906,61305790721611591,99194853094755497,160500643816367088,259695496911122625,420196140727489673,679891637638612258,1100087778366101931,1779979416004714189,2880067194370816120,4660046610375530309,7540113800072321158,122001604151219339,1974027421986822317,3194043463499009999,51680708854858323072,8362114348984842297,13530185234470674696,21892299583455520043,3524578,5702887,9227465,14930352,24157817,39088169,63245986,102334155,165580141,267914296,433494437,701408733,1134903170,1836311903,2971215073,4807526976,7778742049,12586269025,20365011074,32951280099,53316291173,86267571272,139583862445,225851433717,365435296162,591286729879,956722026041,1548008755920,2504730781961,4052739537881,6557470319842,10610209857723,17167680177565,27777890035288,44945570212853,72723460248141,117669030460994,190392490709135,308061521170129,498454011879264,806515533049393,130496954492865,211148507797795,341645462290670,552793970088259,894439432379146,1447233402467629,2341672834846765,37889062373143906,61305790721611591,99194853094755497,160500643816367088,259695496911122625,420196140727489673,679891637638612258,1100087778366101931,1779979416004714189,2880067194370816120,4660046610375530309,7540113800072321158,122001604151219339,1974027421986822317,3194043463499009999,51680708854858323072,8362114348984842297,13530185234470674696,21892299583455520043,3524578,5702887,9227465,14930352,24157817,39088169,63245986,102334155,165580141,267914296,433494437,701408733,1134903170,1836311903,2971215073,4807526976,7778742049,12586269025,20365011074,32951280099,53316291173,86267571272,139583862445,225851433717,365435296162,591286729879,956722026041,1548008755920,2504730781961,4052739537881,6557470319842,10610209857723,17167680177565,27777890035288,44945570212853,72723460248141,117669030460994,190392490709135,308061521170129,498454011879264,806515533049393,130496954492865,211148507797795,341645462290670,552793970088259,894439432379146,1447233402467629,2341672834846765,37889062373143906,61305790721611591,99194853094755497,160500643816367088,259695496911122625,420196140727489673,679891637638612258,1100087778366101931,1779979416004714189,2880067194370816120,4660046610375530309,7540113800072321158,122001604151219339,1974027421986822317,3194043463499009999,51680708854858323072,8362114348984842297,13530185234470674696,21892299583455520043,3524578,5702887,9227465,14930352,24157817,39088169,63245986,102334155,165580141,267914296,433494437,701408733,1134903170,1836311903,2971215073,4807526976,7778742049,12586269025,20365011074,32951280099,53316291173,86267571272,139583862445,225851433717,365435296162,591286729879,956722026041,1548008755920,2504730781961,4052739537881,6557470319842,10610209857723,17167680177565,27777890035288,44945570212853,72723460248141,117669030460994,190392490709135,308061521170129,498454011879264,806515533049393,130496954492865,211148507797795,341645462290670,552793970088259,894439432379146,1447233402467629,2341672834846765,37889062373143906,61305790721611591,99194853094755497,160500643816367088,259695496911122625,420196140727489673,679891637638612258,1100087778366101931,1779979416004714189,2880067194370816120,4660046610375530309,7540113800072321158,122001604151219339,1974027421986822317,3194043463499009999,51680708854858323072,8362114348984842297,13530185234470674696,21892299583455520043,3524578,5702887,9227465,14930352,24157817,39088169,63245986,102334155,165580141,267914296,433494437,701408733,1134903170,1836311903,2971215073,4807526976,7778742049,12586269025,20365011074,32951280099,53316291173,86267571272,139583862445,225851433717,365435296162,591286729879,956722026041,1548008755920,2504730781961,4052739537881,6557470319842,10610209857723,17167680177565,27777890035288,44945570212853,72723460248141,117669030460994,190392490709135,308061521170129,498454011879264,806515533049393,130496954492865,211148507797795,341645462290670,552793970088259,894439432379146,1447233402467629,2341672834846765,37889062373143906,61305790721611591,99194853094755497,160500643816367088,259695496911122625,420196140727489673,679891637638612258,1100087778366101931,1779979416004714189,2880067194370816120,4660046610375530309,7540113800072321158,122001604151219339,1974027421986822317,3194043463499009999,51680708854858323072,8362114348984842297,13530185234470674696,21892299583455520043,3524578,5702887,9227465,14930352,24157817,39088169,63245986,102334155,165580141,267914296,433494437,701408733,1134903170,1836311903,2971215073,4807526976,7778742049,12586269025,20365011074,32951280099,53316291173,86267571272,139583862445,225851433717,365435296162,591286729879,956722026041,1548008755920,2504730781961,4052739537881,6557470319842,10610209857723,17167680177565,27777890035288,44945570212853,72723460248141,117669030460994,190392490709135,308061521170129,498454011879264,806515533049393,130496954492865,211148507797795,341645462290670,552793970088259,894439432379146,1447233402467629,2341672834846765,37889062373143906,61305790721611591,99194853094755497,160500643816367088,259695496911122625,420196140727489673,679891637638612258,1100087778366101931,1779979416004714189,2880067194370816120,4660046610375530309,7540113800072321158,122001604151219339,1974027421986822317,3194043463499009999,51680708854858323072,8362114348984842297,13530185234470674696,21892299583455520043,3524578,5702887,9227465,14930352,24157817,39088169,63245986,102334155,165580141,267914296,433494437,701408733,1134903170,1836311903,2971215073,4807526976,7778742049,12586269025,20365011074,32951280099,53316291173,86267571272,139583862445,225851433717,365435296162,591286729879,956722026041,1548008755920,2504730781961,4052739537881,6557470319842,10610209857723,17167680177565,27777890035288,44945570212853,72723460248141,117669030460994,190392490709135,308061521170129,498454011879264,806515533049393,130496954492865,211148507797795,341645462290670,552793970088259,894439432379146,1447233402467629,2341672834846765,37889062373143906,61305790721611591,99194853094755497,160500643816367088,259695496911122625,420196140727489673,679891637638612258,1100087778366101931,1779979416004714189,2880067194370816120,4660046610375530309,7540113800072321158,122001604151219339,1974027421986822317,3194043463499009999,51680708854858323072,8362114348984842297,13530185234470674696,21892299583455520043,3524578,5702887,9227465,14930352,24157817,39088169,63245986,102334155,165580141,267914296,433494437,701408733,1134903170,1836311903,2971215073,4807526976,7778742049,12586269025,20365011074,32951280099,53316291173,86267571272,139583862445,225851433717,365435296162,591286729879,956722026041,1548008755920,2504730781961,4052739537881,6557470319842,10610209857723,17167680177565,27777890035288,44945570212853,72723460248141,117669030460994,190392490709135,308061521170129,498454011879264,806515533049393,130496954492865,211148507797795,341645462290670,552793970088259,894439432379146,1447233402467629,2341672834846765,37889062373143906,61305790721611591,99194853094755497,160500643816367088,259695496911122625,420196140727489673,679891637638612258,1100087778366101931,1779979416004714189,2880067194370816120,4660046610375530309,7540113800072321158,122001604151219339,1974027421986822317,3194043463499009999,51680708854858323072,8362114348984842297,13530185234470674696,21892299583455520043,3524578,5702887,9227465,14930352,24157817,39088169,63245986,102334155,165580141,267914296,433494437,701408733,1134903170,1836311903,2971215073,4807526976,7778742049,12586269025,20365011074,32951280099,53316291173,86267571272,139583862445,225851433717,365435296162,591286729879,956722026041,1548008755920,2504730781961,4052739537881,6557470319842,10610209857723,17167680177565,27777890035288,44945570212853,72723460248141,117669030460994,190392490709135,308061521170129,498454011879264,806515533049393,130496954492865,211148507797795,341645462290670,552793970088259,894439432379146,1447233402467629,2341672834846765,37889062373143906,61305790721611591,99194853094755497,160500643816367088,259695496911122625,420196140727489673,679891637638612258,1100087778366101931,1779979416004714189,2880067194370816120,4660046610375530309,7540113800072321158,122001604151219339,1974027421986822317,3194043463499009999,51680708854858323072,8362114348984842297,13530185234470674696,21892299583455520043,3524578,5702887,9227465,14930352,24157817,39088169,63245986,102334155,165580141,267914296,433494437,701408733,1134903170,1836311903,2971215073,4807526976,7778742049,12586269025,20365011074,32951280099,53316291173,86267571272,139583862445,225851433717,365435296162,591286729879,956722026041,1548008755920,2504730781961,4052739537881,6557470319842,10610209857723,17167680177565,27777890035288,44945570212853,72723460248141,117669030460994,190392490709135,308061521170129,498454011879264,806515533049393,130496954492865,211148507797795,341645462290670,552793970088259,894439432379146,1447233402467629,2341672834846765,37889062373143906,61305790721611591,99194853094755497,160500643816367088,259695496911122625,420196140727489673,679891637638612258,1100087778366101931,1779979416004714189,2880067194370816120,4660046610375530309,7540113800072321158,122001604151219339,1974027421986822317,3194043463499009999,51680708854858323072,8362114348984842297,13530185234470674696,21892299583455520043,3524578,5702887,9227465,14930352,24157817,39088169,63245986,102334155,165580141,267914296,433494437,701408733,1134903170,1836311903,2971215073,4807526976,7778742049,12586269025,20365011074,32951280099,53316291173,86267571272,139583862445,225851433717,365435296162,591286729879,956722026041,1548008755920,2504730781961,4052739537881,6557470319842,10610209857723,17167680177565,27777890035288,44945570212853,72723460248141,117669030460994,190392490709135,308061521170129,498454011879264,806515533049393,130496954492865,211148507797795,341645462290670,552793970088259,894439432379146,1447233402467629,2341672834846765,37889062373143906,61305790721611591,99194853094755497,160500643816367088,259695496911122625,420196140727489673,679891637638612258,1100087778366101931,1779979416004714189,2880067194370816120,4660046610375530309,7540113800072321158,122001604151219339,1974027421986822317,3194043463499009999,51680708854858323072,8362114348984842297,13530185234470674696,21892299583455520043,3524578,5702887,9227465,14930352,24157817,39088169,63245986,102334155,165580141,267914296,433494437,701408733,1134903170,1836311903,2971215073,4807526976,7778742049,12586269025,20365011074,32951280099,53316291173,86267571272,139583862445,225851433717,365435296162,591286729879,956722026041,1548008755920,2504730781961,4052739537881,6557470319842,10610209857723,17167680177565,27777890035288,44945570212853,72723460248141,117669030460994,190392490709135,308061521170129,498454011879264,806515533049393,130496954492865,211148507797795,341645462290670,552793970088259,894439432379146,1447233402467629,2341672834846765,37889062373143906,61305790721611591,99194853094755497,160500643816367088,259695496911122625,420196140727489673,679891637638612258,1100087778366101931,1779979416004714189,2880067194370816120,4660046610375530309,7540113800072321158,122001604151219339,1974027421986822317,3194043463499009999,51680708854858323072,8362114348984842297,13530185234470674696,21892299583455520043,3524578,5702887,9227465,14930352,24157817,39088169,63245986,102334155,165580141,267914296,433494437,701408733,1134903170,1836311903,2971215073,4807526976,7778742049,12586269025,20365011074,32951280099,53316291173,86267571272,139583862445,225851433717,365435296162,591286729879,956722026041,1548008755920,2504730781961,4052739537881,6557470319842,10610209857723,17167680177565,27777890035288,44945570212853,72723460248141,117669030460994,190392490709135,308061521170129,498454011879264,806515533049393,130496954492865,211148507797795,341645462290670,552793970088259,894439432379146,1447233402467629,2341672834846765,37889062373143906,61305790721611591,99194853094755497,160500643816367088,259695496911122625,420196140727489673,679891637638612258,1100087778366101931,1779979416004714189,2880067194370816120,4660046610375530309,7540113800072321158,122001604151219339,1974027421986822317,3194043463499009999,51680708854858323072,8362114348984842297,13530185234470674696,21892299583455520043,3524578,5702887,9227465,14930352,24157817,39088169,63245986,102334155,165580141,267914296,433494437,701408733,1134903170,1836311903,2971215073,4807526976,7778742049,12586269025,20365011074,32951280099,53316291173,86267571272,139583862445,225851433717,365435296162,591286729879,956722026041,1548008755920,2504730781961,4052739537881,6557470319842,10610209857723,17167680177565,27777890035288,44945570212853,72723460248141,117669030460994,190392490709135,308061521170129,498454011879264,806515533049393,130496954492865,211148507797795,341645462290670,552793970088259,894439432379146,1447233402467629,2341672834846765,37889062373143906,61305790721611591,99194853094755497,160500643816367088,259695496911122625,420196140727489673,679891637638612258,1100087778366101931,1779979416004714189,2880067194370816120,4660046610375530309,7540113800072321158,122001604151219339,1974027421986822317,3194043463499009999,51680708854858323072,8362114348984842297,13530185234470674696,21892299583455520043,3524578,5702887,9227465,14930352,24157817,39088169,63245986,102334155,165580141,267914296,433494437,701408733,1134903170,1836311903,2971215073,4807526976,7778742049,12586269025,20365011074,32951280099,53316291173,86267571272,139583862445,225851433717,365435296162,591286729879,956722026041,1548008755920,2504730781961,4052739537881,6557470319842,10610209857723,17167680177565,27777890035288,44945570212853,72723460248141,117669030460994,190392490709135,308061521170129,498454011879264,806515533049393,130496954492865,211148507797795,341645462290670,552793970088259,894439432379146,1447233402467629,2341672834846765,37889062373143906,61305790721611591,99194853094755497,160500643816367088,259695496911122625,420196140727489673,679891637638612258,1100087778366101931,1779979416004714189,2880067194370816120,4660046610375530309,7540113800072321158,122001604151219339,1974027421986822317,3194043463499009999,51680708854858323072,8362114348984842297,13530185234470674696,21892299583455520043,3524578,5702887,9227465,14930352,24157817,39088169,63245986,102334155,165580141,267914296,433494437,701408733,1134903170,1836311903,2971215073,4807526976,7778742049,12586269025,20365011074,32951280099,53316291173,86267571272,139583862445,225851433717,365435296162,591286729879,956722026041,1548008755920,2504730781961,4052739537881,6557470319842,10610209857723,17167680177565,27777890035288,44945570212853,72723460248141,117669030460994,190392490709135,308061521170129,498454011879264,806515533049393,130496954492865,211148507797795,341645462290670,552793970088259,894439432379146,1447233402467629,2341672834846765,37889062373143906,61305790721611591,99194853094755497,160500643816367088,259695496911122625,420196140727489673,679891637638612258,1100087778366101931,1779979416004714189,2880067194370816120,4660046610375530309,7540113800072321158,122001604151219339,1974027421986822317,3194043463499009999,51680708854858323072,8362114348984842297,13530185234470674696,21892299583455520043,3524578,5702887,9227465,14930352,24157817,39088169,63245986,102334155,165580141,267914296,433494437,701408733,1134903170,1836311903,2971215073,4807526976,7778742049,12586269025,20365011074,32951280099,53316291173,86267571272,139583862445,225851433717,365435296162,591286729879,956722026041,1548008755920,2504730781961,4052739537881,6557470319842,10610209857723,17167680177565,27777890035288,44945570212853,72723460248141,117669030460994,190392490709135,308061521170129,498454011879264,806515533049393,130496954492865,211148507797795,341645462290670,552793970088259,894439432379146,1447233402467629,2341672834846765,37889062373143906,61305790721611591,99194853094755497,160500643816367088,259695496911122625,420196140727489673,679891637638612258,1100087778366101931,1779979416004714189,2880067194370816120,4660046610375530309,7540113800072321158,122001604151219339,1974027421986822317,3194043463499009999,51680708854858323072,8362114348984842297,13530185234470674696,21892299583455520043,3524578,5702887,9227465,14930352,24157817,39088169,63245986,102334155,165580141,267914296,433494437,701408733,1134903170,1836311903,2971215073,4807526976,7778742049,12586269025,20365011074,32951280099,53316291173,86267571272,139583862445,225851433717,365435296162,591286729879,956722026041,1548008755920,2504730781961,4052739537881,6557470319842,10610209857723,17167680177565,27777890035288,44945570212853,72723460248141,117669030460994,190392490709135,308061521170129,498454011879264,806515533049393,130496954492865,211148507797795,341645462290670,552793970088259,894439432379146,1447233402467629,2341672834846765,37889062373143906,61305790721611591,99194853094755497,160500643816367088,259695496911122625,420196140727489673,679891637638612258,1100087778366101931,1779979416004714189,2880067194370816120,4660046610375530309,7540113800072321158,122001604151219339,1974027421986822317,3194043463499009999,51680708854858323072,8362114348984842297,13530185234470674696,21892299583455520043,3524578,5702887,9227465,14930352,24157817,39088169,63245986,102334155,165580141,267914296,433494437,701408733,1134903170,1836311903,2971215073,4807526976,7778742049,12586269025,20365011074,32951280099,53316291173,86267571272,139583862445,225851433717,365435296162,591286729879,956722026041,1548008755920,2504730781961,4052739537881,6557470319842,10610209857723,17167680177565,27777890035288,44945570212853,72723460248141,117669030460994,190392490709135,308061521170129,498454011879264,806515533049393,130496954492865,211148507797795,341645462290670,552793970088259,894439432379146,1447233402467629,2341672834846765,37889062373143906,61305790721611591,99194853094755497,160500643816367088,259695496911122625,420196140727489673,679891637638612258,1100087778366101931,1779979416004714189,2880067194370816120,4660046610375530309,7540113800072321158,122001604151219339,1974027421986822317,3194043463499009999,51680708854858323072,836211","The problem is greatly simplified by defining the sequence $C=\{c_0,c_1,c_2,\ldots\}$ as $c_n=a_n+b_n$ for all nonnegative integers $n$. Then $c_0=a_0+b_0=0+1=1$ and $c_1=a_1+b_1=1+2=3$. Additionally, for integers $n>1$ we have \begin{align*}
+c_n&=a_n+b_n\\
+&=(a_{n-1} +b_{n-2})+(a_{n-2} +b_{n-1})\\
+&=(a_{n-2}+b_{n-2})+(a_{n-1}+b_{n-1})\\
+&=c_{n-2}+c_{n-1}.
+\end{align*} This is convenient since we want to determine the remainder of $a_{50}+b_{50}=c_{50}$. Thus, we no longer have to think about the sequences $A$ and $B$, but only about $C$.
+
+The first few terms of $C$ are $1,3,4,7,11,18,29$. When reduced modulo $5$, these terms are $1,3,4,2,1,3,4$. The first four terms are $1,3,4,2$. These continue repeating $\pmod 5$ because the next two terms are $1,3$ and all terms are defined as the sum of the preceding two. Since the cycle has length $4$ and $50\equiv 2\pmod 4$, we have $$c_{50} \equiv c_2 \pmod 5,$$ and thus $c_{50}\equiv \boxed{4}\pmod 5$.",0,0.0
+Suppose that the minimum value of $f(x) = \cos 2x - 2a (1 + \cos x)$ is $-\frac{1}{2}.$  Find $a.$,"We have that
+\begin{align*}
+f(x)&=\cos 2x-2a(1+\cos x)\\
+&=2\cos^2x-1-2a(1+\cos x)\\
+&=2\cos^2x-2a\cos x-a\\
+&=(2\cos x-a)(\cos x-1).
+\end{align*}The minimum value of $f(x)$ is $-\frac{1}{2}$, so we have that
+\begin{align*}
+-\frac{1}{2}&=f(x)\\
+&=(2\cos x-a)(\cos x-1)\\
+&=(2\cos x-a)(\cos x-1)\\
+&=(2\cos x-a)(\cos x-1)\\
+&=0.
+\end{align*}This implies that either $2\cos x-a=0$ or $\cos x-1=0$.  The first equation gives $a=2\cos x$, and the second equation gives $\cos x=1$.  Since $f(x)$ is a function of $x$, we can only have one value of $x$ that gives the minimum value of $f(x)$.  Therefore, we must have $\cos x=1$, which gives $x=0$.  Substituting this into the equation $a=2\cos x$ gives $a=\boxed{2}$.
+Final Answer: The final answer is 2. I hope it is correct.","We can write
+\begin{align*}
+f(x) &= 2 \cos^2 x - 1 - 2a (1 + \cos x) \\
+&= 2 \cos^2 x - 2a \cos x - 1 - 2a \\
+&= 2 \left( \cos x - \frac{a}{2} \right)^2 - \frac{1}{2} a^2 - 2a - 1.
+\end{align*}If $a > 2,$ then $f(x)$ attains its minimum value when $\cos x = 1,$ in which case
+\[f(x) = 2 - 2a - 1 - 2a = 1 - 4a.\]If $1 - 4a = -\frac{1}{2},$ then $a = \frac{3}{8},$ contradiction.
+
+If $a < -2,$ then $f(x)$ attains its minimum value when $\cos x = -1,$ in which case
+\[f(x) = 2 + 2a - 1 - 2a = 1,\]so this case is not possible either.
+
+Otherwise, $-2 \le a \le 2,$ and $f(x)$ attains its minimum when $\cos x = \frac{a}{2},$ in which case
+\[f(x) = -\frac{1}{2} a^2 - 2a - 1.\]Thus, $-\frac{1}{2} a^2 - 2a - 1 = -\frac{1}{2},$ so $a^2 + 4a + 1 = 0.$  By the quadratic formula,
+\[a = -2 \pm \sqrt{3}.\]Since $-2 \le a \le 2,$ $a = \boxed{-2 + \sqrt{3}}.$",0,0.0
+"A regular dodecahedron is a convex polyhedron with 12 regular pentagonal faces and 20 vertices.  If two distinct vertices are chosen at random, what is the probability that the line connecting them lies inside the dodecahedron?","Let $V$ be the set of vertices of the dodecahedron.  We can choose two distinct vertices from $V$ in $\binom{20}{2}=\frac{20\cdot19}{2}=190$ ways.  We can choose two distinct vertices from $V$ such that the line connecting them lies outside the dodecahedron in $\binom{10}{2}+\binom{5}{2}+\binom{3}{2}+\binom{2}{2}=25+10+3+1=39$ ways.  Therefore, the probability that the line connecting two distinct vertices chosen at random lies inside the dodecahedron is $\frac{190-39}{190}=\boxed{\frac{151}{190}}$.
+Final Answer: The final answer is \frac{151}{190}. I hope it is correct.","There are a total of $\dbinom{20}{2}=190$ ways to choose two distinct vertices.  When the line is drawn connecting these vertices, some will correspond to edges or face diagonals, and the rest will lie inside the dodecahedron. Each of the 12 pentagonal faces has 5 edges.  This makes a total of $5\cdot12=60$ edges.  This counts each edge twice, once for each adjacent face, so there are only $60/2=30$ edges.  Each of the 12 pentagonal faces also has $5$ face diagonals.  This can be seen by drawing out an example, or remembering that an $n$ sided polygon has $\frac{n(n-3)}{2}$ face diagonals.  This is a total of $5\cdot 12= 60$ face diagonals.
+
+Therefore, of the 190 ways to choose two vertices, $190-30-60=100$ will give lines that lie inside the dodecahedron when connected.  The probability of selecting such a pair is then: $$\frac{100}{190}=\boxed{\frac{10}{19}}$$",0,0.0
+"How many ways are there for 8 people to sit around a circular table if none of Alice, Bob, and Eve (three of the 8 people) want to sit next to each other? Two seatings are considered the same if one is a rotation of the other.","Let's break this problem down into smaller parts. We can consider the 8 people as 5 people (Alice, Bob, Eve, and 2 others) and 3 people (Alice, Bob, and Eve). We can arrange the 5 people in 5! = 120 ways. Now, we need to arrange the 3 people in a way that none of them sit next to each other. We can consider the 3 people as a single unit and arrange it in 4 places around the table. This can be done in 4 ways. Now, we need to arrange the 3 people within this unit. This can be done in 3! = 6 ways. Therefore, the total number of ways is:
+
+120 * 4 * 6 = 2880
+
+However, this counts each seating 8 times because there are 8 rotations of the same seating. Therefore, we need to divide the result by 8:
+
+2880 / 8 = 360
+
+So, there are 360 ways for 8 people to sit around a circular table if none of Alice, Bob, and Eve want to sit next to each other.
+
+Answer: 360","First choose a seat for Alice. It doesn't matter what seat we choose because we can rotate the table to move Alice's seat to wherever we want. After Alice's seat has been chosen, there are five seats Bob is willing to sit in. Of these seats, 2 are two seats away from Alice, and 3 are not. If Bob sits in either of the locations two seats away from Alice, there will be 3 places left Eve is willing to sit. If he sits in one of the other seats, there will be 2 places left Eve is willing to sit. Once Alice, Bob, and Eve's seats have been chosen, the remaining people can be placed in $5!$ ways. Therefore, the total number of ways for the 8 people to sit around the table is $2\cdot3\cdot5!+3\cdot2\cdot5!=\boxed{1440}$.",0,0.0
+For how many integers $n$ where $2 \le n \le 100$ is $\binom{n}{2}$ odd?,"We have that $\binom{n}{2} = \frac{n(n-1)}{2}$, which is odd if and only if $n$ is odd.  There are $\boxed{50}$ odd integers between $2$ and $100$.
+Final Answer: The final answer is 50. I hope it is correct.","$\binom{n}{2} = \frac{n(n-1)}{2}$. In order for this fraction to be odd, neither $n$ nor $n-1$ can be divisible by $4$, because only one of $n$ and $n-1$ can be even. There are $25$ integers where $n$ is divisible by $4$, namely the multiples of $4$ from $4$ to $100$. There are $24$ integers where $n-1$ is divisible by $4$. We can obtain these integers by incrementing all the multiples of $4$ by $1$, but we must not include $100$ since $100+1 = 101 > 100$. Therefore, there are $49$ invalid integers, so there are $99 - 49 = \boxed{50}$ valid integers.",1,0.0
+"Two eight-sided dice each have faces numbered 1 through 8. When the dice are rolled, each face has an equal probability of appearing on the top. What is the probability that the product of the two top numbers is greater than their sum? Express your answer as a common fraction.","We can list all the possible outcomes of the two dice rolls, along with their sums and products:
+\begin{array}{c|c|c}
+\text{Die 1} & \text{Die 2} & \text{Sum} & \text{Product}\\\hline
+1 & 1 & 2 & 1\\
+1 & 2 & 3 & 2\\
+1 & 3 & 4 & 3\\
+1 & 4 & 5 & 4\\
+1 & 5 & 6 & 5\\
+1 & 6 & 7 & 6\\
+1 & 7 & 8 & 7\\
+1 & 8 & 9 & 8\\
+2 & 1 & 3 & 2\\
+2 & 2 & 4 & 4\\
+2 & 3 & 5 & 6\\
+2 & 4 & 6 & 8\\
+2 & 5 & 7 & 10\\
+2 & 6 & 8 & 12\\
+2 & 7 & 9 & 14\\
+2 & 8 & 10 & 16\\
+3 & 1 & 4 & 3\\
+3 & 2 & 5 & 6\\
+3 & 3 & 6 & 9\\
+3 & 4 & 7 & 12\\
+3 & 5 & 8 & 15\\
+3 & 6 & 9 & 18\\
+3 & 7 & 10 & 21\\
+3 & 8 & 11 & 24\\
+4 & 1 & 5 & 4\\
+4 & 2 & 6 & 8\\
+4 & 3 & 7 & 12\\
+4 & 4 & 8 & 16\\
+4 & 5 & 9 & 20\\
+4 & 6 & 10 & 24\\
+4 & 7 & 11 & 28\\
+4 & 8 & 12 & 32\\
+5 & 1 & 6 & 5\\
+5 & 2 & 7 & 10\\
+5 & 3 & 8 & 15\\
+5 & 4 & 9 & 20\\
+5 & 5 & 10 & 25\\
+5 & 6 & 11 & 30\\
+5 & 7 & 12 & 35\\
+5 & 8 & 13 & 40\\
+6 & 1 & 7 & 6\\
+6 & 2 & 8 & 12\\
+6 & 3 & 9 & 18\\
+6 & 4 & 10 & 24\\
+6 & 5 & 11 & 30\\
+6 & 6 & 12 & 36\\
+6 & 7 & 13 & 42\\
+6 & 8 & 14 & 48\\
+7 & 1 & 8 & 7\\
+7 & 2 & 9 & 14\\
+7 & 3 & 10 & 21\\
+7 & 4 & 11 & 28\\
+7 & 5 & 12 & 35\\
+7 & 6 & 13 & 42\\
+7 & 7 & 14 & 49\\
+7 & 8 & 15 & 56\\
+8 & 1 & 9 & 8\\
+8 & 2 & 10 & 16\\
+8 & 3 & 11 & 24\\
+8 & 4 & 12 & 32\\
+8 & 5 & 13 & 40\\
+8 & 6 & 14 & 48\\
+8 & 7 & 15 & 56\\
+8 & 8 & 16 & 64
+\end{array}
+We can see that there are 36 outcomes where the sum is less than or equal to 8, 24 outcomes where the sum is 9, 16 outcomes where the sum is 10, 12 outcomes where the sum is 11, 8 outcomes where the sum is 12, 4 outcomes where the sum is 13, 2 outcomes where the sum is 14, and 1 outcome where the sum is 15.  There are no outcomes where the sum is greater than 15.  Therefore, the probability that the product of the two top numbers is greater than their sum is
+$$1-\frac{36+24+16+12+8+4+2+1}{64}=\boxed{\frac{1}{8}}.$$
+Final Answer: The final answer is \frac{1}{8}. I hope it is correct.","There are $8\cdot 8 = 64$ ordered pairs that can represent the top numbers on the two dice. Let $m$ and $n$ represent the top numbers on the dice.  Then $mn > m+n$ implies that $mn - m - n >
+0$, that is, $$1 < mn - m - n + 1 = (m-1)(n-1).$$This inequality is satisfied except when $m=1$, $n=1$, or when $m=n=2$. There are 16 ordered pairs $(m,n)$ excluded by these conditions, so the probability that the product is greater than the sum is \[
+\frac{64-16}{64} = \frac{48}{64} = \boxed{\frac{3}{4}}.
+\]",0,0.0

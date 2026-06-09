@@ -1,0 +1,1 @@
+Modify the prompt for the `custom` operator to explicitly request the final answer to be enclosed in **.** to align with the expected format, addressing the `answer_mismatch` failures. This is a small, targeted patch that preserves all validated subworkflows and avoids previously rejected patches.

@@ -1,0 +1,1 @@
+ANSWER_ALIGNMENT_PROMPT = "Align the following answer with the expected format and content. The expected answer is concise and matches the ground truth exactly. Return only the aligned answer: "

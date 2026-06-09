@@ -1,0 +1,84 @@
+﻿question,prediction,expected_output,score,cost
+"Each good worker can paint my new house alone in 12 hours.  Each bad worker can paint my house alone in 36 hours.  I need my house painted in 3 hours.  If I can only find 3 good workers, how many bad workers must I also find in order to have my house painted on time?",9,"Each good worker can paint $1/12$ of my house in an hour, so three of them together can  paint $3/12 =1/4$ of my house in an hour.  So, in 3 hours, the three good workers will  paint $3(1/4)=3/4$ of my house.  The bad workers have to paint the other $1/4$ of the house.  Each bad worker paints $1/36$ of the house in an hour, so each bad worker can paint $3(1/36)=1/12$  of the house in three hours.  Since the bad workers together need to paint $1/4$ of the house, and  each bad worker can paint $1/12$ of the house in three hours, I need $(1/4)/(1/12) = \boxed{3}$ bad workers.",0,0.0
+Estimate $14.7923412^2$ to the nearest hundred.,200,"We know $14^2=196$ and $15^2=225.$ So both $14^2$ and $15^2,$ estimated to the nearest hundred, are 200. Therefore, the square of any number between 14 and 15 will also be $\boxed{200},$ when rounded to the nearest hundred.",1,0.0
+A stock loses $10\%$ of its value on Monday.  On Tuesday it loses  $20\%$ of the value it had at the end of the day on Monday.  What is  the overall percent loss in value from the beginning of Monday to  the end of Tuesday?  Enter the answer as a percent.,28%,"If its initial value was $x$, after Monday, its value is $.9x$, and after a further $20\%$ loss, its value becomes $.8\cdot .9x = .72x$, making for a total loss of $\boxed{28\%}$.",1,0.0
+Each interior angle of a polygon measures 170 degrees. How many sides does the polygon have?,9,"The sum of the interior angles of a polygon is $180(n-2)$, where $n$ is the number of sides. That means each interior angle has a measure of $\frac{180(n-2)}{n}$ degrees. We set this equal to 170 degrees and solve for $n$. \begin{align*}
+\frac{180(n-2)}{n}&=170\\
+\Rightarrow \qquad 180n-360&=170n\\\Rightarrow \qquad 10n&=360\\
+\Rightarrow\qquad n&=36.
+\end{align*} The polygon has $\boxed{36}$ sides.",0,0.0
+"Pick two or fewer different digits from the set $\{1, 3, 6, 7\}$ and arrange them to form a number.  How many prime numbers can we create in this manner?",3,"We have two cases: the number is either 1-digit or 2-digit.  We examine each of these cases separately.
+
+Case 1: 1 digit
+
+In this case, the only 1-digit primes are 3 and 7, for a total of 2 primes.
+
+Case 2: 2 digits
+
+We have the following combinations of numbers: 13, 16, 17, 36, 37, 67, 76, 73, 63, 71, 61, 31.  Out of these 12 numbers, it is easier to count the composites: 16, 36, 76, and 63 for a total of 4 composites, which we subtract from the original 12 numbers to yield $12-4=8$ primes in this case.
+
+Both cases considered, the total number of prime numbers we can create is $2 + 8 = \boxed{10}$.",0,0.0
+"Let $a = .\overline{2} + .\overline{6}$.  Find the reciprocal of $a$, expressed as a decimal.",0.8889,"Convert both decimals into fractions. \begin{align*}
+x&=.\overline{2} \\
+\Rightarrow 10x&=2.\overline{2} \\
+\Rightarrow 9x&=2 \\
+\Rightarrow x &= \frac{2}{9}.
+\end{align*}Likewise, $.\overline{6}=\frac{6}{9}$. Adding the two fractions yields $\frac{2}{9} + \frac{6}{9}=\frac{8}{9}$. The reciprocal of this is $\frac{1}{\frac{8}{9}}=\frac{9}{8}$. To convert this to a decimal, we need to multiply the numerator and denominator by 125. Doing so, we get \[\frac{9}{8} \cdot \frac{125}{125} = \frac{9 \cdot 125}{8 \cdot 125} = \frac{1125}{1000}=\boxed{1.125}.\]",0,0.0
+"Delilah writes down the positive factors of $12$ on a piece of paper, which she gives to Ezekiel. Next to each factor, Ezekiel writes all of the positive integers that are less than or equal to that number and that share no divisors with the factor other than $1.$ (So, for example, Ezekiel will write $``1""$ next to each of the factors Delilah writes.) How many numbers total does Ezekiel write?",13,"This is what the paper should look like after Ezekiel writes his final number: \begin{tabular}{l|l}
+1 & 1\\
+2 & 1 \\
+3 & 1, 2\\
+4 & 1, 3\\
+6 & 1, 5\\
+12 & 1, 5, 7, 11
+\end{tabular} The left-hand column contains the positive factors of $12$ and the right-hand column contains Ezekiel's numbers. We see that Ezekiel wrote $\boxed{12}$ numbers.
+
+Note: Notice that the number of numbers Ezekiel ends up with is the same as Delilah's number. Will this always happen? Suppose Delilah starts with $n.$ Will Ezekiel end up with $n$ numbers?",0,0.0
+"Daphne has a rope that is 60 meters long. She wants to use it to mark the boundary of a circle whose radius is an integer. What's the largest possible radius for her circle, in meters?",29,"The 60-meter rope will mark the circumference of the circle, which is equal to $2\pi r$. So we look for the largest integer $r$ such that the circumference is less than or equal to 60. We have $$2\pi r\le60\qquad\implies r\le\frac{60}{2\pi}\approx \frac{30}{3.14}.$$We know that $\frac{30}{3.14}<\frac{31.4}{3.14}=10$, but greater than $\frac{31.4-3.14}{3.14}=9$, so the largest possible radius is $\boxed{9}$ meters.",0,0.0
+What is the smallest two-digit prime that is the sum of three (not necessarily distinct) positive perfect cubes?,28,"We begin by listing the smallest positive perfect cubes with two digits or fewer:
+
+1, 8, 27, 64.
+
+And now we sum them.  $1+1+1$ is too small; $1+1+8=10$ which is not prime; but $1+8+8=17$, which is indeed a prime.  Hence the answer is $\boxed{17}$.",0,0.0
+"In the base-three number system, $a = 2012_3$ and $b = 201_3.$ What is the product $ab$ expressed in the base-three number system?",212012_3,"We may multiply in base $3$ just as in base $10:$ anytime we get a number greater than $3,$ we record the remainder when the number is divided by $3$ and carry the quotient. \[
+\begin{array}{r}
+2012 \\
+\times 201 \\ \hline
+2012 \\
+11101\hphantom{00} \\ \hline
+1112112
+\end{array}
+\] Therefore, the product is $\boxed{1112112_3}.$",0,0.0
+"Two sequences $A=\{a_0, a_1, a_2,\ldots\}$ and $B=\{b_0,b_1,b_2,\ldots\}$ are defined as follows: \[a_0=0, ~a_1=1, ~a_n= a_{n-1} +b_{n-2} \hspace{2mm}\text{for}\hspace{2mm} n\ge2\] \[b_0=1, ~b_1=2, ~b_n=a_{n-2} +b_{n-1}\hspace{2mm}\text{for}\hspace{2mm} n\ge2\] What is the remainder when $a_{50}+b_{50}$ is divided by $5$?",4,"The problem is greatly simplified by defining the sequence $C=\{c_0,c_1,c_2,\ldots\}$ as $c_n=a_n+b_n$ for all nonnegative integers $n$. Then $c_0=a_0+b_0=0+1=1$ and $c_1=a_1+b_1=1+2=3$. Additionally, for integers $n>1$ we have \begin{align*}
+c_n&=a_n+b_n\\
+&=(a_{n-1} +b_{n-2})+(a_{n-2} +b_{n-1})\\
+&=(a_{n-2}+b_{n-2})+(a_{n-1}+b_{n-1})\\
+&=c_{n-2}+c_{n-1}.
+\end{align*} This is convenient since we want to determine the remainder of $a_{50}+b_{50}=c_{50}$. Thus, we no longer have to think about the sequences $A$ and $B$, but only about $C$.
+
+The first few terms of $C$ are $1,3,4,7,11,18,29$. When reduced modulo $5$, these terms are $1,3,4,2,1,3,4$. The first four terms are $1,3,4,2$. These continue repeating $\pmod 5$ because the next two terms are $1,3$ and all terms are defined as the sum of the preceding two. Since the cycle has length $4$ and $50\equiv 2\pmod 4$, we have $$c_{50} \equiv c_2 \pmod 5,$$ and thus $c_{50}\equiv \boxed{4}\pmod 5$.",1,0.0
+The greatest common divisor of positive integers $m$ and $n$ is 6. The least common multiple of $m$ and $n$ is 126. What is the least possible value of $m+n$?,60,"Since the GCD of $m$ and $n$ is 6, $m = 6x$ and $n = 6y$ for some integers $x$ and $y$.  Note that minimizing $m + n = 6x + 6y = 6(x + y)$ is equivalent to minimizing $x + y$.
+
+The LCM of $m$ and $n$ is $126=2\cdot3^2\cdot7= 6 \cdot 3 \cdot 7$, so one of $x$ and $y$ is divisible by 3 and one is divisible by 7.  Then we can minimize $x + y$ by setting $x$ and $y$ to be 3 and 7 in some order.  Therefore, the least possible value of $m+n$ is $6(3 + 7) = \boxed{60}$.",1,0.0
+Suppose that the minimum value of $f(x) = \cos 2x - 2a (1 + \cos x)$ is $-\frac{1}{2}.$  Find $a.$,a = 1/2,"We can write
+\begin{align*}
+f(x) &= 2 \cos^2 x - 1 - 2a (1 + \cos x) \\
+&= 2 \cos^2 x - 2a \cos x - 1 - 2a \\
+&= 2 \left( \cos x - \frac{a}{2} \right)^2 - \frac{1}{2} a^2 - 2a - 1.
+\end{align*}If $a > 2,$ then $f(x)$ attains its minimum value when $\cos x = 1,$ in which case
+\[f(x) = 2 - 2a - 1 - 2a = 1 - 4a.\]If $1 - 4a = -\frac{1}{2},$ then $a = \frac{3}{8},$ contradiction.
+
+If $a < -2,$ then $f(x)$ attains its minimum value when $\cos x = -1,$ in which case
+\[f(x) = 2 + 2a - 1 - 2a = 1,\]so this case is not possible either.
+
+Otherwise, $-2 \le a \le 2,$ and $f(x)$ attains its minimum when $\cos x = \frac{a}{2},$ in which case
+\[f(x) = -\frac{1}{2} a^2 - 2a - 1.\]Thus, $-\frac{1}{2} a^2 - 2a - 1 = -\frac{1}{2},$ so $a^2 + 4a + 1 = 0.$  By the quadratic formula,
+\[a = -2 \pm \sqrt{3}.\]Since $-2 \le a \le 2,$ $a = \boxed{-2 + \sqrt{3}}.$",0,0.0
+"A regular dodecahedron is a convex polyhedron with 12 regular pentagonal faces and 20 vertices.  If two distinct vertices are chosen at random, what is the probability that the line connecting them lies inside the dodecahedron?",Cannot be determined,"There are a total of $\dbinom{20}{2}=190$ ways to choose two distinct vertices.  When the line is drawn connecting these vertices, some will correspond to edges or face diagonals, and the rest will lie inside the dodecahedron. Each of the 12 pentagonal faces has 5 edges.  This makes a total of $5\cdot12=60$ edges.  This counts each edge twice, once for each adjacent face, so there are only $60/2=30$ edges.  Each of the 12 pentagonal faces also has $5$ face diagonals.  This can be seen by drawing out an example, or remembering that an $n$ sided polygon has $\frac{n(n-3)}{2}$ face diagonals.  This is a total of $5\cdot 12= 60$ face diagonals.
+
+Therefore, of the 190 ways to choose two vertices, $190-30-60=100$ will give lines that lie inside the dodecahedron when connected.  The probability of selecting such a pair is then: $$\frac{100}{190}=\boxed{\frac{10}{19}}$$",0,0.0
+Paul and Jesse each choose a number at random from the first six primes. What is the probability that the sum of the numbers they choose is even?,1/2,"The only way for the sum of the numbers Paul and Jesse choose to be odd is if one of them chooses 2 and the other chooses an odd prime. There are five ways for Paul to choose 2 and Jesse to choose an odd prime, and there are five ways for Jesse to choose 2 and Paul to choose an odd prime. Since there are $6\cdot 6=36$ total possible ways for Paul and Jesse to choose their numbers, the probability that the sum of the numbers Paul and Jesse choose is NOT even is $\frac{10}{36}=\frac{5}{18}$. Therefore, the probability that the sum of the numbers Paul and Jesse choose IS even is $1-\frac{5}{18}=\boxed{\frac{13}{18}}$.",0,0.0
+"Two eight-sided dice each have faces numbered 1 through 8. When the dice are rolled, each face has an equal probability of appearing on the top. What is the probability that the product of the two top numbers is greater than their sum? Express your answer as a common fraction.",5/32,"There are $8\cdot 8 = 64$ ordered pairs that can represent the top numbers on the two dice. Let $m$ and $n$ represent the top numbers on the dice.  Then $mn > m+n$ implies that $mn - m - n >
+0$, that is, $$1 < mn - m - n + 1 = (m-1)(n-1).$$This inequality is satisfied except when $m=1$, $n=1$, or when $m=n=2$. There are 16 ordered pairs $(m,n)$ excluded by these conditions, so the probability that the product is greater than the sum is \[
+\frac{64-16}{64} = \frac{48}{64} = \boxed{\frac{3}{4}}.
+\]",0,0.0

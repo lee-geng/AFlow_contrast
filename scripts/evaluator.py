@@ -3,7 +3,7 @@
 # @Author  : all
 # @Desc    : Evaluation for different datasets
 
-from typing import Dict, Literal, Tuple
+from typing import Dict, List, Literal, Tuple
 
 from benchmarks.benchmark import BaseBenchmark
 from benchmarks.drop import DROPBenchmark
@@ -36,7 +36,15 @@ class Evaluator:
         }
 
     async def graph_evaluate(
-        self, dataset: DatasetType, graph, params: dict, path: str, is_test: bool = False
+        self,
+        dataset: DatasetType,
+        graph,
+        params: dict,
+        path: str,
+        is_test: bool = False,
+        specific_indices: List[int] = None,
+        return_details: bool = False,
+        max_concurrent_tasks: int = 10,
     ) -> Tuple[float, float, float]:
         if dataset not in self.dataset_configs:
             raise ValueError(f"Unsupported dataset: {dataset}")
@@ -48,10 +56,15 @@ class Evaluator:
         # Use params to configure the graph and benchmark
         configured_graph = await self._configure_graph(dataset, graph, params)
         if is_test:
-            va_list = None  # For test data, generally use None to test all
+            va_list = specific_indices  # For test data, None means all test rows.
         else:
-            va_list = None  # Use None to test all Validation data, or set va_list (e.g., [1, 2, 3]) to use partial data
-        return await benchmark.run_evaluation(configured_graph, va_list)
+            va_list = specific_indices  # None means full validation; list means targeted subset.
+        return await benchmark.run_evaluation(
+            configured_graph,
+            va_list,
+            max_concurrent_tasks=max_concurrent_tasks,
+            return_details=return_details,
+        )
 
     async def _configure_graph(self, dataset, graph, params: dict):
         # Here you can configure the graph based on params

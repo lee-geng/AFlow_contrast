@@ -1,0 +1,1 @@
+Refine the custom prompt to improve numerical answer alignment with ground truth, while preserving the validated structure of the workflow and avoiding rejected patches.

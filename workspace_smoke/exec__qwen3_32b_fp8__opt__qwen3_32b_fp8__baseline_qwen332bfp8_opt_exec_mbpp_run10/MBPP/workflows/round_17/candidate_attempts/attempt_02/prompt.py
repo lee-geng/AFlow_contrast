@@ -1,0 +1,1 @@
+REFINE_SOLUTION_PROMPT = "Ensure the solution is syntactically complete and includes a correct test function. Fix any missing parts such as function definitions, return statements, or test cases."

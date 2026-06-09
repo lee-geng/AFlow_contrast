@@ -35,7 +35,11 @@ class ConvergenceUtils:
 
         # Read file and return data
         with open(result_file, "r") as file:
-            return json.load(file)
+            try:
+                return json.load(file)
+            except json.JSONDecodeError:
+                logger.warning(f"Failed to decode JSON from {result_file}; treating it as empty results.")
+                return []
 
     def process_rounds(self):
         """

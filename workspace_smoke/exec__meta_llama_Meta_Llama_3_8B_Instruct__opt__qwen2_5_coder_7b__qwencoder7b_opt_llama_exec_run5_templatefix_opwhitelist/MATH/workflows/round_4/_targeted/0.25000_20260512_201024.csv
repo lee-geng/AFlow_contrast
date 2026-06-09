@@ -1,0 +1,70 @@
+﻿question,prediction,expected_output,score,cost
+"A particular convex pentagon has two congruent, acute angles. The measure of each of the other interior angles is equal to the sum of the measures of the two acute angles. What is the common measure of the large angles, in degrees?",135,"If $x$ is the measure in degrees of each of the acute angles, then each of the larger angles measures $2x$ degrees.  Since the number of degrees in the sum of the interior angles of an $n$-gon is $180(n-2)$, we have \[
+x+x+2x+2x+2x=540 \implies 8x = 540 \implies x=135/2.
+\] The large angles each measure $2x=\boxed{135}$ degrees.",1,0.0
+"Each good worker can paint my new house alone in 12 hours.  Each bad worker can paint my house alone in 36 hours.  I need my house painted in 3 hours.  If I can only find 3 good workers, how many bad workers must I also find in order to have my house painted on time?",9,"Each good worker can paint $1/12$ of my house in an hour, so three of them together can  paint $3/12 =1/4$ of my house in an hour.  So, in 3 hours, the three good workers will  paint $3(1/4)=3/4$ of my house.  The bad workers have to paint the other $1/4$ of the house.  Each bad worker paints $1/36$ of the house in an hour, so each bad worker can paint $3(1/36)=1/12$  of the house in three hours.  Since the bad workers together need to paint $1/4$ of the house, and  each bad worker can paint $1/12$ of the house in three hours, I need $(1/4)/(1/12) = \boxed{3}$ bad workers.",0,0.0
+Estimate $14.7923412^2$ to the nearest hundred.,200,"We know $14^2=196$ and $15^2=225.$ So both $14^2$ and $15^2,$ estimated to the nearest hundred, are 200. Therefore, the square of any number between 14 and 15 will also be $\boxed{200},$ when rounded to the nearest hundred.",1,0.0
+A stock loses $10\%$ of its value on Monday.  On Tuesday it loses  $20\%$ of the value it had at the end of the day on Monday.  What is  the overall percent loss in value from the beginning of Monday to  the end of Tuesday?  Enter the answer as a percent.,28%,"If its initial value was $x$, after Monday, its value is $.9x$, and after a further $20\%$ loss, its value becomes $.8\cdot .9x = .72x$, making for a total loss of $\boxed{28\%}$.",1,0.0
+"Let $a = .\overline{2} + .\overline{6}$.  Find the reciprocal of $a$, expressed as a decimal.",0.8889,"Convert both decimals into fractions. \begin{align*}
+x&=.\overline{2} \\
+\Rightarrow 10x&=2.\overline{2} \\
+\Rightarrow 9x&=2 \\
+\Rightarrow x &= \frac{2}{9}.
+\end{align*}Likewise, $.\overline{6}=\frac{6}{9}$. Adding the two fractions yields $\frac{2}{9} + \frac{6}{9}=\frac{8}{9}$. The reciprocal of this is $\frac{1}{\frac{8}{9}}=\frac{9}{8}$. To convert this to a decimal, we need to multiply the numerator and denominator by 125. Doing so, we get \[\frac{9}{8} \cdot \frac{125}{125} = \frac{9 \cdot 125}{8 \cdot 125} = \frac{1125}{1000}=\boxed{1.125}.\]",0,0.0
+"The five tallest buildings in Los Angeles in 1985 had a mean height of 733 feet. The tallest of the five buildings has a height of 858 feet, the shortest of the five 625 feet. If a new building were constructed with a height of 885 feet, by how many feet would it increase the mean height of the five tallest buildings of the city?",152,"Since the mean of the heights of the 5 tallest buildings in Los Angeles before the new building was built was 733, the sum of their heights must have been $5\cdot733 = 3665$. After the new building is built, the shortest of these, which was 625 feet tall, is replaced as a member of the five tallest buildings, which, since it is 885 feet tall, is $885-625 = 260$ feet taller. Therefore the sum of the heights of the five tallest buildings increases by 260 feet, to $3665 + 260 = 3925$ feet. This means that the new mean height of the 5 tallest buildings is $\frac{3925}{5}=785$ feet, so the mean has increased by $785-733=\boxed{52}$ feet. Note that this amount is just the difference in the height of the two buildings divided by 5.",0,0.0
+"Daphne has a rope that is 60 meters long. She wants to use it to mark the boundary of a circle whose radius is an integer. What's the largest possible radius for her circle, in meters?",29,"The 60-meter rope will mark the circumference of the circle, which is equal to $2\pi r$. So we look for the largest integer $r$ such that the circumference is less than or equal to 60. We have $$2\pi r\le60\qquad\implies r\le\frac{60}{2\pi}\approx \frac{30}{3.14}.$$We know that $\frac{30}{3.14}<\frac{31.4}{3.14}=10$, but greater than $\frac{31.4-3.14}{3.14}=9$, so the largest possible radius is $\boxed{9}$ meters.",0,0.0
+"Lizzy, Megan, Oscar, and Patrick each have $x$ pieces of candy, where $x$ is a positive integer. Unfortunately, Patrick is the only one of the four who likes candy. So Lizzy gives all her candy to Megan. Then Megan gives all the candy she now has (which includes the candy Lizzy gave her) to Oscar. Then Oscar gives all the candy he now has to Patrick.
+
+Let $P$ be the number of pieces of candy Patrick has in the end. How many of the following statements are true? (Assume that we do not know exactly what $x$ is.)
+
+(a) $2$ can be a divisor of $P$.
+(b) $2$ must be a divisor of $P$.
+(c) $3$ can be a divisor of $P$.
+(d) $3$ must be a divisor of $P$.
+(e) $4$ can be a divisor of $P$.
+(f) $4$ must be a divisor of $P$.","2, 3","Note that in the end, Patrick ended up getting all the candy! So $$P = x + x + x + x = 4x.$$It follows that (e) and (f) are true. We can also write $P$ as $P = 2 \cdot (2x)$, so (a) and (b) are true. It is possible that $x = 3$, so (c) is true. It is also possible that $x = 1$, which gives $P = 4$. The number $3$ is not a divisor of $4$, so (d) is false. So our final answer is $\boxed{5}.$",0,0.0
+"Given that $m$ and $n$ are positive integers such that $m\equiv 6\pmod 9$ and $n\equiv 0\pmod 9$, what is the largest integer that $mn$ is necessarily divisible by?",18,"If $m\equiv 6\pmod 9$, then we can write $m$ as $9a+6$ for some integer $a$. This is equal to $3(3a+2)$, so $m$ is certainly divisible by $3$.  If $n\equiv 0\pmod 9$, then $n$ is divisible by $9$. Therefore, $mn$ must be divisible by $3\cdot 9 = 27$.
+
+Note that $m$ can be 6 and $n$ can be 9, which gives us $mn = 54$.  Also, $m$ can be 15 and $n$ can be 9, which gives us $mn = 135$.  The gcd of 54 and 135 is 27.
+
+Therefore, the largest integer that $mn$ must be divisible by is $\boxed{27}$.",0,0.0
+"Given $m\geq 2$, denote by $b^{-1}$ the inverse of $b\pmod{m}$. That is, $b^{-1}$ is the residue for which $bb^{-1}\equiv 1\pmod{m}$. Sadie wonders if $(a+b)^{-1}$ is always congruent to $a^{-1}+b^{-1}$ (modulo $m$). She tries the example $a=2$, $b=3$, and $m=7$. Let $L$ be the residue of $(2+3)^{-1}\pmod{7}$, and let $R$ be the residue of $2^{-1}+3^{-1}\pmod{7}$, where $L$ and $R$ are integers from $0$ to $6$ (inclusive). Find $L-R$.",4,"The inverse of $5\pmod{7}$ is 3, since $5\cdot3 \equiv 1\pmod{7}$. Also, inverse of $2\pmod{7}$ is 4, since $2\cdot 4\equiv 1\pmod{7}$. Finally, the inverse of $3\pmod{7}$ is 5 (again because $5\cdot3 \equiv 1\pmod{7}$). So the residue of $2^{-1}+3^{-1}$ is the residue of $4+5\pmod{7}$, which is $2$. Thus $L-R=3-2=\boxed{1}$. Since the left-hand side $L$ and the right-hand side $R$ of the equation $$
+(a+b)^{-1} \stackrel{?}{=} a^{-1} + b^{-1} \pmod{m}
+$$are not equal, we may conclude that the equation is not true in general.",0,0.0
+"If $A$ is the sum of the positive divisors of $500$, what is the sum of the distinct prime divisors of $A$?","2, 5","First, we find $A$. The prime factorization of $500$ is $2^2 \cdot 5^3$. Therefore,  $$A=(1+2+2^2)(1+5+5^2+5^3)=(7)(156).$$To see why $(1+2+2^2)(1+5+5^2+5^3)$ equals the sum of the divisors of 500, note that if you distribute (without simplifying), you get 12 terms, with each divisor of $2^2\cdot 5^3$ appearing exactly once.
+
+Now we prime factorize $7 \cdot 156 = 7 \cdot 2^2 \cdot 3 \cdot 13$. The sum of the prime divisors of $A$ is $2+3+7+13=\boxed{25}$.",0,0.0
+"Two sequences $A=\{a_0, a_1, a_2,\ldots\}$ and $B=\{b_0,b_1,b_2,\ldots\}$ are defined as follows: \[a_0=0, ~a_1=1, ~a_n= a_{n-1} +b_{n-2} \hspace{2mm}\text{for}\hspace{2mm} n\ge2\] \[b_0=1, ~b_1=2, ~b_n=a_{n-2} +b_{n-1}\hspace{2mm}\text{for}\hspace{2mm} n\ge2\] What is the remainder when $a_{50}+b_{50}$ is divided by $5$?",4,"The problem is greatly simplified by defining the sequence $C=\{c_0,c_1,c_2,\ldots\}$ as $c_n=a_n+b_n$ for all nonnegative integers $n$. Then $c_0=a_0+b_0=0+1=1$ and $c_1=a_1+b_1=1+2=3$. Additionally, for integers $n>1$ we have \begin{align*}
+c_n&=a_n+b_n\\
+&=(a_{n-1} +b_{n-2})+(a_{n-2} +b_{n-1})\\
+&=(a_{n-2}+b_{n-2})+(a_{n-1}+b_{n-1})\\
+&=c_{n-2}+c_{n-1}.
+\end{align*} This is convenient since we want to determine the remainder of $a_{50}+b_{50}=c_{50}$. Thus, we no longer have to think about the sequences $A$ and $B$, but only about $C$.
+
+The first few terms of $C$ are $1,3,4,7,11,18,29$. When reduced modulo $5$, these terms are $1,3,4,2,1,3,4$. The first four terms are $1,3,4,2$. These continue repeating $\pmod 5$ because the next two terms are $1,3$ and all terms are defined as the sum of the preceding two. Since the cycle has length $4$ and $50\equiv 2\pmod 4$, we have $$c_{50} \equiv c_2 \pmod 5,$$ and thus $c_{50}\equiv \boxed{4}\pmod 5$.",1,0.0
+The greatest common divisor of positive integers $m$ and $n$ is 6. The least common multiple of $m$ and $n$ is 126. What is the least possible value of $m+n$?,No valid plan generated.,"Since the GCD of $m$ and $n$ is 6, $m = 6x$ and $n = 6y$ for some integers $x$ and $y$.  Note that minimizing $m + n = 6x + 6y = 6(x + y)$ is equivalent to minimizing $x + y$.
+
+The LCM of $m$ and $n$ is $126=2\cdot3^2\cdot7= 6 \cdot 3 \cdot 7$, so one of $x$ and $y$ is divisible by 3 and one is divisible by 7.  Then we can minimize $x + y$ by setting $x$ and $y$ to be 3 and 7 in some order.  Therefore, the least possible value of $m+n$ is $6(3 + 7) = \boxed{60}$.",0,0.0
+"When $\begin{pmatrix} a \\ b \end{pmatrix}$ is projected onto $\begin{pmatrix} \sqrt{3} \\ 1 \end{pmatrix},$ the resulting vector has magnitude $\sqrt{3}.$  Also, $a = 2 + b \sqrt{3}.$  Enter all possible values of $a,$ separated by commas.","2 + √3, -2 - √3","From the formula for a projection,
+\[\operatorname{proj}_{\begin{pmatrix} \sqrt{3} \\ 1 \end{pmatrix}} \begin{pmatrix} a \\ b \end{pmatrix} = \frac{\begin{pmatrix} a \\ b \end{pmatrix} \cdot \begin{pmatrix} \sqrt{3} \\ 1 \end{pmatrix}}{\left\| \begin{pmatrix} \sqrt{3} \\ 1 \end{pmatrix} \right\|^2} \begin{pmatrix} \sqrt{3} \\ 1 \end{pmatrix} = \frac{a \sqrt{3} + b}{4} \begin{pmatrix} \sqrt{3} \\ 1 \end{pmatrix}.\]This vector has magnitude
+\[\left\| \frac{a \sqrt{3} + b}{4} \begin{pmatrix} \sqrt{3} \\ 1 \end{pmatrix} \right\| = \frac{|a \sqrt{3} + b|}{4} \left\| \begin{pmatrix} \sqrt{3} \\ 1 \end{pmatrix} \right\| = \frac{|a \sqrt{3} + b|}{4} \cdot 2 = \frac{|a \sqrt{3} + b|}{2}.\]Thus, we want $\frac{|a \sqrt{3} + b|}{2} = \sqrt{3}.$  Equivalently, $|a \sqrt{3} + b| = 2 \sqrt{3},$ or $(a \sqrt{3} + b)^2 = 12.$
+
+Also, $a = 2 + b \sqrt{3},$ so
+\[(2 \sqrt{3} + 4b)^2 = 12.\]Then $2 \sqrt{3} + 4b = \pm 2 \sqrt{3}.$  This leads to the solutions $b = -\sqrt{3}$ and $b = 0,$ which in turn leads to the values $a = \boxed{-1}$ and $a = \boxed{2}.$",0,0.0
+"The matrix
+\[\mathbf{A} = \begin{pmatrix} 4 & 7 \\ c & d \end{pmatrix}\]has the property that if you are told the value of $\|\mathbf{v}\|,$ then you can derive the value of $\|\mathbf{A} \mathbf{v}\|.$  Compute $|c - d|,$ assuming that $c$ and $d$ are real numbers.",0,"Let $\mathbf{v} = \begin{pmatrix} x \\ y \end{pmatrix}.$  Then
+\begin{align*}
+\|\mathbf{A} \mathbf{v}\| &= \left\| \begin{pmatrix} 4 & 7 \\ c & d \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} \right\| \\
+&= \left\| \begin{pmatrix} 4x + 7y \\ cx + dy \end{pmatrix} \right\| \\
+&= \sqrt{(4x + 7y)^2 + (cx + dy)^2} \\
+&= \sqrt{16x^2 + 56y + 49y^2 + c^2 x^2 + 2cd xy + d^2 y^2} \\
+&= \sqrt{(c^2 + 16) x^2 + (2cd + 56) xy + (d^2 + 49) y^2}.
+\end{align*}We are told that we can find this value given the value of $\|\mathbf{v}\| = \sqrt{x^2 + y^2}.$  This holds if and only if $c^2 + 16 = d^2 + 49$ and $2cd + 56 = 0.$  This gives us $c^2 - d^2 = 33$ and $cd = -28.$  Squaring $c^2 - d^2 = 33,$ we get
+\[c^4 - 2c^2 d^2 + d^4 = 1089.\]Then
+\[c^4 + 2c^2 d^2 + d^4 = 1089 + 4c^2 d^2 = 1089 + 4 \cdot (-28)^2 = 4225.\]Thus, $(c^2 + d^2)^2 = 4225.$  Since $c^2 + d^2$ must be nonnegative, $c^2 + d^2 = \sqrt{4225} = 65.$
+
+Then
+\[c^2 - 2cd + d^2 = 65 - 2(-28) = 121,\]so $|c - d| = \boxed{11}.$
+
+With some more work, we can show that $(c,d)$ is either $(7,-4)$ or $(-7,4).$",0,0.0
+For how many integers $n$ where $2 \le n \le 100$ is $\binom{n}{2}$ odd?,No valid plan generated.,"$\binom{n}{2} = \frac{n(n-1)}{2}$. In order for this fraction to be odd, neither $n$ nor $n-1$ can be divisible by $4$, because only one of $n$ and $n-1$ can be even. There are $25$ integers where $n$ is divisible by $4$, namely the multiples of $4$ from $4$ to $100$. There are $24$ integers where $n-1$ is divisible by $4$. We can obtain these integers by incrementing all the multiples of $4$ by $1$, but we must not include $100$ since $100+1 = 101 > 100$. Therefore, there are $49$ invalid integers, so there are $99 - 49 = \boxed{50}$ valid integers.",0,0.0

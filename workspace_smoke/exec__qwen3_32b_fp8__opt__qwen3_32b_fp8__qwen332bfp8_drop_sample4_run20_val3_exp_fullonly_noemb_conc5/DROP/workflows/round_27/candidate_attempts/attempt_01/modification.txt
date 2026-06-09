@@ -1,0 +1,1 @@
+Refine the `XXX_PROMPT` to better align numerical and entity answers with expected formats, based on failure evidence where extracted answers like `0.8` or `0.5` did not match expected formats like `.8` or `.5`. This change is minimal, focused on the prompt, and preserves all validated subworkflows.

@@ -1,0 +1,396 @@
+﻿question,prediction,expected_output,score,cost
+"A particular convex pentagon has two congruent, acute angles. The measure of each of the other interior angles is equal to the sum of the measures of the two acute angles. What is the common measure of the large angles, in degrees?","Let $x$ be the measure of each of the two acute angles.  Then the measure of each of the other three angles is $x+x=2x$.  The sum of the measures of the five angles is $180(5-2)=180(3)=540$.  Therefore, $2x+2x=540$, so $x=540/4=\boxed{135}$.
+Final Answer: The final answer is 135. I hope it is correct.","If $x$ is the measure in degrees of each of the acute angles, then each of the larger angles measures $2x$ degrees.  Since the number of degrees in the sum of the interior angles of an $n$-gon is $180(n-2)$, we have \[
+x+x+2x+2x+2x=540 \implies 8x = 540 \implies x=135/2.
+\] The large angles each measure $2x=\boxed{135}$ degrees.",1,0.0
+"Below is a magic square, meaning that the sum of the numbers in each row, in each column, and in each of the $2$ main diagonals are equal. What is the value of $n$?
+
+[asy]size(125);
+for(int i = 0; i<4; ++i)
+{
+
+draw((0,i)--(3,i),linewidth(1));
+}
+
+for(int j = 0; j<4; ++j)
+{
+
+draw((j,0)--(j,3),linewidth(1));
+}
+
+label(""$n-3$"",(.5,.5));
+label(""3"",(.5,1.5));
+label(""$n+1$"",(.5,2.5));
+
+label(""$n+2$"",(1.5,.5));
+label(""$2n-9$"",(1.5,1.5));
+label(""$1$"",(1.5,2.5));
+
+label(""$2$"",(2.5,.5));
+label(""$n$"",(2.5,1.5));
+label(""$n-1$"",(2.5,2.5));
+[/asy]","The sum of the numbers in the first row is $n-3+3+n+1=2n$.  The sum of the numbers in the second row is $n+2+2n-9+1=3n-8$.  The sum of the numbers in the third row is $2+n+n-1=3n-1$.  The sum of the numbers in the fourth row is $1+n-1+n-3=2n-3$.  The sum of the numbers in the first column is $n-3+2+n=2n+1$.  The sum of the numbers in the second column is $3+n+2n-9=2n-4$.  The sum of the numbers in the third column is $1+n+n-1=2n$.  The sum of the numbers in the fourth column is $n+2+n-1=2n+1$.  The sum of the numbers in the main diagonal from top left to bottom right is $n-3+2+n+1=2n+1$.  The sum of the numbers in the main diagonal from top right to bottom left is $1+n-1+n+2=2n+2$.  Since the sum of the numbers in each row, in each column, and in each of the two main diagonals are equal, we have $2n=2n-8=2n-4=2n+1=2n+2$, so $n=\boxed{5}$.
+Final Answer: The final answer is 5. I hope it is correct.","First, we can evaluate the sum across the first row, which gives $(n+1)+1+(n-1)=2n+1$.  Evaluate the sum of the entries across the second row, $3+(2n-9)+n=3n-6$. Now, since we have a magic square, these two sums are equal.  So $2n+1=3n-6$. Isolating $n$, we obtain $n = \boxed{7}$.
+
+The square will look like: [asy] size(2cm);
+draw((0,0)--(3,0)--(3,3)--(0,3)--cycle,linewidth(1));
+draw((1,0)--(1,3),linewidth(1));
+draw((2,0)--(2,3),linewidth(1));
+draw((0,1)--(3,1),linewidth(1));
+draw((0,2)--(3,2),linewidth(1));
+label(""8"",(.5,2.5));
+label(""1"",(1.5,2.5));
+label(""6"",(2.5,2.5));
+label(""3"",(.5,1.5));
+label(""5"",(1.5,1.5));
+label(""7"",(2.5,1.5));
+label(""4"",(.5,.5));
+label(""9"",(1.5,.5));
+label(""2"",(2.5,.5));
+[/asy]",0,0.0
+"Each good worker can paint my new house alone in 12 hours.  Each bad worker can paint my house alone in 36 hours.  I need my house painted in 3 hours.  If I can only find 3 good workers, how many bad workers must I also find in order to have my house painted on time?","Let $g$ be the number of good workers and $b$ be the number of bad workers.  We know that $g=3$ and that $g+b=3+g$ (since we can only find 3 good workers).  We also know that $g\cdot12+b\cdot36=3\cdot60$ (since we need the house painted in 3 hours).  We can solve for $b$:
+
+\begin{align*}
+3\cdot12+36b&=3\cdot60\\
+\Rightarrow\qquad 36b&=3\cdot48\\
+\Rightarrow\qquad b&=3\cdot48/36=\boxed{4}
+\end{align*}
+Final Answer: The final answer is 4. I hope it is correct.","Each good worker can paint $1/12$ of my house in an hour, so three of them together can  paint $3/12 =1/4$ of my house in an hour.  So, in 3 hours, the three good workers will  paint $3(1/4)=3/4$ of my house.  The bad workers have to paint the other $1/4$ of the house.  Each bad worker paints $1/36$ of the house in an hour, so each bad worker can paint $3(1/36)=1/12$  of the house in three hours.  Since the bad workers together need to paint $1/4$ of the house, and  each bad worker can paint $1/12$ of the house in three hours, I need $(1/4)/(1/12) = \boxed{3}$ bad workers.",0,0.0
+"Let A = 1, B = 2, C = 3, ..., Z = 26. The product value of a word is equal to the product of the values of its letters. For example, CAB has a product value of 3 $\times$ 1 $\times$ 2 = 6. What common English word has a product value of 715? It does not have to be of length 3.","We can list out the product values of all the words of length 1, 2, 3, 4, 5, and 6.  We can then look for the product value of 715 in this list.  We find that the product value of the word $\boxed{\text{A} \text{B} \text{C} \text{D} \text{E} \text{F}}$ is 715.
+Final Answer: The final answer is A B C D E F. I hope it is correct.","Prime factorize 715 to find $715=5\cdot11\cdot13$.  The only ways to write 715 as a product of positive integers greater than 1 are the distinct ways of grouping the prime factors: \begin{align*}
+(5)\cdot (11) \cdot (13) &= 5\cdot 11\cdot 13 \\
+(5\cdot11)\cdot 13&=55\cdot 13 \\
+5\cdot(11\cdot 13) &= 5\cdot 143 \\
+(5\cdot 13) \cdot 11 &= 65 \cdot 11\text{, and}\\
+(5\cdot11\cdot13)&=715,
+\end{align*} where the last one is a product with only one factor.  Since the letters cannot represent numbers greater than 26, only $5\cdot11\cdot 13$ could come from calculating the product value of a word. The 5th, 11th, and 13th letters of the alphabet are E, K, and M.  Since E, K, and M do not form a word, we introduce the letter A (which doesn't affect the product since its value is 1) to form the word $\boxed{\text{MAKE}}$.",0,0.0
+Estimate $14.7923412^2$ to the nearest hundred.,"We have that $14.7923412^2 = (14.8)^2 + 2(14.8)(0.7923412) + (0.7923412)^2 \approx 217.44 + 18.56 + 0.0625 = \boxed{236}.$
+Final Answer: The final answer is 236. I hope it is correct.","We know $14^2=196$ and $15^2=225.$ So both $14^2$ and $15^2,$ estimated to the nearest hundred, are 200. Therefore, the square of any number between 14 and 15 will also be $\boxed{200},$ when rounded to the nearest hundred.",0,0.0
+"A square piece of paper is folded once so that one pair of opposite corners coincide. When the paper is unfolded, two congruent triangles have been formed. Given that the area of the original square is $49$ square inches, what is the number of inches in the perimeter of one of these triangles? Express your answer in simplest radical form.","The area of the square is $49$ square inches, so the side length of the square is $\sqrt{49}=7$ inches.  When the square is folded, the diagonal of the square is the base of the two congruent triangles.  The diagonal of the square is $\sqrt{7^2+7^2}=\sqrt{98}=7\sqrt{2}$ inches.  The height of the triangle is half of this, or $7\sqrt{2}/2$ inches.  The base of the triangle is half of the side length of the square, or $7/2$ inches.  The perimeter of the triangle is the sum of the base, the height, and the hypotenuse, which is $\sqrt{(7/2)^2+(7\sqrt{2}/2)^2}=\sqrt{49/4+98/2}=\sqrt{49/4+49}=\sqrt{49(1+2)/4}=\sqrt{49\cdot3/4}=7\sqrt{3}/2$ inches.  Therefore, the perimeter of the triangle is $\boxed{7\sqrt{3}}$ inches.
+Final Answer: The final answer is 7\sqrt{3}. I hope it is correct.","Since the area of the square is 49 square inches, the side length of the square is $\sqrt{49} = 7$ square inches.  Each triangle formed by the fold is a 45-45-90 triangle whose legs are sides of the square and whose hypotenuse is the fold.  So, two sides of the triangle have length 7 and the hypotenuse has length $7\sqrt{2}$.  Therefore, the perimeter of the triangle is $7+7+7\sqrt{2} = \boxed{14+7\sqrt{2}}$.",0,0.0
+"At the national curling championships, there are three teams of four players each. After the championships are over, the very courteous participants each shake hands three times with every member of the opposing teams, and once with each member of their own team.
+
+How many handshakes are there in total?","There are three teams of four players each, so there are $3\cdot4=12$ players in total.  Each player shakes hands with 8 other players (3 times with each of the 3 opposing teams, and once with each of the 4 members of their own team).  Therefore, the total number of handshakes is $12\cdot8=\boxed{96}.$
+Final Answer: The final answer is 96. I hope it is correct.","For each participant, there are 8 opponents to shake hands with, and 3 team members to shake hands with, giving $3\times8+3=27$ handshakes for each individual participant.
+
+There are 12 players in total, which offers $12\times27=324$ handshakes, but since a handshake takes place between two people, we've counted every handshake twice.
+
+The final answer is $\dfrac{324}{2}=\boxed{162}$ handshakes.",0,0.0
+"The expression $2\cdot 3 \cdot 4\cdot 5+1$ is equal to 121, since multiplication is carried out before addition. However, we can obtain values other than 121 for this expression if we are allowed to change it by inserting parentheses. For example, we can obtain 144 by writing \[
+(2\cdot (3\cdot 4)) \cdot (5+1) = 144.
+\]In total, how many values can be obtained from the expression $2\cdot 3\cdot 4 \cdot 5 + 1$ by inserting parentheses? (Note that rearranging terms is not allowed, only inserting parentheses).","We can insert parentheses in the following ways:
+
+\begin{align*}
+&(2\cdot 3)\cdot (4\cdot 5)+1=43,\\
+&(2\cdot 3\cdot 4)\cdot 5+1=61,\\
+&(2\cdot 3\cdot 4\cdot 5)+1=121,\\
+&(2\cdot (3\cdot 4\cdot 5))+1=82,\\
+&(2\cdot (3\cdot 4))+ (5\cdot 1)=144,\\
+&(2\cdot (3\cdot (4\cdot 5)))+1=146,\\
+&(2\cdot ((3\cdot 4)\cdot 5))+1=94,\\
+&(2\cdot (3\cdot (4\cdot 1)))+5\cdot 2=26,\\
+&(2\cdot ((3\cdot 1)\cdot 4))+5\cdot 3=31,\\
+&(2\cdot (3\cdot (1\cdot 4)))+5\cdot 6=66,\\
+&(2\cdot ((1\cdot 3)\cdot 4))+5\cdot 7=77,\\
+&(2\cdot (1\cdot (3\cdot 4)))+5\cdot 8=88,\\
+&(2\cdot ((1\cdot 1)\cdot 3))+5\cdot 9=99,\\
+&(2\cdot (1\cdot (1\cdot 3)))+5\cdot 10=110,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 11=121,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 12=132,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 13=143,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 14=154,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 15=165,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 16=176,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 17=187,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 18=198,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 19=209,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 20=220,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 21=231,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 22=242,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 23=253,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 24=264,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 25=275,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 26=286,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 27=297,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 28=308,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 29=319,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 30=330,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 31=341,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 32=352,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 33=363,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 34=374,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 35=385,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 36=396,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 37=407,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 38=418,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 39=429,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 40=440,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 41=451,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 42=462,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 43=473,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 44=484,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 45=495,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 46=506,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 47=517,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 48=528,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 49=539,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 50=550,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 51=561,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 52=572,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 53=583,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 54=594,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 55=605,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 56=616,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 57=627,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 58=638,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 59=649,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 60=660,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 61=671,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 62=682,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 63=693,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 64=704,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 65=715,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 66=726,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 67=737,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 68=748,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 69=759,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 70=770,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 71=781,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 72=792,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 73=803,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 74=814,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 75=825,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 76=836,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 77=847,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 78=858,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 79=869,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 80=880,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 81=891,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 82=902,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 83=913,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 84=924,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 85=935,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 86=946,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 87=957,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 88=968,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 89=979,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 90=990,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 91=1001,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 92=1012,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 93=1023,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 94=1034,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 95=1045,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 96=1056,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 97=1067,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 98=1078,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 99=1089,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 100=1100,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 101=1111,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 102=1122,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 103=1133,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 104=1144,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 105=1155,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 106=1166,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 107=1177,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 108=1188,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 109=1199,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 110=1210,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 111=1221,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 112=1232,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 113=1243,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 114=1254,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 115=1265,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 116=1276,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 117=1287,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 118=1298,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 119=1309,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 120=1320,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 121=1331,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 122=1342,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 123=1353,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 124=1364,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 125=1375,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 126=1386,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 127=1397,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 128=1408,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 129=1419,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 130=1430,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 131=1441,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 132=1452,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 133=1463,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 134=1474,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 135=1485,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 136=1496,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 137=1507,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 138=1518,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 139=1529,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 140=1540,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 141=1551,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 142=1562,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 143=1573,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 144=1584,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 145=1595,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 146=1606,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 147=1617,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 148=1628,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 149=1639,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 150=1650,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 151=1661,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 152=1672,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 153=1683,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 154=1694,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 155=1705,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 156=1716,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 157=1727,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 158=1738,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 159=1749,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 160=1760,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 161=1771,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 162=1782,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 163=1793,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 164=1804,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 165=1815,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 166=1826,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 167=1837,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 168=1848,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 169=1859,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 170=1870,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 171=1881,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 172=1892,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 173=1903,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 174=1914,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 175=1925,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 176=1936,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 177=1947,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 178=1958,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 179=1969,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 180=1980,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 181=1991,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 182=2002,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 183=2013,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 184=2024,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 185=2035,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 186=2046,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 187=2057,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 188=2068,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 189=2079,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 190=2090,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 191=2101,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 192=2112,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 193=2123,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 194=2134,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 195=2145,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 196=2156,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 197=2167,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 198=2178,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 199=2189,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 200=2200,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 201=2211,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 202=2222,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 203=2233,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 204=2244,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 205=2255,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 206=2266,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 207=2277,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 208=2288,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 209=2299,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 210=2310,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 211=2321,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 212=2332,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 213=2343,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 214=2354,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 215=2365,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 216=2376,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 217=2387,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 218=2398,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 219=2409,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 220=2420,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 221=2431,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 222=2442,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 223=2453,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 224=2464,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 225=2475,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 226=2486,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 227=2497,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 228=2508,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 229=2519,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 230=2530,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 231=2541,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 232=2552,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 233=2563,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 234=2574,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 235=2585,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 236=2596,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 237=2607,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 238=2618,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 239=2629,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 240=2640,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 241=2651,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 242=2662,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 243=2673,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 244=2684,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 245=2695,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 246=2706,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 247=2717,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 248=2728,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 249=2739,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 250=2750,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 251=2761,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 252=2772,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 253=2783,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 254=2794,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 255=2805,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 256=2816,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 257=2827,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 258=2838,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 259=2849,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 260=2860,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 261=2871,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 262=2882,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 263=2893,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 264=2904,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 265=2915,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 266=2926,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 267=2937,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 268=2948,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 269=2959,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 270=2970,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 271=2981,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 272=2992,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 273=3003,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 274=3014,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 275=3025,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 276=3036,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 277=3047,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 278=3058,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 279=3069,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 280=3080,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 281=3091,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 282=3102,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 283=3113,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 284=3124,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 285=3135,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 286=3146,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 287=3157,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 288=3168,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 289=3179,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 290=3190,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 291=3201,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 292=3212,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 293=3223,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 294=3234,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 295=3245,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 296=3256,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 297=3267,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 298=3278,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 299=3289,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 300=3300,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 301=3311,\\
+&(2\cdot (1\cdot (1\cdot 1)))+5\cdot 302=3322,\\
+&(2\cdot ((1\cdot 1)\cdot 1))+5\cdot 303=3333,\\
+&(2\cdot (1\cdot (1\cdot 1","By the associative property of multiplication, it doesn't help to insert parentheses that specify the order of multiplication. For example, the associative property tells us that $(2\cdot(3\cdot 4))\cdot (5+1)$ is the same as $2\cdot3\cdot4\cdot (5+1)$. So the only way to get different values is to group +1 with a different number of factors. We get \begin{align*}
+2\cdot 3 \cdot 4 \cdot (5 + 1) &= 144, \\
+2\cdot 3 \cdot (4 \cdot 5 + 1) &= 126,\\
+2\cdot (3 \cdot 4 \cdot 5 + 1) &= 122, \\
+(2\cdot 3 \cdot 4 \cdot 5) + 1 \hphantom{)} &= 121.
+\end{align*}In total there are $\boxed{4}$ possible values for the expression.",0,0.0

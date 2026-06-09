@@ -1,0 +1,1 @@
+Applied a minimal local fix by introducing a fallback handling mechanism for the `b1:custom` node. This ensures that if the model's output is ambiguous or does not match expected formats (e.g., "No" vs. "no"), it is normalized to a consistent format before returning. This addresses the `answer_mismatch` failure by improving robustness without altering the validated core logic.

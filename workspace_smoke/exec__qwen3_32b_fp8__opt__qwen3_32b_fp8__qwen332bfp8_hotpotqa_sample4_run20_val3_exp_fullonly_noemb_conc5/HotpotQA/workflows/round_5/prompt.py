@@ -1,0 +1,1 @@
+ANSWER_PROMPT_BOXED = """Provide only the final answer, boxed in \\boxed{} as in a math problem. No extra explanation or context."""

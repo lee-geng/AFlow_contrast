@@ -1,0 +1,5062 @@
+test_error of surfacearea_cylinder
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of start_withp
+test_error of string_to_tuple
+test_error of angle_complex
+test_error of sum_div
+test_error of extract_freq
+test_error of remove_nested
+test_error of long_words
+test_error of find_sum
+test_error of surfacearea_cylinder
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of bell_number
+get_max_sum maximum recursion depth exceeded
+test_error of k_smallest_pairs
+test_error of rgb_to_hsv
+test_error of extract_freq
+test_error of angle_complex
+test_error of remove_nested
+test_error of round_and_sum
+test_error of large_product
+test_error of is_polite
+test_error of find_sum
+test_error of average_tuple
+test_error of find_length
+test_error of harmonic_sum
+test_error of surfacearea_cylinder
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of remove_nested
+test_error of find_sum
+test_error of average_tuple
+test_error of is_polite
+test_error of surfacearea_cylinder
+test_error of harmonic_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of find_sum
+test_error of round_and_sum
+test_error of average_tuple
+test_error of remove_nested
+test_error of bell_number
+test_error of angle_complex
+test_error of is_polite
+test_error of k_smallest_pairs
+test_error of average_tuple
+test_error of find_length
+test_error of is_polite
+test_error of harmonic_sum
+test_error of round_and_sum
+test_error of bell_number
+test_error of angle_complex
+test_error of find_length
+test_error of harmonic_sum
+test_error of round_and_sum
+test_error of k_smallest_pairs
+test_error of bell_number
+test_error of find_length
+test_error of large_product
+test_error of k_smallest_pairs
+test_error of large_product
+test_error of remove_nested
+test_error of average_tuple
+test_error of round_and_sum
+test_error of string_to_tuple
+tuple_to_dict dictionary update sequence element #0 has length 3; 2 is required
+test_error of bell_number
+test_error of angle_complex
+test_error of start_withp
+test_error of find_length
+test_error of is_polite
+test_error of long_words
+test_error of remove_nested
+test_error of sum_div
+test_error of find_sum
+test_error of surfacearea_cylinder
+test_error of extract_freq
+test_error of harmonic_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of round_and_sum
+test_error of average_tuple
+test_error of long_words
+test_error of surfacearea_cylinder
+test_error of extract_freq
+test_error of is_polite
+test_error of remove_nested
+test_error of find_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of angle_complex
+test_error of surfacearea_cylinder
+test_error of long_words
+test_error of is_polite
+test_error of harmonic_sum
+test_error of find_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of surfacearea_cylinder
+test_error of long_words
+test_error of bell_number
+test_error of remove_nested
+test_error of is_polite
+test_error of find_length
+test_error of round_and_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of find_sum
+test_error of average_tuple
+test_error of angle_complex
+test_error of harmonic_sum
+test_error of bell_number
+test_error of angle_complex
+test_error of round_and_sum
+test_error of find_length
+test_error of average_tuple
+test_error of harmonic_sum
+test_error of find_length
+test_error of bell_number
+test_error of string_to_tuple
+angle_complex Both a and b must be numeric values.
+test_error of sum_div
+test_error of extract_freq
+test_error of remove_nested
+test_error of is_polite
+long_words words must be a list
+test_error of start_withp
+test_error of find_length
+test_error of extract_freq
+angle_complex Both a and b must be numeric values.
+test_error of average_tuple
+Diff list expected at most 1 argument, got 2
+test_three_equal test_three_equal() takes 0 positional arguments but 3 were given
+test_error of find_sum
+test_error of remove_nested
+test_error of is_undulating
+test_error of is_polite
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+long_words words must be a list
+test_error of surfacearea_cylinder
+test_error of Diff
+test_error of find_sum
+angle_complex Both a and b must be numeric values.
+test_error of find_length
+test_error of remove_nested
+test_error of is_polite
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of Diff
+test_error of eulerian_num
+test_error of find_sum
+test_error of surfacearea_cylinder
+test_error of is_polite
+test_error of remove_nested
+long_words words must be a list
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+angle_complex Both a and b must be numeric values.
+test_error of find_sum
+test_error of Diff
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of surfacearea_cylinder
+test_error of find_length
+test_error of harmonic_sum
+long_words words must be a list
+test_error of eulerian_num
+test_error of surfacearea_cylinder
+test_three_equal test_three_equal() takes 0 positional arguments but 3 were given
+test_error of harmonic_sum
+test_error of find_length
+test_error of average_tuple
+test_error of harmonic_sum
+test_error of eulerian_num
+test_error of average_tuple
+test_error of harmonic_sum
+test_three_equal test_three_equal() takes 0 positional arguments but 3 were given
+test_error of eulerian_num
+test_error of average_tuple
+test_three_equal test_three_equal() takes 0 positional arguments but 3 were given
+test_error of dif_Square
+test_error of start_withp
+test_error of extract_freq
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of surfacearea_cylinder
+test_error of eulerian_num
+test_error of get_max_sum
+test_error of harmonic_sum
+test_error of bell_number
+test_error of remove_nested
+test_error of angle_complex
+test_error of sum_div
+test_error of extract_freq
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of string_to_tuple
+test_error of find_sum
+test_error of surfacearea_cylinder
+test_error of eulerian_num
+test_three_equal test_three_equal() takes 0 positional arguments but 3 were given
+test_error of harmonic_sum
+test_error of remove_nested
+test_error of bell_number
+test_error of is_polite
+test_error of angle_complex
+test_error of long_words
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of find_sum
+test_error of surfacearea_cylinder
+test_error of average_tuple
+test_error of harmonic_sum
+test_error of remove_nested
+test_error of eulerian_num
+test_error of long_words
+test_error of is_polite
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of find_length
+test_error of long_words
+test_error of is_polite
+test_error of angle_complex
+test_error of bell_number
+test_error of remove_nested
+test_error of find_sum
+test_error of harmonic_sum
+test_error of long_words
+test_error of is_polite
+test_error of surfacearea_cylinder
+test_error of average_tuple
+test_error of eulerian_num
+test_error of find_sum
+test_error of angle_complex
+test_error of rgb_to_hsv
+test_error of find_length
+test_error of bell_number
+test_error of average_tuple
+test_error of find_length
+test_error of average_tuple
+test_error of find_length
+test_error of extract_freq
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of surfacearea_cylinder
+test_error of start_withp
+test_error of eulerian_num
+test_error of max_product_tuple
+test_error of remove_nested
+test_error of bell_number
+test_error of sum_div
+test_error of angle_complex
+test_error of extract_freq
+test_error of surfacearea_cylinder
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_three_equal test_three_equal() takes 0 positional arguments but 3 were given
+test_error of rgb_to_hsv
+test_error of average_tuple
+test_error of harmonic_sum
+test_error of max_product_tuple
+test_error of is_polite
+test_error of remove_nested
+test_error of eulerian_num
+test_error of string_to_tuple
+test_error of bell_number
+test_error of find_length
+test_error of find_sum
+test_error of angle_complex
+test_error of surfacearea_cylinder
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of average_tuple
+test_error of long_words
+test_error of harmonic_sum
+test_error of remove_nested
+test_error of is_polite
+test_error of find_sum
+test_error of surfacearea_cylinder
+test_error of max_product_tuple
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of long_words
+test_error of average_tuple
+test_error of is_polite
+test_error of eulerian_num
+test_error of remove_nested
+test_error of long_words
+test_error of harmonic_sum
+test_error of find_sum
+test_error of bell_number
+test_error of is_polite
+test_error of average_tuple
+test_error of find_length
+test_three_equal test_three_equal() takes 0 positional arguments but 3 were given
+test_error of angle_complex
+test_error of long_words
+test_error of find_sum
+test_error of max_product_tuple
+test_error of harmonic_sum
+test_error of eulerian_num
+test_error of find_length
+test_error of bell_number
+test_error of angle_complex
+test_error of find_length
+test_error of extract_freq
+test_error of long_words
+angle_complex 'complex' object has no attribute 'phase'
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of remove_nested
+test_error of string_to_tuple
+test_error of bell_number
+test_error of surfacearea_cylinder
+test_error of start_withp
+test_error of extract_freq
+test_error of angle_complex
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of sum_div
+test_error of find_sum
+test_error of remove_nested
+test_error of round_and_sum
+test_error of find_length
+test_error of harmonic_sum
+test_error of k_smallest_pairs
+test_error of average_tuple
+test_error of is_polite
+test_error of surfacearea_cylinder
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of find_sum
+test_error of bell_number
+test_error of eulerian_num
+test_error of rgb_to_hsv
+test_error of average_tuple
+test_error of remove_nested
+test_error of harmonic_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of angle_complex
+test_error of find_sum
+test_error of is_polite
+test_error of round_and_sum
+test_error of remove_nested
+test_error of surfacearea_cylinder
+test_error of harmonic_sum
+test_error of find_sum
+test_error of find_length
+test_error of is_polite
+test_error of angle_complex
+test_error of average_tuple
+test_error of bell_number
+test_error of k_smallest_pairs
+test_error of is_polite
+test_error of eulerian_num
+test_error of surfacearea_cylinder
+test_error of round_and_sum
+test_error of harmonic_sum
+test_error of find_length
+test_error of average_tuple
+test_error of bell_number
+test_error of round_and_sum
+test_error of eulerian_num
+test_error of k_smallest_pairs
+test_error of find_length
+test_error of eulerian_num
+test_error of k_smallest_pairs
+test_error of max_product_tuple
+test_error of is_polite
+test_error of remove_nested
+test_error of angle_complex
+test_error of round_and_sum
+test_error of string_to_tuple
+test_error of start_withp
+test_error of rgb_to_hsv
+test_error of harmonic_sum
+test_error of surfacearea_cylinder
+test_error of average_tuple
+test_error of max_product_tuple
+test_error of is_polite
+test_error of remove_nested
+test_error of angle_complex
+test_error of eulerian_num
+test_error of round_and_sum
+test_error of bell_number
+test_error of find_sum
+test_error of find_length
+test_error of extract_freq
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of surfacearea_cylinder
+test_error of harmonic_sum
+test_error of average_tuple
+test_error of is_polite
+test_error of remove_nested
+test_error of sum_div
+test_error of long_words
+test_error of angle_complex
+test_error of find_sum
+test_error of extract_freq
+test_error of max_product_tuple
+test_error of surfacearea_cylinder
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of is_polite
+test_error of round_and_sum
+test_error of long_words
+test_error of angle_complex
+test_error of average_tuple
+test_error of remove_nested
+test_error of find_sum
+test_error of surfacearea_cylinder
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of long_words
+test_error of bell_number
+test_error of harmonic_sum
+test_error of eulerian_num
+test_error of find_sum
+test_error of find_length
+test_error of long_words
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of average_tuple
+test_error of max_product_tuple
+test_error of round_and_sum
+test_error of harmonic_sum
+test_error of bell_number
+test_error of find_length
+test_error of eulerian_num
+test_error of bell_number
+test_error of find_length
+test_error of eulerian_num
+test_error of angle_complex
+test_error of Diff
+test_error of harmonic_sum
+test_error of bell_number
+tuple_to_dict dictionary update sequence element #0 has length 3; 2 is required
+test_error of sum_div
+test_error of is_undulating
+test_error of angle_complex
+test_error of remove_nested
+test_error of long_words
+test_error of string_to_tuple
+test_error of round_and_sum
+test_error of surfacearea_cylinder
+test_error of Diff
+test_error of extract_freq
+test_error of average_tuple
+test_error of find_length
+test_error of start_withp
+test_error of harmonic_sum
+test_error of find_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of long_words
+test_error of rgb_to_hsv
+test_error of remove_nested
+test_error of surfacearea_cylinder
+test_error of round_and_sum
+test_error of extract_freq
+test_error of average_tuple
+test_error of bell_number
+test_error of angle_complex
+test_error of find_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of long_words
+test_error of surfacearea_cylinder
+test_error of harmonic_sum
+test_error of round_and_sum
+test_error of remove_nested
+test_error of find_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of long_words
+test_error of surfacearea_cylinder
+test_error of round_and_sum
+test_error of find_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of angle_complex
+test_error of remove_nested
+test_error of harmonic_sum
+test_error of find_length
+test_error of average_tuple
+test_error of bell_number
+test_error of find_length
+test_error of average_tuple
+test_error of bell_number
+test_error of find_length
+test_error of start_withp
+test_error of surfacearea_cylinder
+test_error of find_sum
+test_error of long_words
+test_error of average_tuple
+test_error of bell_number
+get_max_sum maximum recursion depth exceeded
+test_error of extract_freq
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of surfacearea_cylinder
+test_error of harmonic_sum
+test_error of find_length
+test_error of find_sum
+test_error of long_words
+test_error of is_polite
+test_error of average_tuple
+test_error of bell_number
+test_error of extract_freq
+test_error of string_to_tuple
+test_error of max_product_tuple
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of surfacearea_cylinder
+test_error of find_sum
+test_error of remove_nested
+test_error of long_words
+test_error of harmonic_sum
+test_error of is_polite
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of surfacearea_cylinder
+test_error of find_length
+test_error of angle_complex
+test_error of long_words
+test_error of find_sum
+test_error of is_polite
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of sum_div
+test_error of remove_nested
+test_error of average_tuple
+test_error of is_polite
+test_error of harmonic_sum
+test_error of bell_number
+test_error of max_product_tuple
+test_error of remove_nested
+test_error of angle_complex
+test_error of harmonic_sum
+test_error of find_length
+test_error of remove_nested
+test_error of average_tuple
+test_error of max_product_tuple
+test_error of bell_number
+test_error of angle_complex
+test_error of find_length
+test_error of max_product_tuple
+test_error of angle_complex
+test_error of rgb_to_hsv
+test_error of average_tuple
+test_error of find_length
+test_error of angle_complex
+test_error of long_words
+test_error of surfacearea_cylinder
+test_error of remove_nested
+test_error of average_tuple
+test_error of string_to_tuple
+test_error of find_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of sum_div
+test_error of start_withp
+test_error of is_undulating
+test_error of extract_freq
+get_max_sum maximum recursion depth exceeded
+test_error of bell_number
+test_error of angle_complex
+test_error of rgb_to_hsv
+test_error of long_words
+test_error of harmonic_sum
+test_error of find_length
+test_error of surfacearea_cylinder
+test_error of average_tuple
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of find_sum
+test_error of extract_freq
+test_error of remove_nested
+test_error of angle_complex
+test_error of long_words
+test_error of surfacearea_cylinder
+eulerian_num maximum recursion depth exceeded in comparison
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of average_tuple
+test_error of angle_complex
+test_error of find_sum
+test_error of long_words
+test_error of remove_nested
+test_error of surfacearea_cylinder
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of find_sum
+test_error of bell_number
+test_error of harmonic_sum
+test_error of find_length
+test_error of remove_nested
+test_error of eulerian_num
+test_error of rgb_to_hsv
+test_error of eulerian_num
+test_error of find_length
+test_error of harmonic_sum
+test_error of bell_number
+test_error of eulerian_num
+test_error of harmonic_sum
+test_error of bell_number
+test_error of surfacearea_cylinder
+test_error of long_words
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of harmonic_sum
+test_error of bell_number
+test_error of angle_complex
+test_error of find_length
+test_error of surfacearea_cylinder
+test_error of remove_nested
+test_error of find_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of extract_freq
+test_error of start_withp
+test_error of sum_div
+test_error of harmonic_sum
+test_error of average_tuple
+test_error of string_to_tuple
+test_error of bell_number
+test_error of average_tuple
+test_error of extract_freq
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of find_sum
+test_error of remove_nested
+test_error of surfacearea_cylinder
+test_error of angle_complex
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of find_sum
+test_error of rgb_to_hsv
+test_error of remove_nested
+test_error of find_length
+test_error of harmonic_sum
+test_error of surfacearea_cylinder
+test_error of find_sum
+test_error of average_tuple
+test_error of remove_nested
+test_error of bell_number
+test_error of angle_complex
+test_error of harmonic_sum
+test_error of find_length
+test_error of average_tuple
+test_error of bell_number
+test_error of angle_complex
+test_error of find_length
+test_error of surfacearea_cylinder
+test_error of harmonic_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of string_to_tuple
+test_error of average_tuple
+test_error of long_words
+test_error of start_withp
+test_error of surfacearea_cylinder
+test_error of find_sum
+test_error of extract_freq
+test_error of harmonic_sum
+test_error of find_length
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of average_tuple
+test_error of surfacearea_cylinder
+test_error of find_sum
+test_error of extract_freq
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of harmonic_sum
+test_error of average_tuple
+test_error of find_length
+test_error of find_sum
+test_error of surfacearea_cylinder
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of harmonic_sum
+test_error of find_sum
+test_error of average_tuple
+test_error of find_length
+test_error of sum_div
+test_error of find_length
+test_error of angle_complex
+test_error of angle_complex
+test_error of bell_number
+test_error of angle_complex
+test_error of angle_complex
+test_error of remove_nested
+test_error of bell_number
+test_error of remove_nested
+test_error of remove_nested
+test_error of remove_nested
+test_error of bell_number
+test_error of rgb_to_hsv
+test_error of bell_number
+test_error of harmonic_sum
+test_error of surfacearea_cylinder
+test_error of string_to_tuple
+test_error of find_length
+test_error of extract_freq
+test_error of find_sum
+test_error of surfacearea_cylinder
+test_error of long_words
+test_error of average_tuple
+test_error of harmonic_sum
+test_error of extract_freq
+test_error of bell_number
+test_error of find_sum
+test_error of average_tuple
+test_error of surfacearea_cylinder
+test_error of find_length
+test_error of harmonic_sum
+test_error of find_sum
+test_error of bell_number
+test_error of surfacearea_cylinder
+test_error of rgb_to_hsv
+test_error of average_tuple
+test_error of find_length
+test_error of find_sum
+test_error of harmonic_sum
+test_error of bell_number
+test_error of average_tuple
+test_error of remove_nested
+test_error of angle_complex
+test_error of find_length
+test_error of sum_div
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of remove_nested
+test_error of start_withp
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of angle_complex
+test_error of remove_nested
+test_error of bell_number
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of remove_nested
+test_error of angle_complex
+test_error of angle_complex
+test_error of surfacearea_cylinder
+test_error of long_words
+test_error of extract_freq
+test_error of sum_div
+test_error of string_to_tuple
+test_error of angle_complex
+test_error of start_withp
+test_error of surfacearea_cylinder
+test_error of find_length
+test_error of extract_freq
+test_error of average_tuple
+test_error of remove_nested
+test_error of bell_number
+test_error of surfacearea_cylinder
+test_error of angle_complex
+test_error of average_tuple
+test_error of find_length
+test_error of remove_nested
+test_error of surfacearea_cylinder
+test_error of rgb_to_hsv
+test_error of bell_number
+test_error of angle_complex
+test_error of average_tuple
+test_error of remove_nested
+test_error of find_length
+test_error of bell_number
+test_error of angle_complex
+test_error of remove_nested
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of average_tuple
+test_error of find_sum
+test_error of find_length
+test_error of harmonic_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of find_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of bell_number
+test_error of find_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of harmonic_sum
+test_error of find_sum
+test_error of harmonic_sum
+test_error of harmonic_sum
+test_error of surfacearea_cylinder
+test_error of extract_freq
+test_error of find_length
+test_error of surfacearea_cylinder
+test_error of start_withp
+test_error of extract_freq
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of find_length
+test_error of surfacearea_cylinder
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of surfacearea_cylinder
+test_error of rgb_to_hsv
+test_error of find_length
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of string_to_tuple
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of average_tuple
+test_error of harmonic_sum
+test_error of sum_div
+test_error of find_length
+test_error of long_words
+test_error of find_sum
+test_error of average_tuple
+test_error of angle_complex
+test_error of find_sum
+test_error of bell_number
+test_error of remove_nested
+test_error of find_sum
+test_error of harmonic_sum
+test_error of angle_complex
+test_error of find_sum
+test_error of average_tuple
+test_error of remove_nested
+test_error of remove_nested
+test_error of bell_number
+test_error of harmonic_sum
+test_error of angle_complex
+test_error of average_tuple
+test_error of remove_nested
+test_error of bell_number
+test_error of harmonic_sum
+test_error of angle_complex
+test_error of bell_number
+test_error of harmonic_sum
+test_error of sum_div
+test_error of extract_freq
+test_error of angle_complex
+test_error of start_withp
+test_error of find_sum
+test_error of average_tuple
+test_error of harmonic_sum
+test_error of extract_freq
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of angle_complex
+test_error of find_sum
+test_error of average_tuple
+test_error of bell_number
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of harmonic_sum
+test_error of find_sum
+test_error of angle_complex
+test_error of average_tuple
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of bell_number
+test_error of find_sum
+test_error of surfacearea_cylinder
+test_error of harmonic_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of average_tuple
+test_error of angle_complex
+test_error of string_to_tuple
+test_error of long_words
+test_error of surfacearea_cylinder
+test_error of bell_number
+test_error of remove_nested
+test_error of surfacearea_cylinder
+test_error of remove_nested
+test_error of find_length
+test_error of bell_number
+test_error of surfacearea_cylinder
+test_error of remove_nested
+test_error of remove_nested
+test_error of find_length
+test_error of rgb_to_hsv
+test_error of find_length
+test_error of find_length
+test_error of string_to_tuple
+test_error of long_words
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of sum_div
+test_error of surfacearea_cylinder
+test_error of angle_complex
+test_error of extract_freq
+test_error of find_sum
+test_error of harmonic_sum
+test_error of start_withp
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of extract_freq
+test_error of surfacearea_cylinder
+test_error of find_sum
+test_error of bell_number
+test_error of angle_complex
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of harmonic_sum
+test_error of find_sum
+test_error of surfacearea_cylinder
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of angle_complex
+test_error of bell_number
+test_error of harmonic_sum
+test_error of find_sum
+test_error of surfacearea_cylinder
+test_error of angle_complex
+test_error of harmonic_sum
+test_error of bell_number
+test_error of average_tuple
+test_error of remove_nested
+test_error of find_length
+test_error of average_tuple
+test_error of remove_nested
+test_error of remove_nested
+test_error of bell_number
+test_error of average_tuple
+test_error of find_length
+test_error of remove_nested
+test_error of average_tuple
+test_error of find_length
+test_error of rgb_to_hsv
+test_error of find_length
+test_error of surfacearea_cylinder
+test_error of harmonic_sum
+test_error of start_withp
+test_error of long_words
+test_error of extract_freq
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of find_length
+test_error of surfacearea_cylinder
+test_error of find_sum
+test_error of extract_freq
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of harmonic_sum
+test_error of bell_number
+test_error of surfacearea_cylinder
+test_error of find_sum
+test_error of find_length
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of surfacearea_cylinder
+test_error of find_sum
+test_error of harmonic_sum
+test_error of bell_number
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of find_length
+test_error of find_sum
+test_error of harmonic_sum
+test_error of average_tuple
+test_error of bell_number
+test_error of string_to_tuple
+test_error of find_length
+test_error of sum_div
+test_error of angle_complex
+test_error of average_tuple
+test_error of is_polite
+test_error of remove_nested
+test_error of angle_complex
+test_error of bell_number
+test_error of remove_nested
+test_error of average_tuple
+test_error of is_polite
+test_error of remove_nested
+test_error of angle_complex
+test_error of remove_nested
+test_error of average_tuple
+test_error of is_polite
+test_error of angle_complex
+test_error of rgb_to_hsv
+test_error of is_polite
+test_error of is_polite
+test_error of eulerian_num
+test_error of surfacearea_cylinder
+test_error of is_polite
+test_error of sum_div
+test_error of find_length
+test_error of rgb_to_hsv
+test_error of is_polite
+test_error of angle_complex
+test_error of surfacearea_cylinder
+test_error of sum_div
+test_error of find_length
+test_error of remove_nested
+test_error of is_polite
+test_error of rgb_to_hsv
+test_error of surfacearea_cylinder
+test_error of sum_div
+test_error of find_length
+test_error of remove_nested
+test_error of surfacearea_cylinder
+test_error of sum_div
+test_error of bell_number
+test_error of remove_nested
+test_error of find_length
+test_error of bell_number
+test_error of remove_nested
+test_error of bell_number
+test_error of bell_number
+test_error of surfacearea_cylinder
+test_error of long_words
+test_error of extract_freq
+test_error of average_tuple
+test_error of is_polite
+test_error of start_withp
+get_max_sum maximum recursion depth exceeded
+test_error of bell_number
+test_error of surfacearea_cylinder
+test_error of find_sum
+test_error of extract_freq
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of harmonic_sum
+test_error of find_length
+test_error of sum_div
+test_error of rgb_to_hsv
+test_error of average_tuple
+test_error of remove_nested
+test_error of angle_complex
+test_error of is_polite
+test_error of surfacearea_cylinder
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of find_sum
+test_error of string_to_tuple
+test_error of average_tuple
+test_error of is_polite
+test_error of surfacearea_cylinder
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of find_sum
+test_error of is_polite
+test_error of average_tuple
+test_error of bell_number
+test_error of harmonic_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of remove_nested
+test_error of find_sum
+test_error of remove_nested
+test_error of harmonic_sum
+test_error of remove_nested
+test_error of bell_number
+test_error of harmonic_sum
+test_error of bell_number
+test_error of extract_freq
+test_error of average_tuple
+test_error of surfacearea_cylinder
+test_error of angle_complex
+test_error of find_length
+test_error of long_words
+test_error of start_withp
+test_error of sum_div
+tuple_to_dict dictionary update sequence element #0 has length 3; 2 is required
+test_error of string_to_tuple
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of find_sum
+test_error of bell_number
+test_error of extract_freq
+test_error of average_tuple
+test_error of surfacearea_cylinder
+test_error of angle_complex
+test_error of round_and_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of find_length
+test_error of is_polite
+test_error of harmonic_sum
+test_error of average_tuple
+test_error of remove_nested
+test_error of find_sum
+test_error of angle_complex
+test_error of rgb_to_hsv
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of average_tuple
+test_error of surfacearea_cylinder
+test_error of angle_complex
+test_error of bell_number
+test_error of remove_nested
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of is_polite
+test_error of round_and_sum
+test_error of is_polite
+test_error of harmonic_sum
+test_error of find_length
+test_error of remove_nested
+test_error of find_sum
+test_error of surfacearea_cylinder
+test_error of is_polite
+test_error of remove_nested
+test_error of bell_number
+test_error of round_and_sum
+test_error of harmonic_sum
+test_error of find_length
+test_error of find_sum
+test_error of bell_number
+test_error of round_and_sum
+test_error of harmonic_sum
+test_error of string_to_tuple
+test_error of surfacearea_cylinder
+test_error of harmonic_sum
+test_error of extract_freq
+test_error of angle_complex
+test_error of start_withp
+test_error of sum_div
+test_error of surfacearea_cylinder
+test_error of remove_nested
+test_error of bell_number
+test_error of extract_freq
+test_error of angle_complex
+test_error of harmonic_sum
+test_error of surfacearea_cylinder
+test_error of average_tuple
+test_error of remove_nested
+test_error of bell_number
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of angle_complex
+get_max_sum maximum recursion depth exceeded
+test_error of long_words
+test_error of find_sum
+test_error of average_tuple
+test_error of harmonic_sum
+test_error of surfacearea_cylinder
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of angle_complex
+test_error of remove_nested
+test_error of find_sum
+test_error of average_tuple
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of bell_number
+test_error of find_sum
+test_error of average_tuple
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of harmonic_sum
+test_error of rgb_to_hsv
+test_error of find_sum
+test_error of remove_nested
+test_error of bell_number
+test_error of find_length
+test_error of string_to_tuple
+test_error of start_withp
+test_error of extract_freq
+test_error of long_words
+test_error of average_tuple
+test_error of round_and_sum
+test_error of angle_complex
+test_error of surfacearea_cylinder
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of sum_div
+test_error of find_sum
+test_error of find_length
+test_error of remove_nested
+test_error of max_product_tuple
+test_error of extract_freq
+test_error of average_tuple
+test_error of long_words
+test_error of harmonic_sum
+test_error of surfacearea_cylinder
+test_error of angle_complex
+test_error of round_and_sum
+test_error of is_polite
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of eulerian_num
+test_error of find_sum
+test_error of remove_nested
+test_error of max_product_tuple
+test_error of long_words
+test_error of surfacearea_cylinder
+test_error of average_tuple
+test_error of angle_complex
+test_error of round_and_sum
+test_error of harmonic_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of is_polite
+test_error of find_sum
+test_error of eulerian_num
+test_error of remove_nested
+test_error of long_words
+test_error of max_product_tuple
+test_error of surfacearea_cylinder
+test_error of Diff
+test_error of angle_complex
+test_error of round_and_sum
+test_error of is_polite
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of find_sum
+test_error of average_tuple
+test_error of harmonic_sum
+test_error of Diff
+test_error of is_polite
+test_error of remove_nested
+test_error of max_product_tuple
+test_error of eulerian_num
+test_error of harmonic_sum
+test_error of rgb_to_hsv
+test_error of eulerian_num
+test_error of string_to_tuple
+test_error of find_sum
+test_error of sum_div
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of round_and_sum
+test_error of harmonic_sum
+test_error of max_product_tuple
+test_error of remove_nested
+test_error of long_words
+test_error of find_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of round_and_sum
+test_error of harmonic_sum
+test_error of max_product_tuple
+test_error of remove_nested
+test_error of find_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of eulerian_num
+test_error of surfacearea_cylinder
+test_error of round_and_sum
+test_error of angle_complex
+test_error of max_product_tuple
+test_error of harmonic_sum
+test_error of find_sum
+test_error of remove_nested
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of start_withp
+test_error of extract_freq
+test_error of find_length
+test_error of angle_complex
+test_error of average_tuple
+test_error of surfacearea_cylinder
+test_error of eulerian_num
+test_error of extract_freq
+test_error of round_and_sum
+test_error of max_product_tuple
+test_error of angle_complex
+test_error of harmonic_sum
+test_error of remove_nested
+test_error of average_tuple
+test_error of is_polite
+test_error of large_product
+test_error of angle_complex
+test_error of bell_number
+test_error of average_tuple
+test_error of surfacearea_cylinder
+test_error of rgb_to_hsv
+test_error of is_polite
+test_error of average_tuple
+test_error of find_length
+test_error of is_polite
+test_error of eulerian_num
+test_error of is_polite
+test_error of surfacearea_cylinder
+test_error of bell_number
+test_error of find_length
+test_error of eulerian_num
+test_error of bell_number
+test_error of large_product
+test_error of find_length
+test_error of bell_number
+test_error of large_product
+test_error of large_product
+test_error of string_to_tuple
+test_error of harmonic_sum
+test_error of start_withp
+test_error of extract_freq
+test_error of eulerian_num
+test_error of long_words
+test_error of is_polite
+test_error of remove_nested
+test_error of round_and_sum
+test_error of harmonic_sum
+test_error of surfacearea_cylinder
+test_error of bell_number
+test_error of extract_freq
+test_error of eulerian_num
+test_error of is_polite
+test_error of remove_nested
+test_error of surfacearea_cylinder
+test_error of round_and_sum
+test_error of harmonic_sum
+test_error of bell_number
+test_error of is_polite
+test_error of remove_nested
+test_error of sum_div
+test_error of eulerian_num
+test_error of average_tuple
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of surfacearea_cylinder
+test_error of is_polite
+test_error of round_and_sum
+test_error of harmonic_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of average_tuple
+test_error of find_sum
+test_error of remove_nested
+test_error of bell_number
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of angle_complex
+test_error of average_tuple
+test_error of find_sum
+test_error of large_product
+test_error of surfacearea_cylinder
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of angle_complex
+test_error of average_tuple
+test_error of find_length
+test_error of rgb_to_hsv
+test_error of find_sum
+test_error of round_and_sum
+test_error of eulerian_num
+test_error of angle_complex
+test_error of find_sum
+test_error of bell_number
+test_error of angle_complex
+test_error of find_length
+test_error of large_product
+test_error of find_length
+test_error of find_length
+test_error of large_product
+test_error of large_product
+test_error of extract_freq
+test_error of remove_nested
+test_error of bell_number
+test_error of start_withp
+test_error of sum_div
+test_error of is_polite
+test_error of angle_complex
+test_error of extract_freq
+test_error of surfacearea_cylinder
+test_error of round_and_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of remove_nested
+test_error of bell_number
+test_error of is_polite
+test_error of large_product
+test_error of angle_complex
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of surfacearea_cylinder
+test_error of round_and_sum
+test_error of remove_nested
+test_error of is_polite
+test_error of bell_number
+test_error of harmonic_sum
+test_error of angle_complex
+test_error of find_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of surfacearea_cylinder
+test_error of rgb_to_hsv
+test_error of is_polite
+test_error of remove_nested
+test_error of round_and_sum
+test_error of string_to_tuple
+test_error of angle_complex
+test_error of find_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of long_words
+test_error of large_product
+test_error of average_tuple
+test_error of find_length
+test_error of harmonic_sum
+test_error of find_sum
+test_error of average_tuple
+test_error of bell_number
+test_error of surfacearea_cylinder
+test_error of find_sum
+test_error of round_and_sum
+test_error of average_tuple
+test_error of average_tuple
+test_error of harmonic_sum
+test_error of harmonic_sum
+test_error of large_product
+test_error of large_product
+test_error of string_to_tuple
+harmonic_sum name 'math' is not defined
+test_error of angle_complex
+test_error of sum_div
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of remove_nested
+test_error of surfacearea_cylinder
+test_error of extract_freq
+test_error of harmonic_sum
+test_error of start_withp
+test_error of is_polite
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of remove_nested
+test_error of surfacearea_cylinder
+test_error of extract_freq
+test_error of harmonic_sum
+test_error of rgb_to_hsv
+test_error of is_polite
+test_error of round_and_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of remove_nested
+test_error of bell_number
+test_error of average_tuple
+test_error of surfacearea_cylinder
+test_error of is_polite
+test_error of find_length
+test_error of get_max_sum
+test_error of harmonic_sum
+test_error of find_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of long_words
+test_error of round_and_sum
+test_error of average_tuple
+test_error of is_polite
+test_error of long_words
+test_error of find_sum
+test_error of remove_nested
+test_error of surfacearea_cylinder
+test_error of round_and_sum
+test_error of long_words
+test_error of bell_number
+test_error of rgb_to_hsv
+test_error of long_words
+test_error of find_sum
+test_error of round_and_sum
+test_error of find_sum
+test_error of average_tuple
+test_error of bell_number
+test_error of average_tuple
+test_error of bell_number
+test_error of long_words
+test_error of find_sum
+test_error of average_tuple
+test_error of find_length
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of harmonic_sum
+test_error of start_withp
+test_error of eulerian_num
+test_error of extract_freq
+test_error of bell_number
+test_error of sum_div
+test_error of round_and_sum
+test_error of surfacearea_cylinder
+test_error of remove_nested
+test_error of k_smallest_pairs
+test_error of angle_complex
+test_error of find_sum
+test_error of average_tuple
+test_error of find_length
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of harmonic_sum
+test_error of extract_freq
+test_error of eulerian_num
+test_error of surfacearea_cylinder
+test_error of bell_number
+test_error of angle_complex
+test_error of find_sum
+test_error of round_and_sum
+test_error of average_tuple
+test_error of remove_nested
+test_error of string_to_tuple
+test_error of k_smallest_pairs
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of find_length
+test_error of harmonic_sum
+test_error of angle_complex
+test_error of find_sum
+test_error of eulerian_num
+test_error of surfacearea_cylinder
+test_error of average_tuple
+test_error of bell_number
+test_error of round_and_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of remove_nested
+test_error of rgb_to_hsv
+test_error of angle_complex
+test_error of find_length
+test_error of harmonic_sum
+test_error of is_polite
+test_error of k_smallest_pairs
+test_error of surfacearea_cylinder
+test_error of round_and_sum
+test_error of remove_nested
+test_error of eulerian_num
+test_error of is_polite
+test_error of bell_number
+test_error of is_polite
+test_error of is_polite
+test_error of k_smallest_pairs
+test_error of long_words
+test_error of angle_complex
+test_error of find_sum
+test_error of string_to_tuple
+test_error of round_and_sum
+test_error of remove_nested
+test_error of sum_div
+test_error of is_polite
+test_error of angle_complex
+test_error of find_length
+test_error of average_tuple
+test_error of find_sum
+test_error of round_and_sum
+test_error of remove_nested
+test_error of angle_complex
+test_error of is_polite
+test_error of average_tuple
+test_error of find_sum
+test_error of find_length
+test_error of extract_freq
+test_error of round_and_sum
+test_error of remove_nested
+test_error of rgb_to_hsv
+test_error of is_polite
+test_error of angle_complex
+test_error of average_tuple
+test_error of find_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of bell_number
+test_error of extract_freq
+test_error of start_withp
+test_error of is_polite
+test_error of surfacearea_cylinder
+test_error of find_length
+test_error of harmonic_sum
+test_error of average_tuple
+test_error of round_and_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of remove_nested
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of surfacearea_cylinder
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of harmonic_sum
+test_error of find_length
+test_error of bell_number
+test_error of surfacearea_cylinder
+test_error of harmonic_sum
+test_error of surfacearea_cylinder
+test_error of bell_number
+test_error of harmonic_sum
+test_error of bell_number
+test_error of large_product
+test_error of large_product
+test_error of large_product
+test_error of large_product
+test_error of remove_nested
+test_error of harmonic_sum
+test_error of max_product_tuple
+test_error of average_tuple
+test_error of string_to_tuple
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of sum_div
+test_error of start_withp
+test_error of large_product
+test_error of find_sum
+test_error of remove_nested
+test_error of bell_number
+test_error of harmonic_sum
+test_error of average_tuple
+test_error of max_product_tuple
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of find_sum
+test_error of remove_nested
+test_error of large_product
+test_error of bell_number
+test_error of max_product_tuple
+test_error of average_tuple
+test_error of harmonic_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of find_sum
+test_error of surfacearea_cylinder
+test_error of remove_nested
+test_error of is_polite
+test_error of average_tuple
+test_error of rgb_to_hsv
+test_error of extract_freq
+test_error of large_product
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of bell_number
+test_error of harmonic_sum
+test_error of find_sum
+test_error of extract_freq
+test_error of angle_complex
+test_error of round_and_sum
+test_error of surfacearea_cylinder
+test_error of is_polite
+test_error of angle_complex
+test_error of find_length
+test_error of long_words
+test_error of is_polite
+test_error of long_words
+test_error of angle_complex
+test_error of surfacearea_cylinder
+test_error of long_words
+test_error of round_and_sum
+test_error of bell_number
+test_error of angle_complex
+test_error of long_words
+test_error of large_product
+test_error of is_polite
+test_error of surfacearea_cylinder
+test_error of round_and_sum
+test_error of round_and_sum
+test_error of long_words
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of start_withp
+test_error of surfacearea_cylinder
+test_error of round_and_sum
+test_error of extract_freq
+test_error of find_length
+test_error of find_sum
+test_error of average_tuple
+test_error of max_product_tuple
+test_error of string_to_tuple
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of is_polite
+test_error of surfacearea_cylinder
+test_error of rgb_to_hsv
+test_error of bell_number
+test_error of extract_freq
+test_error of round_and_sum
+test_error of find_sum
+test_error of average_tuple
+test_error of max_product_tuple
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of is_polite
+test_error of surfacearea_cylinder
+test_error of find_sum
+test_error of round_and_sum
+test_error of average_tuple
+test_error of bell_number
+test_error of harmonic_sum
+test_error of max_product_tuple
+test_error of is_polite
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of remove_nested
+test_error of angle_complex
+test_error of surfacearea_cylinder
+test_error of sum_div
+test_error of find_sum
+test_error of average_tuple
+test_error of is_polite
+test_error of angle_complex
+test_error of round_and_sum
+test_error of harmonic_sum
+test_error of max_product_tuple
+test_error of angle_complex
+test_error of remove_nested
+test_error of bell_number
+test_error of angle_complex
+test_error of large_product
+test_error of harmonic_sum
+test_error of remove_nested
+test_error of bell_number
+test_error of remove_nested
+test_error of harmonic_sum
+test_error of large_product
+test_error of large_product
+test_error of large_product
+test_error of string_to_tuple
+test_error of sum_div
+test_error of remove_nested
+test_error of angle_complex
+test_error of average_tuple
+test_error of long_words
+test_error of bell_number
+test_error of remove_nested
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of rgb_to_hsv
+test_error of angle_complex
+test_error of average_tuple
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of remove_nested
+test_error of angle_complex
+test_error of bell_number
+test_error of average_tuple
+test_error of extract_freq
+test_error of harmonic_sum
+test_error of rgb_to_hsv
+test_error of start_withp
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of angle_complex
+test_error of find_sum
+test_error of is_polite
+test_error of average_tuple
+test_error of remove_nested
+test_error of surfacearea_cylinder
+test_error of k_smallest_pairs
+test_error of extract_freq
+test_error of round_and_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of harmonic_sum
+test_error of find_sum
+test_error of bell_number
+test_error of is_polite
+test_error of surfacearea_cylinder
+test_error of find_sum
+test_error of is_polite
+test_error of find_length
+test_error of is_polite
+test_error of find_sum
+test_error of round_and_sum
+test_error of harmonic_sum
+test_error of surfacearea_cylinder
+test_error of bell_number
+test_error of round_and_sum
+test_error of harmonic_sum
+test_error of surfacearea_cylinder
+test_error of round_and_sum
+harmonic_sum name 'math' is not defined
+test_error of extract_freq
+test_error of surfacearea_cylinder
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of start_withp
+get_max_sum maximum recursion depth exceeded
+test_error of extract_freq
+test_error of harmonic_sum
+test_error of surfacearea_cylinder
+test_error of string_to_tuple
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of bell_number
+test_error of surfacearea_cylinder
+test_error of harmonic_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of bell_number
+test_error of average_tuple
+test_error of sum_div
+test_error of angle_complex
+test_error of surfacearea_cylinder
+test_error of remove_nested
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of long_words
+test_error of find_sum
+test_error of average_tuple
+test_error of angle_complex
+test_error of harmonic_sum
+test_error of find_sum
+test_error of angle_complex
+test_error of average_tuple
+test_error of find_sum
+test_error of angle_complex
+test_error of remove_nested
+test_error of average_tuple
+test_error of bell_number
+test_error of find_length
+test_error of find_sum
+test_error of rgb_to_hsv
+test_error of remove_nested
+test_error of bell_number
+test_error of remove_nested
+test_error of find_length
+test_error of find_length
+test_error of find_length
+multiply_int EOL while scanning string literal (<string>, line 2)
+count_X EOL while scanning string literal (<string>, line 2)
+Find_Max_Length EOL while scanning string literal (<string>, line 2)
+surfacearea_sphere EOL while scanning string literal (<string>, line 2)
+empty_list EOL while scanning string literal (<string>, line 2)
+rear_extract EOL while scanning string literal (<string>, line 2)
+find_Volume invalid syntax (<string>, line 2)
+find_star_num invalid syntax (<string>, line 2)
+minimum EOL while scanning string literal (<string>, line 2)
+multiply_elements EOL while scanning string literal (<string>, line 2)
+kth_element EOL while scanning string literal (<string>, line 2)
+left_insertion EOL while scanning string literal (<string>, line 2)
+volume_cylinder EOL while scanning string literal (<string>, line 2)
+max_sum_list EOL while scanning string literal (<string>, line 2)
+round_and_sum invalid syntax (<string>, line 2)
+sum_list EOL while scanning string literal (<string>, line 2)
+find_Parity EOL while scanning string literal (<string>, line 2)
+string_to_tuple EOL while scanning string literal (<string>, line 2)
+number_of_substrings invalid syntax (<string>, line 2)
+subject_marks EOL while scanning string literal (<string>, line 2)
+sequential_search invalid syntax (<string>, line 2)
+average_tuple EOL while scanning string literal (<string>, line 2)
+left_rotate invalid syntax (<string>, line 2)
+median_trapezium invalid syntax (<string>, line 2)
+sum_series invalid syntax (<string>, line 2)
+sum_div invalid syntax (<string>, line 2)
+check_min_heap EOL while scanning string literal (<string>, line 2)
+angle_complex EOL while scanning string literal (<string>, line 2)
+find_length invalid syntax (<string>, line 2)
+divisible_by_digits invalid syntax (<string>, line 2)
+long_words invalid syntax (<string>, line 2)
+validate EOL while scanning string literal (<string>, line 2)
+is_Diff invalid syntax (<string>, line 2)
+max_product_tuple invalid syntax (<string>, line 2)
+Find_Max_Length name 'Find_Max_Length' is not defined
+max_run_uppercase invalid syntax (<string>, line 2)
+max_occurrences EOL while scanning string literal (<string>, line 2)
+is_undulating invalid syntax (<string>, line 2)
+count_rotation invalid syntax (<string>, line 2)
+max_subarray_product invalid syntax (<string>, line 2)
+find_sum invalid syntax (<string>, line 2)
+large_product invalid syntax (<string>, line 2)
+test_error of string_to_tuple
+remove_nested EOL while scanning string literal (<string>, line 2)
+test_error of sum_div
+median_trapezium median_trapezium() takes 2 positional arguments but 3 were given
+test_error of average_tuple
+test_error of find_length
+is_polite invalid syntax (<string>, line 2)
+test_error of angle_complex
+test_error of find_sum
+magic_square_test invalid syntax (<string>, line 2)
+test_error of string_to_tuple
+test_error of remove_nested
+test_error of average_tuple
+test_error of angle_complex
+rgb_to_hsv EOL while scanning string literal (<string>, line 2)
+test_error of find_sum
+test_error of string_to_tuple
+test_error of remove_nested
+test_error of average_tuple
+test_error of angle_complex
+test_error of find_sum
+volume_cube EOL while scanning string literal (<string>, line 2)
+remove_whitespaces EOL while scanning string literal (<string>, line 2)
+dif_Square invalid syntax (<string>, line 2)
+test_error of rgb_to_hsv
+last_Digit_Factorial EOL while scanning string literal (<string>, line 2)
+test_error of remove_nested
+pos_count invalid syntax (<string>, line 2)
+area_polygon EOL while scanning string literal (<string>, line 2)
+harmonic_sum EOL while scanning string literal (<string>, line 2)
+unique_product EOL while scanning string literal (<string>, line 2)
+opposite_Signs invalid syntax (<string>, line 2)
+extract_index_list invalid syntax (<string>, line 2)
+jacobsthal_num invalid syntax (<string>, line 2)
+check_answer EOL while scanning string literal (<string>, line 2)
+hexagonal_num EOL while scanning string literal (<string>, line 2)
+surfacearea_cylinder EOL while scanning string literal (<string>, line 2)
+_sum EOL while scanning string literal (<string>, line 2)
+find_Odd_Pair invalid syntax (<string>, line 2)
+extract_freq EOL while scanning string literal (<string>, line 2)
+freq_count EOL while scanning string literal (<string>, line 2)
+maximum EOL while scanning string literal (<string>, line 2)
+max_Abs_Diff EOL while scanning string literal (<string>, line 2)
+similar_elements EOL while scanning string literal (<string>, line 2)
+count_Substrings invalid syntax (<string>, line 2)
+second_smallest EOL while scanning string literal (<string>, line 2)
+tuple_to_dict EOL while scanning string literal (<string>, line 2)
+start_withp EOL while scanning string literal (<string>, line 2)
+sum_digits invalid syntax (<string>, line 2)
+Diff invalid syntax (<string>, line 2)
+find_lucas invalid syntax (<string>, line 2)
+reverse_vowels invalid syntax (<string>, line 2)
+text_match_zero_one EOL while scanning string literal (<string>, line 2)
+bell_number invalid syntax (<string>, line 2)
+test_error of extract_freq
+test_error of surfacearea_cylinder
+Diff name 'Diff' is not defined
+get_max_sum invalid syntax (<string>, line 2)
+k_smallest_pairs invalid syntax (<string>, line 2)
+test_error of start_withp
+test_three_equal invalid syntax (<string>, line 2)
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+Diff name 'Diff' is not defined
+eulerian_num invalid syntax (<string>, line 2)
+test_error of bell_number
+test_error of start_withp
+test_three_equal name 'test_three_equal' is not defined
+Diff name 'Diff' is not defined
+test_error of surfacearea_cylinder
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of bell_number
+test_three_equal name 'test_three_equal' is not defined
+test_error of start_withp
+is_majority EOL while scanning string literal (<string>, line 2)
+test_error of bell_number
+test_three_equal name 'test_three_equal' is not defined
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of surfacearea_cylinder
+area_polygon name 'math' is not defined
+test_error of string_to_tuple
+harmonic_sum name 'math' is not defined
+test_error of surfacearea_cylinder
+test_error of angle_complex
+test_error of sum_div
+test_error of find_sum
+test_error of start_withp
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of long_words
+test_error of harmonic_sum
+test_error of surfacearea_cylinder
+test_error of remove_nested
+test_error of angle_complex
+test_error of find_sum
+test_error of eulerian_num
+test_error of is_polite
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of long_words
+test_error of surfacearea_cylinder
+test_error of harmonic_sum
+test_error of remove_nested
+test_error of find_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of angle_complex
+test_error of long_words
+test_error of is_polite
+test_error of eulerian_num
+test_error of surfacearea_cylinder
+test_error of find_sum
+test_error of remove_nested
+test_error of harmonic_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of long_words
+test_error of is_polite
+test_error of angle_complex
+test_error of rgb_to_hsv
+test_error of eulerian_num
+test_error of extract_freq
+test_error of remove_nested
+test_error of large_product
+test_error of is_polite
+test_error of extract_freq
+test_error of average_tuple
+test_error of eulerian_num
+test_error of find_length
+test_error of average_tuple
+test_error of bell_number
+test_error of average_tuple
+test_error of find_length
+test_error of bell_number
+test_error of large_product
+test_error of average_tuple
+test_error of find_length
+test_error of bell_number
+test_error of find_length
+test_error of bell_number
+test_error of large_product
+test_error of large_product
+pos_count EOL while scanning string literal (<string>, line 2)
+freq_count EOL while scanning string literal (<string>, line 2)
+_sum invalid syntax (<string>, line 2)
+find_Parity invalid syntax (<string>, line 2)
+maximum invalid syntax (<string>, line 2)
+surfacearea_cylinder EOL while scanning string literal (<string>, line 2)
+harmonic_sum invalid syntax (<string>, line 2)
+opposite_Signs invalid syntax (<string>, line 2)
+find_Volume invalid syntax (<string>, line 2)
+subject_marks invalid syntax (<string>, line 2)
+Find_Max_Length EOL while scanning string literal (<string>, line 2)
+similar_elements invalid syntax (<string>, line 2)
+multiply_int invalid syntax (<string>, line 2)
+angle_complex invalid syntax (<string>, line 2)
+multiply_elements invalid syntax (<string>, line 2)
+sequential_search EOL while scanning string literal (<string>, line 2)
+surfacearea_sphere EOL while scanning string literal (<string>, line 2)
+volume_cube EOL while scanning string literal (<string>, line 2)
+validate invalid syntax (<string>, line 2)
+sum_digits invalid syntax (<string>, line 2)
+unique_product invalid syntax (<string>, line 2)
+Diff invalid syntax (<string>, line 2)
+start_withp invalid syntax (<string>, line 2)
+last_Digit_Factorial EOL while scanning string literal (<string>, line 2)
+extract_index_list invalid syntax (<string>, line 2)
+sum_div invalid syntax (<string>, line 2)
+second_smallest EOL while scanning string literal (<string>, line 2)
+find_star_num invalid syntax (<string>, line 2)
+left_rotate invalid syntax (<string>, line 2)
+remove_nested invalid syntax (<string>, line 2)
+hexagonal_num invalid syntax (<string>, line 2)
+extract_freq invalid syntax (<string>, line 2)
+area_polygon invalid syntax (<string>, line 2)
+median_trapezium invalid syntax (<string>, line 2)
+is_undulating invalid syntax (<string>, line 2)
+max_Abs_Diff EOL while scanning string literal (<string>, line 2)
+max_product_tuple invalid syntax (<string>, line 2)
+count_Substrings invalid syntax (<string>, line 2)
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of surfacearea_cylinder
+count_rotation invalid syntax (<string>, line 2)
+large_product invalid syntax (<string>, line 2)
+test_error of angle_complex
+eulerian_num invalid syntax (<string>, line 2)
+get_max_sum invalid syntax (<string>, line 2)
+test_three_equal EOL while scanning string literal (<string>, line 2)
+test_error of start_withp
+test_error of sum_div
+reverse_vowels EOL while scanning string literal (<string>, line 2)
+test_error of remove_nested
+test_error of extract_freq
+k_smallest_pairs invalid syntax (<string>, line 2)
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of surfacearea_cylinder
+test_error of angle_complex
+test_error of sum_div
+test_error of start_withp
+test_error of extract_freq
+test_error of remove_nested
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+is_majority invalid syntax (<string>, line 2)
+test_error of angle_complex
+rgb_to_hsv EOL while scanning string literal (<string>, line 2)
+test_error of start_withp
+test_error of surfacearea_cylinder
+test_error of remove_nested
+string_to_tuple EOL while scanning string literal (<string>, line 2)
+left_insertion EOL while scanning string literal (<string>, line 2)
+find_lucas invalid syntax (<string>, line 2)
+rear_extract invalid syntax (<string>, line 2)
+kth_element EOL while scanning string literal (<string>, line 2)
+empty_list invalid syntax (<string>, line 2)
+count_X invalid syntax (<string>, line 2)
+minimum invalid syntax (<string>, line 2)
+tuple_to_dict EOL while scanning string literal (<string>, line 2)
+test_error of rgb_to_hsv
+test_error of string_to_tuple
+jacobsthal_num invalid syntax (<string>, line 2)
+check_answer invalid syntax (<string>, line 2)
+max_sum_list EOL while scanning string literal (<string>, line 2)
+remove_whitespaces EOL while scanning string literal (<string>, line 2)
+round_and_sum invalid syntax (<string>, line 2)
+check_min_heap invalid syntax (<string>, line 2)
+sum_list invalid syntax (<string>, line 2)
+find_Odd_Pair invalid syntax (<string>, line 2)
+volume_cylinder EOL while scanning string literal (<string>, line 2)
+bell_number invalid syntax (<string>, line 2)
+average_tuple invalid syntax (<string>, line 2)
+max_subarray_product invalid syntax (<string>, line 2)
+sum_series invalid syntax (<string>, line 2)
+max_run_uppercase EOL while scanning string literal (<string>, line 2)
+divisible_by_digits invalid syntax (<string>, line 2)
+test_error of string_to_tuple
+is_polite invalid syntax (<string>, line 2)
+long_words invalid syntax (<string>, line 2)
+max_occurrences invalid syntax (<string>, line 2)
+number_of_substrings invalid syntax (<string>, line 2)
+find_sum invalid syntax (<string>, line 2)
+test_error of rgb_to_hsv
+test_error of average_tuple
+find_length invalid syntax (<string>, line 2)
+test_error of string_to_tuple
+test_error of is_polite
+test_error of find_sum
+magic_square_test invalid syntax (<string>, line 2)
+test_error of is_polite
+test_error of find_length
+test_error of find_sum
+test_error of average_tuple
+test_error of is_polite
+test_error of find_sum
+test_error of find_length
+test_error of find_length
+test_error of average_tuple
+is_Diff invalid syntax (<string>, line 2)
+text_match_zero_one invalid syntax (<string>, line 2)
+text_match_zero_one invalid syntax (<string>, line 2)
+dif_Square invalid syntax (<string>, line 2)
+dif_Square invalid syntax (<string>, line 2)
+dif_Square invalid syntax (<string>, line 2)
+dif_Square invalid syntax (<string>, line 2)
+dif_Square invalid syntax (<string>, line 2)
+test_error of extract_freq
+test_error of long_words
+test_error of angle_complex
+test_error of remove_nested
+test_error of string_to_tuple
+test_error of sum_div
+test_error of remove_nested
+test_error of angle_complex
+test_error of remove_nested
+test_error of large_product
+test_error of angle_complex
+test_error of rgb_to_hsv
+test_error of remove_nested
+test_error of angle_complex
+test_error of large_product
+test_error of harmonic_sum
+test_error of average_tuple
+test_error of surfacearea_cylinder
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of start_withp
+test_error of find_sum
+test_error of round_and_sum
+test_error of find_length
+test_error of surfacearea_cylinder
+test_error of average_tuple
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of harmonic_sum
+test_error of find_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of surfacearea_cylinder
+test_error of find_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of is_polite
+test_error of round_and_sum
+test_error of average_tuple
+test_error of find_sum
+test_error of find_length
+test_error of harmonic_sum
+test_error of surfacearea_cylinder
+test_error of large_product
+test_error of is_polite
+test_error of is_polite
+test_error of average_tuple
+test_error of round_and_sum
+test_error of find_length
+test_error of harmonic_sum
+test_error of is_polite
+test_error of round_and_sum
+test_error of find_length
+test_error of large_product
+test_error of average_tuple
+test_error of extract_freq
+test_error of surfacearea_cylinder
+test_error of start_withp
+test_error of find_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of bell_number
+test_error of average_tuple
+test_error of extract_freq
+test_error of surfacearea_cylinder
+test_error of find_length
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of get_max_sum
+test_error of find_sum
+test_error of average_tuple
+test_error of bell_number
+test_error of surfacearea_cylinder
+test_error of find_length
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of average_tuple
+test_error of find_sum
+test_error of surfacearea_cylinder
+test_error of bell_number
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of find_length
+test_error of find_sum
+test_error of bell_number
+test_error of remove_nested
+test_error of find_length
+test_error of string_to_tuple
+test_error of remove_nested
+test_error of harmonic_sum
+test_error of is_polite
+test_error of angle_complex
+test_error of remove_nested
+test_error of sum_div
+test_error of is_polite
+test_error of remove_nested
+test_error of is_polite
+test_error of harmonic_sum
+test_error of max_product_tuple
+test_error of sum_div
+test_error of angle_complex
+test_error of max_product_tuple
+test_error of sum_div
+test_error of harmonic_sum
+test_error of is_polite
+test_error of sum_div
+test_error of angle_complex
+test_error of max_product_tuple
+test_error of harmonic_sum
+test_error of max_product_tuple
+test_error of angle_complex
+test_error of rgb_to_hsv
+test_error of string_to_tuple
+test_error of angle_complex
+test_error of sum_div
+test_error of extract_freq
+test_error of start_withp
+test_error of angle_complex
+test_error of remove_nested
+test_error of extract_freq
+test_error of is_polite
+test_error of angle_complex
+test_error of remove_nested
+test_error of angle_complex
+test_error of is_polite
+test_error of remove_nested
+test_error of rgb_to_hsv
+test_error of remove_nested
+test_error of is_polite
+test_error of find_sum
+test_error of surfacearea_cylinder
+test_error of long_words
+test_error of average_tuple
+test_error of harmonic_sum
+test_error of find_length
+test_error of find_sum
+test_error of average_tuple
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of is_polite
+test_error of surfacearea_cylinder
+test_error of find_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of bell_number
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of find_sum
+test_error of surfacearea_cylinder
+test_error of find_length
+test_error of harmonic_sum
+test_error of average_tuple
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of surfacearea_cylinder
+test_error of bell_number
+test_error of find_length
+test_error of average_tuple
+test_error of harmonic_sum
+test_error of bell_number
+test_error of find_length
+test_error of harmonic_sum
+test_error of bell_number
+surfacearea_cylinder EOL while scanning string literal (<string>, line 2)
+volume_cube invalid syntax (<string>, line 2)
+multiply_elements EOL while scanning string literal (<string>, line 2)
+minimum EOL while scanning string literal (<string>, line 2)
+rear_extract invalid syntax (<string>, line 2)
+round_and_sum EOL while scanning string literal (<string>, line 2)
+find_Volume invalid syntax (<string>, line 2)
+subject_marks EOL while scanning string literal (<string>, line 2)
+Find_Max_Length EOL while scanning string literal (<string>, line 2)
+number_of_substrings EOL while scanning string literal (<string>, line 2)
+empty_list EOL while scanning string literal (<string>, line 2)
+area_polygon EOL while scanning string literal (<string>, line 2)
+remove_whitespaces EOL while scanning string literal (<string>, line 2)
+last_Digit_Factorial EOL while scanning string literal (<string>, line 2)
+sum_list EOL while scanning string literal (<string>, line 2)
+pos_count invalid syntax (<string>, line 2)
+unique_product EOL while scanning string literal (<string>, line 2)
+left_insertion EOL while scanning string literal (<string>, line 2)
+surfacearea_sphere EOL while scanning string literal (<string>, line 2)
+extract_index_list EOL while scanning string literal (<string>, line 2)
+find_Parity EOL while scanning string literal (<string>, line 2)
+average_tuple EOL while scanning string literal (<string>, line 2)
+extract_freq EOL while scanning string literal (<string>, line 2)
+sum_digits EOL while scanning string literal (<string>, line 2)
+hexagonal_num EOL while scanning string literal (<string>, line 2)
+max_Abs_Diff EOL while scanning string literal (<string>, line 2)
+jacobsthal_num EOL while scanning string literal (<string>, line 2)
+find_star_num EOL while scanning string literal (<string>, line 2)
+start_withp EOL while scanning string literal (<string>, line 2)
+Diff invalid syntax (<string>, line 2)
+max_product_tuple invalid syntax (<string>, line 2)
+find_sum invalid syntax (<string>, line 2)
+max_occurrences EOL while scanning string literal (<string>, line 2)
+test_error of surfacearea_cylinder
+divisible_by_digits invalid syntax (<string>, line 2)
+tuple_to_dict EOL while scanning string literal (<string>, line 2)
+second_smallest EOL while scanning string literal (<string>, line 2)
+sum_div invalid syntax (<string>, line 2)
+large_product invalid syntax (<string>, line 2)
+count_Substrings invalid syntax (<string>, line 2)
+left_rotate EOL while scanning string literal (<string>, line 2)
+eulerian_num invalid syntax (<string>, line 2)
+find_length invalid syntax (<string>, line 2)
+test_error of average_tuple
+is_Diff invalid syntax (<string>, line 2)
+max_subarray_product invalid syntax (<string>, line 2)
+test_error of extract_freq
+test_error of find_sum
+dif_Square invalid syntax (<string>, line 2)
+test_error of surfacearea_cylinder
+test_error of sum_div
+bell_number EOL while scanning string literal (<string>, line 2)
+k_smallest_pairs invalid syntax (<string>, line 2)
+test_error of find_length
+test_error of average_tuple
+test_error of extract_freq
+test_error of find_sum
+test_error of surfacearea_cylinder
+test_error of sum_div
+rgb_to_hsv EOL while scanning string literal (<string>, line 2)
+test_error of bell_number
+test_error of average_tuple
+test_error of find_sum
+test_error of bell_number
+maximum EOL while scanning string literal (<string>, line 2)
+remove_nested invalid syntax (<string>, line 2)
+freq_count EOL while scanning string literal (<string>, line 2)
+count_X EOL while scanning string literal (<string>, line 2)
+test_error of rgb_to_hsv
+test_error of bell_number
+_sum EOL while scanning string literal (<string>, line 2)
+sum_series EOL while scanning string literal (<string>, line 2)
+multiply_int invalid syntax (<string>, line 2)
+sequential_search invalid syntax (<string>, line 2)
+string_to_tuple EOL while scanning string literal (<string>, line 2)
+find_lucas invalid syntax (<string>, line 2)
+angle_complex EOL while scanning string literal (<string>, line 2)
+max_sum_list EOL while scanning string literal (<string>, line 2)
+max_run_uppercase EOL while scanning string literal (<string>, line 2)
+kth_element EOL while scanning string literal (<string>, line 2)
+validate EOL while scanning string literal (<string>, line 2)
+volume_cylinder EOL while scanning string literal (<string>, line 2)
+harmonic_sum EOL while scanning string literal (<string>, line 2)
+test_error of remove_nested
+long_words EOL while scanning string literal (<string>, line 2)
+opposite_Signs invalid syntax (<string>, line 2)
+median_trapezium invalid syntax (<string>, line 2)
+count_rotation invalid syntax (<string>, line 2)
+similar_elements EOL while scanning string literal (<string>, line 2)
+is_polite EOL while scanning string literal (<string>, line 2)
+check_answer EOL while scanning string literal (<string>, line 2)
+get_max_sum invalid syntax (<string>, line 2)
+is_undulating EOL while scanning string literal (<string>, line 2)
+test_error of string_to_tuple
+find_Odd_Pair EOL while scanning string literal (<string>, line 2)
+test_error of angle_complex
+test_error of long_words
+text_match_zero_one EOL while scanning string literal (<string>, line 2)
+check_min_heap invalid syntax (<string>, line 2)
+test_error of rgb_to_hsv
+reverse_vowels invalid syntax (<string>, line 2)
+test_error of remove_nested
+test_three_equal EOL while scanning string literal (<string>, line 2)
+test_error of is_polite
+test_error of string_to_tuple
+magic_square_test invalid syntax (<string>, line 2)
+test_error of angle_complex
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of is_polite
+test_error of remove_nested
+test_error of string_to_tuple
+test_error of is_polite
+is_majority EOL while scanning string literal (<string>, line 2)
+test_error of angle_complex
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of string_to_tuple
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+angle_complex 'complex' object has no attribute 'phase'
+test_error of surfacearea_cylinder
+test_error of start_withp
+test_error of average_tuple
+test_error of round_and_sum
+test_error of harmonic_sum
+test_error of Diff
+test_error of remove_nested
+test_error of find_length
+tuple_to_dict dictionary update sequence element #0 has length 3; 2 is required
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of angle_complex
+test_error of surfacearea_cylinder
+test_error of round_and_sum
+test_error of average_tuple
+test_error of harmonic_sum
+test_error of max_occurrences
+test_error of is_polite
+test_error of Diff
+test_error of remove_nested
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of surfacearea_cylinder
+test_error of angle_complex
+test_error of find_length
+test_error of harmonic_sum
+test_error of round_and_sum
+test_error of average_tuple
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of remove_nested
+test_error of is_polite
+test_error of max_occurrences
+test_error of angle_complex
+test_error of surfacearea_cylinder
+test_error of harmonic_sum
+test_error of find_length
+test_error of round_and_sum
+test_error of average_tuple
+test_error of remove_nested
+test_error of is_polite
+test_error of extract_freq
+test_error of find_sum
+test_error of long_words
+test_error of max_occurrences
+test_error of find_length
+test_error of find_sum
+test_error of long_words
+test_error of find_sum
+test_error of long_words
+test_error of is_polite
+test_error of sum_div
+test_error of find_sum
+test_error of long_words
+test_error of max_occurrences
+test_error of sum_div
+test_error of sum_div
+test_error of sum_div
+test_error of rgb_to_hsv
+_sum invalid syntax (<string>, line 2)
+count_X EOL while scanning string literal (<string>, line 2)
+sum_list invalid syntax (<string>, line 2)
+surfacearea_sphere EOL while scanning string literal (<string>, line 2)
+empty_list invalid syntax (<string>, line 2)
+unique_product invalid syntax (<string>, line 2)
+hexagonal_num EOL while scanning string literal (<string>, line 2)
+volume_cylinder EOL while scanning string literal (<string>, line 2)
+round_and_sum invalid syntax (<string>, line 2)
+sum_series invalid syntax (<string>, line 2)
+find_Volume invalid syntax (<string>, line 2)
+harmonic_sum invalid syntax (<string>, line 2)
+start_withp EOL while scanning string literal (<string>, line 2)
+left_insertion invalid syntax (<string>, line 2)
+Find_Max_Length invalid syntax (<string>, line 2)
+max_sum_list invalid syntax (<string>, line 2)
+last_Digit_Factorial invalid syntax (<string>, line 2)
+sum_digits invalid syntax (<string>, line 2)
+opposite_Signs invalid syntax (<string>, line 2)
+sum_div invalid syntax (<string>, line 2)
+maximum invalid syntax (<string>, line 2)
+Diff invalid syntax (<string>, line 2)
+find_Parity invalid syntax (<string>, line 2)
+max_product_tuple invalid syntax (<string>, line 2)
+extract_index_list EOL while scanning string literal (<string>, line 2)
+second_smallest invalid syntax (<string>, line 2)
+string_to_tuple invalid syntax (<string>, line 2)
+remove_nested EOL while scanning string literal (<string>, line 2)
+is_Diff EOL while scanning string literal (<string>, line 2)
+number_of_substrings invalid syntax (<string>, line 2)
+find_sum invalid syntax (<string>, line 2)
+multiply_elements EOL while scanning string literal (<string>, line 2)
+long_words EOL while scanning string literal (<string>, line 2)
+max_occurrences EOL while scanning string literal (<string>, line 2)
+sequential_search invalid syntax (<string>, line 2)
+area_polygon EOL while scanning string literal (<string>, line 2)
+find_star_num invalid syntax (<string>, line 2)
+large_product EOL while scanning string literal (<string>, line 2)
+max_run_uppercase invalid syntax (<string>, line 2)
+test_three_equal invalid syntax (<string>, line 2)
+tuple_to_dict invalid syntax (<string>, line 2)
+test_error of start_withp
+text_match_zero_one EOL while scanning string literal (<string>, line 2)
+test_error of string_to_tuple
+test_error of sum_div
+max_subarray_product EOL while scanning string literal (<string>, line 2)
+test_error of remove_nested
+validate invalid syntax (<string>, line 2)
+test_error of find_sum
+test_error of long_words
+eulerian_num EOL while scanning string literal (<string>, line 2)
+test_error of start_withp
+is_polite invalid syntax (<string>, line 2)
+test_error of string_to_tuple
+test_error of remove_nested
+test_error of long_words
+test_error of find_sum
+test_error of is_polite
+test_error of start_withp
+test_error of string_to_tuple
+test_error of remove_nested
+test_error of find_sum
+test_error of is_polite
+remove_whitespaces invalid syntax (<string>, line 2)
+test_error of is_polite
+freq_count EOL while scanning string literal (<string>, line 2)
+pos_count invalid syntax (<string>, line 2)
+volume_cube invalid syntax (<string>, line 2)
+surfacearea_cylinder EOL while scanning string literal (<string>, line 2)
+multiply_int invalid syntax (<string>, line 2)
+check_answer EOL while scanning string literal (<string>, line 2)
+max_Abs_Diff invalid syntax (<string>, line 2)
+median_trapezium invalid syntax (<string>, line 2)
+kth_element invalid syntax (<string>, line 2)
+similar_elements EOL while scanning string literal (<string>, line 2)
+find_Odd_Pair invalid syntax (<string>, line 2)
+angle_complex invalid syntax (<string>, line 2)
+check_min_heap invalid syntax (<string>, line 2)
+count_Substrings EOL while scanning string literal (<string>, line 2)
+average_tuple invalid syntax (<string>, line 2)
+find_lucas invalid syntax (<string>, line 2)
+reverse_vowels EOL while scanning string literal (<string>, line 2)
+find_length invalid syntax (<string>, line 2)
+divisible_by_digits EOL while scanning string literal (<string>, line 2)
+count_rotation invalid syntax (<string>, line 2)
+rear_extract invalid syntax (<string>, line 2)
+minimum invalid syntax (<string>, line 2)
+subject_marks EOL while scanning string literal (<string>, line 2)
+extract_freq EOL while scanning string literal (<string>, line 2)
+test_error of surfacearea_cylinder
+jacobsthal_num invalid syntax (<string>, line 2)
+bell_number EOL while scanning string literal (<string>, line 2)
+is_undulating EOL while scanning string literal (<string>, line 2)
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+left_rotate EOL while scanning string literal (<string>, line 2)
+test_error of average_tuple
+test_error of angle_complex
+test_error of find_length
+get_max_sum EOL while scanning string literal (<string>, line 2)
+k_smallest_pairs EOL while scanning string literal (<string>, line 2)
+rgb_to_hsv EOL while scanning string literal (<string>, line 2)
+is_majority invalid syntax (<string>, line 2)
+test_error of extract_freq
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of surfacearea_cylinder
+test_error of bell_number
+magic_square_test EOL while scanning string literal (<string>, line 2)
+test_error of average_tuple
+test_error of angle_complex
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of extract_freq
+test_error of bell_number
+test_error of surfacearea_cylinder
+test_error of bell_number
+test_error of average_tuple
+test_error of rgb_to_hsv
+test_error of angle_complex
+dif_Square invalid syntax (<string>, line 2)
+empty_list invalid syntax (<string>, line 2)
+sum_list EOL while scanning string literal (<string>, line 2)
+pos_count EOL while scanning string literal (<string>, line 2)
+surfacearea_sphere EOL while scanning string literal (<string>, line 2)
+minimum EOL while scanning string literal (<string>, line 2)
+_sum EOL while scanning string literal (<string>, line 2)
+volume_cylinder EOL while scanning string literal (<string>, line 2)
+remove_whitespaces EOL while scanning string literal (<string>, line 2)
+freq_count EOL while scanning string literal (<string>, line 2)
+sequential_search EOL while scanning string literal (<string>, line 2)
+surfacearea_cylinder EOL while scanning string literal (<string>, line 2)
+number_of_substrings EOL while scanning string literal (<string>, line 2)
+opposite_Signs EOL while scanning string literal (<string>, line 2)
+harmonic_sum EOL while scanning string literal (<string>, line 2)
+Diff invalid syntax (<string>, line 2)
+multiply_elements EOL while scanning string literal (<string>, line 2)
+Find_Max_Length EOL while scanning string literal (<string>, line 2)
+hexagonal_num EOL while scanning string literal (<string>, line 2)
+sum_digits EOL while scanning string literal (<string>, line 2)
+dif_Square invalid syntax (<string>, line 2)
+max_sum_list invalid syntax (<string>, line 2)
+subject_marks EOL while scanning string literal (<string>, line 2)
+find_star_num EOL while scanning string literal (<string>, line 2)
+unique_product invalid syntax (<string>, line 2)
+extract_index_list invalid syntax (<string>, line 2)
+left_rotate invalid syntax (<string>, line 2)
+validate EOL while scanning string literal (<string>, line 2)
+jacobsthal_num EOL while scanning string literal (<string>, line 2)
+sum_series invalid syntax (<string>, line 2)
+divisible_by_digits invalid syntax (<string>, line 2)
+is_undulating invalid syntax (<string>, line 2)
+maximum EOL while scanning string literal (<string>, line 2)
+count_Substrings EOL while scanning string literal (<string>, line 2)
+find_Odd_Pair EOL while scanning string literal (<string>, line 2)
+find_length invalid syntax (<string>, line 2)
+max_product_tuple EOL while scanning string literal (<string>, line 2)
+tuple_to_dict EOL while scanning string literal (<string>, line 2)
+is_Diff EOL while scanning string literal (<string>, line 2)
+large_product invalid syntax (<string>, line 2)
+similar_elements invalid syntax (<string>, line 2)
+max_occurrences EOL while scanning string literal (<string>, line 2)
+text_match_zero_one invalid syntax (<string>, line 2)
+max_run_uppercase EOL while scanning string literal (<string>, line 2)
+max_subarray_product invalid syntax (<string>, line 2)
+angle_complex EOL while scanning string literal (<string>, line 2)
+test_error of surfacearea_cylinder
+max_Abs_Diff EOL while scanning string literal (<string>, line 2)
+test_error of harmonic_sum
+remove_nested invalid syntax (<string>, line 2)
+test_error of find_length
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+is_polite EOL while scanning string literal (<string>, line 2)
+test_error of surfacearea_cylinder
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+magic_square_test invalid syntax (<string>, line 2)
+test_error of remove_nested
+test_error of harmonic_sum
+test_error of angle_complex
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of surfacearea_cylinder
+test_error of remove_nested
+test_error of harmonic_sum
+test_error of angle_complex
+test_error of remove_nested
+rear_extract invalid syntax (<string>, line 2)
+multiply_int invalid syntax (<string>, line 2)
+left_insertion invalid syntax (<string>, line 2)
+average_tuple invalid syntax (<string>, line 2)
+area_polygon invalid syntax (<string>, line 2)
+kth_element EOL while scanning string literal (<string>, line 2)
+find_Volume invalid syntax (<string>, line 2)
+round_and_sum EOL while scanning string literal (<string>, line 2)
+count_X EOL while scanning string literal (<string>, line 2)
+test_error of angle_complex
+check_answer EOL while scanning string literal (<string>, line 2)
+volume_cube EOL while scanning string literal (<string>, line 2)
+find_Parity invalid syntax (<string>, line 2)
+string_to_tuple EOL while scanning string literal (<string>, line 2)
+extract_freq EOL while scanning string literal (<string>, line 2)
+second_smallest EOL while scanning string literal (<string>, line 2)
+reverse_vowels EOL while scanning string literal (<string>, line 2)
+find_lucas EOL while scanning string literal (<string>, line 2)
+long_words invalid syntax (<string>, line 2)
+median_trapezium invalid syntax (<string>, line 2)
+start_withp EOL while scanning string literal (<string>, line 2)
+find_sum invalid syntax (<string>, line 2)
+last_Digit_Factorial EOL while scanning string literal (<string>, line 2)
+sum_div invalid syntax (<string>, line 2)
+test_error of average_tuple
+count_rotation EOL while scanning string literal (<string>, line 2)
+check_min_heap EOL while scanning string literal (<string>, line 2)
+test_error of string_to_tuple
+get_max_sum EOL while scanning string literal (<string>, line 2)
+bell_number EOL while scanning string literal (<string>, line 2)
+test_error of start_withp
+test_error of extract_freq
+test_three_equal EOL while scanning string literal (<string>, line 2)
+test_error of find_sum
+median_trapezium median_trapezium() takes 2 positional arguments but 3 were given
+eulerian_num invalid syntax (<string>, line 2)
+test_error of string_to_tuple
+test_error of sum_div
+k_smallest_pairs EOL while scanning string literal (<string>, line 2)
+test_error of average_tuple
+test_error of bell_number
+test_error of extract_freq
+test_error of find_sum
+test_error of string_to_tuple
+test_error of sum_div
+median_trapezium median_trapezium() takes 2 positional arguments but 3 were given
+is_majority EOL while scanning string literal (<string>, line 2)
+test_error of bell_number
+rgb_to_hsv EOL while scanning string literal (<string>, line 2)
+test_error of average_tuple
+test_error of sum_div
+test_error of find_sum
+median_trapezium median_trapezium() takes 2 positional arguments but 3 were given
+test_error of bell_number
+test_error of rgb_to_hsv
+_sum EOL while scanning string literal (<string>, line 2)
+freq_count EOL while scanning string literal (<string>, line 2)
+multiply_int EOL while scanning string literal (<string>, line 2)
+volume_cube invalid syntax (<string>, line 2)
+sum_digits invalid syntax (<string>, line 2)
+maximum invalid syntax (<string>, line 2)
+subject_marks EOL while scanning string literal (<string>, line 2)
+sum_list EOL while scanning string literal (<string>, line 2)
+left_insertion EOL while scanning string literal (<string>, line 2)
+unique_product invalid syntax (<string>, line 2)
+Diff invalid syntax (<string>, line 2)
+extract_freq EOL while scanning string literal (<string>, line 2)
+hexagonal_num EOL while scanning string literal (<string>, line 2)
+multiply_elements invalid syntax (<string>, line 2)
+find_lucas invalid syntax (<string>, line 2)
+rear_extract invalid syntax (<string>, line 2)
+string_to_tuple invalid syntax (<string>, line 2)
+start_withp EOL while scanning string literal (<string>, line 2)
+last_Digit_Factorial invalid syntax (<string>, line 2)
+max_Abs_Diff invalid syntax (<string>, line 2)
+surfacearea_sphere EOL while scanning string literal (<string>, line 2)
+find_Volume EOL while scanning string literal (<string>, line 2)
+find_star_num EOL while scanning string literal (<string>, line 2)
+tuple_to_dict invalid syntax (<string>, line 2)
+text_match_zero_one invalid syntax (<string>, line 2)
+check_answer invalid syntax (<string>, line 2)
+number_of_substrings invalid syntax (<string>, line 2)
+test_three_equal invalid syntax (<string>, line 2)
+median_trapezium invalid syntax (<string>, line 2)
+left_rotate invalid syntax (<string>, line 2)
+sum_div invalid syntax (<string>, line 2)
+average_tuple invalid syntax (<string>, line 2)
+jacobsthal_num invalid syntax (<string>, line 2)
+check_min_heap invalid syntax (<string>, line 2)
+reverse_vowels invalid syntax (<string>, line 2)
+long_words invalid syntax (<string>, line 2)
+is_undulating invalid syntax (<string>, line 2)
+test_error of extract_freq
+test_error of Diff
+second_smallest invalid syntax (<string>, line 2)
+get_max_sum invalid syntax (<string>, line 2)
+test_error of start_withp
+divisible_by_digits invalid syntax (<string>, line 2)
+large_product invalid syntax (<string>, line 2)
+test_error of string_to_tuple
+find_Odd_Pair invalid syntax (<string>, line 2)
+bell_number invalid syntax (<string>, line 2)
+test_error of average_tuple
+is_polite invalid syntax (<string>, line 2)
+test_error of sum_div
+test_error of long_words
+test_error of extract_freq
+test_error of start_withp
+test_error of string_to_tuple
+magic_square_test invalid syntax (<string>, line 2)
+test_error of bell_number
+test_error of is_polite
+is_majority invalid syntax (<string>, line 2)
+test_error of start_withp
+test_error of average_tuple
+test_error of is_polite
+test_error of string_to_tuple
+test_error of bell_number
+test_error of is_polite
+test_error of average_tuple
+find_Parity invalid syntax (<string>, line 2)
+test_error of bell_number
+count_X invalid syntax (<string>, line 2)
+empty_list invalid syntax (<string>, line 2)
+find_length invalid syntax (<string>, line 2)
+max_occurrences invalid syntax (<string>, line 2)
+sequential_search invalid syntax (<string>, line 2)
+extract_index_list invalid syntax (<string>, line 2)
+round_and_sum invalid syntax (<string>, line 2)
+harmonic_sum invalid syntax (<string>, line 2)
+validate invalid syntax (<string>, line 2)
+max_sum_list invalid syntax (<string>, line 2)
+volume_cylinder EOL while scanning string literal (<string>, line 2)
+max_product_tuple invalid syntax (<string>, line 2)
+find_sum invalid syntax (<string>, line 2)
+kth_element invalid syntax (<string>, line 2)
+minimum invalid syntax (<string>, line 2)
+Find_Max_Length invalid syntax (<string>, line 2)
+area_polygon EOL while scanning string literal (<string>, line 2)
+pos_count invalid syntax (<string>, line 2)
+count_Substrings invalid syntax (<string>, line 2)
+test_error of empty_list
+angle_complex invalid syntax (<string>, line 2)
+remove_whitespaces EOL while scanning string literal (<string>, line 2)
+opposite_Signs invalid syntax (<string>, line 2)
+count_rotation invalid syntax (<string>, line 2)
+remove_nested invalid syntax (<string>, line 2)
+sum_series invalid syntax (<string>, line 2)
+surfacearea_cylinder invalid syntax (<string>, line 2)
+test_error of find_sum
+max_run_uppercase invalid syntax (<string>, line 2)
+test_error of angle_complex
+is_Diff invalid syntax (<string>, line 2)
+dif_Square invalid syntax (<string>, line 2)
+test_error of angle_complex
+test_error of remove_nested
+test_error of find_sum
+test_error of surfacearea_cylinder
+similar_elements invalid syntax (<string>, line 2)
+test_error of angle_complex
+k_smallest_pairs invalid syntax (<string>, line 2)
+test_error of find_sum
+test_error of remove_nested
+max_subarray_product invalid syntax (<string>, line 2)
+test_error of surfacearea_cylinder
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+eulerian_num invalid syntax (<string>, line 2)
+test_error of remove_nested
+test_error of surfacearea_cylinder
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+rgb_to_hsv invalid syntax (<string>, line 2)
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of rgb_to_hsv
+test_error of rgb_to_hsv
+test_error of rgb_to_hsv
+test_error of extract_freq
+test_error of harmonic_sum
+test_error of string_to_tuple
+angle_complex 'complex' object has no attribute 'phase'
+test_error of extract_freq
+get_max_sum maximum recursion depth exceeded
+test_error of remove_nested
+test_error of sum_div
+test_error of bell_number
+test_error of harmonic_sum
+test_error of angle_complex
+test_error of remove_nested
+test_error of angle_complex
+test_error of harmonic_sum
+test_error of bell_number
+test_error of remove_nested
+test_error of angle_complex
+test_error of surfacearea_cylinder
+test_error of remove_nested
+test_error of harmonic_sum
+test_error of bell_number
+test_error of find_length
+test_error of start_withp
+test_error of find_sum
+test_error of surfacearea_cylinder
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of find_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of long_words
+test_error of average_tuple
+test_error of surfacearea_cylinder
+test_error of find_sum
+test_error of bell_number
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of average_tuple
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of find_sum
+test_error of find_length
+test_error of surfacearea_cylinder
+test_error of average_tuple
+test_error of find_length
+test_error of is_polite
+test_error of average_tuple
+test_error of rgb_to_hsv
+test_error of find_length
+test_error of is_polite
+test_error of is_polite
+test_error of is_polite
+test_error of surfacearea_cylinder
+test_error of harmonic_sum
+test_error of extract_freq
+test_error of start_withp
+test_error of surfacearea_cylinder
+test_error of string_to_tuple
+test_error of long_words
+test_error of find_sum
+test_error of average_tuple
+test_error of extract_freq
+test_error of harmonic_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of surfacearea_cylinder
+test_error of bell_number
+test_error of average_tuple
+test_error of find_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of surfacearea_cylinder
+test_error of harmonic_sum
+test_error of rgb_to_hsv
+test_error of find_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of bell_number
+test_error of average_tuple
+test_error of find_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of harmonic_sum
+test_error of bell_number
+test_error of average_tuple
+test_error of sum_div
+test_error of bell_number
+test_error of angle_complex
+test_error of remove_nested
+test_error of angle_complex
+test_error of find_length
+test_error of remove_nested
+test_error of angle_complex
+test_error of angle_complex
+test_error of remove_nested
+test_error of remove_nested
+test_error of find_length
+test_error of find_length
+test_error of find_length
+test_error of extract_freq
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of start_withp
+test_error of harmonic_sum
+test_error of surfacearea_cylinder
+angle_complex 'complex' object has no attribute 'phase'
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of surfacearea_cylinder
+test_error of angle_complex
+test_error of bell_number
+test_error of harmonic_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of surfacearea_cylinder
+test_error of angle_complex
+test_error of average_tuple
+test_error of is_polite
+get_max_sum maximum recursion depth exceeded
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of bell_number
+test_error of harmonic_sum
+test_error of average_tuple
+test_error of surfacearea_cylinder
+test_error of angle_complex
+test_error of is_polite
+test_error of bell_number
+test_error of is_polite
+test_error of long_words
+test_error of average_tuple
+test_error of harmonic_sum
+test_error of remove_nested
+test_error of find_length
+test_error of string_to_tuple
+test_error of find_sum
+test_error of sum_div
+test_error of bell_number
+test_error of remove_nested
+test_error of find_sum
+test_error of remove_nested
+test_error of is_polite
+test_error of average_tuple
+test_error of find_sum
+test_error of find_length
+test_error of find_sum
+test_error of remove_nested
+test_error of find_length
+test_error of rgb_to_hsv
+test_error of find_length
+test_error of surfacearea_cylinder
+test_error of long_words
+test_error of extract_freq
+test_error of find_sum
+test_error of string_to_tuple
+test_error of harmonic_sum
+test_error of start_withp
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of extract_freq
+test_error of surfacearea_cylinder
+test_error of find_sum
+test_error of bell_number
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of surfacearea_cylinder
+test_error of harmonic_sum
+test_error of find_sum
+test_error of is_polite
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of bell_number
+test_error of surfacearea_cylinder
+test_error of find_sum
+test_error of rgb_to_hsv
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of is_polite
+test_error of harmonic_sum
+test_error of angle_complex
+test_error of bell_number
+test_error of is_polite
+test_error of average_tuple
+test_error of angle_complex
+test_error of average_tuple
+test_error of harmonic_sum
+test_error of find_length
+test_error of angle_complex
+test_error of bell_number
+test_error of angle_complex
+test_error of is_polite
+test_error of sum_div
+test_error of average_tuple
+test_error of remove_nested
+test_error of find_length
+test_error of remove_nested
+test_error of remove_nested
+test_error of average_tuple
+test_error of find_length
+test_error of remove_nested
+test_error of find_length
+multiply_int invalid syntax (<string>, line 2)
+surfacearea_sphere EOL while scanning string literal (<string>, line 2)
+remove_whitespaces EOL while scanning string literal (<string>, line 2)
+find_Parity invalid syntax (<string>, line 2)
+string_to_tuple invalid syntax (<string>, line 2)
+hexagonal_num EOL while scanning string literal (<string>, line 2)
+left_insertion invalid syntax (<string>, line 2)
+Find_Max_Length invalid syntax (<string>, line 2)
+surfacearea_cylinder invalid syntax (<string>, line 2)
+unique_product invalid syntax (<string>, line 2)
+number_of_substrings invalid syntax (<string>, line 2)
+Diff invalid syntax (<string>, line 2)
+count_X invalid syntax (<string>, line 2)
+freq_count invalid syntax (<string>, line 2)
+jacobsthal_num invalid syntax (<string>, line 2)
+long_words invalid syntax (<string>, line 2)
+volume_cube invalid syntax (<string>, line 2)
+sum_div invalid syntax (<string>, line 2)
+sequential_search invalid syntax (<string>, line 2)
+find_sum invalid syntax (<string>, line 2)
+max_product_tuple invalid syntax (<string>, line 2)
+count_rotation invalid syntax (<string>, line 2)
+tuple_to_dict invalid syntax (<string>, line 2)
+check_answer invalid syntax (<string>, line 2)
+second_smallest invalid syntax (<string>, line 2)
+start_withp invalid syntax (<string>, line 2)
+extract_freq invalid syntax (<string>, line 2)
+sum_series invalid syntax (<string>, line 2)
+minimum invalid syntax (<string>, line 2)
+is_Diff invalid syntax (<string>, line 2)
+remove_nested invalid syntax (<string>, line 2)
+angle_complex invalid syntax (<string>, line 2)
+find_star_num EOL while scanning string literal (<string>, line 2)
+left_rotate invalid syntax (<string>, line 2)
+find_Odd_Pair invalid syntax (<string>, line 2)
+harmonic_sum invalid syntax (<string>, line 2)
+large_product invalid syntax (<string>, line 2)
+test_error of string_to_tuple
+count_Substrings invalid syntax (<string>, line 2)
+find_length invalid syntax (<string>, line 2)
+similar_elements invalid syntax (<string>, line 2)
+max_Abs_Diff invalid syntax (<string>, line 2)
+test_error of surfacearea_cylinder
+area_polygon EOL while scanning string literal (<string>, line 2)
+reverse_vowels invalid syntax (<string>, line 2)
+test_error of start_withp
+test_error of find_sum
+test_error of extract_freq
+test_error of sum_div
+test_error of angle_complex
+test_error of remove_nested
+bell_number invalid syntax (<string>, line 2)
+test_error of string_to_tuple
+test_error of find_length
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+k_smallest_pairs invalid syntax (<string>, line 2)
+test_error of surfacearea_cylinder
+test_error of start_withp
+test_error of extract_freq
+test_error of find_sum
+test_error of sum_div
+test_error of angle_complex
+test_error of string_to_tuple
+test_error of bell_number
+test_error of remove_nested
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of find_length
+test_error of start_withp
+dif_Square invalid syntax (<string>, line 2)
+test_error of surfacearea_cylinder
+test_error of find_sum
+rgb_to_hsv invalid syntax (<string>, line 2)
+test_error of sum_div
+test_error of angle_complex
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of bell_number
+test_error of find_length
+test_error of remove_nested
+sum_list invalid syntax (<string>, line 2)
+volume_cylinder invalid syntax (<string>, line 2)
+test_error of bell_number
+divisible_by_digits invalid syntax (<string>, line 2)
+_sum invalid syntax (<string>, line 2)
+multiply_elements invalid syntax (<string>, line 2)
+pos_count invalid syntax (<string>, line 2)
+kth_element invalid syntax (<string>, line 2)
+sum_digits invalid syntax (<string>, line 2)
+extract_index_list invalid syntax (<string>, line 2)
+test_error of rgb_to_hsv
+max_subarray_product invalid syntax (<string>, line 2)
+round_and_sum invalid syntax (<string>, line 2)
+rear_extract invalid syntax (<string>, line 2)
+find_lucas invalid syntax (<string>, line 2)
+text_match_zero_one invalid syntax (<string>, line 2)
+maximum invalid syntax (<string>, line 2)
+median_trapezium invalid syntax (<string>, line 2)
+find_Volume invalid syntax (<string>, line 2)
+last_Digit_Factorial invalid syntax (<string>, line 2)
+opposite_Signs invalid syntax (<string>, line 2)
+max_sum_list invalid syntax (<string>, line 2)
+empty_list invalid syntax (<string>, line 2)
+check_min_heap invalid syntax (<string>, line 2)
+test_error of text_match_zero_one
+max_occurrences invalid syntax (<string>, line 2)
+max_run_uppercase invalid syntax (<string>, line 2)
+test_three_equal invalid syntax (<string>, line 2)
+eulerian_num invalid syntax (<string>, line 2)
+is_majority invalid syntax (<string>, line 2)
+get_max_sum invalid syntax (<string>, line 2)
+average_tuple invalid syntax (<string>, line 2)
+test_error of rgb_to_hsv
+subject_marks invalid syntax (<string>, line 2)
+is_undulating invalid syntax (<string>, line 2)
+magic_square_test invalid syntax (<string>, line 2)
+test_error of eulerian_num
+test_error of average_tuple
+is_polite invalid syntax (<string>, line 2)
+test_error of eulerian_num
+test_error of average_tuple
+test_error of eulerian_num
+test_error of average_tuple
+validate invalid syntax (<string>, line 2)
+count_X EOL while scanning string literal (<string>, line 2)
+rear_extract invalid syntax (<string>, line 2)
+empty_list invalid syntax (<string>, line 2)
+_sum invalid syntax (<string>, line 2)
+volume_cube EOL while scanning string literal (<string>, line 2)
+sum_list EOL while scanning string literal (<string>, line 2)
+max_sum_list invalid syntax (<string>, line 2)
+kth_element EOL while scanning string literal (<string>, line 2)
+round_and_sum EOL while scanning string literal (<string>, line 2)
+volume_cylinder EOL while scanning string literal (<string>, line 2)
+sum_series invalid syntax (<string>, line 2)
+minimum EOL while scanning string literal (<string>, line 2)
+remove_whitespaces EOL while scanning string literal (<string>, line 2)
+left_insertion invalid syntax (<string>, line 2)
+subject_marks EOL while scanning string literal (<string>, line 2)
+long_words invalid syntax (<string>, line 2)
+maximum EOL while scanning string literal (<string>, line 2)
+string_to_tuple EOL while scanning string literal (<string>, line 2)
+max_run_uppercase EOL while scanning string literal (<string>, line 2)
+Find_Max_Length EOL while scanning string literal (<string>, line 2)
+average_tuple invalid syntax (<string>, line 2)
+median_trapezium invalid syntax (<string>, line 2)
+dif_Square invalid syntax (<string>, line 2)
+validate EOL while scanning string literal (<string>, line 2)
+divisible_by_digits invalid syntax (<string>, line 2)
+extract_freq EOL while scanning string literal (<string>, line 2)
+find_sum invalid syntax (<string>, line 2)
+sum_digits EOL while scanning string literal (<string>, line 2)
+extract_index_list invalid syntax (<string>, line 2)
+check_min_heap EOL while scanning string literal (<string>, line 2)
+max_occurrences EOL while scanning string literal (<string>, line 2)
+multiply_elements EOL while scanning string literal (<string>, line 2)
+large_product invalid syntax (<string>, line 2)
+max_subarray_product invalid syntax (<string>, line 2)
+second_smallest EOL while scanning string literal (<string>, line 2)
+left_rotate invalid syntax (<string>, line 2)
+test_error of string_to_tuple
+is_undulating EOL while scanning string literal (<string>, line 2)
+is_Diff EOL while scanning string literal (<string>, line 2)
+text_match_zero_one invalid syntax (<string>, line 2)
+is_polite EOL while scanning string literal (<string>, line 2)
+test_error of find_sum
+test_error of average_tuple
+test_error of extract_freq
+k_smallest_pairs EOL while scanning string literal (<string>, line 2)
+bell_number EOL while scanning string literal (<string>, line 2)
+test_error of string_to_tuple
+test_error of find_sum
+magic_square_test invalid syntax (<string>, line 2)
+test_error of extract_freq
+rgb_to_hsv EOL while scanning string literal (<string>, line 2)
+test_error of average_tuple
+is_majority EOL while scanning string literal (<string>, line 2)
+test_error of string_to_tuple
+test_error of find_sum
+test_error of bell_number
+test_error of average_tuple
+test_error of rgb_to_hsv
+sum_div EOL while scanning string literal (<string>, line 2)
+test_error of bell_number
+Diff invalid syntax (<string>, line 2)
+pos_count EOL while scanning string literal (<string>, line 2)
+similar_elements invalid syntax (<string>, line 2)
+start_withp EOL while scanning string literal (<string>, line 2)
+freq_count EOL while scanning string literal (<string>, line 2)
+find_Volume invalid syntax (<string>, line 2)
+find_Parity invalid syntax (<string>, line 2)
+hexagonal_num EOL while scanning string literal (<string>, line 2)
+unique_product invalid syntax (<string>, line 2)
+surfacearea_cylinder EOL while scanning string literal (<string>, line 2)
+angle_complex EOL while scanning string literal (<string>, line 2)
+surfacearea_sphere EOL while scanning string literal (<string>, line 2)
+jacobsthal_num EOL while scanning string literal (<string>, line 2)
+count_Substrings EOL while scanning string literal (<string>, line 2)
+get_max_sum invalid syntax (<string>, line 2)
+last_Digit_Factorial EOL while scanning string literal (<string>, line 2)
+sequential_search EOL while scanning string literal (<string>, line 2)
+find_star_num EOL while scanning string literal (<string>, line 2)
+max_product_tuple EOL while scanning string literal (<string>, line 2)
+find_lucas EOL while scanning string literal (<string>, line 2)
+check_answer EOL while scanning string literal (<string>, line 2)
+multiply_int invalid syntax (<string>, line 2)
+harmonic_sum EOL while scanning string literal (<string>, line 2)
+test_error of start_withp
+test_error of bell_number
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of sum_div
+reverse_vowels EOL while scanning string literal (<string>, line 2)
+tuple_to_dict EOL while scanning string literal (<string>, line 2)
+test_error of surfacearea_cylinder
+test_error of rgb_to_hsv
+eulerian_num invalid syntax (<string>, line 2)
+number_of_substrings EOL while scanning string literal (<string>, line 2)
+count_rotation EOL while scanning string literal (<string>, line 2)
+area_polygon invalid syntax (<string>, line 2)
+find_Odd_Pair EOL while scanning string literal (<string>, line 2)
+test_three_equal EOL while scanning string literal (<string>, line 2)
+test_error of angle_complex
+opposite_Signs EOL while scanning string literal (<string>, line 2)
+test_error of start_withp
+find_length invalid syntax (<string>, line 2)
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of sum_div
+test_error of surfacearea_cylinder
+test_error of harmonic_sum
+remove_nested invalid syntax (<string>, line 2)
+test_error of start_withp
+test_error of angle_complex
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+max_Abs_Diff EOL while scanning string literal (<string>, line 2)
+test_error of find_length
+test_error of surfacearea_cylinder
+test_error of sum_div
+test_error of remove_nested
+test_error of harmonic_sum
+test_error of angle_complex
+test_error of remove_nested
+test_error of harmonic_sum
+test_error of remove_nested
+multiply_int invalid syntax (<string>, line 2)
+empty_list invalid syntax (<string>, line 2)
+volume_cylinder EOL while scanning string literal (<string>, line 2)
+left_insertion invalid syntax (<string>, line 2)
+hexagonal_num EOL while scanning string literal (<string>, line 2)
+multiply_elements EOL while scanning string literal (<string>, line 2)
+sequential_search invalid syntax (<string>, line 2)
+pos_count EOL while scanning string literal (<string>, line 2)
+opposite_Signs invalid syntax (<string>, line 2)
+surfacearea_cylinder EOL while scanning string literal (<string>, line 2)
+harmonic_sum invalid syntax (<string>, line 2)
+round_and_sum invalid syntax (<string>, line 2)
+jacobsthal_num EOL while scanning string literal (<string>, line 2)
+subject_marks EOL while scanning string literal (<string>, line 2)
+large_product invalid syntax (<string>, line 2)
+volume_cube invalid syntax (<string>, line 2)
+freq_count EOL while scanning string literal (<string>, line 2)
+area_polygon EOL while scanning string literal (<string>, line 2)
+second_smallest EOL while scanning string literal (<string>, line 2)
+string_to_tuple EOL while scanning string literal (<string>, line 2)
+start_withp EOL while scanning string literal (<string>, line 2)
+find_Volume invalid syntax (<string>, line 2)
+find_star_num EOL while scanning string literal (<string>, line 2)
+find_Parity EOL while scanning string literal (<string>, line 2)
+find_length invalid syntax (<string>, line 2)
+count_rotation invalid syntax (<string>, line 2)
+left_rotate invalid syntax (<string>, line 2)
+divisible_by_digits invalid syntax (<string>, line 2)
+sum_series invalid syntax (<string>, line 2)
+extract_freq EOL while scanning string literal (<string>, line 2)
+similar_elements EOL while scanning string literal (<string>, line 2)
+Diff invalid syntax (<string>, line 2)
+count_Substrings invalid syntax (<string>, line 2)
+max_occurrences EOL while scanning string literal (<string>, line 2)
+average_tuple invalid syntax (<string>, line 2)
+reverse_vowels invalid syntax (<string>, line 2)
+remove_nested invalid syntax (<string>, line 2)
+check_min_heap invalid syntax (<string>, line 2)
+is_Diff invalid syntax (<string>, line 2)
+test_error of surfacearea_cylinder
+is_undulating invalid syntax (<string>, line 2)
+max_Abs_Diff invalid syntax (<string>, line 2)
+find_Odd_Pair EOL while scanning string literal (<string>, line 2)
+test_error of string_to_tuple
+test_error of start_withp
+test_error of harmonic_sum
+max_subarray_product invalid syntax (<string>, line 2)
+is_polite invalid syntax (<string>, line 2)
+test_error of extract_freq
+test_error of find_length
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of average_tuple
+magic_square_test invalid syntax (<string>, line 2)
+test_error of remove_nested
+test_error of surfacearea_cylinder
+test_error of start_withp
+test_error of string_to_tuple
+test_error of is_undulating
+is_majority EOL while scanning string literal (<string>, line 2)
+test_error of extract_freq
+test_error of harmonic_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of average_tuple
+test_error of start_withp
+test_error of remove_nested
+test_error of string_to_tuple
+test_error of surfacearea_cylinder
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of harmonic_sum
+test_error of average_tuple
+test_error of remove_nested
+count_X EOL while scanning string literal (<string>, line 2)
+number_of_substrings invalid syntax (<string>, line 2)
+maximum EOL while scanning string literal (<string>, line 2)
+surfacearea_sphere EOL while scanning string literal (<string>, line 2)
+remove_whitespaces EOL while scanning string literal (<string>, line 2)
+tuple_to_dict EOL while scanning string literal (<string>, line 2)
+rear_extract invalid syntax (<string>, line 2)
+long_words invalid syntax (<string>, line 2)
+_sum invalid syntax (<string>, line 2)
+median_trapezium invalid syntax (<string>, line 2)
+minimum EOL while scanning string literal (<string>, line 2)
+text_match_zero_one invalid syntax (<string>, line 2)
+max_product_tuple invalid syntax (<string>, line 2)
+kth_element EOL while scanning string literal (<string>, line 2)
+sum_div EOL while scanning string literal (<string>, line 2)
+find_sum invalid syntax (<string>, line 2)
+sum_digits EOL while scanning string literal (<string>, line 2)
+find_lucas EOL while scanning string literal (<string>, line 2)
+angle_complex EOL while scanning string literal (<string>, line 2)
+max_sum_list invalid syntax (<string>, line 2)
+check_answer EOL while scanning string literal (<string>, line 2)
+max_run_uppercase EOL while scanning string literal (<string>, line 2)
+unique_product invalid syntax (<string>, line 2)
+sum_list EOL while scanning string literal (<string>, line 2)
+bell_number EOL while scanning string literal (<string>, line 2)
+dif_Square invalid syntax (<string>, line 2)
+Find_Max_Length EOL while scanning string literal (<string>, line 2)
+validate EOL while scanning string literal (<string>, line 2)
+test_error of text_match_zero_one
+eulerian_num invalid syntax (<string>, line 2)
+last_Digit_Factorial EOL while scanning string literal (<string>, line 2)
+test_error of find_sum
+test_error of sum_div
+test_three_equal invalid syntax (<string>, line 2)
+test_error of angle_complex
+extract_index_list invalid syntax (<string>, line 2)
+k_smallest_pairs invalid syntax (<string>, line 2)
+test_error of bell_number
+test_error of find_sum
+test_error of angle_complex
+get_max_sum invalid syntax (<string>, line 2)
+test_error of find_sum
+test_error of bell_number
+test_error of angle_complex
+rgb_to_hsv EOL while scanning string literal (<string>, line 2)
+test_error of bell_number
+test_error of rgb_to_hsv
+_sum invalid syntax (<string>, line 2)
+multiply_int invalid syntax (<string>, line 2)
+count_X EOL while scanning string literal (<string>, line 2)
+rear_extract invalid syntax (<string>, line 2)
+empty_list invalid syntax (<string>, line 2)
+max_sum_list invalid syntax (<string>, line 2)
+left_insertion invalid syntax (<string>, line 2)
+round_and_sum EOL while scanning string literal (<string>, line 2)
+kth_element EOL while scanning string literal (<string>, line 2)
+sequential_search EOL while scanning string literal (<string>, line 2)
+find_Volume invalid syntax (<string>, line 2)
+find_lucas EOL while scanning string literal (<string>, line 2)
+similar_elements invalid syntax (<string>, line 2)
+tuple_to_dict EOL while scanning string literal (<string>, line 2)
+find_star_num EOL while scanning string literal (<string>, line 2)
+surfacearea_cylinder invalid syntax (<string>, line 2)
+find_Parity invalid syntax (<string>, line 2)
+max_run_uppercase EOL while scanning string literal (<string>, line 2)
+large_product invalid syntax (<string>, line 2)
+opposite_Signs EOL while scanning string literal (<string>, line 2)
+max_product_tuple EOL while scanning string literal (<string>, line 2)
+jacobsthal_num EOL while scanning string literal (<string>, line 2)
+Find_Max_Length EOL while scanning string literal (<string>, line 2)
+last_Digit_Factorial EOL while scanning string literal (<string>, line 2)
+sum_digits EOL while scanning string literal (<string>, line 2)
+pos_count EOL while scanning string literal (<string>, line 2)
+extract_freq EOL while scanning string literal (<string>, line 2)
+start_withp EOL while scanning string literal (<string>, line 2)
+median_trapezium invalid syntax (<string>, line 2)
+test_three_equal EOL while scanning string literal (<string>, line 2)
+is_undulating invalid syntax (<string>, line 2)
+area_polygon EOL while scanning string literal (<string>, line 2)
+sum_series invalid syntax (<string>, line 2)
+max_Abs_Diff EOL while scanning string literal (<string>, line 2)
+find_Odd_Pair EOL while scanning string literal (<string>, line 2)
+extract_index_list invalid syntax (<string>, line 2)
+find_length invalid syntax (<string>, line 2)
+bell_number EOL while scanning string literal (<string>, line 2)
+max_subarray_product invalid syntax (<string>, line 2)
+check_min_heap EOL while scanning string literal (<string>, line 2)
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of surfacearea_cylinder
+test_error of start_withp
+get_max_sum EOL while scanning string literal (<string>, line 2)
+k_smallest_pairs EOL while scanning string literal (<string>, line 2)
+test_error of extract_freq
+test_error of find_length
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of bell_number
+magic_square_test invalid syntax (<string>, line 2)
+test_error of extract_freq
+rgb_to_hsv EOL while scanning string literal (<string>, line 2)
+test_error of surfacearea_cylinder
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+is_majority EOL while scanning string literal (<string>, line 2)
+test_error of bell_number
+test_error of surfacearea_cylinder
+subject_marks EOL while scanning string literal (<string>, line 2)
+string_to_tuple EOL while scanning string literal (<string>, line 2)
+sum_list invalid syntax (<string>, line 2)
+test_error of rgb_to_hsv
+test_error of bell_number
+surfacearea_sphere EOL while scanning string literal (<string>, line 2)
+find_sum invalid syntax (<string>, line 2)
+freq_count EOL while scanning string literal (<string>, line 2)
+minimum EOL while scanning string literal (<string>, line 2)
+volume_cylinder EOL while scanning string literal (<string>, line 2)
+hexagonal_num EOL while scanning string literal (<string>, line 2)
+number_of_substrings EOL while scanning string literal (<string>, line 2)
+test_error of string_to_tuple
+multiply_elements EOL while scanning string literal (<string>, line 2)
+remove_whitespaces EOL while scanning string literal (<string>, line 2)
+maximum EOL while scanning string literal (<string>, line 2)
+text_match_zero_one invalid syntax (<string>, line 2)
+dif_Square invalid syntax (<string>, line 2)
+Diff invalid syntax (<string>, line 2)
+max_occurrences EOL while scanning string literal (<string>, line 2)
+second_smallest EOL while scanning string literal (<string>, line 2)
+check_answer EOL while scanning string literal (<string>, line 2)
+volume_cube EOL while scanning string literal (<string>, line 2)
+left_rotate invalid syntax (<string>, line 2)
+remove_nested invalid syntax (<string>, line 2)
+test_error of find_sum
+divisible_by_digits invalid syntax (<string>, line 2)
+test_error of rgb_to_hsv
+eulerian_num invalid syntax (<string>, line 2)
+test_error of string_to_tuple
+harmonic_sum EOL while scanning string literal (<string>, line 2)
+angle_complex EOL while scanning string literal (<string>, line 2)
+reverse_vowels EOL while scanning string literal (<string>, line 2)
+count_rotation EOL while scanning string literal (<string>, line 2)
+count_Substrings EOL while scanning string literal (<string>, line 2)
+validate EOL while scanning string literal (<string>, line 2)
+is_Diff EOL while scanning string literal (<string>, line 2)
+average_tuple invalid syntax (<string>, line 2)
+unique_product invalid syntax (<string>, line 2)
+sum_div invalid syntax (<string>, line 2)
+long_words invalid syntax (<string>, line 2)
+test_error of remove_nested
+test_error of string_to_tuple
+test_error of find_sum
+test_error of harmonic_sum
+test_error of angle_complex
+test_error of remove_nested
+test_error of sum_div
+test_error of average_tuple
+is_polite invalid syntax (<string>, line 2)
+test_error of find_sum
+test_error of sum_div
+test_error of harmonic_sum
+test_error of angle_complex
+test_error of remove_nested
+test_error of is_polite
+test_error of average_tuple
+test_error of sum_div
+test_error of is_polite
+test_error of harmonic_sum
+test_error of angle_complex
+test_error of is_polite
+test_error of average_tuple
+count_X EOL while scanning string literal (<string>, line 2)
+pos_count EOL while scanning string literal (<string>, line 2)
+_sum invalid syntax (<string>, line 2)
+remove_whitespaces EOL while scanning string literal (<string>, line 2)
+rear_extract invalid syntax (<string>, line 2)
+freq_count EOL while scanning string literal (<string>, line 2)
+surfacearea_cylinder EOL while scanning string literal (<string>, line 2)
+hexagonal_num EOL while scanning string literal (<string>, line 2)
+volume_cylinder EOL while scanning string literal (<string>, line 2)
+subject_marks EOL while scanning string literal (<string>, line 2)
+number_of_substrings invalid syntax (<string>, line 2)
+check_answer EOL while scanning string literal (<string>, line 2)
+minimum invalid syntax (<string>, line 2)
+round_and_sum invalid syntax (<string>, line 2)
+Diff invalid syntax (<string>, line 2)
+median_trapezium invalid syntax (<string>, line 2)
+max_run_uppercase invalid syntax (<string>, line 2)
+second_smallest EOL while scanning string literal (<string>, line 2)
+area_polygon EOL while scanning string literal (<string>, line 2)
+unique_product invalid syntax (<string>, line 2)
+is_undulating invalid syntax (<string>, line 2)
+maximum EOL while scanning string literal (<string>, line 2)
+divisible_by_digits invalid syntax (<string>, line 2)
+max_Abs_Diff EOL while scanning string literal (<string>, line 2)
+sum_digits EOL while scanning string literal (<string>, line 2)
+jacobsthal_num EOL while scanning string literal (<string>, line 2)
+opposite_Signs invalid syntax (<string>, line 2)
+find_length invalid syntax (<string>, line 2)
+last_Digit_Factorial EOL while scanning string literal (<string>, line 2)
+is_Diff EOL while scanning string literal (<string>, line 2)
+test_three_equal invalid syntax (<string>, line 2)
+find_lucas EOL while scanning string literal (<string>, line 2)
+max_occurrences EOL while scanning string literal (<string>, line 2)
+tuple_to_dict EOL while scanning string literal (<string>, line 2)
+check_min_heap invalid syntax (<string>, line 2)
+test_error of surfacearea_cylinder
+get_max_sum invalid syntax (<string>, line 2)
+max_subarray_product invalid syntax (<string>, line 2)
+eulerian_num invalid syntax (<string>, line 2)
+find_Odd_Pair EOL while scanning string literal (<string>, line 2)
+is_polite invalid syntax (<string>, line 2)
+reverse_vowels invalid syntax (<string>, line 2)
+test_error of find_length
+bell_number EOL while scanning string literal (<string>, line 2)
+magic_square_test invalid syntax (<string>, line 2)
+k_smallest_pairs invalid syntax (<string>, line 2)
+test_error of surfacearea_cylinder
+test_error of is_polite
+test_error of bell_number
+test_error of surfacearea_cylinder
+is_majority EOL while scanning string literal (<string>, line 2)
+test_error of is_polite
+test_error of bell_number
+empty_list invalid syntax (<string>, line 2)
+start_withp EOL while scanning string literal (<string>, line 2)
+volume_cube EOL while scanning string literal (<string>, line 2)
+test_error of is_polite
+sum_list EOL while scanning string literal (<string>, line 2)
+long_words EOL while scanning string literal (<string>, line 2)
+max_sum_list invalid syntax (<string>, line 2)
+harmonic_sum invalid syntax (<string>, line 2)
+extract_freq EOL while scanning string literal (<string>, line 2)
+kth_element EOL while scanning string literal (<string>, line 2)
+sum_series invalid syntax (<string>, line 2)
+test_error of bell_number
+multiply_int invalid syntax (<string>, line 2)
+find_Parity EOL while scanning string literal (<string>, line 2)
+surfacearea_sphere EOL while scanning string literal (<string>, line 2)
+multiply_elements EOL while scanning string literal (<string>, line 2)
+average_tuple invalid syntax (<string>, line 2)
+find_sum invalid syntax (<string>, line 2)
+find_star_num EOL while scanning string literal (<string>, line 2)
+count_Substrings invalid syntax (<string>, line 2)
+test_error of start_withp
+string_to_tuple EOL while scanning string literal (<string>, line 2)
+sum_div EOL while scanning string literal (<string>, line 2)
+left_insertion EOL while scanning string literal (<string>, line 2)
+text_match_zero_one invalid syntax (<string>, line 2)
+Find_Max_Length EOL while scanning string literal (<string>, line 2)
+similar_elements EOL while scanning string literal (<string>, line 2)
+extract_index_list invalid syntax (<string>, line 2)
+max_product_tuple invalid syntax (<string>, line 2)
+find_Volume invalid syntax (<string>, line 2)
+test_error of extract_freq
+test_error of long_words
+validate EOL while scanning string literal (<string>, line 2)
+remove_nested invalid syntax (<string>, line 2)
+dif_Square invalid syntax (<string>, line 2)
+large_product invalid syntax (<string>, line 2)
+count_rotation invalid syntax (<string>, line 2)
+angle_complex EOL while scanning string literal (<string>, line 2)
+sequential_search invalid syntax (<string>, line 2)
+test_error of find_sum
+test_error of string_to_tuple
+test_error of start_withp
+test_error of average_tuple
+test_error of sum_div
+test_error of extract_freq
+left_rotate invalid syntax (<string>, line 2)
+test_error of text_match_zero_one
+test_error of long_words
+test_error of remove_nested
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of string_to_tuple
+test_error of find_sum
+long_words isinstance() arg 2 must be a type or tuple of types
+test_error of string_to_tuple
+rgb_to_hsv EOL while scanning string literal (<string>, line 2)
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of remove_nested
+test_error of angle_complex
+test_error of find_sum
+test_error of average_tuple
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of remove_nested
+test_error of angle_complex
+test_error of rgb_to_hsv
+test_error of average_tuple
+angle_complex can't convert complex to float
+test_error of add_tuple
+test_error of polar_rect
+test_error of check_occurences
+test_error of check_char
+test_error of removezero_ip
+test_error of trim_tuple
+test_error of count_vowels
+test_error of sort_numeric_strings
+test_error of find_substring
+index_multiplication duplicate argument 'test_tup1' in function definition (<string>, line 2)
+test_error of tuple_intersection
+test_error of get_ludic
+test_error of polar_rect
+test_error of check_occurences
+test_error of trim_tuple
+test_error of check_char
+test_error of count_vowels
+index_multiplication can't multiply sequence by non-int of type 'tuple'
+test_error of tuple_intersection
+test_error of check_occurences
+test_error of trim_tuple
+test_error of get_ludic
+test_error of polar_rect
+test_error of extract_even
+test_error of combinations_list
+test_error of check_char
+index_multiplication can't multiply sequence by non-int of type 'tuple'
+test_error of count_vowels
+test_error of maximize_elements
+test_error of occurance_substring
+test_error of check_occurences
+common_in_nested_lists 'int' object is not iterable
+test_error of trim_tuple
+test_error of polar_rect
+test_error of get_ludic
+test_error of combinations_list
+index_multiplication can't multiply sequence by non-int of type 'tuple'
+test_error of extract_even
+min_Jumps 'tuple' object has no attribute 'sort'
+test_error of check_char
+test_error of count_vowels
+common_in_nested_lists 'int' object is not iterable
+test_error of combinations_list
+test_error of get_ludic
+test_error of all_Bits_Set_In_The_Given_Range
+test_error of even_bit_set_number
+min_Jumps 'tuple' object has no attribute 'sort'
+find_char_long expected string or bytes-like object, got 'list'
+test_error of combinations_list
+test_error of all_Bits_Set_In_The_Given_Range
+test_error of get_coordinates
+test_error of common_in_nested_lists
+test_error of re_arrange_array
+test_error of group_tuples
+test_error of even_bit_set_number
+test_error of set_left_most_unset_bit
+concatenate_tuple sequence item 2: expected str instance, int found
+test_error of find_combinations
+test_error of min_Jumps
+find_char_long Input must be a string or bytes-like object.
+test_error of all_Bits_Set_In_The_Given_Range
+test_error of even_bit_set_number
+test_error of set_left_most_unset_bit
+test_error of re_arrange_array
+test_error of group_tuples
+test_error of get_coordinates
+test_error of common_in_nested_lists
+test_error of merge_sorted_list
+test_error of find_Element
+test_error of find_combinations
+test_error of new_tuple
+find_char_long Input must be a string.
+count_same_pair sum() missing 1 required positional argument: 'b'
+test_error of min_Jumps
+test_error of all_Bits_Set_In_The_Given_Range
+test_error of even_bit_set_number
+test_error of set_left_most_unset_bit
+test_error of group_tuples
+test_error of positive_count
+test_error of get_coordinates
+test_error of re_arrange_array
+test_error of find_Element
+test_error of max_sum_increasing_subseq
+find_combinations sum() missing 1 required positional argument: 'b'
+find_char_long Input must be a string.
+count_same_pair sum() missing 1 required positional argument: 'b'
+larg_nnum larg_nnum() missing 1 required positional argument: 'n'
+test_error of list_split
+count sum() missing 1 required positional argument: 'b'
+test_error of find_adverb_position
+test_error of set_left_most_unset_bit
+test_error of positive_count
+test_error of group_tuples
+convert 'int' object is not iterable
+test_error of find_Element
+count_same_pair sum() missing 1 required positional argument: 'b'
+test_error of get_coordinates
+find_combinations sum() missing 1 required positional argument: 'b'
+sort_matrix sum() missing 1 required positional argument: 'b'
+test_error of re_arrange_array
+test_error of max_sum_increasing_subseq
+larg_nnum larg_nnum() missing 1 required positional argument: 'n'
+count sum() missing 1 required positional argument: 'b'
+sum_negativenum sum() missing 1 required positional argument: 'b'
+test_error of find_adverb_position
+test_error of filter_data
+test_error of positive_count
+test_error of two_unique_nums
+test_error of loss_amount
+convert 'int' object is not iterable
+test_error of remove_kth_element
+count_same_pair sum() missing 1 required positional argument: 'b'
+odd_length_sum sum() missing 1 required positional argument: 'b'
+sort_matrix sum() missing 1 required positional argument: 'b'
+larg_nnum larg_nnum() missing 1 required positional argument: 'n'
+count sum() missing 1 required positional argument: 'b'
+test_error of find_Element
+sum_negativenum sum() missing 1 required positional argument: 'b'
+test_error of max_sum_increasing_subseq
+test_error of filter_data
+test_error of extract_rear
+test_error of find_adverb_position
+test_error of positive_count
+test_error of cal_sum
+test_error of loss_amount
+convert 'int' object is not iterable
+sort_matrix sum() missing 1 required positional argument: 'b'
+test_error of remove_kth_element
+larg_nnum larg_nnum() missing 1 required positional argument: 'n'
+count sum() missing 1 required positional argument: 'b'
+max_sub_array_sum_repeated sum() missing 1 required positional argument: 'b'
+odd_length_sum sum() missing 1 required positional argument: 'b'
+sum_negativenum sum() missing 1 required positional argument: 'b'
+test_error of surface_Area
+find_Average_Of_Cube sum() missing 1 required positional argument: 'b'
+test_error of filter_data
+test_error of max_sum_increasing_subseq
+test_error of find_adverb_position
+convert 'int' object is not iterable
+test_error of loss_amount
+test_error of and_tuples
+sum_of_digits sum() missing 1 required positional argument: 'b'
+sort_matrix sum() missing 1 required positional argument: 'b'
+test_error of cal_sum
+test_error of remove_kth_element
+sum_negativenum sum() missing 1 required positional argument: 'b'
+odd_length_sum sum() missing 1 required positional argument: 'b'
+test_error of sort_counter
+test_error of surface_Area
+find_Average_Of_Cube sum() missing 1 required positional argument: 'b'
+test_error of filter_data
+max_sub_array_sum_repeated max_sub_array_sum_repeated() takes 2 positional arguments but 3 were given
+sum_of_digits sum() missing 1 required positional argument: 'b'
+test_error of loss_amount
+test_error of remove_kth_element
+test_error of tup_string
+odd_length_sum sum() missing 1 required positional argument: 'b'
+find_Average_Of_Cube sum() missing 1 required positional argument: 'b'
+test_error of get_Char
+test_error of surface_Area
+test_error of largest_neg
+sum_of_digits sum() missing 1 required positional argument: 'b'
+remove_parenthesis expected string or bytes-like object, got 'list'
+max_sub_array_sum_repeated max_sub_array_sum_repeated() takes 2 positional arguments but 3 were given
+sample_nam sum() missing 1 required positional argument: 'b'
+test_error of list_to_float
+test_error of upper_ctr
+test_error of max_Product
+test_error of get_Char
+find_Average_Of_Cube sum() missing 1 required positional argument: 'b'
+test_error of find_solution
+test_error of surface_Area
+sum_of_digits sum() missing 1 required positional argument: 'b'
+test_error of largest_neg
+test_error of remove_parenthesis
+armstrong_number sum() missing 1 required positional argument: 'b'
+test_error of intersection_array
+test_error of max_product
+test_error of extract_singly
+sample_nam sum() missing 1 required positional argument: 'b'
+test_error of upper_ctr
+max_sub_array_sum_repeated max_sub_array_sum_repeated() takes 2 positional arguments but 3 were given
+test_error of triangle_area
+test_error of get_Char
+test_error of newman_prime
+test_error of max_Product
+test_error of remove_parenthesis
+test_error of largest_neg
+armstrong_number sum() missing 1 required positional argument: 'b'
+sample_nam sum() missing 1 required positional argument: 'b'
+test_error of upper_ctr
+test_error of max_product
+test_error of count_Occurrence
+test_error of convert_list_dictionary
+colon_tuplex Invalid indices
+test_error of get_Char
+test_error of remove_parenthesis
+test_error of newman_prime
+test_error of largest_neg
+test_error of upper_ctr
+armstrong_number sum() missing 1 required positional argument: 'b'
+sample_nam sum() missing 1 required positional argument: 'b'
+count_Occurrence sum() missing 1 required positional argument: 'b'
+test_error of sequence
+test_error of max_product
+colon_tuplex Invalid indices
+test_error of newman_prime
+test_error of max_length_list
+test_error of max_difference
+armstrong_number sum() missing 1 required positional argument: 'b'
+count_Occurrence sum() missing 1 required positional argument: 'b'
+test_error of bell_Number
+test_error of max_length
+test_error of max_product
+test_error of find_adverbs
+test_error of max_length_list
+count_Occurrence sum() missing 1 required positional argument: 'b'
+test_error of newman_prime
+colon_tuplex Invalid indices
+test_error of max_difference
+test_error of bell_Number
+colon_tuplex Invalid indices
+test_error of max_difference
+test_error of parabola_directrix
+test_error of wind_chill
+get_total_number_of_sequences sum() missing 1 required positional argument: 'b'
+test_error of parabola_directrix
+test_error of bell_Number
+test_error of max_difference
+test_error of wind_chill
+test_error of parabola_directrix
+get_total_number_of_sequences sum() missing 1 required positional argument: 'b'
+test_error of parabola_directrix
+test_error of wind_chill
+test_error of bell_Number
+get_total_number_of_sequences sum() missing 1 required positional argument: 'b'
+test_error of wind_chill
+get_total_number_of_sequences sum() missing 1 required positional argument: 'b'
+remove_parenthesis expected string or bytes-like object, got 'list'
+test_error of upper_ctr
+test_error of list_to_float
+convert 'int' object is not iterable
+sort_matrix sum() missing 1 required positional argument: 'b'
+armstrong_number sum() missing 1 required positional argument: 'b'
+test_error of list_split
+test_error of max_product
+test_error of intersection_array
+test_error of re_arrange_array
+concatenate_tuple sequence item 2: expected str instance, int found
+test_error of positive_count
+test_error of extract_singly
+test_error of remove_parenthesis
+test_error of upper_ctr
+sort_matrix sum() missing 1 required positional argument: 'b'
+convert 'int' object is not iterable
+test_error of merge_sorted_list
+test_error of largest_subset
+armstrong_number sum() missing 1 required positional argument: 'b'
+test_error of count_Occurrence
+test_error of new_tuple
+test_error of convert_list_dictionary
+test_error of max_product
+test_error of re_arrange_array
+count_same_pair sum() missing 1 required positional argument: 'b'
+test_error of remove_parenthesis
+test_error of sequence
+test_error of upper_ctr
+test_error of positive_count
+sort_matrix sum() missing 1 required positional argument: 'b'
+sum_range_list sum() missing 1 required positional argument: 'b'
+test_error of max_length_list
+convert 'int' object is not iterable
+find_char_long expected string or bytes-like object, got 'list'
+test_error of find_Element
+test_error of max_sum_increasing_subseq
+armstrong_number sum() missing 1 required positional argument: 'b'
+test_error of find_adverbs
+count_Occurrence sum() missing 1 required positional argument: 'b'
+count sum() missing 1 required positional argument: 'b'
+larg_nnum larg_nnum() missing 1 required positional argument: 'n'
+count_same_pair sum() missing 1 required positional argument: 'b'
+test_error of remove_parenthesis
+test_error of upper_ctr
+test_error of re_arrange_array
+sort_matrix sum() missing 1 required positional argument: 'b'
+test_error of max_product
+test_error of positive_count
+test_error of set_left_most_unset_bit
+sum_range_list sum() missing 1 required positional argument: 'b'
+test_error of find_adverb_position
+test_error of wind_chill
+test_error of polar_rect
+test_error of max_length_list
+convert 'int' object is not iterable
+test_error of group_tuples
+find_char_long Input must be a string or bytes-like object.
+test_error of get_coordinates
+index_multiplication duplicate argument 'test_tup1' in function definition (<string>, line 2)
+count_Occurrence sum() missing 1 required positional argument: 'b'
+count sum() missing 1 required positional argument: 'b'
+larg_nnum larg_nnum() missing 1 required positional argument: 'n'
+armstrong_number sum() missing 1 required positional argument: 'b'
+test_error of find_Element
+test_error of max_sum_increasing_subseq
+count_same_pair sum() missing 1 required positional argument: 'b'
+test_error of capital_words_spaces
+sum_negativenum sum() missing 1 required positional argument: 'b'
+test_error of two_unique_nums
+test_error of cal_sum
+test_error of re_arrange_array
+get_total_number_of_sequences sum() missing 1 required positional argument: 'b'
+test_error of set_left_most_unset_bit
+test_error of filter_data
+sum_range_list sum() missing 1 required positional argument: 'b'
+test_error of positive_count
+test_error of max_product
+max_sub_array_sum_repeated sum() missing 1 required positional argument: 'b'
+test_error of find_adverb_position
+test_error of remove_kth_element
+find_char_long Input must be a string.
+count_Occurrence sum() missing 1 required positional argument: 'b'
+count sum() missing 1 required positional argument: 'b'
+test_error of polar_rect
+index_multiplication can't multiply sequence by non-int of type 'tuple'
+larg_nnum larg_nnum() missing 1 required positional argument: 'n'
+test_error of wind_chill
+test_error of check_occurences
+test_error of loss_amount
+test_error of group_tuples
+sum_negativenum sum() missing 1 required positional argument: 'b'
+count_same_pair sum() missing 1 required positional argument: 'b'
+odd_length_sum sum() missing 1 required positional argument: 'b'
+test_error of trim_tuple
+test_error of get_coordinates
+test_error of set_left_most_unset_bit
+test_error of filter_data
+test_error of max_sum_increasing_subseq
+test_error of extract_rear
+sum_range_list sum() missing 1 required positional argument: 'b'
+test_error of sort_numeric_strings
+test_error of find_Element
+test_error of extract_even
+test_error of cal_sum
+count sum() missing 1 required positional argument: 'b'
+test_error of remove_kth_element
+find_char_long Input must be a string.
+larg_nnum larg_nnum() missing 1 required positional argument: 'n'
+get_total_number_of_sequences sum() missing 1 required positional argument: 'b'
+index_multiplication can't multiply sequence by non-int of type 'tuple'
+test_error of find_adverb_position
+sum_negativenum sum() missing 1 required positional argument: 'b'
+test_error of check_occurences
+find_Average_Of_Cube sum() missing 1 required positional argument: 'b'
+test_error of trim_tuple
+test_error of loss_amount
+test_error of polar_rect
+test_error of set_left_most_unset_bit
+test_error of group_tuples
+test_error of wind_chill
+odd_length_sum sum() missing 1 required positional argument: 'b'
+test_error of filter_data
+test_error of maximize_elements
+test_error of sort_numeric_strings
+test_error of get_coordinates
+test_error of occurance_substring
+max_sub_array_sum_repeated sum() missing 1 required positional argument: 'b'
+test_error of max_sum_increasing_subseq
+test_error of remove_kth_element
+test_error of find_Element
+test_error of extract_even
+index_multiplication can't multiply sequence by non-int of type 'tuple'
+test_error of check_occurences
+sum_of_digits sum() missing 1 required positional argument: 'b'
+test_error of and_tuples
+sum_negativenum sum() missing 1 required positional argument: 'b'
+test_error of cal_sum
+test_error of trim_tuple
+find_Average_Of_Cube sum() missing 1 required positional argument: 'b'
+test_error of find_adverb_position
+test_error of loss_amount
+get_total_number_of_sequences sum() missing 1 required positional argument: 'b'
+odd_length_sum sum() missing 1 required positional argument: 'b'
+test_error of polar_rect
+test_error of sort_numeric_strings
+test_error of group_tuples
+test_error of filter_data
+test_error of sort_counter
+test_error of wind_chill
+test_error of remove_kth_element
+test_error of check_occurences
+sum_of_digits sum() missing 1 required positional argument: 'b'
+test_error of get_coordinates
+test_error of tup_string
+test_error of extract_even
+test_error of trim_tuple
+test_error of get_Char
+find_Average_Of_Cube sum() missing 1 required positional argument: 'b'
+test_error of loss_amount
+test_error of sort_numeric_strings
+odd_length_sum sum() missing 1 required positional argument: 'b'
+test_error of largest_neg
+sample_nam sum() missing 1 required positional argument: 'b'
+test_error of cal_sum
+max_sub_array_sum_repeated sum() missing 1 required positional argument: 'b'
+get_total_number_of_sequences sum() missing 1 required positional argument: 'b'
+test_error of find_solution
+sum_of_digits sum() missing 1 required positional argument: 'b'
+test_error of newman_prime
+test_error of triangle_area
+test_error of max_Product
+test_error of count_Pairs
+test_error of get_Char
+colon_tuplex Invalid indices
+find_Average_Of_Cube sum() missing 1 required positional argument: 'b'
+test_error of largest_neg
+test_error of extract_even
+sample_nam sum() missing 1 required positional argument: 'b'
+test_error of max_length
+test_error of max_difference
+sum_of_digits sum() missing 1 required positional argument: 'b'
+test_error of bell_Number
+test_error of parabola_directrix
+test_error of newman_prime
+test_error of max_Product
+test_error of tuple_intersection
+test_error of get_ludic
+test_error of find_substring
+test_error of get_Char
+test_error of add_tuple
+max_sub_array_sum_repeated sum() missing 1 required positional argument: 'b'
+test_error of largest_neg
+sample_nam sum() missing 1 required positional argument: 'b'
+colon_tuplex Invalid indices
+test_error of max_difference
+count_Primes_nums sum() missing 1 required positional argument: 'b'
+test_error of count_vowels
+test_error of check_char
+test_error of parabola_directrix
+amicable_numbers_sum sum() missing 1 required positional argument: 'b'
+test_error of combinations_list
+power_base_sum sum() missing 1 required positional argument: 'b'
+test_error of bell_Number
+test_error of union_elements
+common_in_nested_lists 'int' object is not iterable
+test_error of newman_prime
+test_error of tuple_intersection
+test_error of get_Char
+test_error of largest_neg
+test_error of get_ludic
+sample_nam sum() missing 1 required positional argument: 'b'
+test_error of max_Product
+colon_tuplex Invalid indices
+test_error of max_difference
+test_error of even_bit_set_number
+min_Jumps 'tuple' object has no attribute 'sort'
+test_error of check_char
+test_error of parabola_directrix
+power_base_sum sum() missing 1 required positional argument: 'b'
+test_error of count_vowels
+test_error of all_Bits_Set_In_The_Given_Range
+count_Primes_nums sum() missing 1 required positional argument: 'b'
+test_error of combinations_list
+common_in_nested_lists 'int' object is not iterable
+find_combinations sum() missing 1 required positional argument: 'b'
+test_error of max_Product
+power_base_sum sum() missing 1 required positional argument: 'b'
+amicable_numbers_sum sum() missing 1 required positional argument: 'b'
+test_error of even_bit_set_number
+test_error of newman_prime
+colon_tuplex Invalid indices
+test_error of parabola_directrix
+test_error of get_ludic
+test_error of all_Bits_Set_In_The_Given_Range
+test_error of check_char
+power_base_sum sum() missing 1 required positional argument: 'b'
+test_error of combinations_list
+test_error of max_difference
+common_in_nested_lists 'int' object is not iterable
+test_error of even_bit_set_number
+find_combinations sum() missing 1 required positional argument: 'b'
+min_Jumps 'tuple' object has no attribute 'sort'
+test_error of count_vowels
+count_Primes_nums sum() missing 1 required positional argument: 'b'
+test_error of all_Bits_Set_In_The_Given_Range
+test_error of combinations_list
+test_error of even_bit_set_number
+common_in_nested_lists 'int' object is not iterable
+amicable_numbers_sum sum() missing 1 required positional argument: 'b'
+test_error of check_char
+find_combinations sum() missing 1 required positional argument: 'b'
+test_error of get_ludic
+test_error of all_Bits_Set_In_The_Given_Range
+test_error of count_vowels
+count_Primes_nums sum() missing 1 required positional argument: 'b'
+find_combinations sum() missing 1 required positional argument: 'b'
+test_error of min_Jumps
+amicable_numbers_sum sum() missing 1 required positional argument: 'b'
+test_error of min_Jumps
+test_error of add_tuple
+test_error of convert_list_dictionary
+armstrong_number sum() missing 1 required positional argument: 'b'
+test_error of check_char
+amicable_numbers_sum sum() missing 1 required positional argument: 'b'
+index_multiplication can't multiply sequence by non-int of type 'tuple'
+power_base_sum sum() missing 1 required positional argument: 'b'
+test_error of union_elements
+test_error of pancake_sort
+test_error of wind_chill
+count_same_pair sum() missing 1 required positional argument: 'b'
+test_error of list_to_float
+test_error of remove_kth_element
+test_error of extract_singly
+armstrong_number sum() missing 1 required positional argument: 'b'
+test_error of check_char
+get_total_number_of_sequences sum() missing 1 required positional argument: 'b'
+test_error of max_product
+index_multiplication can't multiply sequence by non-int of type 'tuple'
+power_base_sum sum() missing 1 required positional argument: 'b'
+amicable_numbers_sum sum() missing 1 required positional argument: 'b'
+test_error of wind_chill
+count_same_pair sum() missing 1 required positional argument: 'b'
+test_error of pancake_sort
+test_error of remove_kth_element
+armstrong_number sum() missing 1 required positional argument: 'b'
+test_error of upper_ctr
+test_error of check_char
+max_sub_array_sum_repeated sum() missing 1 required positional argument: 'b'
+index_multiplication can't multiply sequence by non-int of type 'tuple'
+power_base_sum sum() missing 1 required positional argument: 'b'
+test_error of max_product
+get_total_number_of_sequences sum() missing 1 required positional argument: 'b'
+find_Average_Of_Cube sum() missing 1 required positional argument: 'b'
+count_same_pair sum() missing 1 required positional argument: 'b'
+test_error of remove_kth_element
+amicable_numbers_sum sum() missing 1 required positional argument: 'b'
+test_error of wind_chill
+larg_nnum larg_nnum() missing 1 required positional argument: 'n'
+test_error of pancake_sort
+test_error of loss_amount
+test_error of upper_ctr
+test_error of get_pairs_count
+armstrong_number sum() missing 1 required positional argument: 'b'
+sum_negativenum sum() missing 1 required positional argument: 'b'
+index_multiplication can't multiply sequence by non-int of type 'tuple'
+test_error of check_char
+power_base_sum sum() missing 1 required positional argument: 'b'
+test_error of largest_neg
+test_error of max_product
+test_error of count_Occurrence
+count_same_pair sum() missing 1 required positional argument: 'b'
+find_Average_Of_Cube sum() missing 1 required positional argument: 'b'
+test_error of intersection_array
+test_error of remove_kth_element
+test_error of find_dissimilar
+get_total_number_of_sequences sum() missing 1 required positional argument: 'b'
+larg_nnum larg_nnum() missing 1 required positional argument: 'n'
+max_sub_array_sum_repeated max_sub_array_sum_repeated() takes 2 positional arguments but 3 were given
+test_error of wind_chill
+amicable_numbers_sum sum() missing 1 required positional argument: 'b'
+test_error of upper_ctr
+test_error of loss_amount
+sum_negativenum sum() missing 1 required positional argument: 'b'
+test_error of pancake_sort
+test_error of largest_neg
+count_integer sum() missing 1 required positional argument: 'b'
+find_Average_Of_Cube sum() missing 1 required positional argument: 'b'
+test_error of max_product
+larg_nnum larg_nnum() missing 1 required positional argument: 'n'
+get_total_number_of_sequences sum() missing 1 required positional argument: 'b'
+test_error of upper_ctr
+count sum() missing 1 required positional argument: 'b'
+max_sub_array_sum_repeated max_sub_array_sum_repeated() takes 2 positional arguments but 3 were given
+sum_negativenum sum() missing 1 required positional argument: 'b'
+test_error of loss_amount
+test_error of largest_neg
+odd_length_sum sum() missing 1 required positional argument: 'b'
+test_error of max_length_list
+test_error of polar_rect
+test_error of get_Char
+count_integer sum() missing 1 required positional argument: 'b'
+find_Average_Of_Cube sum() missing 1 required positional argument: 'b'
+larg_nnum larg_nnum() missing 1 required positional argument: 'n'
+remove_parenthesis expected string or bytes-like object, got 'list'
+test_error of find_adverb_position
+count sum() missing 1 required positional argument: 'b'
+test_error of find_adverbs
+sum_negativenum sum() missing 1 required positional argument: 'b'
+test_error of largest_subset
+test_error of loss_amount
+test_error of largest_neg
+test_error of max_length_list
+test_error of polar_rect
+count_integer sum() missing 1 required positional argument: 'b'
+odd_length_sum sum() missing 1 required positional argument: 'b'
+test_error of get_Char
+test_error of remove_parenthesis
+return_sum sum() missing 1 required positional argument: 'b'
+max_sub_array_sum_repeated max_sub_array_sum_repeated() takes 2 positional arguments but 3 were given
+test_error of sequence
+test_error of two_unique_nums
+count sum() missing 1 required positional argument: 'b'
+test_error of find_adverbs
+test_error of check_occurences
+test_error of trim_tuple
+count_integer sum() missing 1 required positional argument: 'b'
+test_error of polar_rect
+return_sum sum() missing 1 required positional argument: 'b'
+test_error of count_vowels
+odd_length_sum sum() missing 1 required positional argument: 'b'
+test_error of remove_parenthesis
+test_error of get_Char
+count_Primes_nums sum() missing 1 required positional argument: 'b'
+test_error of extract_rear
+count sum() missing 1 required positional argument: 'b'
+test_error of cal_sum
+test_error of sort_numeric_strings
+test_error of check_occurences
+test_error of find_adverbs
+test_error of trim_tuple
+test_error of polar_rect
+return_sum sum() missing 1 required positional argument: 'b'
+test_error of remove_parenthesis
+odd_length_sum sum() missing 1 required positional argument: 'b'
+test_error of add_lists
+test_error of count_vowels
+test_error of get_Char
+count_Primes_nums sum() missing 1 required positional argument: 'b'
+test_error of sort_numeric_strings
+test_error of check_occurences
+test_error of cal_sum
+test_error of find_First_Missing
+test_error of find_adverbs
+test_error of trim_tuple
+test_error of combinations_list
+return_sum sum() missing 1 required positional argument: 'b'
+test_error of maximize_elements
+test_error of count_vowels
+common_in_nested_lists 'int' object is not iterable
+test_error of sort_numeric_strings
+test_error of check_occurences
+count_Primes_nums sum() missing 1 required positional argument: 'b'
+test_error of trim_tuple
+test_error of occurance_substring
+test_error of cal_sum
+test_error of combinations_list
+test_error of and_tuples
+common_in_nested_lists 'int' object is not iterable
+test_error of sort_numeric_strings
+test_error of count_vowels
+test_error of min_Jumps
+count_Primes_nums sum() missing 1 required positional argument: 'b'
+test_error of filter_data
+test_error of combinations_list
+test_error of cal_sum
+test_error of sort_counter
+common_in_nested_lists 'int' object is not iterable
+test_error of dict_depth
+test_error of min_Jumps
+test_error of filter_data
+find_combinations sum() missing 1 required positional argument: 'b'
+test_error of combinations_list
+test_error of all_Bits_Set_In_The_Given_Range
+test_error of tup_string
+common_in_nested_lists 'int' object is not iterable
+test_error of dict_depth
+test_error of even_bit_set_number
+test_error of max_Product
+test_error of filter_data
+sample_nam sum() missing 1 required positional argument: 'b'
+test_error of min_Jumps
+find_combinations sum() missing 1 required positional argument: 'b'
+test_error of find_solution
+test_error of all_Bits_Set_In_The_Given_Range
+test_error of sumofFactors
+test_error of dict_depth
+test_error of even_bit_set_number
+test_error of set_left_most_unset_bit
+test_error of filter_data
+test_error of group_tuples
+test_error of max_Product
+sample_nam sum() missing 1 required positional argument: 'b'
+test_error of get_coordinates
+find_combinations sum() missing 1 required positional argument: 'b'
+test_error of all_Bits_Set_In_The_Given_Range
+test_error of min_Jumps
+test_error of dict_depth
+find_char_long expected string or bytes-like object, got 'list'
+test_error of re_arrange_array
+test_error of even_bit_set_number
+test_error of set_left_most_unset_bit
+sample_nam sum() missing 1 required positional argument: 'b'
+test_error of group_tuples
+test_error of triangle_area
+test_error of all_Bits_Set_In_The_Given_Range
+find_combinations sum() missing 1 required positional argument: 'b'
+test_error of get_coordinates
+test_error of max_Product
+test_error of newman_prime
+find_char_long Input must be a string or bytes-like object.
+concatenate_tuple concatenate_tuple() missing 1 required positional argument: 'delimiter'
+sum_range_list sum() missing 1 required positional argument: 'b'
+test_error of even_bit_set_number
+test_error of re_arrange_array
+test_error of set_left_most_unset_bit
+sample_nam sum() missing 1 required positional argument: 'b'
+test_error of get_coordinates
+find_char_long Input must be a string.
+concatenate_tuple concatenate_tuple() missing 1 required positional argument: 'delimiter'
+test_error of newman_prime
+sum_range_list sum() missing 1 required positional argument: 'b'
+test_error of parabola_directrix
+test_error of find_Element
+test_error of find_substring
+test_error of set_left_most_unset_bit
+test_error of re_arrange_array
+colon_tuplex Invalid slice indices
+test_error of merge_sorted_list
+test_error of new_tuple
+find_char_long Input must be a string.
+test_error of get_coordinates
+concatenate_tuple concatenate_tuple() missing 1 required positional argument: 'delimiter'
+sum_range_list sum() missing 1 required positional argument: 'b'
+test_error of newman_prime
+test_error of parabola_directrix
+test_error of find_Element
+colon_tuplex Invalid slice indices
+test_error of re_arrange_array
+test_error of positive_count
+concatenate_tuple concatenate_tuple() missing 1 required positional argument: 'delimiter'
+sum_range_list sum() missing 1 required positional argument: 'b'
+test_error of max_difference
+test_error of newman_prime
+test_error of parabola_directrix
+test_error of list_split
+test_error of max_length
+test_error of find_Element
+convert 'int' object is not iterable
+test_error of max_sum_increasing_subseq
+colon_tuplex Invalid slice indices
+test_error of positive_count
+sort_matrix sum() missing 1 required positional argument: 'b'
+test_error of max_difference
+test_error of parabola_directrix
+test_error of tuple_intersection
+convert 'int' object is not iterable
+sort_matrix sum() missing 1 required positional argument: 'b'
+test_error of get_ludic
+test_error of positive_count
+sort_matrix sum() missing 1 required positional argument: 'b'
+colon_tuplex Invalid slice indices
+convert 'int' object is not iterable
+sort_matrix sum() missing 1 required positional argument: 'b'
+test_error of positive_count
+convert 'int' object is not iterable
+test_error of max_sum_increasing_subseq
+test_error of get_ludic
+test_error of is_num_decagonal
+test_error of get_ludic
+test_error of max_sum_increasing_subseq
+test_error of get_ludic
+test_error of is_num_decagonal
+test_error of max_sum_increasing_subseq
+test_error of is_num_decagonal
+test_error of is_num_decagonal
+test_error of get_Char
+test_error of polar_rect
+test_error of largest_neg
+test_error of occurance_substring
+test_error of loss_amount
+test_error of min_Swaps
+test_error of upper_ctr
+remove_parenthesis expected string or bytes-like object, got 'list'
+sample_nam sum() missing 1 required positional argument: 'b'
+test_error of list_to_float
+test_error of get_Char
+test_error of intersection_array
+armstrong_number sum() missing 1 required positional argument: 'b'
+test_error of polar_rect
+test_error of largest_neg
+test_error of max_product
+test_error of loss_amount
+test_error of remove_parenthesis
+test_error of upper_ctr
+sample_nam sum() missing 1 required positional argument: 'b'
+test_error of min_Swaps
+test_error of get_Char
+armstrong_number sum() missing 1 required positional argument: 'b'
+test_error of polar_rect
+test_error of largest_neg
+test_error of loss_amount
+test_error of upper_ctr
+test_error of remove_parenthesis
+test_error of max_product
+count_Primes_nums sum() missing 1 required positional argument: 'b'
+sample_nam sum() missing 1 required positional argument: 'b'
+test_error of get_Char
+sum_negativenum sum() missing 1 required positional argument: 'b'
+test_error of find_adverb_position
+test_error of wind_chill
+test_error of polar_rect
+armstrong_number sum() missing 1 required positional argument: 'b'
+larg_nnum larg_nnum() missing 1 required positional argument: 'n'
+get_total_number_of_sequences sum() missing 1 required positional argument: 'b'
+test_error of largest_neg
+test_error of sort_numeric_strings
+test_error of loss_amount
+test_error of upper_ctr
+test_error of remove_parenthesis
+test_error of find_solution
+test_error of find_First_Missing
+sample_nam sum() missing 1 required positional argument: 'b'
+test_error of max_product
+sum_negativenum sum() missing 1 required positional argument: 'b'
+count_Primes_nums sum() missing 1 required positional argument: 'b'
+test_error of find_adverb_position
+test_error of new_tuple
+test_error of wind_chill
+count sum() missing 1 required positional argument: 'b'
+armstrong_number sum() missing 1 required positional argument: 'b'
+larg_nnum larg_nnum() missing 1 required positional argument: 'n'
+test_error of sort_numeric_strings
+get_total_number_of_sequences sum() missing 1 required positional argument: 'b'
+test_error of count_vowels
+sum_negativenum sum() missing 1 required positional argument: 'b'
+count_same_pair sum() missing 1 required positional argument: 'b'
+test_error of max_product
+test_error of find_adverb_position
+count_Primes_nums sum() missing 1 required positional argument: 'b'
+count sum() missing 1 required positional argument: 'b'
+larg_nnum larg_nnum() missing 1 required positional argument: 'n'
+test_error of wind_chill
+odd_length_sum sum() missing 1 required positional argument: 'b'
+test_error of sort_numeric_strings
+test_error of count_vowels
+sum_negativenum sum() missing 1 required positional argument: 'b'
+get_total_number_of_sequences sum() missing 1 required positional argument: 'b'
+count_same_pair sum() missing 1 required positional argument: 'b'
+colon_tuplex Invalid indices
+count sum() missing 1 required positional argument: 'b'
+test_error of find_adverb_position
+count_Primes_nums sum() missing 1 required positional argument: 'b'
+larg_nnum larg_nnum() missing 1 required positional argument: 'n'
+common_in_nested_lists 'int' object is not iterable
+odd_length_sum sum() missing 1 required positional argument: 'b'
+test_error of wind_chill
+test_error of sort_numeric_strings
+test_error of count_vowels
+count_same_pair sum() missing 1 required positional argument: 'b'
+count sum() missing 1 required positional argument: 'b'
+test_error of trim_tuple
+get_total_number_of_sequences sum() missing 1 required positional argument: 'b'
+index_multiplication can't multiply sequence by non-int of type 'tuple'
+colon_tuplex Invalid indices
+max_sub_array_sum_repeated sum() missing 1 required positional argument: 'b'
+common_in_nested_lists 'int' object is not iterable
+test_error of add_lists
+odd_length_sum sum() missing 1 required positional argument: 'b'
+test_error of maximize_elements
+test_error of count_vowels
+count_same_pair sum() missing 1 required positional argument: 'b'
+test_error of trim_tuple
+index_multiplication can't multiply sequence by non-int of type 'tuple'
+colon_tuplex Invalid indices
+find_kth maximum recursion depth exceeded in comparison
+odd_length_sum sum() missing 1 required positional argument: 'b'
+common_in_nested_lists 'int' object is not iterable
+max_sub_array_sum_repeated sum() missing 1 required positional argument: 'b'
+test_error of even_bit_set_number
+test_error of sequence
+test_error of triangle_area
+test_error of find_adverbs
+test_error of and_tuples
+index_multiplication can't multiply sequence by non-int of type 'tuple'
+test_error of check_occurences
+test_error of trim_tuple
+test_error of remove_kth_element
+colon_tuplex Invalid indices
+common_in_nested_lists 'int' object is not iterable
+max_sub_array_sum_repeated sum() missing 1 required positional argument: 'b'
+test_error of even_bit_set_number
+find_kth maximum recursion depth exceeded in comparison
+test_error of re_arrange_array
+test_error of sequence
+index_multiplication can't multiply sequence by non-int of type 'tuple'
+test_error of check_occurences
+test_error of trim_tuple
+test_error of remove_kth_element
+sum sum() missing 1 required positional argument: 'b'
+test_error of combinations_list
+test_error of newman_prime
+test_error of max_length_list
+test_error of even_bit_set_number
+max_sub_array_sum_repeated sum() missing 1 required positional argument: 'b'
+test_error of check_occurences
+test_error of re_arrange_array
+test_error of sequence
+find_Average_Of_Cube sum() missing 1 required positional argument: 'b'
+find_combinations sum() missing 1 required positional argument: 'b'
+find_kth maximum recursion depth exceeded in comparison
+test_error of remove_kth_element
+test_error of combinations_list
+test_error of max_length_list
+sum sum() missing 1 required positional argument: 'b'
+test_error of newman_prime
+test_error of even_bit_set_number
+test_error of check_occurences
+test_error of max_sum_increasing_subseq
+test_error of area_tetrahedron
+test_error of re_arrange_array
+find_Average_Of_Cube sum() missing 1 required positional argument: 'b'
+test_error of remove_kth_element
+test_error of all_Bits_Set_In_The_Given_Range
+find_combinations sum() missing 1 required positional argument: 'b'
+test_error of combinations_list
+min_Jumps 'tuple' object has no attribute 'sort'
+test_error of sort_counter
+test_error of newman_prime
+concatenate_tuple concatenate_tuple() missing 1 required positional argument: 'delimiter'
+find_kth maximum recursion depth exceeded in comparison
+sum sum() missing 1 required positional argument: 'b'
+count_integer sum() missing 1 required positional argument: 'b'
+test_error of capital_words_spaces
+test_error of area_tetrahedron
+find_Average_Of_Cube sum() missing 1 required positional argument: 'b'
+test_error of max_sum_increasing_subseq
+test_error of all_Bits_Set_In_The_Given_Range
+test_error of re_arrange_array
+test_error of combinations_list
+find_combinations sum() missing 1 required positional argument: 'b'
+test_error of min_Jumps
+test_error of filter_data
+test_error of max_Product
+concatenate_tuple concatenate_tuple() missing 1 required positional argument: 'delimiter'
+test_error of newman_prime
+count_integer sum() missing 1 required positional argument: 'b'
+test_error of extract_rear
+test_error of area_tetrahedron
+sum sum() missing 1 required positional argument: 'b'
+test_error of convert_list_dictionary
+test_error of max_length
+find_Average_Of_Cube sum() missing 1 required positional argument: 'b'
+test_error of set_left_most_unset_bit
+test_error of all_Bits_Set_In_The_Given_Range
+find_combinations sum() missing 1 required positional argument: 'b'
+test_error of two_unique_nums
+test_error of max_sum_increasing_subseq
+test_error of max_difference
+test_error of filter_data
+concatenate_tuple concatenate_tuple() missing 1 required positional argument: 'delimiter'
+count_integer sum() missing 1 required positional argument: 'b'
+test_error of min_Jumps
+test_error of area_tetrahedron
+test_error of get_coordinates
+test_error of set_left_most_unset_bit
+convert 'int' object is not iterable
+test_error of all_Bits_Set_In_The_Given_Range
+sort_matrix sum() missing 1 required positional argument: 'b'
+test_error of get_ludic
+test_error of check_char
+test_error of filter_data
+test_error of max_difference
+concatenate_tuple concatenate_tuple() missing 1 required positional argument: 'delimiter'
+count_integer sum() missing 1 required positional argument: 'b'
+test_error of max_sum_increasing_subseq
+test_error of min_Jumps
+tuple_intersection unhashable type: 'set'
+test_error of get_coordinates
+test_error of find_Element
+test_error of set_left_most_unset_bit
+test_error of dict_depth
+sort_matrix sum() missing 1 required positional argument: 'b'
+convert 'int' object is not iterable
+test_error of count_Occurrence
+test_error of filter_data
+test_error of check_char
+test_error of get_ludic
+test_error of max_difference
+test_error of tuple_intersection
+sort_matrix sum() missing 1 required positional argument: 'b'
+test_error of set_left_most_unset_bit
+test_error of dict_depth
+test_error of get_coordinates
+convert 'int' object is not iterable
+test_error of find_Element
+positive_count sum() missing 1 required positional argument: 'b'
+test_error of is_num_decagonal
+test_error of check_char
+test_error of max_difference
+test_error of get_ludic
+test_error of max_aggregate
+sort_matrix sum() missing 1 required positional argument: 'b'
+amicable_numbers_sum sum() missing 1 required positional argument: 'b'
+convert 'int' object is not iterable
+test_error of dict_depth
+test_error of parabola_directrix
+test_error of get_coordinates
+positive_count sum() missing 1 required positional argument: 'b'
+find_Element name 'rotutions' is not defined
+sum_range_list sum() missing 1 required positional argument: 'b'
+test_error of is_num_decagonal
+test_error of check_char
+test_error of get_ludic
+test_error of group_tuples
+test_error of parabola_directrix
+test_error of dict_depth
+amicable_numbers_sum sum() missing 1 required positional argument: 'b'
+test_error of find_substring
+test_error of merge_sorted_list
+positive_count sum() missing 1 required positional argument: 'b'
+test_error of list_split
+sum_range_list sum() missing 1 required positional argument: 'b'
+test_error of extract_singly
+test_error of find_Element
+test_error of is_num_decagonal
+test_error of group_tuples
+test_error of parabola_directrix
+power_base_sum sum() missing 1 required positional argument: 'b'
+amicable_numbers_sum sum() missing 1 required positional argument: 'b'
+positive_count sum() missing 1 required positional argument: 'b'
+sum_range_list sum() missing 1 required positional argument: 'b'
+power_base_sum sum() missing 1 required positional argument: 'b'
+test_error of parabola_directrix
+find_char_long expected string or bytes-like object, got 'list'
+test_error of group_tuples
+test_error of is_num_decagonal
+test_error of add_tuple
+sum_range_list sum() missing 1 required positional argument: 'b'
+amicable_numbers_sum sum() missing 1 required positional argument: 'b'
+power_base_sum sum() missing 1 required positional argument: 'b'
+find_char_long Input must be a string or bytes-like object.
+test_error of bell_Number
+power_base_sum sum() missing 1 required positional argument: 'b'
+find_char_long Input must be a string.
+find_char_long Input must be a string.
+test_error of bell_Number
+test_error of bell_Number
+test_error of bell_Number
+test_error of check_char
+test_error of remove_kth_element
+odd_length_sum sum() missing 1 required positional argument: 'b'
+test_error of largest_neg
+test_error of intersection_array
+test_error of sumofFactors
+test_error of check_occurences
+test_error of string_to_tuple
+test_error of long_words
+test_error of remove_nested
+test_error of find_length
+test_error of large_product
+test_error of bell_number
+harmonic_sum name 'math' is not defined
+area_polygon name 'math' is not defined
+test_error of rgb_to_hsv
+test_error of angle_complex
+test_error of remove_nested
+test_error of sum_div
+test_error of find_length
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of is_polite
+test_error of bell_number
+test_error of harmonic_sum
+large_product local variable 'nums1' referenced before assignment
+test_error of round_and_sum
+test_error of average_tuple
+test_error of extract_freq
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of remove_nested
+test_error of find_sum
+test_error of extract_freq
+test_error of find_length
+test_error of start_withp
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of harmonic_sum
+test_error of is_polite
+test_error of find_sum
+test_error of remove_nested
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of is_polite
+test_error of round_and_sum
+test_error of harmonic_sum
+test_error of average_tuple
+test_error of find_sum
+test_error of is_polite
+test_error of bell_number
+test_error of surfacearea_cylinder
+test_error of eulerian_num
+test_error of find_sum
+test_error of find_length
+test_error of round_and_sum
+test_error of surfacearea_cylinder
+test_error of average_tuple
+test_error of large_product
+test_error of bell_number
+test_error of eulerian_num
+test_error of surfacearea_cylinder
+test_error of round_and_sum
+test_error of average_tuple
+test_error of eulerian_num
+test_error of surfacearea_cylinder
+test_error of large_product
+test_error of eulerian_num
+test_error of average_tuple
+test_error of find_length
+test_error of is_polite
+test_error of round_and_sum
+test_error of rgb_to_hsv
+test_error of harmonic_sum
+test_error of remove_nested
+test_error of average_tuple
+test_error of is_polite
+test_error of sum_div
+test_error of angle_complex
+test_error of surfacearea_cylinder
+test_error of long_words
+test_error of round_and_sum
+test_error of large_product
+test_error of string_to_tuple
+test_error of k_smallest_pairs
+test_error of bell_number
+test_error of find_sum
+test_error of extract_freq
+test_error of harmonic_sum
+test_error of is_polite
+test_error of start_withp
+test_error of remove_nested
+test_error of surfacearea_cylinder
+test_error of average_tuple
+test_error of long_words
+test_error of extract_freq
+test_error of find_sum
+test_error of harmonic_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of round_and_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of find_sum
+test_error of bell_number
+test_error of harmonic_sum
+test_error of remove_nested
+test_error of surfacearea_cylinder
+test_error of is_polite
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of find_sum
+test_error of average_tuple
+test_error of eulerian_num
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of round_and_sum
+test_error of surfacearea_cylinder
+test_error of remove_nested
+test_error of bell_number
+test_error of eulerian_num
+test_error of bell_number
+test_error of eulerian_num
+test_error of eulerian_num
+test_error of string_to_tuple
+test_error of sum_div
+test_error of remove_nested
+test_error of large_product
+test_error of angle_complex
+test_error of is_polite
+test_error of round_and_sum
+test_error of extract_freq
+test_error of find_length
+test_error of long_words
+test_error of rgb_to_hsv
+test_error of harmonic_sum
+test_error of remove_nested
+test_error of eulerian_num
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of surfacearea_cylinder
+test_error of is_polite
+test_error of large_product
+test_error of extract_freq
+test_error of round_and_sum
+test_error of start_withp
+test_error of find_sum
+test_error of long_words
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of is_polite
+test_error of harmonic_sum
+test_error of average_tuple
+test_error of surfacearea_cylinder
+test_error of find_sum
+test_error of remove_nested
+test_error of long_words
+test_error of bell_number
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of eulerian_num
+test_error of long_words
+test_error of harmonic_sum
+test_error of find_sum
+test_error of round_and_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of find_sum
+test_error of is_polite
+test_error of surfacearea_cylinder
+test_error of remove_nested
+test_error of harmonic_sum
+test_error of average_tuple
+test_error of bell_number
+test_error of round_and_sum
+test_error of eulerian_num
+test_error of surfacearea_cylinder
+test_error of large_product
+test_error of average_tuple
+test_error of bell_number
+test_error of eulerian_num
+test_error of average_tuple
+test_error of bell_number
+test_error of large_product
+test_error of string_to_tuple
+test_error of harmonic_sum
+test_error of eulerian_num
+test_error of round_and_sum
+test_error of find_sum
+test_error of extract_freq
+test_error of bell_number
+test_error of angle_complex
+test_error of long_words
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of start_withp
+test_error of harmonic_sum
+test_error of sum_div
+test_error of find_sum
+test_error of extract_freq
+test_error of large_product
+test_error of eulerian_num
+test_error of round_and_sum
+test_error of bell_number
+test_error of is_polite
+test_error of long_words
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of remove_nested
+test_error of average_tuple
+test_error of harmonic_sum
+test_error of find_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of is_polite
+test_error of long_words
+test_error of round_and_sum
+test_error of find_length
+test_error of large_product
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of find_sum
+test_error of eulerian_num
+test_error of k_smallest_pairs
+test_error of harmonic_sum
+test_error of bell_number
+test_error of is_polite
+test_error of remove_nested
+test_error of surfacearea_cylinder
+test_error of average_tuple
+test_error of long_words
+test_error of round_and_sum
+test_error of surfacearea_cylinder
+test_error of is_polite
+test_error of eulerian_num
+test_error of remove_nested
+test_error of bell_number
+test_error of rgb_to_hsv
+test_error of average_tuple
+test_error of k_smallest_pairs
+test_error of surfacearea_cylinder
+test_error of remove_nested
+test_error of average_tuple
+test_error of large_product
+test_error of surfacearea_cylinder
+test_error of k_smallest_pairs
+test_error of k_smallest_pairs
+test_error of large_product
+test_error of find_sum
+test_error of is_polite
+test_error of extract_freq
+test_error of find_length
+test_error of eulerian_num
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of k_smallest_pairs
+test_error of large_product
+test_error of angle_complex
+test_error of find_sum
+test_error of extract_freq
+test_error of is_polite
+test_error of sum_div
+test_error of round_and_sum
+test_error of string_to_tuple
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of average_tuple
+test_error of eulerian_num
+test_error of start_withp
+test_error of k_smallest_pairs
+test_error of long_words
+test_error of harmonic_sum
+test_error of find_sum
+test_error of bell_number
+test_error of remove_nested
+test_error of is_polite
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of large_product
+test_error of round_and_sum
+test_error of find_sum
+test_error of average_tuple
+test_error of long_words
+test_error of harmonic_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of eulerian_num
+test_error of remove_nested
+test_error of long_words
+test_error of surfacearea_cylinder
+test_error of harmonic_sum
+test_error of k_smallest_pairs
+test_error of is_polite
+test_error of bell_number
+test_error of round_and_sum
+test_error of average_tuple
+test_error of long_words
+test_error of harmonic_sum
+test_error of surfacearea_cylinder
+test_error of eulerian_num
+test_error of remove_nested
+test_error of round_and_sum
+test_error of bell_number
+test_error of average_tuple
+test_error of surfacearea_cylinder
+test_error of k_smallest_pairs
+test_error of remove_nested
+test_error of large_product
+test_error of surfacearea_cylinder
+test_error of bell_number
+test_error of rgb_to_hsv
+test_error of large_product
+test_error of long_words
+test_error of find_length
+area_polygon name 'math' is not defined
+test_error of find_sum
+harmonic_sum name 'math' is not defined
+test_error of find_sum
+harmonic_sum name 'math' is not defined
+test_error of start_withp
+test_error of find_sum
+test_error of harmonic_sum
+test_error of find_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of harmonic_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of average_tuple
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of average_tuple
+test_error of surfacearea_cylinder
+test_error of bell_number
+test_error of surfacearea_cylinder
+test_error of surfacearea_cylinder
+test_error of extract_freq
+test_error of surfacearea_cylinder
+test_error of average_tuple
+test_error of extract_freq
+test_error of bell_number
+test_error of remove_nested
+test_error of angle_complex
+test_error of average_tuple
+test_error of remove_nested
+test_error of bell_number
+test_error of is_polite
+test_error of sum_div
+test_error of string_to_tuple
+test_error of rgb_to_hsv
+test_error of is_polite
+test_error of remove_nested
+test_error of is_polite
+test_error of bell_number
+test_error of remove_nested
+test_error of is_polite
+test_error of surfacearea_cylinder
+test_error of harmonic_sum
+test_error of find_sum
+test_error of surfacearea_cylinder
+test_error of find_length
+test_error of harmonic_sum
+test_error of find_sum
+test_error of surfacearea_cylinder
+test_error of harmonic_sum
+test_error of extract_freq
+test_error of find_sum
+test_error of average_tuple
+test_error of extract_freq
+test_error of find_sum
+test_error of average_tuple
+test_error of harmonic_sum
+test_error of surfacearea_cylinder
+test_error of average_tuple
+test_error of long_words
+test_error of average_tuple
+test_error of long_words
+test_error of start_withp
+test_error of long_words
+test_error of long_words
+test_error of string_to_tuple
+test_error of round_and_sum
+test_error of bell_number
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of round_and_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of round_and_sum
+test_error of k_smallest_pairs
+test_error of remove_nested
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of round_and_sum
+test_error of angle_complex
+test_error of bell_number
+test_error of angle_complex
+test_error of angle_complex
+test_error of remove_nested
+test_error of angle_complex
+test_error of is_polite
+test_error of k_smallest_pairs
+test_error of bell_number
+test_error of sum_div
+test_error of remove_nested
+test_error of is_polite
+test_error of is_polite
+test_error of sum_div
+test_error of remove_nested
+test_error of bell_number
+test_error of k_smallest_pairs
+test_error of rgb_to_hsv
+test_error of is_polite
+test_error of k_smallest_pairs
+test_error of average_tuple
+test_error of start_withp
+test_error of average_tuple
+test_error of average_tuple
+test_error of average_tuple
+test_error of is_polite
+test_error of bell_number
+test_error of find_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of harmonic_sum
+test_error of find_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of find_sum
+test_error of harmonic_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of is_polite
+test_error of bell_number
+test_error of find_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of harmonic_sum
+test_error of long_words
+test_error of is_polite
+test_error of find_length
+test_error of long_words
+test_error of bell_number
+test_error of long_words
+test_error of is_polite
+test_error of long_words
+test_error of harmonic_sum
+test_error of string_to_tuple
+test_error of bell_number
+test_error of surfacearea_cylinder
+test_error of k_smallest_pairs
+test_error of surfacearea_cylinder
+test_error of remove_nested
+test_error of surfacearea_cylinder
+test_error of round_and_sum
+test_error of angle_complex
+test_error of k_smallest_pairs
+test_error of angle_complex
+test_error of round_and_sum
+test_error of remove_nested
+test_error of sum_div
+test_error of angle_complex
+test_error of surfacearea_cylinder
+test_error of round_and_sum
+test_error of angle_complex
+test_error of sum_div
+test_error of round_and_sum
+test_error of extract_freq
+test_error of remove_nested
+test_error of extract_freq
+test_error of k_smallest_pairs
+test_error of sum_div
+test_error of rgb_to_hsv
+test_error of remove_nested
+test_error of k_smallest_pairs
+test_error of angle_complex
+test_error of angle_complex
+test_error of sum_div
+test_error of angle_complex
+test_error of string_to_tuple
+test_error of remove_nested
+test_error of angle_complex
+test_error of rgb_to_hsv
+test_error of is_polite
+test_error of remove_nested
+test_error of round_and_sum
+test_error of average_tuple
+test_error of is_polite
+test_error of round_and_sum
+test_error of is_polite
+test_error of average_tuple
+test_error of round_and_sum
+test_error of remove_nested
+test_error of harmonic_sum
+test_error of average_tuple
+test_error of round_and_sum
+test_error of find_sum
+test_error of bell_number
+test_error of long_words
+test_error of average_tuple
+test_error of start_withp
+test_error of harmonic_sum
+test_error of find_sum
+test_error of is_polite
+test_error of long_words
+test_error of remove_nested
+test_error of long_words
+test_error of find_sum
+test_error of long_words
+test_error of find_length
+test_error of find_sum
+test_error of harmonic_sum
+test_error of bell_number
+test_error of harmonic_sum
+test_error of surfacearea_cylinder
+test_error of bell_number
+test_error of surfacearea_cylinder
+test_error of surfacearea_cylinder
+test_error of k_smallest_pairs
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of bell_number
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of extract_freq
+test_error of surfacearea_cylinder
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of extract_freq
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of k_smallest_pairs
+test_error of k_smallest_pairs
+test_error of k_smallest_pairs
+test_error of harmonic_sum
+test_error of bell_number
+test_error of string_to_tuple
+test_error of harmonic_sum
+test_error of long_words
+test_error of is_polite
+test_error of long_words
+test_error of bell_number
+test_error of find_sum
+test_error of long_words
+test_error of is_polite
+test_error of start_withp
+test_error of find_sum
+test_error of harmonic_sum
+test_error of long_words
+test_error of is_polite
+test_error of find_sum
+test_error of k_smallest_pairs
+test_error of remove_nested
+test_error of is_polite
+test_error of find_sum
+test_error of bell_number
+test_error of harmonic_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of remove_nested
+test_error of average_tuple
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of k_smallest_pairs
+test_error of angle_complex
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of extract_freq
+test_error of bell_number
+test_error of remove_nested
+test_error of surfacearea_cylinder
+test_error of extract_freq
+test_error of average_tuple
+test_error of sum_div
+test_error of angle_complex
+test_error of surfacearea_cylinder
+test_error of remove_nested
+test_error of rgb_to_hsv
+test_error of k_smallest_pairs
+test_error of angle_complex
+test_error of average_tuple
+test_error of surfacearea_cylinder
+test_error of surfacearea_cylinder
+test_error of round_and_sum
+test_error of average_tuple
+test_error of angle_complex
+test_error of round_and_sum
+test_error of k_smallest_pairs
+test_error of find_length
+test_error of round_and_sum
+test_error of round_and_sum
+test_error of find_length
+test_error of large_product
+test_error of find_length
+test_error of find_length
+test_error of large_product
+test_error of large_product
+test_error of large_product
+test_error of angle_complex
+test_error of start_withp
+test_error of sum_div
+test_error of eulerian_num
+test_error of remove_nested
+test_error of extract_freq
+test_error of eulerian_num
+test_error of extract_freq
+test_error of remove_nested

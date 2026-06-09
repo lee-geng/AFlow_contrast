@@ -1,0 +1,1 @@
+Refine the `XXX_PROMPT` to improve numerical and entity extraction accuracy by explicitly instructing the model to extract exact numerical values and age ranges in the required format, while preserving the validated structure of the workflow and avoiding rejected patches.

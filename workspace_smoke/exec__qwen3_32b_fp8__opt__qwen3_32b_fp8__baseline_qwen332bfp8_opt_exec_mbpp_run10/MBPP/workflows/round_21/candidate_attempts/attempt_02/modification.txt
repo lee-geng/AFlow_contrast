@@ -1,0 +1,1 @@
+Introduce a post-processing refinement step using the `Custom` operator to explicitly address `answer_mismatch` failures by ensuring the final solution includes a correct test function and is syntactically complete. This step is applied after `ScEnsemble` and before `Test` to refine the selected solution.

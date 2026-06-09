@@ -1,0 +1,1 @@
+XXX_PROMPT = """Answer the question with only the correct entity or role. Do not provide explanations, sentences, or extra text. For example, if the question is 'What profession does X have?', respond with only the profession name like 'author' or 'novelist'. Return only the final answer."""

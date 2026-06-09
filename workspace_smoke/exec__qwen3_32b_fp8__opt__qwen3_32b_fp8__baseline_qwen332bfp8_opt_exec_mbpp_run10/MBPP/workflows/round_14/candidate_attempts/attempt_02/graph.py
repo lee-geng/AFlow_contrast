@@ -1,0 +1,28 @@
+class Workflow:
+    def __init__(
+        self,
+        name: str,
+        llm_config,
+        dataset: DatasetType,
+    ) -> None:
+        self.name = name
+        self.dataset = dataset
+        self.llm = create_llm_instance(llm_config)
+        self.custom = operator.Custom(self.llm)
+        self.custom_code_generate = operator.CustomCodeGenerate(self.llm)
+        self.test = operator.Test(self.llm)
+        self.sc_ensemble = operator.ScEnsemble(self.llm)
+
+    async def __call__(self, problem: str, entry_point: str):
+        # Generate multiple candidate solutions with tailored instructions
+        solution1 = await self.custom_code_generate(problem=problem, entry_point=entry_point, instruction="Implement the function with correct syntax and logic, ensuring it passes all test cases.")
+        solution2 = await self.custom_code_generate(problem=problem, entry_point=entry_point, instruction="Write the function with clear and correct code structure, handling edge cases properly.")
+        solution3 = await self.custom_code_generate(problem=problem, entry_point=entry_point, instruction="Ensure the function is logically sound and matches the expected behavior described in the problem.")
+
+        # Use self-consistency to select the most consistent solution
+        solutions = [solution1["response"], solution2["response"], solution3["response"]]
+        ensemble_solution = await self.sc_ensemble(solutions=solutions, problem=problem)
+
+        # Test the selected solution
+        tested = await self.test(problem=problem, solution=ensemble_solution["response"], entry_point=entry_point)
+        return tested["solution"], self.llm.get_usage_summary()["total_cost"]

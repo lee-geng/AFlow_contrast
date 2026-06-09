@@ -1,0 +1,1 @@
+Enhance the code generation instruction to ensure the generated code is complete and includes return statements instead of print statements, addressing the observed answer mismatches in the test phase.

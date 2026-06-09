@@ -1,0 +1,2 @@
+# No new prompts are needed since the `ScEnsemble` operator is used directly with the list of solutions.
+# The existing prompts for `custom_code_generate` and `test` are already in use and do not need to be modified.

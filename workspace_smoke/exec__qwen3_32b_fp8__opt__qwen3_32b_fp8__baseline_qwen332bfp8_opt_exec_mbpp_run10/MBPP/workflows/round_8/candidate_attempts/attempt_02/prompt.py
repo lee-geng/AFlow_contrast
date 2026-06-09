@@ -1,0 +1,2 @@
+# No new prompts are required for this modification since the `ScEnsemble` operator is already designed to work with raw solution strings.
+# All existing prompts in prompt_custom are already in use and remain unchanged.

@@ -1,0 +1,1 @@
+Modified the prompt to explicitly enforce the extraction of a single entity or role as the final answer, addressing the mismatch between the model's output and the expected answer format. This change is directly linked to the failure evidence where the model returned full sentences or incorrect entity forms instead of the expected concise answer.

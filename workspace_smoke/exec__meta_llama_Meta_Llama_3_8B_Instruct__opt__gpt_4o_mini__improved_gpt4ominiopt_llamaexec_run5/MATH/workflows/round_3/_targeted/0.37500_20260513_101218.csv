@@ -1,0 +1,94 @@
+﻿question,prediction,expected_output,score,cost
+"A particular convex pentagon has two congruent, acute angles. The measure of each of the other interior angles is equal to the sum of the measures of the two acute angles. What is the common measure of the large angles, in degrees?",270°,"If $x$ is the measure in degrees of each of the acute angles, then each of the larger angles measures $2x$ degrees.  Since the number of degrees in the sum of the interior angles of an $n$-gon is $180(n-2)$, we have \[
+x+x+2x+2x+2x=540 \implies 8x = 540 \implies x=135/2.
+\] The large angles each measure $2x=\boxed{135}$ degrees.",0,0.0
+Estimate $14.7923412^2$ to the nearest hundred.,200,"We know $14^2=196$ and $15^2=225.$ So both $14^2$ and $15^2,$ estimated to the nearest hundred, are 200. Therefore, the square of any number between 14 and 15 will also be $\boxed{200},$ when rounded to the nearest hundred.",1,0.0
+A stock loses $10\%$ of its value on Monday.  On Tuesday it loses  $20\%$ of the value it had at the end of the day on Monday.  What is  the overall percent loss in value from the beginning of Monday to  the end of Tuesday?  Enter the answer as a percent.,28%,"If its initial value was $x$, after Monday, its value is $.9x$, and after a further $20\%$ loss, its value becomes $.8\cdot .9x = .72x$, making for a total loss of $\boxed{28\%}$.",1,0.0
+Each interior angle of a polygon measures 170 degrees. How many sides does the polygon have?,36,"The sum of the interior angles of a polygon is $180(n-2)$, where $n$ is the number of sides. That means each interior angle has a measure of $\frac{180(n-2)}{n}$ degrees. We set this equal to 170 degrees and solve for $n$. \begin{align*}
+\frac{180(n-2)}{n}&=170\\
+\Rightarrow \qquad 180n-360&=170n\\\Rightarrow \qquad 10n&=360\\
+\Rightarrow\qquad n&=36.
+\end{align*} The polygon has $\boxed{36}$ sides.",1,0.0
+Four standard six-sided dice are to be rolled. What is the probability that the product of the numbers on the top faces will be prime? Express your answer as a common fraction.,1/8,"The product of four positive integers is prime only if three of the integers are 1 and the fourth is a prime number.  Therefore, of the $6^4$ outcomes for the roll of four dice, only the outcomes $(1,1,1,p)$, $(1,1,p,1)$, $(1,p,1,1)$, and $(p,1,1,1)$ for $p=2$, $3$, or $5$ give a prime product.  The probability of achieving a prime product is therefore \[
+\frac{12}{6\cdot6\cdot6\cdot6}=\frac{2}{6\cdot6\cdot6}=\frac{1}{3\cdot6^2}=\boxed{\frac{1}{108}}.
+\]",0,0.0
+"Pick two or fewer different digits from the set $\{1, 3, 6, 7\}$ and arrange them to form a number.  How many prime numbers can we create in this manner?",8,"We have two cases: the number is either 1-digit or 2-digit.  We examine each of these cases separately.
+
+Case 1: 1 digit
+
+In this case, the only 1-digit primes are 3 and 7, for a total of 2 primes.
+
+Case 2: 2 digits
+
+We have the following combinations of numbers: 13, 16, 17, 36, 37, 67, 76, 73, 63, 71, 61, 31.  Out of these 12 numbers, it is easier to count the composites: 16, 36, 76, and 63 for a total of 4 composites, which we subtract from the original 12 numbers to yield $12-4=8$ primes in this case.
+
+Both cases considered, the total number of prime numbers we can create is $2 + 8 = \boxed{10}$.",0,0.0
+"Let $a = .\overline{2} + .\overline{6}$.  Find the reciprocal of $a$, expressed as a decimal.",1.125,"Convert both decimals into fractions. \begin{align*}
+x&=.\overline{2} \\
+\Rightarrow 10x&=2.\overline{2} \\
+\Rightarrow 9x&=2 \\
+\Rightarrow x &= \frac{2}{9}.
+\end{align*}Likewise, $.\overline{6}=\frac{6}{9}$. Adding the two fractions yields $\frac{2}{9} + \frac{6}{9}=\frac{8}{9}$. The reciprocal of this is $\frac{1}{\frac{8}{9}}=\frac{9}{8}$. To convert this to a decimal, we need to multiply the numerator and denominator by 125. Doing so, we get \[\frac{9}{8} \cdot \frac{125}{125} = \frac{9 \cdot 125}{8 \cdot 125} = \frac{1125}{1000}=\boxed{1.125}.\]",1,0.0
+"Delilah writes down the positive factors of $12$ on a piece of paper, which she gives to Ezekiel. Next to each factor, Ezekiel writes all of the positive integers that are less than or equal to that number and that share no divisors with the factor other than $1.$ (So, for example, Ezekiel will write $``1""$ next to each of the factors Delilah writes.) How many numbers total does Ezekiel write?",14,"This is what the paper should look like after Ezekiel writes his final number: \begin{tabular}{l|l}
+1 & 1\\
+2 & 1 \\
+3 & 1, 2\\
+4 & 1, 3\\
+6 & 1, 5\\
+12 & 1, 5, 7, 11
+\end{tabular} The left-hand column contains the positive factors of $12$ and the right-hand column contains Ezekiel's numbers. We see that Ezekiel wrote $\boxed{12}$ numbers.
+
+Note: Notice that the number of numbers Ezekiel ends up with is the same as Delilah's number. Will this always happen? Suppose Delilah starts with $n.$ Will Ezekiel end up with $n$ numbers?",0,0.0
+What is the smallest two-digit prime that is the sum of three (not necessarily distinct) positive perfect cubes?,73,"We begin by listing the smallest positive perfect cubes with two digits or fewer:
+
+1, 8, 27, 64.
+
+And now we sum them.  $1+1+1$ is too small; $1+1+8=10$ which is not prime; but $1+8+8=17$, which is indeed a prime.  Hence the answer is $\boxed{17}$.",0,0.0
+"Find the largest prime number (in decimal form) that divides the sum, $$ 1_2 + 10_2 + 100_2 + \cdots + 100000000_2. $$",-1,"We can see that \begin{align*}
+1_2 + 10_2 + 100_2 + \cdots + 100000000_2 &= 111111111_2 \\
+&= 1000000000_2 - 1\\
+& = 2^9 - 1.
+\end{align*}We can factor $2^9 - 1 = 8^3 - 1$ as a difference of cubes to make our task easier: $$ 8^3 - 1 = (8 - 1)(8^2 + 8 + 1) = 7 \cdot 73. $$Since $\boxed{73}$ is prime, it is the largest prime divisor of the sum.",0,0.0
+How many base-10 integers are exactly 4 digits in their base-3 representation and exactly 2 digits in their base-6 representation?,9,"Base-10 integers that are exactly 4 digits in base 3 range from $1000_3=3^3=27$ to less than $10000_3=3^4=81$. Base-10 integers that are exactly 2 digits in base 6 range from $10_6=6^1=6$ to less than $100_6=6^2=36$. So, for a number $n$ to satisfy the conditions, it must be that $27\le n <36$. $n$ could be a number from 27 to 35, inclusive, which means there are $\boxed{9}$ integers that meet the conditions of the problem.",1,0.0
+"In the base-three number system, $a = 2012_3$ and $b = 201_3.$ What is the product $ab$ expressed in the base-three number system?",21212_3,"We may multiply in base $3$ just as in base $10:$ anytime we get a number greater than $3,$ we record the remainder when the number is divided by $3$ and carry the quotient. \[
+\begin{array}{r}
+2012 \\
+\times 201 \\ \hline
+2012 \\
+11101\hphantom{00} \\ \hline
+1112112
+\end{array}
+\] Therefore, the product is $\boxed{1112112_3}.$",0,0.0
+The greatest common divisor of positive integers $m$ and $n$ is 6. The least common multiple of $m$ and $n$ is 126. What is the least possible value of $m+n$?,60,"Since the GCD of $m$ and $n$ is 6, $m = 6x$ and $n = 6y$ for some integers $x$ and $y$.  Note that minimizing $m + n = 6x + 6y = 6(x + y)$ is equivalent to minimizing $x + y$.
+
+The LCM of $m$ and $n$ is $126=2\cdot3^2\cdot7= 6 \cdot 3 \cdot 7$, so one of $x$ and $y$ is divisible by 3 and one is divisible by 7.  Then we can minimize $x + y$ by setting $x$ and $y$ to be 3 and 7 in some order.  Therefore, the least possible value of $m+n$ is $6(3 + 7) = \boxed{60}$.",1,0.0
+Suppose that the minimum value of $f(x) = \cos 2x - 2a (1 + \cos x)$ is $-\frac{1}{2}.$  Find $a.$,-2,"We can write
+\begin{align*}
+f(x) &= 2 \cos^2 x - 1 - 2a (1 + \cos x) \\
+&= 2 \cos^2 x - 2a \cos x - 1 - 2a \\
+&= 2 \left( \cos x - \frac{a}{2} \right)^2 - \frac{1}{2} a^2 - 2a - 1.
+\end{align*}If $a > 2,$ then $f(x)$ attains its minimum value when $\cos x = 1,$ in which case
+\[f(x) = 2 - 2a - 1 - 2a = 1 - 4a.\]If $1 - 4a = -\frac{1}{2},$ then $a = \frac{3}{8},$ contradiction.
+
+If $a < -2,$ then $f(x)$ attains its minimum value when $\cos x = -1,$ in which case
+\[f(x) = 2 + 2a - 1 - 2a = 1,\]so this case is not possible either.
+
+Otherwise, $-2 \le a \le 2,$ and $f(x)$ attains its minimum when $\cos x = \frac{a}{2},$ in which case
+\[f(x) = -\frac{1}{2} a^2 - 2a - 1.\]Thus, $-\frac{1}{2} a^2 - 2a - 1 = -\frac{1}{2},$ so $a^2 + 4a + 1 = 0.$  By the quadratic formula,
+\[a = -2 \pm \sqrt{3}.\]Since $-2 \le a \le 2,$ $a = \boxed{-2 + \sqrt{3}}.$",0,0.0
+"Two eight-sided dice each have faces numbered 1 through 8. When the dice are rolled, each face has an equal probability of appearing on the top. What is the probability that the product of the two top numbers is greater than their sum? Express your answer as a common fraction.",0.25,"There are $8\cdot 8 = 64$ ordered pairs that can represent the top numbers on the two dice. Let $m$ and $n$ represent the top numbers on the dice.  Then $mn > m+n$ implies that $mn - m - n >
+0$, that is, $$1 < mn - m - n + 1 = (m-1)(n-1).$$This inequality is satisfied except when $m=1$, $n=1$, or when $m=n=2$. There are 16 ordered pairs $(m,n)$ excluded by these conditions, so the probability that the product is greater than the sum is \[
+\frac{64-16}{64} = \frac{48}{64} = \boxed{\frac{3}{4}}.
+\]",0,0.0
+"In how many ways can seven beads of distinct colors be put on the hexagonal grid shown, if reflections and rotations of an arrangement are considered equivalent?
+
+[asy]
+size(50);
+dot((0,0));
+dot((1,0));
+dot((-1,0));
+dot((.5,sqrt(3)/2));
+dot((.5,-sqrt(3)/2));
+dot((-.5,sqrt(3)/2));
+dot((-.5,-sqrt(3)/2));
+[/asy]",70,"There are $7!$ ways to put the beads on the grid, not considering rotations and reflections. Arrangements can be reflected or not reflected and can be rotated by 0, 60, 120, 180, 240, or 300 degrees, so they come in groups of twelve equivalent arrangements. Correcting for the symmetries, we find that there are $7!/12=\boxed{420}$ distinct arrangements.",0,0.0

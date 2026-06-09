@@ -1,0 +1,1 @@
+Modify the prompt for the `custom` operator to better align with the expected answer format, especially for numerical and entity answers, to reduce mismatches like "9.20%" vs "9.2" or "The Vikings" vs "Minnesota".

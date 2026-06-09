@@ -1,0 +1,256 @@
+﻿question,prediction,expected_output,score,cost
+"A particular convex pentagon has two congruent, acute angles. The measure of each of the other interior angles is equal to the sum of the measures of the two acute angles. What is the common measure of the large angles, in degrees?","Let's break down the problem step by step:
+
+1. The pentagon has two congruent, acute angles. This means that the two acute angles have the same measure, which we'll call x.
+
+2. The measure of each of the other interior angles is equal to the sum of the measures of the two acute angles. This means that the three remaining angles have measures that are equal to x + x, which is 2x.
+
+3. The sum of the interior angles of a pentagon is 540 degrees. Since we know the measures of all five angles, we can set up an equation:
+
+x + x + 2x = 540
+
+Combine like terms:
+
+4x = 540
+
+4. Divide both sides by 4 to solve for x:
+
+x = 540/4
+
+x = 135
+
+So, the common measure of the large angles is 135 degrees.
+
+Final Answer: The common measure of the large angles is 135 degrees.","If $x$ is the measure in degrees of each of the acute angles, then each of the larger angles measures $2x$ degrees.  Since the number of degrees in the sum of the interior angles of an $n$-gon is $180(n-2)$, we have \[
+x+x+2x+2x+2x=540 \implies 8x = 540 \implies x=135/2.
+\] The large angles each measure $2x=\boxed{135}$ degrees.",0,0.0
+"Let A = 1, B = 2, C = 3, ..., Z = 26. The product value of a word is equal to the product of the values of its letters. For example, CAB has a product value of 3 $\times$ 1 $\times$ 2 = 6. What common English word has a product value of 715? It does not have to be of length 3.","Let's start by listing out the possible words that could have a product value of 715. Since the product value is the product of the values of the letters, we can start by listing out the possible combinations of letters that multiply to 715.
+
+First, we can start by listing out the prime factors of 715:
+
+715 = 5 $\times$ 11 $\times$ 13
+
+Now, we can start by listing out the possible combinations of letters that multiply to 5:
+
+* A (1) $\times$ B (2) = 2
+* E (5) (since E = 5)
+
+Next, we can list out the possible combinations of letters that multiply to 11:
+
+* K (11) (since K = 11)
+
+Finally, we can list out the possible combinations of letters that multiply to 13:
+
+* M (13) (since M = 13)
+
+Now, we can combine these letters to form a word:
+
+EKM
+
+The product value of EKM is:
+
+E (5) $\times$ K (11) $\times$ M (13) = 5 $\times$ 11 $\times$ 13 = 715
+
+Therefore, the common English word that has a product value of 715 is EKM.","Prime factorize 715 to find $715=5\cdot11\cdot13$.  The only ways to write 715 as a product of positive integers greater than 1 are the distinct ways of grouping the prime factors: \begin{align*}
+(5)\cdot (11) \cdot (13) &= 5\cdot 11\cdot 13 \\
+(5\cdot11)\cdot 13&=55\cdot 13 \\
+5\cdot(11\cdot 13) &= 5\cdot 143 \\
+(5\cdot 13) \cdot 11 &= 65 \cdot 11\text{, and}\\
+(5\cdot11\cdot13)&=715,
+\end{align*} where the last one is a product with only one factor.  Since the letters cannot represent numbers greater than 26, only $5\cdot11\cdot 13$ could come from calculating the product value of a word. The 5th, 11th, and 13th letters of the alphabet are E, K, and M.  Since E, K, and M do not form a word, we introduce the letter A (which doesn't affect the product since its value is 1) to form the word $\boxed{\text{MAKE}}$.",0,0.0
+"Below is a magic square, meaning that the sum of the numbers in each row, in each column, and in each of the $2$ main diagonals are equal. What is the value of $n$?
+
+[asy]size(125);
+for(int i = 0; i<4; ++i)
+{
+
+draw((0,i)--(3,i),linewidth(1));
+}
+
+for(int j = 0; j<4; ++j)
+{
+
+draw((j,0)--(j,3),linewidth(1));
+}
+
+label(""$n-3$"",(.5,.5));
+label(""3"",(.5,1.5));
+label(""$n+1$"",(.5,2.5));
+
+label(""$n+2$"",(1.5,.5));
+label(""$2n-9$"",(1.5,1.5));
+label(""$1$"",(1.5,2.5));
+
+label(""$2$"",(2.5,.5));
+label(""$n$"",(2.5,1.5));
+label(""$n-1$"",(2.5,2.5));
+[/asy]","We can start by calculating the sum of the numbers in the first row. We have $n-3+3+n+1=2n$. Next, we can calculate the sum of the numbers in the second row. We have $n+2+2n-9+1=n-6$. Since the sum of the numbers in each row is equal, we have $2n=n-6$, which implies that $n=3$. Therefore, the value of $n$ is $\boxed{3}$.
+Final Answer: The final answer is 3. I hope it is correct.","First, we can evaluate the sum across the first row, which gives $(n+1)+1+(n-1)=2n+1$.  Evaluate the sum of the entries across the second row, $3+(2n-9)+n=3n-6$. Now, since we have a magic square, these two sums are equal.  So $2n+1=3n-6$. Isolating $n$, we obtain $n = \boxed{7}$.
+
+The square will look like: [asy] size(2cm);
+draw((0,0)--(3,0)--(3,3)--(0,3)--cycle,linewidth(1));
+draw((1,0)--(1,3),linewidth(1));
+draw((2,0)--(2,3),linewidth(1));
+draw((0,1)--(3,1),linewidth(1));
+draw((0,2)--(3,2),linewidth(1));
+label(""8"",(.5,2.5));
+label(""1"",(1.5,2.5));
+label(""6"",(2.5,2.5));
+label(""3"",(.5,1.5));
+label(""5"",(1.5,1.5));
+label(""7"",(2.5,1.5));
+label(""4"",(.5,.5));
+label(""9"",(1.5,.5));
+label(""2"",(2.5,.5));
+[/asy]",0,0.0
+How many whole numbers between 99 and 999 contain exactly one 0?,"Let's break down the problem step by step:
+
+1. We need to find the whole numbers between 99 and 999 that contain exactly one 0.
+
+2. The smallest whole number that contains exactly one 0 is 100, and the largest whole number that contains exactly one 0 is 990.
+
+3. We can start by counting the whole numbers that contain exactly one 0 and start with 1 (i.e., 100, 101, 102, ..., 199).
+
+4. There are 100 such whole numbers (from 100 to 199).
+
+5. Next, we can count the whole numbers that contain exactly one 0 and start with 2 (i.e., 200, 201, 202, ..., 299).
+
+6. There are 100 such whole numbers (from 200 to 299).
+
+7. We can continue this process until we reach 9 (i.e., 900, 901, 902, ..., 999).
+
+8. There are 100 such whole numbers (from 900 to 999).
+
+9. In total, we have counted 4 sets of 100 whole numbers that contain exactly one 0.
+
+10. Therefore, the total number of whole numbers between 99 and 999 that contain exactly one 0 is:
+
+4 sets of 100 whole numbers = 4 x 100 = 400
+
+Final Answer: The final answer is 400.","Numbers with exactly one zero have the form $\_ 0 \_$ or $\_ \_ 0$, where the blanks are not zeros.  There are $(9\cdot1\cdot9)+(9\cdot9\cdot1) = 81+81 = \boxed{162}$ such numbers.",0,0.0
+"At the national curling championships, there are three teams of four players each. After the championships are over, the very courteous participants each shake hands three times with every member of the opposing teams, and once with each member of their own team.
+
+How many handshakes are there in total?","Let's break this problem down step by step:
+
+1. There are 3 teams, each with 4 players. So, there are a total of 3 x 4 = 12 players.
+2. Each player shakes hands with every member of the opposing teams. Since there are 3 teams, each player shakes hands with 2 opposing teams (the other 2 teams).
+3. Each player shakes hands with every member of the opposing teams 3 times (since they are shaking hands with each player in the opposing team 3 times). So, each player shakes hands with 2 opposing teams x 3 times = 6 times with opposing teams.
+4. Each player also shakes hands with every member of their own team once. So, each player shakes hands with their own team 1 time.
+5. In total, each player shakes hands 6 times with opposing teams + 1 time with their own team = 7 times.
+6. Since there are 12 players, the total number of handshakes is 12 players x 7 handshakes per player = 84 handshakes.
+
+However, we need to consider that each handshake is counted twice (once for each player involved in the handshake). To avoid double-counting, we need to divide the total number of handshakes by 2.
+
+84 handshakes ÷ 2 = 42 handshakes
+
+Therefore, the final answer is 42 handshakes.","For each participant, there are 8 opponents to shake hands with, and 3 team members to shake hands with, giving $3\times8+3=27$ handshakes for each individual participant.
+
+There are 12 players in total, which offers $12\times27=324$ handshakes, but since a handshake takes place between two people, we've counted every handshake twice.
+
+The final answer is $\dfrac{324}{2}=\boxed{162}$ handshakes.",0,0.0
+"Each good worker can paint my new house alone in 12 hours.  Each bad worker can paint my house alone in 36 hours.  I need my house painted in 3 hours.  If I can only find 3 good workers, how many bad workers must I also find in order to have my house painted on time?","Let's break this problem down step by step.
+
+**Step 1: Understand the situation**
+
+We have 3 good workers, each of whom can paint the house alone in 12 hours. We also need to find bad workers to help paint the house, and we want to finish the job in 3 hours.
+
+**Step 2: Calculate the total work required**
+
+Since each good worker can paint the house alone in 12 hours, the total work required to paint the house is:
+
+3 good workers × 12 hours = 36 hours
+
+**Step 3: Calculate the work rate of each good worker**
+
+Since each good worker can paint the house alone in 12 hours, their work rate is:
+
+1 good worker × 1 house = 1/12 of the house per hour
+
+**Step 4: Calculate the work rate of each bad worker**
+
+Each bad worker can paint the house alone in 36 hours, so their work rate is:
+
+1 bad worker × 1 house = 1/36 of the house per hour
+
+**Step 5: Calculate the total work rate of the good workers**
+
+We have 3 good workers, so their total work rate is:
+
+3 good workers × 1/12 of the house per hour = 1/4 of the house per hour
+
+**Step 6: Calculate the remaining work required**
+
+We want to finish the job in 3 hours, and the good workers can complete 1/4 of the house per hour. To find the remaining work required, we subtract the work that the good workers can complete in 3 hours from the total work required:
+
+36 hours - (3 hours × 1/4 of the house per hour) = 24 hours
+
+**Step 7: Calculate the work rate required to complete the remaining work**
+
+The remaining work required is 24 hours, and we want to complete it in 3 hours. To find the work rate required, we divide the remaining work by the time:
+
+24 hours ÷ 3 hours = 8
+
+**Step 8: Calculate the number of bad workers required**
+
+Each bad worker can complete 1/36 of the house per hour, so the number of bad workers required to complete the remaining work is:
+
+8 ÷ (1/36 of the house per hour) = 288 bad workers
+
+**Final answer**
+
+To have your house painted on time, you need to find 288 bad workers in addition to the 3 good workers you already have.","Each good worker can paint $1/12$ of my house in an hour, so three of them together can  paint $3/12 =1/4$ of my house in an hour.  So, in 3 hours, the three good workers will  paint $3(1/4)=3/4$ of my house.  The bad workers have to paint the other $1/4$ of the house.  Each bad worker paints $1/36$ of the house in an hour, so each bad worker can paint $3(1/36)=1/12$  of the house in three hours.  Since the bad workers together need to paint $1/4$ of the house, and  each bad worker can paint $1/12$ of the house in three hours, I need $(1/4)/(1/12) = \boxed{3}$ bad workers.",0,0.0
+"The expression $2\cdot 3 \cdot 4\cdot 5+1$ is equal to 121, since multiplication is carried out before addition. However, we can obtain values other than 121 for this expression if we are allowed to change it by inserting parentheses. For example, we can obtain 144 by writing \[
+(2\cdot (3\cdot 4)) \cdot (5+1) = 144.
+\]In total, how many values can be obtained from the expression $2\cdot 3\cdot 4 \cdot 5 + 1$ by inserting parentheses? (Note that rearranging terms is not allowed, only inserting parentheses).","We can insert parentheses in the expression $2\cdot 3\cdot 4\cdot 5+1$ in $2^4-1=15$ ways. Here are the ways:
+
+1. $(2\cdot 3)\cdot (4\cdot 5)+1$
+2. $(2\cdot 3\cdot 4)\cdot 5+1$
+3. $2\cdot (3\cdot 4\cdot 5)+1$
+4. $(2\cdot 3\cdot 4)\cdot (5+1)$
+5. $(2\cdot 3)\cdot (4\cdot 5+1)$
+6. $(2\cdot 3\cdot 4+1)\cdot 5$
+7. $2\cdot (3\cdot 4+1)\cdot 5$
+8. $(2\cdot 3+1)\cdot (4\cdot 5)$
+9. $(2\cdot 3+1)\cdot (4\cdot 5+1)$
+10. $(2\cdot 3+1)\cdot (4\cdot (5+1))$
+11. $(2\cdot (3+1))\cdot (4\cdot 5)$
+12. $(2\cdot (3+1))\cdot (4\cdot (5+1))$
+13. $(2\cdot (3+1)+1)\cdot 5$
+14. $(2\cdot (3+1)+1)\cdot (4\cdot 5)$
+15. $(2\cdot (3+1)+1)\cdot (4\cdot (5+1))$
+
+Final Answer: The final answer is 15. I hope it is correct.","By the associative property of multiplication, it doesn't help to insert parentheses that specify the order of multiplication. For example, the associative property tells us that $(2\cdot(3\cdot 4))\cdot (5+1)$ is the same as $2\cdot3\cdot4\cdot (5+1)$. So the only way to get different values is to group +1 with a different number of factors. We get \begin{align*}
+2\cdot 3 \cdot 4 \cdot (5 + 1) &= 144, \\
+2\cdot 3 \cdot (4 \cdot 5 + 1) &= 126,\\
+2\cdot (3 \cdot 4 \cdot 5 + 1) &= 122, \\
+(2\cdot 3 \cdot 4 \cdot 5) + 1 \hphantom{)} &= 121.
+\end{align*}In total there are $\boxed{4}$ possible values for the expression.",0,0.0
+"Tom got a Mr. Potato Head for his birthday. It came with 3 hairstyles, 2 sets of eyebrows, 1 pair of googly eyes, 2 sets of ears, and 2 sets of lips, a pair of regular shoes, and a bonus pair of clown shoes. If a complete Mr. Potato Head personality includes eyebrows, eyes, ears, lips, shoes and optionally hair, how many different wacky personalities can Tom come up with? Note that Mr. Potato Head can be bald.
+
+Note: You cannot ""mix and match"".  For example, you cannot take the left eyebrow from one pair and the right eyebrow from the other pair.","Let's break down the problem step by step:
+
+1. Eyebrows: Tom has 2 sets of eyebrows to choose from. He can choose one of the two sets.
+2. Eyes: Tom has 1 pair of googly eyes. He can only choose this one pair.
+3. Ears: Tom has 2 sets of ears to choose from. He can choose one of the two sets.
+4. Lips: Tom has 2 sets of lips to choose from. He can choose one of the two sets.
+5. Shoes: Tom has 3 pairs of shoes to choose from: regular shoes and the two bonus pairs (clown shoes). He can choose one of the three pairs.
+6. Hair: Tom has 3 hairstyles to choose from. He can choose one of the three hairstyles, or he can choose to be bald (i.e., not have any hair).
+
+Now, let's calculate the total number of wacky personalities Tom can come up with:
+
+* For eyebrows, eyes, ears, lips, and shoes, Tom has 2 x 1 x 2 x 2 x 3 = 24 possible combinations.
+* For hair, Tom has 4 options: 3 hairstyles or being bald. We can add this to the previous calculation: 24 x 4 = 96.
+
+However, we need to consider that Tom can't mix and match eyebrows, eyes, ears, lips, and shoes. This means that for each combination of these features, Tom can only choose one hairstyle or be bald. Therefore, we need to divide the total number of combinations by the number of hairstyles (3) or add 1 for being bald. This gives us:
+
+96 / 3 = 32 (for each hairstyle) + 1 (for being bald) = 33
+
+So, Tom can come up with 33 different wacky personalities with the Mr. Potato Head.","There are 2 choices of eyebrows, 1 choice for eyes, 2 choices for ears, 2 choices for lips, 2 choices for shoes, and 4 choices for hair (3 choices of hairstyles, or bald), and each can be picked independent of the others, so the number of combinations is the product of those, $2\cdot 1\cdot 2\cdot 2\cdot 2\cdot 4 = \boxed{64}$.",0,0.0
+Estimate $14.7923412^2$ to the nearest hundred.,"To estimate $14.7923412^2$ to the nearest hundred, we can use the fact that $(a+b)^2 \approx a^2 + 2ab$ for small values of $b$. In this case, we can write $14.7923412 = 14.79 + 0.0023412$, and then use the approximation to get
+
+$$(14.7923412)^2 \approx (14.79)^2 + 2(14.79)(0.0023412) = 217.5809 + 0.0693 = 217.6502.$$
+
+Since the hundredth digit is 5, we round up to the nearest hundred to get $\boxed{218}$.
+Final Answer: The final answer is 218. I hope it is correct.","We know $14^2=196$ and $15^2=225.$ So both $14^2$ and $15^2,$ estimated to the nearest hundred, are 200. Therefore, the square of any number between 14 and 15 will also be $\boxed{200},$ when rounded to the nearest hundred.",0,0.0
+"A square piece of paper is folded once so that one pair of opposite corners coincide. When the paper is unfolded, two congruent triangles have been formed. Given that the area of the original square is $49$ square inches, what is the number of inches in the perimeter of one of these triangles? Express your answer in simplest radical form.","Let $s$ be the side length of the original square.  Then the area of the square is $s^2=49$, so $s=7$.  When the square is folded, the diagonal of the square forms the base of one of the triangles.  The diagonal of the square has length $s\sqrt{2}=7\sqrt{2}$, so the height of the triangle is $\frac{7\sqrt{2}}{2}$.  The base of the triangle is $s=7$, so the area of the triangle is $\frac{1}{2}\cdot7\cdot\frac{7\sqrt{2}}{2}=\frac{49\sqrt{2}}{4}$.  The perimeter of the triangle is the sum of the lengths of its three sides, which are the base, the height, and the hypotenuse.  The hypotenuse is the diagonal of the square, so its length is $7\sqrt{2}$.  The perimeter of the triangle is therefore $7+7\sqrt{2}+\frac{7\sqrt{2}}{2}=\boxed{7+7\sqrt{2}}$.
+Final Answer: The final answer is 7+7\sqrt{2}. I hope it is correct.","Since the area of the square is 49 square inches, the side length of the square is $\sqrt{49} = 7$ square inches.  Each triangle formed by the fold is a 45-45-90 triangle whose legs are sides of the square and whose hypotenuse is the fold.  So, two sides of the triangle have length 7 and the hypotenuse has length $7\sqrt{2}$.  Therefore, the perimeter of the triangle is $7+7+7\sqrt{2} = \boxed{14+7\sqrt{2}}$.",0,0.0

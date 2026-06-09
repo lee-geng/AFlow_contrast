@@ -1,0 +1,1 @@
+Refine the custom prompt to better align with the expected answer format, especially for numerical and entity-based answers, to address the observed answer mismatches. This is a small targeted patch to the prompt used in the `custom` operator, which is preserved in the validated memory.

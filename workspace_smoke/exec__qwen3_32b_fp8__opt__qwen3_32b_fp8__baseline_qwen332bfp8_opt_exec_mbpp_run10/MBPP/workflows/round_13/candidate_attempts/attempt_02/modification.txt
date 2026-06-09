@@ -1,0 +1,1 @@
+Introduce a post-processing step using the `Custom` operator to refine the final solution before testing. This step explicitly addresses the `answer_mismatch` failures by ensuring the solution includes a correct test function. The refinement is applied to the `ensemble_solution` before passing it to the `Test` operator.

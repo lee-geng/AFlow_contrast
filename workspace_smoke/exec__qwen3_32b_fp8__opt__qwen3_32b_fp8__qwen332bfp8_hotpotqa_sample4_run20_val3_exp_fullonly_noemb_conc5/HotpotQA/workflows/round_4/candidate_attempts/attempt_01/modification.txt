@@ -1,0 +1,1 @@
+Added a new prompt `ANSWER_PROMPT_BOXED` to ensure the model outputs a boxed final answer. Updated the workflow to use this new prompt instead of the original `ANSWER_PROMPT` to address the `answer_mismatch` issue. This change is small and targeted, aligning with the guidance to avoid repeating rejected patches and to preserve the validated workflow structure.

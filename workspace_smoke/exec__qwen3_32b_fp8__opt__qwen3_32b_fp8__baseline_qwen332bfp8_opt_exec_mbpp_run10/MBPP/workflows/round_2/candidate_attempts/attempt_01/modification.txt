@@ -1,0 +1,3 @@
+- Incorporated the `Test` operator to validate and refine the generated solution before returning it.
+- This addresses the `answer_mismatch` failure by ensuring the solution passes public test cases.
+- The `Test` operator is used after `custom_code_generate` to improve correctness.

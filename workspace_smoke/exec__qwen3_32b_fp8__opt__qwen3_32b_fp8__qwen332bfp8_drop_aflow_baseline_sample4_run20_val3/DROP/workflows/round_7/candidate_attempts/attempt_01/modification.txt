@@ -1,0 +1,1 @@
+Introduce a post-processing step using the `ScEnsemble` operator to refine the final answer. This addresses the `answer_mismatch` failures by ensuring the final answer is more aligned with the expected format and content. The modification is a small targeted patch that preserves the validated `AnswerGenerate` subworkflow and adds `ScEnsemble` to consolidate the final answer.

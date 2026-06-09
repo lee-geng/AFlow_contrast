@@ -1,0 +1,1 @@
+Introduce a new prompt `FINAL_ANSWER_PROMPT` to explicitly enforce the model to return only the final answer in a boxed format. This addresses the `answer_mismatch` failures by ensuring the model does not return intermediate or incorrect content. The new prompt is used in place of the current `ANSWER_PROMPT` in the `__call__` method of the `Workflow` class.

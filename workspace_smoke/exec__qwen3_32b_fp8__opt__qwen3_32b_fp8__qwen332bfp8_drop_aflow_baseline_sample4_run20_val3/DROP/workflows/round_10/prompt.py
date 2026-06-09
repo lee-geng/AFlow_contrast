@@ -1,0 +1,1 @@
+STRUCTURE_EXTRACTION_PROMPT = "Extract all numerical or structured information from the input text and summarize it clearly. Format the output as a concise summary of the key numbers and facts."

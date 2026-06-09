@@ -1,0 +1,1 @@
+Modify the `XXX_PROMPT` in `prompt.py` to include explicit instructions for generating complete and testable code, ensuring the solution includes the full function and test cases. This addresses the mismatch between the generated code and the expected output in the failure evidence.

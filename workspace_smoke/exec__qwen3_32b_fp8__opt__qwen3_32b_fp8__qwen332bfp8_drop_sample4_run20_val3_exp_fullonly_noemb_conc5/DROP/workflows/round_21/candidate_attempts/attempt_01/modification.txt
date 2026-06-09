@@ -1,0 +1,1 @@
+Refine the custom prompt to improve numerical and entity extraction accuracy, while preserving the validated structure of the workflow and avoiding rejected patches.

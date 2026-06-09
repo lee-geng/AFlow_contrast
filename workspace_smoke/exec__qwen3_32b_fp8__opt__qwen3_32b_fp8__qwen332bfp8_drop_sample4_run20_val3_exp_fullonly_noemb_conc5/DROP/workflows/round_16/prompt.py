@@ -1,0 +1,1 @@
+XXX_PROMPT = """Solve the problem and provide a clear explanation of your reasoning. If the answer is numerical, provide the exact number. If the answer is a short fact, provide it directly. Then, put your final answer within **.**"""

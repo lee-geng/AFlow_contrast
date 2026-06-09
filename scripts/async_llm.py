@@ -6,9 +6,35 @@
 from openai import AsyncOpenAI
 from scripts.formatter import BaseFormatter, FormatError
 
+import os
+import sys
 import yaml
 from pathlib import Path
 from typing import Dict, Optional, Any
+
+
+def clear_proxy_env() -> None:
+    """Clear proxy-related environment variables for the current process."""
+    for proxy_var in (
+        "HTTP_PROXY",
+        "HTTPS_PROXY",
+        "ALL_PROXY",
+        "http_proxy",
+        "https_proxy",
+        "all_proxy",
+    ):
+        os.environ.pop(proxy_var, None)
+
+
+def _safe_console_print(text: str) -> None:
+    """Print text without crashing on non-UTF8 terminals (e.g. Windows GBK)."""
+    try:
+        print(text)
+    except UnicodeEncodeError:
+        encoding = getattr(sys.stdout, "encoding", None) or "utf-8"
+        safe_text = text.encode(encoding, errors="backslashreplace").decode(encoding, errors="ignore")
+        print(safe_text)
+
 
 class LLMConfig:
     def __init__(self, config: dict):
@@ -177,6 +203,7 @@ class AsyncLLM:
         
         # At this point, config should be an LLMConfig instance
         self.config = config
+        clear_proxy_env()
         self.aclient = AsyncOpenAI(api_key=self.config.key, base_url=self.config.base_url)
         self.sys_msg = system_msg
         self.usage_tracker = TokenUsageTracker()
@@ -210,7 +237,7 @@ class AsyncLLM:
         )
         
         ret = response.choices[0].message.content
-        print(ret)
+        _safe_console_print(ret if ret is not None else "")
         
         # You can optionally print token usage information
         print(f"Token usage: {input_tokens} input + {output_tokens} output = {input_tokens + output_tokens} total")

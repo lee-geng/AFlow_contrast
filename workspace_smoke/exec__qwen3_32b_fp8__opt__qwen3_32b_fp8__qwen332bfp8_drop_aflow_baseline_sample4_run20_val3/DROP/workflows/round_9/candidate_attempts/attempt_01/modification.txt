@@ -1,0 +1,3 @@
+Introduce a custom refinement step before the `sc_ensemble` to explicitly extract and normalize numerical answers from the `answer_generate` output. This addresses the `answer_mismatch` failures by ensuring numerical values are standardized (e.g., "35-yard" vs "35 yards", "19|7" vs "20").
+
+The modification adds a `custom` operator call to normalize the answer format, preserving the existing `answer_generate` and `sc_ensemble` operators as they are otherwise validated and functional.

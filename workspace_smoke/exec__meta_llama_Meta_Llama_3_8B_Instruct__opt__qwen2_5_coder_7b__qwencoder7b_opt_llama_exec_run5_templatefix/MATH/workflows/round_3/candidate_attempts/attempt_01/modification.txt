@@ -1,0 +1,1 @@
+Added a new operator `extract_answer` to ensure that only the final answer is extracted from the solution.

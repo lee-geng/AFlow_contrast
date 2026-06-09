@@ -1,0 +1,1 @@
+NORMALIZE_ANSWER_PROMPT = "Normalize the numerical answer to a standard format. For example, convert '35-yard' to '35 yards', and ensure that multiple values are separated by commas or pipes (e.g., '35 yards, 40 yards' or '35|40'). Return only the normalized answer."

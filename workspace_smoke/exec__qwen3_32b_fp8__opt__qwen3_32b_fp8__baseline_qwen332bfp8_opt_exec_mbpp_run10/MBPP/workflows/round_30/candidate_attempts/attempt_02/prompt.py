@@ -1,0 +1,2 @@
+# Problem-specific instruction for code generation
+CODE_GENERATION_INSTRUCTION = "Write a correct and complete Python function that solves the problem. Ensure the function is well-structured and passes all test cases."

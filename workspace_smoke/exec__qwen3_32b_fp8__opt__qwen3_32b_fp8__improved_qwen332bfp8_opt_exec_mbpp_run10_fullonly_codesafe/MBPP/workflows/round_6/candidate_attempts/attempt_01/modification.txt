@@ -1,0 +1,1 @@
+Enhanced the instruction in the custom_code_generate step to explicitly clarify the expected output format and test case alignment, addressing the mismatch between generated code and expected test results. This change is applied to the prompt used in the existing b1:custom_code_generate node, without modifying the validated b2:sc_ensemble and b3:test nodes.

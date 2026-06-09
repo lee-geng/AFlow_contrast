@@ -1,0 +1,1 @@
+XXX_PROMPT = """Provide multiple distinct answers to the problem, each with a clear explanation of your reasoning. List all possible answers and their justifications. Then, put your final answer within **.**"""

@@ -1,0 +1,2 @@
+- Updated the prompt to ensure the model produces a final answer in the correct format (e.g., "Yes" or "No", or a direct entity like "Duke University").
+- This addresses the `answer_mismatch` failures by aligning the model's output with the expected format.

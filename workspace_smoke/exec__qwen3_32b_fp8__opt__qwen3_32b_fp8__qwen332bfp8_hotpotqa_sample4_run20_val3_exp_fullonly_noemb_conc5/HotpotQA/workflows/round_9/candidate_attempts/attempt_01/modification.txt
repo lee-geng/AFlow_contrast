@@ -1,0 +1,1 @@
+Enhanced the answer extraction by using the `AnswerGenerate` operator to ensure structured output with a clear 'answer' field, instead of relying solely on the `Custom` operator. This addresses the `answer_mismatch` failures by enforcing a more consistent answer format.

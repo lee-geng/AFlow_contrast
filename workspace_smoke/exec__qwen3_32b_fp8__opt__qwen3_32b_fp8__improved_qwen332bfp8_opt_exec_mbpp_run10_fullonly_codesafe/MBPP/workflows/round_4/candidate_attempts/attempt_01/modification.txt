@@ -1,0 +1,1 @@
+Enhanced the code generation instruction to explicitly require the function to be defined and named as specified in the problem. This addresses the failure evidence where the solution omitted the required function definition.

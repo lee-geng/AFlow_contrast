@@ -1,0 +1,1 @@
+EXTRACT_ANSWER_PROMPT = "Based on the passage and the generated answer, extract the correct final answer in the format: 'Answer: [answer]'. Only return the final answer without any explanation."

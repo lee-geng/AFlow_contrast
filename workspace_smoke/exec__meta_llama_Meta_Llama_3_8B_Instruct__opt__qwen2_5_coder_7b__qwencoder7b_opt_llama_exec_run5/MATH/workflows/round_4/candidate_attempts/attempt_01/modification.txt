@@ -1,0 +1,1 @@
+Apply a minimal local fix around current workflow to ensure the custom operator returns the correct answer format.

@@ -1,0 +1,1 @@
+XXX_PROMPT = """Answer the question directly and concisely. Provide only the final answer in the format expected by the question. Avoid unnecessary explanations or formatting."""

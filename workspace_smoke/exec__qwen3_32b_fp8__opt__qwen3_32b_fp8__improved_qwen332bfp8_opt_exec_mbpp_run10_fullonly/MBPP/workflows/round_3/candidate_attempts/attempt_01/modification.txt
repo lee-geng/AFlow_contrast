@@ -1,0 +1,3 @@
+- Enhanced the `custom_code_generate` instruction by explicitly requesting the full function definition and test cases to address incomplete outputs.
+- Preserved the validated subworkflow structure (b1:custom_code_generate, b2:test).
+- No new operators or nodes were introduced.

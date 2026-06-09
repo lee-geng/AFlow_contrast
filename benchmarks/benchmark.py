@@ -1,10 +1,11 @@
 import asyncio
 import json
 import os
+import time
 from abc import ABC, abstractmethod
 from datetime import datetime
 from pathlib import Path
-from typing import Any, Callable, List, Tuple
+from typing import Any, Callable, Dict, List, Tuple
 
 import aiofiles
 import pandas as pd
@@ -26,8 +27,13 @@ class BaseBenchmark(ABC):
     async def load_data(self, specific_indices: List[int] = None) -> List[dict]:
         data = []
         async with aiofiles.open(self.file_path, mode="r", encoding="utf-8") as file:
+            idx = 0
             async for line in file:
-                data.append(json.loads(line))
+                row = json.loads(line)
+                if isinstance(row, dict) and "_task_id" not in row:
+                    row["_task_id"] = idx
+                data.append(row)
+                idx += 1
         if specific_indices is not None:
             filtered_data = [data[i] for i in specific_indices if i < len(data)]
             return filtered_data
@@ -41,7 +47,9 @@ class BaseBenchmark(ABC):
         current_time = datetime.now().strftime("%Y%m%d_%H%M%S")
         filename = f"{avg_score:.5f}_{current_time}.csv"
         output_file = os.path.join(self.log_path, filename)
-        df.to_csv(output_file, index=False)
+        # Force UTF-8 output to avoid platform default encodings (e.g. gbk on Windows)
+        # causing failures when predictions contain non-ASCII symbols.
+        df.to_csv(output_file, index=False, encoding="utf-8-sig")
         logger.info(f"Results saved to {output_file}")
         return avg_score, a_cost, t_cost
 
@@ -89,18 +97,42 @@ class BaseBenchmark(ABC):
 
         async def sem_evaluate(problem):
             async with semaphore:
-                return await self.evaluate_problem(problem, agent)
+                start_time = time.perf_counter()
+                result = await self.evaluate_problem(problem, agent)
+                runtime_seconds = time.perf_counter() - start_time
+                return {
+                    "task_index": problem.get("_task_id"),
+                    "problem": problem,
+                    "result": result,
+                    "runtime_seconds": runtime_seconds,
+                }
 
         tasks = [sem_evaluate(problem) for problem in data]
         return await tqdm_asyncio.gather(*tasks, desc=f"Evaluating {self.name} problems", total=len(data))
 
-    async def run_evaluation(self, agent: Callable, va_list: List[int], max_concurrent_tasks: int = 50):
+    async def run_evaluation(
+        self,
+        agent: Callable,
+        va_list: List[int],
+        max_concurrent_tasks: int = 50,
+        return_details: bool = False,
+    ):
         data = await self.load_data(va_list)
         results = await self.evaluate_all_problems(data, agent, max_concurrent_tasks)
         columns = self.get_result_columns()
-        average_score, average_cost, total_cost = self.save_results_to_csv(results, columns)
+        rows = [row["result"] for row in results]
+        average_score, average_cost, total_cost = self.save_results_to_csv(rows, columns)
         logger.info(f"Average score on {self.name} dataset: {average_score:.5f}")
         logger.info(f"Total Cost: {total_cost:.5f}")
+        if return_details:
+            return {
+                "score": average_score,
+                "avg_cost": average_cost,
+                "total_cost": total_cost,
+                "columns": columns,
+                "results": results,
+                "task_ids": [str(item.get("_task_id")) for item in data],
+            }
         return average_score, average_cost, total_cost
     
 
@@ -108,7 +140,8 @@ class BaseBenchmark(ABC):
         data = await self.load_data()
         results = await self.evaluate_all_problems(data, agent, max_concurrent_tasks)
         columns = self.get_result_columns()
-        average_score, average_cost, total_cost = self.save_results_to_csv(results, columns)
+        rows = [row["result"] for row in results]
+        average_score, average_cost, total_cost = self.save_results_to_csv(rows, columns)
         logger.info(f"Average score on {self.name} dataset: {average_score:.5f}")
         logger.info(f"Total Cost: {total_cost:.5f}")
         logger.info(f"Avg Cost:{average_cost:.5f}")

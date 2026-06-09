@@ -1,0 +1,1 @@
+EXTRACT_ANSWER_PROMPT = "Extract the final answer from the following solution. Only return the answer, nothing else.\n\nSolution: {input}"

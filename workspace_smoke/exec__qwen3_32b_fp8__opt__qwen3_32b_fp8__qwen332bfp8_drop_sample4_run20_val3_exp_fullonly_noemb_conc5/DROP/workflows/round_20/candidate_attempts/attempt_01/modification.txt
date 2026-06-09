@@ -1,0 +1,1 @@
+Enhanced the custom prompt to better align with the expected answer format by explicitly instructing the model to extract and prioritize numerical answers from the problem context. This addresses the `answer_mismatch` failures by improving the precision of the initial reasoning step.

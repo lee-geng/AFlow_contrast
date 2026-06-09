@@ -52,15 +52,34 @@ class ExperienceUtils:
         logger.info(f"Processed experience data saved to {output_path}")
         return experience_data
 
-    def format_experience(self, processed_experience, sample_round):
+    def format_experience(
+        self,
+        processed_experience,
+        sample_round,
+        max_failures: int = 3,
+        max_successes: int = 2,
+        modification_char_limit: int = 220,
+    ):
         experience_data = processed_experience.get(sample_round)
         if experience_data:
             experience = f"Original Score: {experience_data['score']}\n"
             experience += "These are some conclusions drawn from experience:\n\n"
-            for key, value in experience_data["failure"].items():
-                experience += f"-Absolutely prohibit {value['modification']} (Score: {value['score']})\n"
-            for key, value in experience_data["success"].items():
-                experience += f"-Absolutely prohibit {value['modification']} \n"
+            failure_items = sorted(
+                experience_data["failure"].items(),
+                key=lambda item: (item[1].get("score", 0.0), item[0]),
+            )[: max(0, max_failures)]
+            success_items = sorted(
+                experience_data["success"].items(),
+                key=lambda item: (item[1].get("score", 0.0), item[0]),
+                reverse=True,
+            )[: max(0, max_successes)]
+
+            for _, value in failure_items:
+                modification = str(value["modification"])[:modification_char_limit]
+                experience += f"-Avoid repeating failed edit: {modification} (Score: {value['score']})\n"
+            for _, value in success_items:
+                modification = str(value["modification"])[:modification_char_limit]
+                experience += f"-Preserve successful direction: {modification} \n"
             experience += "\n\nNote: Take into account past failures and avoid repeating the same mistakes, as these failures indicate that these approaches are ineffective. You must fundamentally change your way of thinking, rather than simply using more advanced Python syntax like for, if, else, etc., or modifying the prompt."
         else:
             experience = f"No experience data found for round {sample_round}."

@@ -1,0 +1,1 @@
+XXX_PROMPT = """Write a complete and correct Python function to solve the problem. Ensure that the function passes all test cases and matches the expected output format. Include the function definition and any necessary imports. Test cases must be included in the solution."""

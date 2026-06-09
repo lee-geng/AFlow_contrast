@@ -1,0 +1,1 @@
+SC_ENSEMBLE_PROMPT = "Select the most consistent and correct solution from the following list of code solutions for the given problem. Provide only the final solution as the output."

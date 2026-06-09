@@ -1,0 +1,71 @@
+﻿question,prediction,expected_output,score,cost
+What is the smallest two-digit prime that is the sum of three (not necessarily distinct) positive perfect cubes?,148,"We begin by listing the smallest positive perfect cubes with two digits or fewer:
+
+1, 8, 27, 64.
+
+And now we sum them.  $1+1+1$ is too small; $1+1+8=10$ which is not prime; but $1+8+8=17$, which is indeed a prime.  Hence the answer is $\boxed{17}$.",0,0.0
+Each interior angle of a polygon measures 170 degrees. How many sides does the polygon have?,36,"The sum of the interior angles of a polygon is $180(n-2)$, where $n$ is the number of sides. That means each interior angle has a measure of $\frac{180(n-2)}{n}$ degrees. We set this equal to 170 degrees and solve for $n$. \begin{align*}
+\frac{180(n-2)}{n}&=170\\
+\Rightarrow \qquad 180n-360&=170n\\\Rightarrow \qquad 10n&=360\\
+\Rightarrow\qquad n&=36.
+\end{align*} The polygon has $\boxed{36}$ sides.",1,0.0
+"When the decimal $0.1\overline{23}$ is written as a fraction $\frac{a}{b}$ with $a$ and $b$ being positive integers with a greatest common divisor of 1, what is $a+b$?",8.223,"We can rewrite $0.1\overline{23}$ as $0.1$ + $0.0\overline{23}$. The first decimal is simply $\frac{1}{10}$. Let the second decimal be $x$. Multiplying by 100, we have $100x = 2.3\overline{23}$, which gives $99x = 2.3 \implies x = \frac{23}{990}$. Therefore, $0.1\overline{23} = \frac{1}{10} + \frac{23}{990} = \frac{61}{495}$. Thus $a+b=61+495 = \boxed{556}$.",0,0.0
+Mike draws five cards from a standard 52-card deck. What is the probability that he draws a card from at least three of the four suits? Express your answer as a simplified fraction.,5/4,"We calculate the probability that he does not draw a card from at least three of the suits. To do this, we calculate the number of sets of 5 cards from at most two suits and divide by $\binom{52}5$, the number of sets of 5 cards. Since there are $\binom42=6$ choices for the two suits, and $\binom{26}5$ ways to choose 5 cards from the 26 in those two suits, our answer would appear to be $6\binom{26}5$. But this triple-counts the ways to choose the cards from a single suit: 5 hearts is included in 5 (hearts and spades), 5 (hearts and clubs), and 5 (hearts and diamonds). So we subtract twice the number of ways to choose cards from a single suit: $6\binom{26}5-2\cdot4\binom{13}5$. We divide this by $\binom{52}5$ to get $$\frac{6\cdot26\cdot25\cdot24\cdot23\cdot22-8\cdot13\cdot12\cdot11\cdot10\cdot9}{52\cdot51\cdot50\cdot49\cdot48}=\frac{88}{595}.$$Therefore, the probability that he draws three or four of the suits is $1-\frac{88}{595}=\boxed{\frac{507}{595}}$.",0,0.0
+"If $m$ is a 3-digit positive integer such that $\mathop{\text{lcm}}[8m,10^{10}] = 4\cdot\mathop{\text{lcm}}[m,10^{10}]$, then what is the value of $m$?",1280,"Let $\alpha$ be the exponent of $2$ in the prime factorization of $m$. That is, $m=2^\alpha\cdot t$, where $t$ is some odd integer.
+
+Note that $\mathop{\text{lcm}}[8m,10^{10}] = \mathop{\text{lcm}}[2^3m,2^{10}5^{10}]$, so the exponent of $2$ in the prime factorization of $\mathop{\text{lcm}}[8m,10^{10}]$ is equal to $\max\{3+\alpha,10\}$.
+
+Similarly, the exponent of $2$ in the prime factorization of $4\cdot\mathop{\text{lcm}}[m,10^{10}]$ is $2+\max\{\alpha,10\}$. Thus we have $$\max\{3+\alpha,10\} = 2+\max\{\alpha,10\},$$which is possible only if $\alpha=9$. So, $m$ is divisible by $2^9=512$. The only 3-digit multiple of $2^9$ is $512$ itself, so $m=\boxed{512}$.",0,0.0
+Suppose that the minimum value of $f(x) = \cos 2x - 2a (1 + \cos x)$ is $-\frac{1}{2}.$  Find $a.$,-2,"We can write
+\begin{align*}
+f(x) &= 2 \cos^2 x - 1 - 2a (1 + \cos x) \\
+&= 2 \cos^2 x - 2a \cos x - 1 - 2a \\
+&= 2 \left( \cos x - \frac{a}{2} \right)^2 - \frac{1}{2} a^2 - 2a - 1.
+\end{align*}If $a > 2,$ then $f(x)$ attains its minimum value when $\cos x = 1,$ in which case
+\[f(x) = 2 - 2a - 1 - 2a = 1 - 4a.\]If $1 - 4a = -\frac{1}{2},$ then $a = \frac{3}{8},$ contradiction.
+
+If $a < -2,$ then $f(x)$ attains its minimum value when $\cos x = -1,$ in which case
+\[f(x) = 2 + 2a - 1 - 2a = 1,\]so this case is not possible either.
+
+Otherwise, $-2 \le a \le 2,$ and $f(x)$ attains its minimum when $\cos x = \frac{a}{2},$ in which case
+\[f(x) = -\frac{1}{2} a^2 - 2a - 1.\]Thus, $-\frac{1}{2} a^2 - 2a - 1 = -\frac{1}{2},$ so $a^2 + 4a + 1 = 0.$  By the quadratic formula,
+\[a = -2 \pm \sqrt{3}.\]Since $-2 \le a \le 2,$ $a = \boxed{-2 + \sqrt{3}}.$",0,0.0
+Phillip flips an unfair coin eight times. This coin is twice as likely to come up heads as tails. How many times as likely is Phillip to get exactly three heads than exactly two heads?,3/4,"The probability that Phillip flips $k$ heads is $$\binom8k\left(\frac23\right)^k\left(\frac13\right)^{8-k}=\frac1{3^8}\binom8k2^k,$$  since there are $\binom{8}{k}$ ways that $k$ out of $8$ coins will come up heads, and each of these arrangements of $k$ heads out of $8$ coins occurs with probability $\left(\frac23\right)^k\left(\frac13\right)^{8-k}$.   Therefore, the ratio of the two probabilities in the problem is equal to $$\frac{\binom832^3}{\binom822^2}=\frac{8\cdot7\cdot6}{3\cdot2\cdot1}\cdot\frac{2\cdot1}{8\cdot7}\cdot\frac{2^3}{2^2}=\frac{6}{3}\cdot2=\boxed{4}.$$",0,0.0
+"If Michael rolls three fair dice, what is the probability that he will roll at least two 1's? Express your answer as a common fraction.",13/216,"We calculate the complement, or the probability that Michael does not roll at least two 1's, and then subtract from 1.  If Michael does not roll at least two 1's, he must roll either zero or one.  The probability that he rolls no 1's is  $$\frac{5}{6}\cdot\frac{5}{6}\cdot\frac{5}{6} = \left(\frac{5}{6}\right)^3 = \frac{125}{216}$$The probability that he rolls one 1 is $$\left(\binom{3}{1}\cdot\frac{1}{6}\right)\cdot\frac{5}{6}\cdot\frac{5}{6} = \binom{3}{1}\left(\frac{25}{216}\right) = \frac{75}{216},$$since we can choose which of the dice rolled a 1 in $\binom{3}{1}$ ways.  Thus our answer is $1-\frac{125}{216}-\frac{75}{216} = \frac{16}{216}=\boxed{\frac{2}{27}}$.",0,0.0
+Simplify $\frac{k-3}{2} + 3k+1+\frac{3k+1}{2}$.,2k-1,"Notice that the two fractions have the same denominator, so we can add them. Addition is commutative, so we can rearrange the terms to get  \begin{align*}
+\frac{k-3}{2} +\frac{3k+1}{2}+3k+1 &=\frac{4k-2}{2}+3k+1 \\
+&=2k-1+3k+1 \\
+&=\boxed{5k}.\end{align*}",0,0.0
+"A particular convex pentagon has two congruent, acute angles. The measure of each of the other interior angles is equal to the sum of the measures of the two acute angles. What is the common measure of the large angles, in degrees?",270°,"If $x$ is the measure in degrees of each of the acute angles, then each of the larger angles measures $2x$ degrees.  Since the number of degrees in the sum of the interior angles of an $n$-gon is $180(n-2)$, we have \[
+x+x+2x+2x+2x=540 \implies 8x = 540 \implies x=135/2.
+\] The large angles each measure $2x=\boxed{135}$ degrees.",0,0.0
+"The matrix for reflecting through a certain plane $P,$ which passes through the origin, is given by
+\[\renewcommand{\arraystretch}{1.5} \begin{pmatrix} \frac{11}{15} & \frac{2}{15} & \frac{2}{3} \\ \frac{2}{15} & \frac{14}{15} & -\frac{1}{3} \\ \frac{2}{3} & -\frac{1}{3} & -\frac{2}{3} \end{pmatrix} \renewcommand{\arraystretch}{1}.\]Find the normal vector of plane $P.$  Enter your answer in the form $\begin{pmatrix} a \\ b \\ c \end{pmatrix},$ where $a,$ $b,$ and $c$ are integers, $a > 0,$ and $\gcd(|a|,|b|,|c|) = 1.$",\begin{pmatrix} 4 \\ -1 \\ 2 \end{pmatrix},"If $\begin{pmatrix} x \\ y \\ z \end{pmatrix}$ is a vector in plane $P,$ then the reflection takes the vector to itself.  Thus,
+\[\renewcommand{\arraystretch}{1.5} \begin{pmatrix} \frac{11}{15} & \frac{2}{15} & \frac{2}{3} \\ \frac{2}{15} & \frac{14}{15} & -\frac{1}{3} \\ \frac{2}{3} & -\frac{1}{3} & -\frac{2}{3} \end{pmatrix} \renewcommand{\arraystretch}{1} \begin{pmatrix} x \\ y \\ z \end{pmatrix} = \begin{pmatrix} x \\ y \\ z \end{pmatrix}.\]Then
+\[\renewcommand{\arraystretch}{1.5} \begin{pmatrix} \frac{11}{15} x + \frac{2}{15} y + \frac{2}{3} z \\ \frac{2}{15} x + \frac{14}{15} y - \frac{1}{3} z \\ \frac{2}{3} x - \frac{1}{3} y - \frac{2}{3} z \end{pmatrix} \renewcommand{\arraystretch}{1} = \begin{pmatrix} x \\ y \\ z \end{pmatrix}.\]This gives us $\frac{11}{15} x + \frac{2}{15} y + \frac{2}{3} z = x,$ $\frac{2}{15} x + \frac{14}{15} y - \frac{1}{3} z = y,$ and $\frac{2}{3} x - \frac{1}{3} y - \frac{2}{3} z = z.$  Each of these equations reduces to
+\[2x - y - 5z = 0,\]so the normal vector of the plane is $\boxed{\begin{pmatrix} 2 \\ -1 \\ -5 \end{pmatrix}}.$",0,0.0
+"The matrix
+\[\begin{pmatrix} -\frac{7}{25} & \frac{24}{25} \\ \frac{24}{25} & \frac{7}{25} \end{pmatrix}\]corresponds to reflecting over a certain vector $\begin{pmatrix} x \\ y \end{pmatrix}.$  Find $\frac{y}{x}.$",3/5,"Note that the reflecting $\begin{pmatrix} x \\ y \end{pmatrix}$ over itself results in itself, so
+\[\begin{pmatrix} -\frac{7}{25} & \frac{24}{25} \\ \frac{24}{25} & \frac{7}{25} \end{pmatrix} \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} x \\ y \end{pmatrix}.\]Then $-\frac{7}{25} x + \frac{24}{25} y = x$ and $\frac{24}{25} x + \frac{7}{25} y = y.$  Both equations lead to $\frac{y}{x} = \boxed{\frac{4}{3}}.$",0,0.0
+"Two sequences $A=\{a_0, a_1, a_2,\ldots\}$ and $B=\{b_0,b_1,b_2,\ldots\}$ are defined as follows: \[a_0=0, ~a_1=1, ~a_n= a_{n-1} +b_{n-2} \hspace{2mm}\text{for}\hspace{2mm} n\ge2\] \[b_0=1, ~b_1=2, ~b_n=a_{n-2} +b_{n-1}\hspace{2mm}\text{for}\hspace{2mm} n\ge2\] What is the remainder when $a_{50}+b_{50}$ is divided by $5$?",4,"The problem is greatly simplified by defining the sequence $C=\{c_0,c_1,c_2,\ldots\}$ as $c_n=a_n+b_n$ for all nonnegative integers $n$. Then $c_0=a_0+b_0=0+1=1$ and $c_1=a_1+b_1=1+2=3$. Additionally, for integers $n>1$ we have \begin{align*}
+c_n&=a_n+b_n\\
+&=(a_{n-1} +b_{n-2})+(a_{n-2} +b_{n-1})\\
+&=(a_{n-2}+b_{n-2})+(a_{n-1}+b_{n-1})\\
+&=c_{n-2}+c_{n-1}.
+\end{align*} This is convenient since we want to determine the remainder of $a_{50}+b_{50}=c_{50}$. Thus, we no longer have to think about the sequences $A$ and $B$, but only about $C$.
+
+The first few terms of $C$ are $1,3,4,7,11,18,29$. When reduced modulo $5$, these terms are $1,3,4,2,1,3,4$. The first four terms are $1,3,4,2$. These continue repeating $\pmod 5$ because the next two terms are $1,3$ and all terms are defined as the sum of the preceding two. Since the cycle has length $4$ and $50\equiv 2\pmod 4$, we have $$c_{50} \equiv c_2 \pmod 5,$$ and thus $c_{50}\equiv \boxed{4}\pmod 5$.",1,0.0
+Three cards are chosen at random from a standard 52-card deck.  What is the probability that they are not all the same color?,0.2825,"We can find the probability they are all same color, then subtract that from 1. There are 26 cards of each color, so 3 of them can be selected in $\binom{26}{3}$ ways, and of course there are 2 colors.  So the answer is \[1-2\frac{\binom{26}{3}}{\binom{52}{3}}=\boxed{\frac{13}{17}}.\]",0,0.0
+"In how many ways can seven beads of distinct colors be put on the hexagonal grid shown, if reflections and rotations of an arrangement are considered equivalent?
+
+[asy]
+size(50);
+dot((0,0));
+dot((1,0));
+dot((-1,0));
+dot((.5,sqrt(3)/2));
+dot((.5,-sqrt(3)/2));
+dot((-.5,sqrt(3)/2));
+dot((-.5,-sqrt(3)/2));
+[/asy]",420,"There are $7!$ ways to put the beads on the grid, not considering rotations and reflections. Arrangements can be reflected or not reflected and can be rotated by 0, 60, 120, 180, 240, or 300 degrees, so they come in groups of twelve equivalent arrangements. Correcting for the symmetries, we find that there are $7!/12=\boxed{420}$ distinct arrangements.",1,0.0
+For how many integers $n$ where $2 \le n \le 100$ is $\binom{n}{2}$ odd?,100,"$\binom{n}{2} = \frac{n(n-1)}{2}$. In order for this fraction to be odd, neither $n$ nor $n-1$ can be divisible by $4$, because only one of $n$ and $n-1$ can be even. There are $25$ integers where $n$ is divisible by $4$, namely the multiples of $4$ from $4$ to $100$. There are $24$ integers where $n-1$ is divisible by $4$. We can obtain these integers by incrementing all the multiples of $4$ by $1$, but we must not include $100$ since $100+1 = 101 > 100$. Therefore, there are $49$ invalid integers, so there are $99 - 49 = \boxed{50}$ valid integers.",0,0.0

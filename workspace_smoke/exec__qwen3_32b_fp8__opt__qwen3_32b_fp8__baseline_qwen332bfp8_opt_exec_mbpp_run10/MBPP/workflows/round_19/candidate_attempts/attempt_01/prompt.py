@@ -1,0 +1,2 @@
+HARMONIC_SUM_PROMPT = "Generate a Python function to calculate the harmonic sum of n-1 given an integer n."
+REMOVE_NESTED_PROMPT = "Generate a Python function to remove nested tuples from a given tuple."

@@ -1,0 +1,1 @@
+Introduce the `ScEnsemble` operator to aggregate multiple code generation attempts and select the most consistent solution, addressing the `answer_mismatch` failures. This leverages self-consistency to improve alignment.

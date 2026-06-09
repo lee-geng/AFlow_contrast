@@ -1,0 +1,5 @@
+Introduce a `custom` preprocessing step to extract structured or numerical information from the input before passing it to `AnswerGenerate`. This addresses the mismatch between predicted and expected answers by clarifying ambiguous or incomplete input, especially in cases where the model fails to extract the correct numerical or factual content from the passage.
+
+This change is motivated by the failure evidence where the model extracted incorrect or non-matching values (e.g., 17.75% instead of 9.2|10.7), and the prior failed attempts to fix this by similar preprocessing steps were ineffective. The new approach is to explicitly extract and structure the relevant information before reasoning begins, which should help the `AnswerGenerate` step produce more accurate answers.
+
+The change is minimal and targeted, adding only one `custom` call before the `AnswerGenerate` step.

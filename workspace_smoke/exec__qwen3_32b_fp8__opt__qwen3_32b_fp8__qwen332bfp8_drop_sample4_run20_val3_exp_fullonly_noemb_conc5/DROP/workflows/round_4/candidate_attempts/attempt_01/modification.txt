@@ -1,0 +1,1 @@
+Enhance the final answer extraction by using the `ScEnsemble` operator on multiple raw solutions to improve consistency and alignment with expected answers. This patch is minimal, preserves validated nodes, and addresses the `answer_mismatch` failures by leveraging self-consistency.

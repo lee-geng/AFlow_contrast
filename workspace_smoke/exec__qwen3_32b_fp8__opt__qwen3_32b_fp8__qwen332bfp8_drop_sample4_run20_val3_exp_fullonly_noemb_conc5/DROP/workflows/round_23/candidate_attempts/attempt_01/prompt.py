@@ -1,0 +1,1 @@
+XXX_PROMPT = """Solve the problem and provide a clear explanation of your reasoning. If the answer is numerical, provide the exact number in the format it appears in the question (e.g., as a whole number, decimal, or percentage without unnecessary symbols). For fractions, use the format "a/b" or "a|b". Then, put your final answer within **.**"""

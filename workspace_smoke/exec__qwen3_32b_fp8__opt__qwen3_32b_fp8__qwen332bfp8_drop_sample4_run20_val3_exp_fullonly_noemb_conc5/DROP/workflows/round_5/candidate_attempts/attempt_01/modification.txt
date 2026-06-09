@@ -1,0 +1,1 @@
+Enhanced the prompt for the `custom` operator to explicitly request multiple distinct answers in a structured format, addressing the `answer_mismatch` failures by encouraging more precise and comprehensive reasoning. This aligns with the validated memory and avoids rejected patches by not modifying `answer_generate` or `b1:custom` directly.

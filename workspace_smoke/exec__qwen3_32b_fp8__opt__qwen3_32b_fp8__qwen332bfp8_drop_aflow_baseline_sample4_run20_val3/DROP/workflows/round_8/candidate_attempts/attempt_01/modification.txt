@@ -1,0 +1,1 @@
+Introduce a `custom` step to preprocess the problem input and extract numerical or structured information explicitly, to address the mismatch between predicted and expected answers. This step will help clarify ambiguous or incomplete input before passing it to `AnswerGenerate`, improving alignment with ground truth.

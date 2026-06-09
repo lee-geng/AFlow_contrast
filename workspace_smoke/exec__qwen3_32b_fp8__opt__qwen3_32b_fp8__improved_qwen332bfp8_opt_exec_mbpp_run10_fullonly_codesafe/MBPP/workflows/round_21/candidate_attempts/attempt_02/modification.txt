@@ -1,0 +1,1 @@
+Add fallback handling to the `test` operator by using `ScEnsemble` to refine the solution before testing, based on the candidate memory suggestion. This addresses the mismatch between the generated code and the expected output by improving the robustness of the test phase.

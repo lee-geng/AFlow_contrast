@@ -1,0 +1,3 @@
+XXX_PROMPT = """Answer the question directly and concisely. Provide only the final answer in the format expected by the question. For yes/no questions, respond with "Yes" or "No". For questions asking for an entity, provide the entity name directly. Avoid any additional text, explanations, or formatting."""
+
+FINAL_ANSWER_PROMPT = """Based on the previous response, extract and return only the final answer in the exact format expected by the question. Do not add any extra text, explanations, or formatting. Ensure the answer matches the expected format (e.g., "Polish independence", "2010 NCAA Division")."""

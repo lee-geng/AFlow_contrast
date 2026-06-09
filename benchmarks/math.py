@@ -7,10 +7,31 @@ import regex
 from sympy import N, simplify
 from sympy.parsing.latex import parse_latex
 from sympy.parsing.sympy_parser import parse_expr
-from tenacity import retry, retry_if_exception_type, stop_after_attempt, wait_fixed
+from tenacity import retry, retry_if_exception, stop_after_attempt, wait_fixed
 
 from benchmarks.benchmark import BaseBenchmark
 from scripts.logs import logger
+
+RETRYABLE_ERROR_KEYWORDS = (
+    "connection error",
+    "timeout",
+    "timed out",
+    "temporarily unavailable",
+    "rate limit",
+    "too many requests",
+    "service unavailable",
+    "server error",
+    "bad gateway",
+    "gateway timeout",
+    "apiconnectionerror",
+    "apitimeouterror",
+    "server disconnected",
+)
+
+
+def is_retryable_generation_error(exc: Exception) -> bool:
+    message = str(exc).lower()
+    return any(keyword in message for keyword in RETRYABLE_ERROR_KEYWORDS)
 
 
 class MATHBenchmark(BaseBenchmark):
@@ -106,7 +127,12 @@ class MATHBenchmark(BaseBenchmark):
         except OSError:
             return "no code"
 
-    @retry(stop=stop_after_attempt(5), wait=wait_fixed(1), retry=retry_if_exception_type(Exception), reraise=True)
+    @retry(
+        stop=stop_after_attempt(5),
+        wait=wait_fixed(1),
+        retry=retry_if_exception(is_retryable_generation_error),
+        reraise=True,
+    )
     async def _generate_output(self, graph, input_text):
         return await graph(input_text)
 
@@ -130,7 +156,10 @@ class MATHBenchmark(BaseBenchmark):
             return input_text, output, expected_output, uni_score, cost
 
         except Exception as e:
-            logger.info(f"Maximum retries reached. Skipping this sample. Error: {e}")
+            if is_retryable_generation_error(e):
+                logger.info(f"Maximum retries reached. Skipping this sample. Error: {e}")
+            else:
+                logger.info(f"Non-retryable runtime error. Skipping this sample. Error: {e}")
             return input_text, str(e), expected_output, 0.0, 0.0
 
     def get_result_columns(self) -> List[str]:

@@ -1,0 +1,1 @@
+Introduce a problem-specific instruction in the `custom_code_generate` calls to guide the model toward correct code structure and function behavior, addressing the `answer_mismatch` failures. This is a small patch that preserves the existing use of `ScEnsemble` and `Test` operators while improving the quality of the initial code generation.

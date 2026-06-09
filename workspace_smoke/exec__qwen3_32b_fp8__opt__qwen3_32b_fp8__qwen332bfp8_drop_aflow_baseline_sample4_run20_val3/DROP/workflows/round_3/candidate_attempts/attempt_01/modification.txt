@@ -1,0 +1,5 @@
+Introduce a post-processing step using the `ScEnsemble` operator to refine the final answer. This addresses the `answer_mismatch` failures by ensuring the final answer is more aligned with the expected format and content. The `ScEnsemble` operator is used to improve the selection of the best solution by leveraging self-consistency, which is particularly useful when the model's raw output is verbose or mismatched in format.
+
+The modification adds a call to `ScEnsemble` after `AnswerGenerate`, passing the generated answer to it. This ensures the final answer is more concise and better matches the expected format, especially for numeric or short-answer tasks.
+
+No changes are made to the prompt since the current `ANSWER_GENERATE_PROMPT` is already sufficient for generating the initial thought and answer. The `ScEnsemble` operator is used to refine the final output without altering the initial generation process.

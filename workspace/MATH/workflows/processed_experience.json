@@ -1,0 +1,121 @@
+{
+    "7": {
+        "score": 0.5210084033613446,
+        "success": {
+            "18": {
+                "modification": "Modified the workflow to include a review mechanism that evaluates the generated solutions before ensemble selection, enhancing the overall solution quality.",
+                "score": 0.5462184873949579
+            }
+        },
+        "failure": {
+            "10": {
+                "modification": "Added a self-ask mechanism to refine the generated solutions before ensemble selection, enhancing the solution quality.",
+                "score": 0.5042016806722689
+            },
+            "11": {
+                "modification": "modify: Added a review mechanism to enhance the solution selection process by incorporating a self-ask method to refine the generated solutions before ensemble selection.",
+                "score": 0.5210084033613446
+            },
+            "12": {
+                "modification": "modify: Added a review mechanism to enhance the solution generation process by incorporating a self-ask method to refine the generated solutions before ensemble selection.",
+                "score": 0.5126050420168067
+            },
+            "13": {
+                "modification": "Added a review mechanism to enhance the solution generation process by incorporating a self-ask method to refine the generated solutions before ensemble selection.",
+                "score": 0.5126050420168067
+            },
+            "14": {
+                "modification": "modify: Added a self-ask mechanism to refine the generated solutions before ensemble selection, enhancing the solution quality.",
+                "score": 0.4957983193277311
+            },
+            "15": {
+                "modification": "modify: Added a self-consistency check to improve the solution selection process by incorporating a review mechanism that evaluates the generated solutions before ensemble selection.",
+                "score": 0.0
+            },
+            "16": {
+                "modification": "modify: Added a self-review mechanism to evaluate the generated solutions before ensemble selection, enhancing the overall solution quality.",
+                "score": 0.4117647058823529
+            },
+            "17": {
+                "modification": "Modified the workflow to include a self-review mechanism that evaluates the generated solutions before ensemble selection, enhancing the overall solution quality.",
+                "score": 0.20168067226890757
+            },
+            "8": {
+                "modification": "modify: Added a self-consistency check to improve the solution selection process by incorporating a review mechanism.",
+                "score": 0.4789915966386555
+            },
+            "9": {
+                "modification": "Added a review mechanism to enhance the solution selection process by incorporating a self-ask method to refine the generated solutions before ensemble selection.",
+                "score": 0.46218487394957986
+            }
+        }
+    },
+    "18": {
+        "score": 0.5462184873949579,
+        "success": {},
+        "failure": {
+            "19": {
+                "modification": "modify: Change the review mechanism to include a more comprehensive evaluation of solution quality by checking for specific keywords and length.",
+                "score": 0.16806722689075632
+            },
+            "2": {
+                "modification": "Modify the review_solution method to include a more robust evaluation of solution quality by checking for specific keywords related to the problem context and ensuring the solution length is adequate. This will help filter out less relevant solutions more effectively.",
+                "score": 0.1
+            },
+            "20": {
+                "modification": "Change the review mechanism to include a more detailed evaluation of solution quality by checking for specific keywords related to the problem context and ensuring the solution length is adequate. This will help filter out less relevant solutions more effectively.",
+                "score": 0.25210084033613445
+            },
+            "21": {
+                "modification": "Modify the review_solution method to include a more comprehensive evaluation of solution quality by checking for specific keywords related to the problem context and ensuring the solution length is adequate.",
+                "score": 0.46218487394957986
+            },
+            "22": {
+                "modification": "Modify the review_solution method to include a more detailed evaluation of solution quality by checking for specific keywords related to the problem context and ensuring the solution length is adequate. This will help filter out less relevant solutions more effectively.",
+                "score": 0.4957983193277311
+            },
+            "23": {
+                "modification": "Modify the review_solution method to include a more sophisticated evaluation of solution quality by checking for specific keywords related to the problem context and ensuring the solution length is adequate. This will help filter out less relevant solutions more effectively.",
+                "score": 0.46218487394957986
+            },
+            "24": {
+                "modification": "Modify the review_solution method to include a more nuanced evaluation of solution quality by checking for specific keywords related to the problem context and ensuring the solution length is adequate. This will help filter out less relevant solutions more effectively.",
+                "score": 0.05042016806722689
+            }
+        }
+    },
+    "2": {
+        "score": 0.5042016806722689,
+        "success": {
+            "4": {
+                "modification": "Change the number of solutions generated from 3 to 4 for better ensemble performance.",
+                "score": 0.5126050420168067
+            }
+        },
+        "failure": {
+            "3": {
+                "modification": "modify: Change the number of solutions generated from 3 to 5 for better ensemble performance.",
+                "score": 0.48739495798319327
+            }
+        }
+    },
+    "4": {
+        "score": 0.5126050420168067,
+        "success": {
+            "7": {
+                "modification": "Change the number of solutions generated from 4 to 5 for better ensemble performance.",
+                "score": 0.5210084033613446
+            }
+        },
+        "failure": {
+            "5": {
+                "modification": "modify: Change the number of solutions generated from 4 to 5 for better ensemble performance.",
+                "score": 0.5042016806722689
+            },
+            "6": {
+                "modification": "Change the number of solutions generated from 4 to 6 for better ensemble performance.",
+                "score": 0.5126050420168067
+            }
+        }
+    }
+}

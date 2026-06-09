@@ -1,0 +1,1 @@
+Introduce a problem-specific instruction in the `custom_code_generate` calls to guide the model toward correct code structure and function behavior, addressing the `answer_mismatch` failures. This is a small patch that improves the alignment of generated code with expected behavior by providing explicit guidance on handling input types and expected output formats.

@@ -1,0 +1,1 @@
+CODE_GEN_PROMPT = """Write a complete and correct Python function to solve the problem. Include the full function definition and any necessary imports. Also, write a test function to verify the correctness of your solution."""

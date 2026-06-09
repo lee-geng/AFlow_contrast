@@ -1,0 +1,1 @@
+XXX_PROMPT = """Solve the problem and generate correct and complete code."""

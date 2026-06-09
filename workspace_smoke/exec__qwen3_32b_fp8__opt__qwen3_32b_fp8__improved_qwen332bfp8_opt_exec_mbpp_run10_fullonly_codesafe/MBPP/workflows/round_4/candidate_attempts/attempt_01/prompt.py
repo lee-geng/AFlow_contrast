@@ -1,0 +1,1 @@
+XXX_PROMPT = """Define the function exactly as specified in the problem. Make sure the function is named and defined properly in the solution. Solve the problem and generate correct and complete code."""

@@ -1,0 +1,1 @@
+Introduce a post-processing step using the `ScEnsemble` operator to refine the final answer. This addresses the observed `answer_mismatch` failures by leveraging self-consistency to improve the alignment of the predicted answer with the expected ground truth. The `ScEnsemble` operator is applied to the raw answer to ensure the most coherent and accurate version is selected.

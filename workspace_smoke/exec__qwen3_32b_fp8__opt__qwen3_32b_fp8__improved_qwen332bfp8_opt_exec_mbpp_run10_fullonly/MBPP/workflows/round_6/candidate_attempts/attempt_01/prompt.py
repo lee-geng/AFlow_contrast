@@ -1,0 +1,1 @@
+CODE_GEN_PROMPT = """Solve the problem. Write a correct and complete Python function as the solution. Include a test function with assert statements to verify correctness. Ensure the function is fully implemented and returns the expected result."""

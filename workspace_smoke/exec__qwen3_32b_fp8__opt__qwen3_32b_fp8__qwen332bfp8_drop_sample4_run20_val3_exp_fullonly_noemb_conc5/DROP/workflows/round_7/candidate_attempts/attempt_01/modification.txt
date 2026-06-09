@@ -1,0 +1,1 @@
+Enhance the final answer extraction by using the `sc_ensemble` operator on multiple raw solutions to improve consistency and accuracy, while preserving the validated components of the workflow.

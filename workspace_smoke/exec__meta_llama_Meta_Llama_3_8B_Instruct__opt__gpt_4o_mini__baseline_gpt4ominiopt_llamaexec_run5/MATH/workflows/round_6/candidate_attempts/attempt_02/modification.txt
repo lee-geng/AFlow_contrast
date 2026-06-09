@@ -1,0 +1,1 @@
+Added a call to the `Custom` operator after the `Verify` step to generate a more detailed solution based on the final solution and the verification results. This aims to address the answer mismatches observed in the failure evidence by providing additional context for the final answer extraction.

@@ -1,0 +1,4 @@
+- Modified the prompt for the `custom` operator to reduce verbose output and align the response format with the expected ground-truth format.
+- The new instruction explicitly asks the model to provide only the final answer, avoiding unnecessary elaboration.
+- This change is motivated by the `answer_mismatch` failures, where the model's output included extra context instead of the expected concise answer.
+- The patch is minimal and focused on the `b1:custom` node, as guided by the memory and constraints.

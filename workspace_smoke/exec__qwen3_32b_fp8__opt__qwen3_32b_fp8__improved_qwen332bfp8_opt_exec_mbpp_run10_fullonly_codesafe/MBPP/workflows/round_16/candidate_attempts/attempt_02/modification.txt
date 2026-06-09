@@ -1,0 +1,1 @@
+Modify the `XXX_PROMPT` in `prompt.py` to include explicit instructions for ensuring the solution includes the full test function and passes all test cases. This addresses the mismatch between the generated code and the expected output in the test cases.

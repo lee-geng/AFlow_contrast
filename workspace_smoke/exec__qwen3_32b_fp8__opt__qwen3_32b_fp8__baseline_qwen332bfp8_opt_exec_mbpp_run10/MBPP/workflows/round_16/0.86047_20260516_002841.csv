@@ -1,0 +1,1344 @@
+﻿inputs,prediction,expected_output,score,cost
+"Write a python function to count the number of rotations required to generate a sorted array. https://www.geeksforgeeks.org/count-of-rotations-required-to-generate-a-sorted-array/
+
+def count_rotation(arr):   ","def count_rotation(arr):
+    n = len(arr)
+    for i in range(1, n):
+        if arr[i] < arr[i - 1]:
+            return i
+    return 0","The solution passed all test cases.
+Correct Solution:def count_rotation(arr):   
+    for i in range (1,len(arr)): 
+        if (arr[i] < arr[i - 1]): 
+            return i  
+    return 0",1.0,0.0
+"Write a function to multiply two integers.
+
+def multiply_int(x, y):","def multiply_int(x, y):
+    return x * y","The solution passed all test cases.
+Correct Solution:def multiply_int(x, y):
+    if y < 0:
+        return -multiply_int(x, -y)
+    elif y == 0:
+        return 0
+    elif y == 1:
+        return x
+    else:
+        return x + multiply_int(x, y - 1)",1.0,0.0
+"Write a function to convert a given string to a tuple of characters.
+
+def string_to_tuple(str1):","def string_to_tuple(str1):
+    return tuple(str1.replace(' ', ''))
+def candidate(s):
+    return string_to_tuple(s)","The solution passed all test cases.
+Correct Solution:def string_to_tuple(str1):
+    result = tuple(x for x in str1 if not x.isspace()) 
+    return result",1.0,0.0
+"Write a python function to check whether the given number can be represented as the difference of two squares or not.
+
+def dif_Square(n): ","def dif_Square(n):
+    for i in range(n + 1):
+        for j in range(i + 1):
+            if i * i - j * j == n:
+                return True
+    return False","The solution passed all test cases.
+Correct Solution:def dif_Square(n): 
+    if (n % 4 != 2): 
+        return True
+    return False",1.0,0.0
+"Write a function to locate the left insertion point for a specified value in sorted order. https://www.w3resource.com/python-exercises/data-structures-and-algorithms/python-data-structure-exercise-24.php
+import bisect
+def left_insertion(a, x):","import bisect
+def left_insertion(a, x):
+    return bisect.bisect_left(a, x)","The solution passed all test cases.
+Correct Solution:import bisect
+def left_insertion(a, x):
+    i = bisect.bisect_left(a, x)
+    return i",1.0,0.0
+"Write a python function to find the length of the longest sublists.
+
+def Find_Max_Length(lst):  ","def Find_Max_Length(lst):
+    if not lst:
+        return 0
+    max_len = max((len(sublist) for sublist in lst))
+    return max_len","The solution passed all test cases.
+Correct Solution:def Find_Max_Length(lst):  
+    maxLength = max(len(x) for x in lst )
+    return maxLength ",1.0,0.0
+"Write a python function takes in an integer and check whether the frequency of each digit in the integer is less than or equal to the digit itself.
+
+def validate(n): ","def validate(n):
+    from collections import Counter
+    if n < 0:
+        return False
+    digits = str(n)
+    freq = Counter(digits)
+    for (digit, count) in freq.items():
+        if int(digit) < count:
+            return False
+    return True","The solution passed all test cases.
+Correct Solution:def validate(n): 
+    for i in range(10): 
+        temp = n;  
+        count = 0; 
+        while (temp): 
+            if (temp % 10 == i): 
+                count+=1;  
+            if (count > i): 
+                return False
+            temp //= 10; 
+    return True",1.0,0.0
+"Write a function that takes in an array and element and returns a tuple containing a boolean that indicates if the element is in the array and the index position of the element (or -1 if the element is not found).
+
+def sequential_search(dlist, item):","def sequential_search(dlist, item):
+    for (index, value) in enumerate(dlist):
+        if value == item:
+            return (True, index)
+    return (False, -1)","The solution passed all test cases.
+Correct Solution:def sequential_search(dlist, item):
+    pos = 0
+    found = False
+    while pos < len(dlist) and not found:
+        if dlist[pos] == item:
+            found = True
+        else:
+            pos = pos + 1
+    return found, pos",1.0,0.0
+"Write a function to return the sum of all divisors of a number.
+
+def sum_div(number):","def sum_div(number):
+    if number <= 0:
+        return 0
+    total = 0
+    i = 1
+    while i * i <= number:
+        if number % i == 0:
+            total += i
+            if i != number // i:
+                total += number // i
+        i += 1
+    return total - number","The solution passed all test cases.
+Correct Solution:def sum_div(number):
+    divisors = [1]
+    for i in range(2, number):
+        if (number % i)==0:
+            divisors.append(i)
+    return sum(divisors)",1.0,0.0
+"Write a function to find the specified number of largest products from two given lists, selecting one factor from each list.
+
+def large_product(nums1, nums2, N):","import heapq
+from itertools import product
+def large_product(nums1, nums2, N):
+    products = (a * b for (a, b) in product(nums1, nums2))
+    largest_products = heapq.nlargest(N, products)
+    return largest_products","The solution passed all test cases.
+Correct Solution:def large_product(nums1, nums2, N):
+    result = sorted([x*y for x in nums1 for y in nums2], reverse=True)[:N]
+    return result",1.0,0.0
+"Write a function to remove tuples from the given tuple.
+
+def remove_nested(test_tup):","def remove_nested(test_tup):
+    result = ()
+    for element in test_tup:
+        if isinstance(element, tuple):
+            result += remove_nested(element)
+        else:
+            result += (element,)
+    return result","Error: .
+ Solution: def remove_nested(test_tup):
+    result = ()
+    for element in test_tup:
+        if isinstance(element, tuple):
+            result += remove_nested(element)
+        else:
+            result += (element,)
+    return result.
+ Test: def check():
+    assert remove_nested((1, 5, 7, (4, 6), 10)) == (1, 5, 7, 10)
+    assert remove_nested((2, 6, 8, (5, 7), 11)) == (2, 6, 8, 11)
+    assert remove_nested((3, 7, 9, (6, 8), 12)) == (3, 7, 9, 12)
+    assert remove_nested((3, 7, 9, (6, 8), (5,12), 12)) == (3, 7, 9, 12)
+
+Correct Solution:def remove_nested(test_tup):
+  res = tuple()
+  for count, ele in enumerate(test_tup):
+    if not isinstance(ele, tuple):
+      res = res + (ele, )
+  return (res) ",0.0,0.0
+"Write a function to find the maximum absolute product between numbers in pairs of tuples within a given list.
+
+def max_product_tuple(list1):","def max_product_tuple(list1):
+    max_product = float('-inf')
+    for (a, b) in list1:
+        product = abs(a * b)
+        if product > max_product:
+            max_product = product
+    return max_product","The solution passed all test cases.
+Correct Solution:def max_product_tuple(list1):
+    result_max = max([abs(x * y) for x, y in list1] )
+    return result_max",1.0,0.0
+"Write a python function to find whether the parity of a given number is odd.
+
+def find_Parity(x): ","def find_Parity(x):
+    return x % 2 != 0","The solution passed all test cases.
+Correct Solution:def find_Parity(x): 
+    y = x ^ (x >> 1); 
+    y = y ^ (y >> 2); 
+    y = y ^ (y >> 4); 
+    y = y ^ (y >> 8); 
+    y = y ^ (y >> 16); 
+    if (y & 1): 
+        return True
+    return False",1.0,0.0
+"Write a function to that rotate left bits by d bits a given number. We assume that the number is 32 bit.
+
+def left_rotate(n,d):   ","def left_rotate(n, d):
+    d %= 32
+    return (n << d | n >> 32 - d) & 4294967295","The solution passed all test cases.
+Correct Solution:def left_rotate(n,d):   
+    INT_BITS = 32
+    return (n << d)|(n >> (INT_BITS - d))  ",1.0,0.0
+"Write a function to find the surface area of a sphere.
+import math
+def surfacearea_sphere(r):","import math
+def surfacearea_sphere(r):
+    return 4 * math.pi * r ** 2","The solution passed all test cases.
+Correct Solution:import math
+def surfacearea_sphere(r):
+  surfacearea=4*math.pi*r*r
+  return surfacearea",1.0,0.0
+"Write a function to find the n'th star number.
+
+def find_star_num(n): ","def find_star_num(n):
+    return 6 * n * (n - 1) + 1","The solution passed all test cases.
+Correct Solution:def find_star_num(n): 
+	return (6 * n * (n - 1) + 1) ",1.0,0.0
+"Write a function that takes as input a tuple of numbers (t_1,...,t_{N+1}) and returns a tuple of length N where the i-th element of the tuple is equal to t_i * t_{i+1}.
+
+def multiply_elements(test_tup):","def multiply_elements(test_tup):
+    return tuple((test_tup[i] * test_tup[i + 1] for i in range(len(test_tup) - 1)))","The solution passed all test cases.
+Correct Solution:def multiply_elements(test_tup):
+  res = tuple(i * j for i, j in zip(test_tup, test_tup[1:]))
+  return (res) ",1.0,0.0
+"Write a function to get the angle of a complex number.
+import cmath
+def angle_complex(a,b):","import cmath
+def angle_complex(a, b):
+    z = complex(a, b)
+    angle = cmath.phase(z)
+    return angle","Error: .
+ Solution: import cmath
+def angle_complex(a, b):
+    z = complex(a, b)
+    angle = cmath.phase(z)
+    return angle.
+ Test: def check():
+    assert math.isclose(angle_complex(0,1j), 1.5707963267948966, rel_tol=0.001)
+    assert math.isclose(angle_complex(2,1j), 0.4636476090008061, rel_tol=0.001)
+    assert math.isclose(angle_complex(0,2j), 1.5707963267948966, rel_tol=0.001)
+
+Correct Solution:import cmath
+def angle_complex(a,b):
+  cn=complex(a,b)
+  angle=cmath.phase(a+b)
+  return angle",0.0,0.0
+"Write a python function to find the volume of a triangular prism.
+
+def find_Volume(l,b,h) : ","def find_Volume(l, b, h):
+    return l * b * h / 2","The solution passed all test cases.
+Correct Solution:def find_Volume(l,b,h) : 
+    return ((l * b * h) / 2) ",1.0,0.0
+"Write a function to convert rgb color to hsv color. https://www.geeksforgeeks.org/program-change-rgb-color-model-hsv-color-model/
+
+def rgb_to_hsv(r, g, b):","def rgb_to_hsv(r, g, b):
+    (r, g, b) = (r / 255.0, g / 255.0, b / 255.0)
+    max_c = max(r, g, b)
+    min_c = min(r, g, b)
+    delta = max_c - min_c
+    v = max_c * 100
+    if max_c == 0:
+        s = 0.0
+    else:
+        s = delta / max_c * 100
+    if delta == 0:
+        h = 0.0
+    else:
+        if max_c == r:
+            h = (g - b) / delta % 6
+        elif max_c == g:
+            h = (b - r) / delta + 2
+        else:
+            h = (r - g) / delta + 4
+        h *= 60
+        if h < 0:
+            h += 360
+    return (h, s, v)","The solution passed all test cases.
+Correct Solution:def rgb_to_hsv(r, g, b):
+    r, g, b = r/255.0, g/255.0, b/255.0
+    mx = max(r, g, b)
+    mn = min(r, g, b)
+    df = mx-mn
+    if mx == mn:
+        h = 0
+    elif mx == r:
+        h = (60 * ((g-b)/df) + 360) % 360
+    elif mx == g:
+        h = (60 * ((b-r)/df) + 120) % 360
+    elif mx == b:
+        h = (60 * ((r-g)/df) + 240) % 360
+    if mx == 0:
+        s = 0
+    else:
+        s = (df/mx)*100
+    v = mx*100
+    return h, s, v",1.0,0.0
+"Write a python function to interchange the first and last elements in a list.
+
+def swap_List(newList): ","def swap_List(newList):
+    if len(newList) < 2:
+        return newList
+    (newList[0], newList[-1]) = (newList[-1], newList[0])
+    return newList","The solution passed all test cases.
+Correct Solution:def swap_List(newList): 
+    size = len(newList) 
+    temp = newList[0] 
+    newList[0] = newList[size - 1] 
+    newList[size - 1] = temp  
+    return newList ",1.0,0.0
+"Write a function to find the median length of a trapezium.
+
+def median_trapezium(base1,base2,height):","def median_trapezium(base1, base2, height):
+    return (base1 + base2) / 2","The solution passed all test cases.
+Correct Solution:def median_trapezium(base1,base2,height):
+ median = 0.5 * (base1+ base2)
+ return median",1.0,0.0
+"Write a function to check if the given array represents min heap or not. https://www.geeksforgeeks.org/how-to-check-if-a-given-array-represents-a-binary-heap/
+
+def check_min_heap(arr): ","def check_min_heap(arr):
+    n = len(arr)
+    for i in range(int((n - 2) / 2) + 1):
+        left = 2 * i + 1
+        right = 2 * i + 2
+        if left < n and arr[i] > arr[left]:
+            return False
+        if right < n and arr[i] > arr[right]:
+            return False
+    return True","The solution passed all test cases.
+Correct Solution:def check_min_heap_helper(arr, i):
+    if 2 * i + 2 > len(arr):
+        return True
+    left_child = (arr[i] <= arr[2 * i + 1]) and check_min_heap_helper(arr, 2 * i + 1)
+    right_child = (2 * i + 2 == len(arr)) or (arr[i] <= arr[2 * i + 2] 
+                                      and check_min_heap_helper(arr, 2 * i + 2))
+    return left_child and right_child
+
+def check_min_heap(arr):
+  return check_min_heap_helper(arr, 0)",1.0,0.0
+"Write a function to find the kth element in the given array using 1-based indexing.
+
+def kth_element(arr, k):","def kth_element(arr, k):
+    if k < 1 or k > len(arr):
+        return None
+    return arr[k - 1]","The solution passed all test cases.
+Correct Solution:def kth_element(arr, k):
+  n = len(arr)
+  for i in range(n):
+    for j in range(0, n-i-1):
+      if arr[j] > arr[j+1]:
+        arr[j], arr[j+1] == arr[j+1], arr[j]
+  return arr[k-1]",1.0,0.0
+"Write a python function that takes in an integer n and returns the sum of the squares of the first n odd natural numbers.
+
+def square_Sum(n):  ","def square_Sum(n):
+    total = 0
+    for i in range(1, 2 * n, 2):
+        total += i ** 2
+    return total","The solution passed all test cases.
+Correct Solution:def square_Sum(n):  
+    return int(n*(4*n*n-1)/3) ",1.0,0.0
+"Write a python function to find the minimum of two numbers.
+
+def minimum(a,b):   ","def minimum(a, b):
+    return a if a < b else b","The solution passed all test cases.
+Correct Solution:def minimum(a,b):   
+    if a <= b: 
+        return a 
+    else: 
+        return b ",1.0,0.0
+"Write a function that takes in a list of tuples and returns a list containing the rear element of each tuple.
+
+def rear_extract(test_list):","def rear_extract(test_list):
+    return [t[-1] for t in test_list]","The solution passed all test cases.
+Correct Solution:def rear_extract(test_list):
+  res = [lis[-1] for lis in test_list]
+  return (res) ",1.0,0.0
+"Write a function to find nth polite number. geeksforgeeks.org/n-th-polite-number/
+import math 
+def is_polite(n): ","import math
+def is_power_of_two(n):
+    return n and n & n - 1 == 0
+def nth_polite_number(n):
+    log_val = math.floor(math.log2(n + 1))
+    return n + log_val
+def candidate(n):
+    return nth_polite_number(n)","Error: Function is_polite is not defined in the solution..
+ Solution: import math.
+ Test: def check():
+    assert is_polite(7) == 11
+    assert is_polite(4) == 7
+    assert is_polite(9) == 13
+
+Correct Solution:import math 
+def is_polite(n): 
+	n = n + 1
+	return (int)(n+(math.log((n + math.log(n, 2)), 2))) ",0.0,0.0
+"Write a function to create a list of N empty dictionaries.
+
+def empty_list(length):","def empty_list(length):
+    return [{} for _ in range(length)]","The solution passed all test cases.
+Correct Solution:def empty_list(length):
+ empty_list = [{} for _ in range(length)]
+ return empty_list",1.0,0.0
+"Write a function to find numbers within a given range from startnum ti endnum where every number is divisible by every digit it contains. https://www.w3resource.com/python-exercises/lambda/python-lambda-exercise-24.php
+
+def divisible_by_digits(startnum, endnum):","def divisible_by_digits(startnum, endnum):
+
+    def is_divisible_by_digits(num):
+        for digit in str(num):
+            if digit == '0' or num % int(digit) != 0:
+                return False
+        return True
+    result = list(filter(is_divisible_by_digits, range(startnum, endnum + 1)))
+    return result","The solution passed all test cases.
+Correct Solution:def divisible_by_digits(startnum, endnum):
+    return [n for n in range(startnum, endnum+1) \
+                if not any(map(lambda x: int(x) == 0 or n%int(x) != 0, str(n)))]",1.0,0.0
+"Write a python function that takes in a tuple and an element and counts the occcurences of the element in the tuple.
+
+def count_X(tup, x): ","def count_X(tup, x):
+    return tup.count(x)","The solution passed all test cases.
+Correct Solution:def count_X(tup, x): 
+    count = 0
+    for ele in tup: 
+        if (ele == x): 
+            count = count + 1
+    return count ",1.0,0.0
+"Write a function to find the maximum product subarray of the given array.
+
+def max_subarray_product(arr):","def max_subarray_product(arr):
+    if not arr:
+        return 0
+    max_product = current_max = current_min = arr[0]
+    for i in range(1, len(arr)):
+        num = arr[i]
+        if num < 0:
+            (current_max, current_min) = (current_min, current_max)
+        current_max = max(num, current_max * num)
+        current_min = min(num, current_min * num)
+        max_product = max(max_product, current_max)
+    return max_product","The solution passed all test cases.
+Correct Solution:def max_subarray_product(arr):
+	n = len(arr)
+	max_ending_here = 1
+	min_ending_here = 1
+	max_so_far = 0
+	flag = 0
+	for i in range(0, n):
+		if arr[i] > 0:
+			max_ending_here = max_ending_here * arr[i]
+			min_ending_here = min (min_ending_here * arr[i], 1)
+			flag = 1
+		elif arr[i] == 0:
+			max_ending_here = 1
+			min_ending_here = 1
+		else:
+			temp = max_ending_here
+			max_ending_here = max (min_ending_here * arr[i], 1)
+			min_ending_here = temp * arr[i]
+		if (max_so_far < max_ending_here):
+			max_so_far = max_ending_here
+	if flag == 0 and max_so_far == 0:
+		return 0
+	return max_so_far",1.0,0.0
+"Write a python function to find even numbers from a list of numbers.
+
+def Split(list): ","def Split(list):
+    even_numbers = [num for num in list if num % 2 == 0]
+    return even_numbers","The solution passed all test cases.
+Correct Solution:def Split(list): 
+    return [num for num in list if num % 2 == 0]",1.0,0.0
+"Write a function to calculate the sum (n - 2*i) from i=0 to n // 2, for instance n + (n-2) + (n-4)... (until n-x =< 0).
+
+def sum_series(n):","def sum_series(n):
+    total = 0
+    i = 0
+    while n - 2 * i >= 0:
+        total += n - 2 * i
+        i += 1
+    return total","The solution passed all test cases.
+Correct Solution:def sum_series(n):
+  if n < 1:
+    return 0
+  else:
+    return n + sum_series(n - 2)",1.0,0.0
+"Write a function that returns the list in a list of lists whose sum of elements is the highest.
+
+def max_sum_list(lists):","def max_sum_list(lists):
+    if not lists:
+        return []
+    return max(lists, key=sum)","The solution passed all test cases.
+Correct Solution:def max_sum_list(lists):
+ return max(lists, key=sum)",1.0,0.0
+"Write a function to calculate whether the matrix is a magic square.
+
+def magic_square_test(my_matrix):","def magic_square_test(my_matrix):
+    n = len(my_matrix)
+    if n == 0 or any((len(row) != n for row in my_matrix)):
+        return False
+    total = sum(my_matrix[0])
+    elements = set()
+    for row in my_matrix:
+        if sum(row) != total:
+            return False
+        for num in row:
+            if num in elements:
+                return False
+            elements.add(num)
+    for col in range(n):
+        if sum((my_matrix[row][col] for row in range(n))) != total:
+            return False
+    if sum((my_matrix[i][i] for i in range(n))) != total:
+        return False
+    if sum((my_matrix[i][n - 1 - i] for i in range(n))) != total:
+        return False
+    return True","The solution passed all test cases.
+Correct Solution:def magic_square_test(my_matrix):
+    iSize = len(my_matrix[0])
+    sum_list = []
+    sum_list.extend([sum (lines) for lines in my_matrix])   
+    for col in range(iSize):
+        sum_list.append(sum(row[col] for row in my_matrix))
+    result1 = 0
+    for i in range(0,iSize):
+        result1 +=my_matrix[i][i]
+    sum_list.append(result1)      
+    result2 = 0
+    for i in range(iSize-1,-1,-1):
+        result2 +=my_matrix[i][i]
+    sum_list.append(result2)
+    if len(set(sum_list))>1:
+        return False
+    return True",1.0,0.0
+"Write a function to round every number of a given list of numbers and print the total sum multiplied by the length of the list.
+
+def round_and_sum(list1):","def round_and_sum(list1):
+    rounded_sum = sum((round(num) for num in list1))
+    result = rounded_sum * len(list1)
+    print(result)
+    return result","The solution passed all test cases.
+Correct Solution:def round_and_sum(list1):
+  lenght=len(list1)
+  round_and_sum=sum(list(map(round,list1))* lenght)
+  return round_and_sum",1.0,0.0
+"Write a function takes as input two lists [a_1,...,a_n], [b_1,...,b_n] and returns [a_1+b_1,...,a_n+b_n].
+
+def sum_list(lst1,lst2):","def sum_list(lst1, lst2):
+    return [a + b for (a, b) in zip(lst1, lst2)]","The solution passed all test cases.
+Correct Solution:def sum_list(lst1,lst2):
+  res_list = [lst1[i] + lst2[i] for i in range(len(lst1))] 
+  return res_list",1.0,0.0
+"Write a function which takes a tuple of tuples and returns the average value for each tuple as a list.
+
+def average_tuple(nums):","def average_tuple(nums):
+    return [sum(t) / len(t) for t in nums]","Error: .
+ Solution: def average_tuple(nums):
+    return [sum(t) / len(t) for t in nums].
+ Test: def check():
+    assert average_tuple(((10, 10, 10, 12), (30, 45, 56, 45), (81, 80, 39, 32), (1, 2, 3, 4)))==[30.5, 34.25, 27.0, 23.25]
+    assert average_tuple(((1, 1, -5), (30, -15, 56), (81, -60, -39), (-10, 2, 3)))== [25.5, -18.0, 3.75]
+    assert average_tuple( ((100, 100, 100, 120), (300, 450, 560, 450), (810, 800, 390, 320), (10, 20, 30, 40)))==[305.0, 342.5, 270.0, 232.5]
+
+Correct Solution:def average_tuple(nums):
+    result = [sum(x) / len(x) for x in zip(*nums)]
+    return result",0.0,0.0
+"Write a function to find maximum run of uppercase characters in the given string.
+
+def max_run_uppercase(test_str):","def max_run_uppercase(test_str):
+    max_run = 0
+    current_run = 0
+    for char in test_str:
+        if char.isupper():
+            current_run += 1
+            if current_run > max_run:
+                max_run = current_run
+        else:
+            current_run = 0
+    return max_run","The solution passed all test cases.
+Correct Solution:def max_run_uppercase(test_str):
+  cnt = 0
+  res = 0
+  for idx in range(0, len(test_str)):
+    if test_str[idx].isupper():
+      cnt += 1
+    else:
+      res = cnt
+      cnt = 0
+  if test_str[len(test_str) - 1].isupper():
+    res = cnt
+  return (res)",1.0,0.0
+"Write a function to remove odd characters in a string.
+
+def remove_odd(str1):","def remove_odd(str1):
+    return ''.join((char for (index, char) in enumerate(str1) if index % 2 == 0))","Error: .
+ Solution: def remove_odd(str1):
+    return ''.join((char for (index, char) in enumerate(str1) if index % 2 == 0)).
+ Test: def check():
+    assert remove_odd(""python"")==(""yhn"")
+    assert remove_odd(""program"")==(""rga"")
+    assert remove_odd(""language"")==(""agae"")
+
+Correct Solution:def remove_odd(str1):
+ str2 = ''
+ for i in range(1, len(str1) + 1):
+    if(i % 2 == 0):
+        str2 = str2 + str1[i - 1]
+ return str2",0.0,0.0
+"Write a function that takes in the radius and height of a cylinder and returns the the volume.
+
+def volume_cylinder(r,h):","import math
+def volume_cylinder(r, h):
+    return math.pi * r ** 2 * h","The solution passed all test cases.
+Correct Solution:def volume_cylinder(r,h):
+  volume=3.1415*r*r*h
+  return volume",1.0,0.0
+"Write a function to find the item with maximum frequency in a given list.
+from collections import defaultdict
+def max_occurrences(nums):","from collections import defaultdict
+def max_occurrences(nums):
+    freq = defaultdict(int)
+    for num in nums:
+        freq[num] += 1
+    max_item = None
+    max_count = 0
+    for (item, count) in freq.items():
+        if count > max_count:
+            max_count = count
+            max_item = item
+    return max_item","The solution passed all test cases.
+Correct Solution:from collections import defaultdict
+def max_occurrences(nums):
+    dict = defaultdict(int)
+    for i in nums:
+        dict[i] += 1
+    result = max(dict.items(), key=lambda x: x[1]) 
+    return result[0]",1.0,0.0
+"Write a function to find the maximum difference between the number of 0s and number of 1s in any sub-string of the given binary string.
+
+def find_length(string): ","def find_length(string):
+    max_diff = 0
+    current_diff = 0
+    prefix_sums = {0: -1}
+    for (i, ch) in enumerate(string):
+        if ch == '0':
+            current_diff += 1
+        else:
+            current_diff -= 1
+        if current_diff in prefix_sums:
+            max_diff = max(max_diff, i - prefix_sums[current_diff])
+        else:
+            prefix_sums[current_diff] = i
+    return max_diff","Error: .
+ Solution: def find_length(string):
+    max_diff = 0
+    current_diff = 0
+    prefix_sums = {0: -1}
+    for (i, ch) in enumerate(string):
+        if ch == '0':
+            current_diff += 1
+        else:
+            current_diff -= 1
+        if current_diff in prefix_sums:
+            max_diff = max(max_diff, i - prefix_sums[current_diff])
+        else:
+            prefix_sums[current_diff] = i
+    return max_diff.
+ Test: def check():
+    assert find_length(""11000010001"") == 6
+    assert find_length(""10111"") == 1
+    assert find_length(""11011101100101"") == 2
+
+Correct Solution:def find_length(string): 
+	n = len(string)
+	current_sum = 0
+	max_sum = 0
+	for i in range(n): 
+		current_sum += (1 if string[i] == '0' else -1) 
+		if current_sum < 0: 
+			current_sum = 0
+		max_sum = max(current_sum, max_sum) 
+	return max_sum if max_sum else 0",0.0,0.0
+"Write a python function to find whether a number is divisible by 11.
+
+def is_Diff(n): ","def is_Diff(n):
+    if n == 0:
+        return True
+    num_str = str(n)
+    odd_sum = sum((int(num_str[i]) for i in range(0, len(num_str), 2)))
+    even_sum = sum((int(num_str[i]) for i in range(1, len(num_str), 2)))
+    return (odd_sum - even_sum) % 11 == 0","The solution passed all test cases.
+Correct Solution:def is_Diff(n): 
+    return (n % 11 == 0) ",1.0,0.0
+"Write a python function to count the number of non-empty substrings of a given string.
+
+def number_of_substrings(str): ","def number_of_substrings(str):
+    n = len(str)
+    count = 0
+    for i in range(n):
+        for j in range(i + 1, n + 1):
+            count += 1
+    return count","The solution passed all test cases.
+Correct Solution:def number_of_substrings(str): 
+	str_len = len(str); 
+	return int(str_len * (str_len + 1) / 2); ",1.0,0.0
+"Write a python function to find the sum of non-repeated elements in a given list.
+
+def find_sum(arr): ","def find_sum(arr):
+    from collections import Counter
+    count = Counter(arr)
+    return sum((key for (key, value) in count.items() if value == 1))","Error: .
+ Solution: def find_sum(arr):
+    from collections import Counter
+    count = Counter(arr)
+    return sum((key for (key, value) in count.items() if value == 1)).
+ Test: def check():
+    assert find_sum([1,2,3,1,1,4,5,6]) == 21
+    assert find_sum([1,10,9,4,2,10,10,45,4]) == 71
+    assert find_sum([12,10,9,45,2,10,10,45,10]) == 78
+
+Correct Solution:def find_sum(arr): 
+    arr.sort() 
+    sum = arr[0] 
+    for i in range(len(arr)-1): 
+        if (arr[i] != arr[i+1]): 
+            sum = sum + arr[i+1]   
+    return sum",0.0,0.0
+"Write a function to find words that are longer than n characters from a given list of words.
+
+def long_words(n, str):","def long_words(n, str):
+    return [word for word in str.split() if len(word) > n]","The solution passed all test cases.
+Correct Solution:def long_words(n, str):
+    word_len = []
+    txt = str.split("" "")
+    for x in txt:
+        if len(x) > n:
+            word_len.append(x)
+    return word_len	",1.0,0.0
+"Write a function to remove all whitespaces from the given string.
+import re
+def remove_whitespaces(text1):","import re
+def remove_whitespaces(text1):
+    return re.sub('\\s+', '', text1)","The solution passed all test cases.
+Correct Solution:import re
+def remove_whitespaces(text1):
+  return (re.sub(r'\s+', '',text1))",1.0,0.0
+"Write a function to find the nth jacobsthal number. https://www.geeksforgeeks.org/jacobsthal-and-jacobsthal-lucas-numbers/ 0, 1, 1, 3, 5, 11, 21, 43, 85, 171, 341, 683, 1365, 2731, ...
+
+def jacobsthal_num(n): ","def jacobsthal_num(n):
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    (a, b) = (0, 1)
+    for _ in range(2, n + 1):
+        (a, b) = (b, b + 2 * a)
+    return b","The solution passed all test cases.
+Correct Solution:def jacobsthal_num(n): 
+	dp = [0] * (n + 1) 
+	dp[0] = 0
+	dp[1] = 1
+	for i in range(2, n+1): 
+		dp[i] = dp[i - 1] + 2 * dp[i - 2] 
+	return dp[n]",1.0,0.0
+"Write a python function to check if a given number is one less than twice its reverse.
+
+def check_answer(n):    ","def check_answer(n):
+    reversed_n = int(str(n)[::-1])
+    return n == 2 * reversed_n - 1","The solution passed all test cases.
+Correct Solution:def rev(num):    
+    rev_num = 0
+    while (num > 0):  
+        rev_num = (rev_num * 10 + num % 10) 
+        num = num // 10  
+    return rev_num  
+def check_answer(n):    
+    return (2 * rev(n) == n + 1)  ",1.0,0.0
+"Write a python function to count the number of pairs whose xor value is odd.
+
+def find_Odd_Pair(A,N) : ","def find_Odd_Pair(A, N):
+    odd_count = 0
+    even_count = 0
+    for num in A:
+        if num % 2 == 0:
+            even_count += 1
+        else:
+            odd_count += 1
+    return odd_count * even_count","The solution passed all test cases.
+Correct Solution:def find_Odd_Pair(A,N) : 
+    oddPair = 0
+    for i in range(0,N) :  
+        for j in range(i+1,N) :  
+            if ((A[i] ^ A[j]) % 2 != 0):  
+                oddPair+=1  
+    return oddPair  ",1.0,0.0
+"Write a function to find k number of smallest pairs which consist of one element from the first array and one element from the second array.
+import heapq
+def k_smallest_pairs(nums1, nums2, k):","import heapq
+def k_smallest_pairs(nums1, nums2, k):
+    if not nums1 or not nums2:
+        return []
+    min_heap = []
+    result = []
+    for i in range(len(nums1)):
+        heapq.heappush(min_heap, (nums1[i] + nums2[0], i, 0))
+    while min_heap and len(result) < k:
+        (_, i, j) = heapq.heappop(min_heap)
+        result.append([nums1[i], nums2[j]])
+        if j + 1 < len(nums2):
+            heapq.heappush(min_heap, (nums1[i] + nums2[j + 1], i, j + 1))
+    return result","The solution passed all test cases.
+Correct Solution:import heapq
+def k_smallest_pairs(nums1, nums2, k):
+   queue = []
+   def push(i, j):
+       if i < len(nums1) and j < len(nums2):
+           heapq.heappush(queue, [nums1[i] + nums2[j], i, j])
+   push(0, 0)
+   pairs = []
+   while queue and len(pairs) < k:
+       _, i, j = heapq.heappop(queue)
+       pairs.append([nums1[i], nums2[j]])
+       push(i, j + 1)
+       if j == 0:
+           push(i + 1, 0)
+   return pairs",1.0,0.0
+"Write a function to find the shared elements from the given two lists.
+
+def similar_elements(test_tup1, test_tup2):","def similar_elements(test_tup1, test_tup2):
+    return tuple(set(test_tup1) & set(test_tup2))","The solution passed all test cases.
+Correct Solution:def similar_elements(test_tup1, test_tup2):
+  res = tuple(set(test_tup1) & set(test_tup2))
+  return (res) ",1.0,0.0
+"Write a python function to count the number of substrings with the sum of digits equal to their length.
+from collections import defaultdict
+def count_Substrings(s):","from collections import defaultdict
+def count_Substrings(s):
+    count = 0
+    n = len(s)
+    for i in range(n):
+        total = 0
+        for j in range(i, n):
+            if s[j].isdigit():
+                total += int(s[j])
+            if total == j - i + 1:
+                count += 1
+    return count","The solution passed all test cases.
+Correct Solution:from collections import defaultdict
+def count_Substrings(s):
+    n = len(s)
+    count,sum = 0,0
+    mp = defaultdict(lambda : 0)
+    mp[0] += 1
+    for i in range(n):
+        sum += ord(s[i]) - ord('0')
+        count += mp[sum - (i + 1)]
+        mp[sum - (i + 1)] += 1
+    return count",1.0,0.0
+"Write a function to find the second smallest number in a list.
+
+def second_smallest(numbers):","def second_smallest(numbers):
+    if len(numbers) < 2:
+        return None
+    unique_numbers = list(set(numbers))
+    if len(unique_numbers) < 2:
+        return None
+    unique_numbers.sort()
+    return unique_numbers[1]","The solution passed all test cases.
+Correct Solution:def second_smallest(numbers):
+  unique_numbers = list(set(numbers))
+  unique_numbers.sort()
+  if len(unique_numbers) < 2:
+    return None
+  else:
+    return unique_numbers[1]",1.0,0.0
+"Write a function to find the surface area of a cylinder.
+
+def surfacearea_cylinder(r,h):","import math
+def surfacearea_cylinder(r, h):
+    return 2 * math.pi * r * (r + h)
+def test_surfacearea_cylinder():
+    assert round(surfacearea_cylinder(10, 5), 2) == 942.48","Error: .
+ Solution: import math
+def surfacearea_cylinder(r, h):
+    return 2 * math.pi * r * (r + h).
+ Test: def check():
+    assert surfacearea_cylinder(10,5)==942.45
+    assert surfacearea_cylinder(4,5)==226.18800000000002
+    assert surfacearea_cylinder(4,10)==351.848
+
+Correct Solution:def surfacearea_cylinder(r,h):
+  surfacearea=((2*3.1415*r*r) +(2*3.1415*r*h))
+  return surfacearea",0.0,0.0
+"Write a function to convert a snake case string to camel case string.
+
+def snake_to_camel(word):","def snake_to_camel(word):
+    components = word.split('_')
+    return components[0] + ''.join((x.title() for x in components[1:]))","Error: .
+ Solution: def snake_to_camel(word):
+    components = word.split('_')
+    return components[0] + ''.join((x.title() for x in components[1:])).
+ Test: def check():
+    assert snake_to_camel('python_program')=='PythonProgram'
+    assert snake_to_camel('python_language')==('PythonLanguage')
+    assert snake_to_camel('programming_language')==('ProgrammingLanguage')
+
+Correct Solution:def snake_to_camel(word):
+        import re
+        return ''.join(x.capitalize() or '_' for x in word.split('_'))",0.0,0.0
+"Write a function to return two words from a list of words starting with letter 'p'.
+import re
+def start_withp(words):","import re
+def start_withp(words):
+    p_words = [word.strip() for word in ' '.join(words).split() if re.match('^p', word.strip(), re.IGNORECASE)]
+    return tuple(p_words[:2])","The solution passed all test cases.
+Correct Solution:import re
+def start_withp(words):
+ for w in words:
+        m = re.match(""(P\w+)\W(P\w+)"", w)
+        if m:
+            return m.groups()",1.0,0.0
+"Write a function to find the nth hexagonal number.
+
+def hexagonal_num(n): ","def hexagonal_num(n):
+    return n * (2 * n - 1)","The solution passed all test cases.
+Correct Solution:def hexagonal_num(n): 
+	return n*(2*n - 1) ",1.0,0.0
+"Write a function to extract the number of unique tuples in the given list.
+
+def extract_freq(test_list):","def extract_freq(test_list):
+    unique_tuples = set((tuple(sorted(t)) for t in test_list))
+    return len(unique_tuples)","The solution passed all test cases.
+Correct Solution:def extract_freq(test_list):
+  res = len(list(set(tuple(sorted(sub)) for sub in test_list)))
+  return (res)",1.0,0.0
+"Write a python function to calculate the product of the unique numbers in a given list.
+
+def unique_product(list_data):","def unique_product(list_data):
+    unique_numbers = set(list_data)
+    product = 1
+    for num in unique_numbers:
+        product *= num
+    return product","The solution passed all test cases.
+Correct Solution:def unique_product(list_data):
+    temp = list(set(list_data))
+    p = 1
+    for i in temp:
+        p *= i
+    return p",1.0,0.0
+"Write a python function to reverse only the vowels of a given string (where y is not a vowel).
+
+def reverse_vowels(str1):","def reverse_vowels(str1):
+    vowels = set('aeiouAEIOU')
+    str_list = list(str1)
+    (i, j) = (0, len(str_list) - 1)
+    while i < j:
+        while i < j and str_list[i] not in vowels:
+            i += 1
+        while i < j and str_list[j] not in vowels:
+            j -= 1
+        if i < j:
+            (str_list[i], str_list[j]) = (str_list[j], str_list[i])
+            i += 1
+            j -= 1
+    return ''.join(str_list)","The solution passed all test cases.
+Correct Solution:def reverse_vowels(str1):
+	vowels = """"
+	for char in str1:
+		if char in ""aeiouAEIOU"":
+			vowels += char
+	result_string = """"
+	for char in str1:
+		if char in ""aeiouAEIOU"":
+			result_string += vowels[-1]
+			vowels = vowels[:-1]
+		else:
+			result_string += char
+	return result_string",1.0,0.0
+"Write a python function to find the maximum difference between any two elements in a given array.
+
+def max_Abs_Diff(arr): ","def max_Abs_Diff(arr):
+    if not arr or len(arr) < 2:
+        return 0
+    min_val = min(arr)
+    max_val = max(arr)
+    return abs(max_val - min_val)","The solution passed all test cases.
+Correct Solution:def max_Abs_Diff(arr): 
+    n = len(arr)
+    minEle = arr[0] 
+    maxEle = arr[0] 
+    for i in range(1, n): 
+        minEle = min(minEle,arr[i]) 
+        maxEle = max(maxEle,arr[i]) 
+    return (maxEle - minEle) ",1.0,0.0
+"Write a function to convert the given tuple to a key-value dictionary using adjacent elements. https://www.geeksforgeeks.org/python-convert-tuple-to-adjacent-pair-dictionary/
+
+def tuple_to_dict(test_tup):","def tuple_to_dict(test_tup):
+    if len(test_tup) % 2 != 0:
+        raise ValueError('Tuple length must be even to form key-value pairs')
+    return {test_tup[i]: test_tup[i + 1] for i in range(0, len(test_tup), 2)}","The solution passed all test cases.
+Correct Solution:def tuple_to_dict(test_tup):
+  res = dict(test_tup[idx : idx + 2] for idx in range(0, len(test_tup), 2))
+  return (res) ",1.0,0.0
+"Write a function to find the number of ways to partition a set of Bell numbers.
+
+def bell_number(n):   ","def bell_number(n):
+    if n < 0:
+        return 0
+    bell = [[0] * n for _ in range(n)]
+    bell[0][0] = 1
+    for i in range(1, n):
+        bell[i][0] = bell[i - 1][i - 1]
+        for j in range(1, i + 1):
+            bell[i][j] = bell[i - 1][j - 1] + bell[i][j - 1]
+    return bell[n - 1][0]","Error: .
+ Solution: def bell_number(n):
+    if n < 0:
+        return 0
+    bell = [[0] * n for _ in range(n)]
+    bell[0][0] = 1
+    for i in range(1, n):
+        bell[i][0] = bell[i - 1][i - 1]
+        for j in range(1, i + 1):
+            bell[i][j] = bell[i - 1][j - 1] + bell[i][j - 1]
+    return bell[n - 1][0].
+ Test: def check():
+    assert bell_number(2)==2
+    assert bell_number(10)==115975
+    assert bell_number(56)==6775685320645824322581483068371419745979053216268760300
+
+Correct Solution:def bell_number(n):   
+    bell = [[0 for i in range(n+1)] for j in range(n+1)] 
+    bell[0][0] = 1
+    for i in range(1, n+1): 
+        bell[i][0] = bell[i-1][i-1]  
+        for j in range(1, i+1): 
+            bell[i][j] = bell[i-1][j-1] + bell[i][j-1]   
+    return bell[n][0] ",0.0,0.0
+"Write a python function to get the difference between two lists.
+
+def Diff(li1,li2):","def Diff(li1, li2):
+    return list(set(li1) - set(li2))","Error: .
+ Solution: def Diff(li1, li2):
+    return list(set(li1) - set(li2)).
+ Test: def check():
+    assert (Diff([10, 15, 20, 25, 30, 35, 40], [25, 40, 35])) == [10, 20, 30, 15]
+    assert (Diff([1,2,3,4,5], [6,7,1])) == [2,3,4,5,6,7]
+    assert (Diff([1,2,3], [6,7,1])) == [2,3,6,7]
+
+Correct Solution:def Diff(li1,li2):
+    return list(set(li1)-set(li2)) + list(set(li2)-set(li1))
+ ",0.0,0.0
+"Write a function to find the n'th lucas number.
+
+def find_lucas(n): ","def find_lucas(n):
+    if n == 0:
+        return 2
+    elif n == 1:
+        return 1
+    (a, b) = (2, 1)
+    for _ in range(2, n + 1):
+        (a, b) = (b, a + b)
+    return b","The solution passed all test cases.
+Correct Solution:def find_lucas(n): 
+	if (n == 0): 
+		return 2
+	if (n == 1): 
+		return 1
+	return find_lucas(n - 1) + find_lucas(n - 2) ",1.0,0.0
+"Write a python function to find the maximum of two numbers.
+
+def maximum(a,b):   ","def maximum(a, b):
+    return a if a > b else b","The solution passed all test cases.
+Correct Solution:def maximum(a,b):   
+    if a >= b: 
+        return a 
+    else: 
+        return b ",1.0,0.0
+"Write a function to get the frequency of all the elements in a list, returned as a dictionary.
+import collections
+def freq_count(list1):","import collections
+def freq_count(list1):
+    return dict(collections.Counter(list1))","The solution passed all test cases.
+Correct Solution:import collections
+def freq_count(list1):
+  freq_count= collections.Counter(list1)
+  return freq_count",1.0,0.0
+"Write a function to find the maximum sum possible by using the given equation f(n) = max( (f(n/2) + f(n/3) + f(n/4) + f(n/5)), n).
+
+def get_max_sum (n):","import sys
+def get_max_sum(n, memo={}):
+    if n == 0:
+        return 0
+    if n in memo:
+        return memo[n]
+    sum_val = get_max_sum(n // 2, memo) + get_max_sum(n // 3, memo) + get_max_sum(n // 4, memo) + get_max_sum(n // 5, memo)
+    result = max(sum_val, n)
+    memo[n] = result
+    return result","The solution passed all test cases.
+Correct Solution:def get_max_sum (n):
+	res = list()
+	res.append(0)
+	res.append(1)
+	i = 2
+	while i<n + 1:
+		res.append(max(i, (res[int(i / 2)] 
+						+ res[int(i / 3)] +
+							res[int(i / 4)]
+						+ res[int(i / 5)])))
+		i = i + 1
+	return res[n]",1.0,0.0
+"Write a python function to find the sum of an array.
+
+def _sum(arr):  ","def _sum(arr):
+    return sum(arr)","The solution passed all test cases.
+Correct Solution:def _sum(arr):  
+    sum=0
+    for i in arr: 
+        sum = sum + i      
+    return(sum)  ",1.0,0.0
+"Write a function that takes in a sorted array, its length (n), and an element and returns whether the element is the majority element in the given sorted array. (The majority element is the element that occurs more than n/2 times.)
+
+def is_majority(arr, n, x):","def is_majority(arr, n, x):
+    first = -1
+    last = -1
+    low = 0
+    high = n - 1
+    while low <= high:
+        mid = (low + high) // 2
+        if arr[mid] == x:
+            first = mid
+            high = mid - 1
+        elif arr[mid] < x:
+            low = mid + 1
+        else:
+            high = mid - 1
+    if first == -1:
+        return False
+    low = 0
+    high = n - 1
+    while low <= high:
+        mid = (low + high) // 2
+        if arr[mid] == x:
+            last = mid
+            low = mid + 1
+        elif arr[mid] < x:
+            low = mid + 1
+        else:
+            high = mid - 1
+    count = last - first + 1
+    return count > n // 2","The solution passed all test cases.
+Correct Solution:def is_majority(arr, n, x):
+	i = binary_search(arr, 0, n-1, x)
+	if i == -1:
+		return False
+	if ((i + n//2) <= (n -1)) and arr[i + n//2] == x:
+		return True
+	else:
+		return False
+def binary_search(arr, low, high, x):
+	if high >= low:
+		mid = (low + high)//2 
+		if (mid == 0 or x > arr[mid-1]) and (arr[mid] == x):
+			return mid
+		elif x > arr[mid]:
+			return binary_search(arr, (mid + 1), high, x)
+		else:
+			return binary_search(arr, low, (mid -1), x)
+	return -1",1.0,0.0
+"Write a function that matches a string that has an 'a' followed by one or more 'b's. https://www.w3resource.com/python-exercises/re/python-re-exercise-3.php
+import re
+def text_match_zero_one(text):","import re
+def text_match_zero_one(text):
+    return bool(re.search('ab+', text))","The solution passed all test cases.
+Correct Solution:import re
+def text_match_zero_one(text):
+        patterns = 'ab+?'
+        if re.search(patterns,  text):
+                return True
+        else:
+                return False",1.0,0.0
+"Write a python function to count the number of equal numbers from three given integers.
+
+def test_three_equal(x,y,z):","def test_three_equal(x, y, z):
+    if x == y == z:
+        return 3
+    elif x == y or y == z or x == z:
+        return 2
+    else:
+        return 0","The solution passed all test cases.
+Correct Solution:def test_three_equal(x,y,z):
+  result = set([x,y,z])
+  if len(result)==3:
+    return 0
+  else:
+    return 4-len(result)",1.0,0.0
+"Write a function to get the sum of the digits of a non-negative integer.
+
+def sum_digits(n):","def sum_digits(n):
+    return sum((int(digit) for digit in str(n)))","The solution passed all test cases.
+Correct Solution:def sum_digits(n):
+  if n == 0:
+    return 0
+  else:
+    return n % 10 + sum_digits(int(n / 10))",1.0,0.0
+"Write a function to sort a list of tuples using the second value of each tuple.
+
+def subject_marks(subjectmarks):","def subject_marks(subjectmarks):
+    return sorted(subjectmarks, key=lambda x: x[1])","The solution passed all test cases.
+Correct Solution:def subject_marks(subjectmarks):
+#subject_marks = [('English', 88), ('Science', 90), ('Maths', 97), ('Social sciences', 82)])
+ subjectmarks.sort(key = lambda x: x[1])
+ return subjectmarks",1.0,0.0
+"Write a function to check whether the given number is undulating or not.
+
+def is_undulating(n): ","def is_undulating(n):
+    s = str(n)
+    if len(s) < 3:
+        return False
+    return all((s[i] != s[i + 1] and s[i] == s[i + 2] for i in range(0, len(s) - 2, 1)))","The solution passed all test cases.
+Correct Solution:def is_undulating(n): 
+	n = str(n)
+	if (len(n) <= 2): 
+		return False
+	for i in range(2, len(n)): 
+		if (n[i - 2] != n[i]): 
+			return False
+	return True",1.0,0.0
+"Write a python function to find the last digit in factorial of a given number.
+
+def last_Digit_Factorial(n): ","def last_Digit_Factorial(n):
+    if n >= 5:
+        return 0
+    result = 1
+    for i in range(2, n + 1):
+        result *= i
+    return result % 10","The solution passed all test cases.
+Correct Solution:def last_Digit_Factorial(n): 
+    if (n == 0): return 1
+    elif (n <= 2): return n  
+    elif (n == 3): return 6
+    elif (n == 4): return 4 
+    else: 
+      return 0",1.0,0.0
+"Write a function to find the volume of a cube given its side length.
+
+def volume_cube(l):","def volume_cube(l):
+    return l ** 3","The solution passed all test cases.
+Correct Solution:def volume_cube(l):
+  volume = l * l * l
+  return volume",1.0,0.0
+"Write a function to calculate the area of a regular polygon given the length and number of its sides.
+from math import tan, pi
+def area_polygon(s, l):","from math import tan, pi
+def area_polygon(s, l):
+    area = s * l ** 2 / (4 * tan(pi / s))
+    return area","The solution passed all test cases.
+Correct Solution:from math import tan, pi
+def area_polygon(s, l):
+  area = s * (l ** 2) / (4 * tan(pi / s))
+  return area",1.0,0.0
+"We say that an element is common for lists l1, l2, l3 if it appears in all three lists under the same index. Write a function to find common elements from three lists. The function should return a list.
+
+def extract_index_list(l1, l2, l3):","def extract_index_list(l1, l2, l3):
+    common = []
+    for i in range(min(len(l1), len(l2), len(l3))):
+        if l1[i] == l2[i] == l3[i]:
+            common.append(l1[i])
+    return common","The solution passed all test cases.
+Correct Solution:def extract_index_list(l1, l2, l3):
+    result = []
+    for m, n, o in zip(l1, l2, l3):
+        if (m == n == o):
+            result.append(m)
+    return result",1.0,0.0
+"Write a function to find the Eulerian number a(n, m).
+
+def eulerian_num(n, m): ","def eulerian_num(n, m):
+
+    def comb(n, k):
+        if k < 0 or k > n:
+            return 0
+        if k == 0 or k == n:
+            return 1
+        return comb(n - 1, k - 1) + comb(n - 1, k)
+    result = 0
+    for k in range(m + 1):
+        result += (-1) ** k * comb(n + 1, k) * (m + 1 - k) ** n
+    return result","The solution passed all test cases.
+Correct Solution:def eulerian_num(n, m): 
+	if (m >= n or n == 0): 
+		return 0 
+	if (m == 0): 
+		return 1 
+	return ((n - m) * eulerian_num(n - 1, m - 1) +(m + 1) * eulerian_num(n - 1, m))",1.0,0.0
+"Write a function that takes in an integer n and calculates the harmonic sum of n-1.
+
+def harmonic_sum(n):","import math
+def harmonic_sum(n):
+    if n <= 0:
+        return 0
+    total = 0.0
+    for i in range(1, n):
+        total += 1 / i
+    return total
+def check(n, expected):
+    assert math.isclose(harmonic_sum(n), expected, rel_tol=1e-09), f'Test failed for n={n}'
+def test_check():
+    check(7, 2.5928571428571425)","Error: .
+ Solution: import math
+def harmonic_sum(n):
+    if n <= 0:
+        return 0
+    total = 0.0
+    for i in range(1, n):
+        total += 1 / i
+    return total.
+ Test: def check():
+    assert math.isclose(harmonic_sum(7), 2.5928571428571425, rel_tol=0.001)
+    assert math.isclose(harmonic_sum(4), 2.083333333333333, rel_tol=0.001)
+    assert math.isclose(harmonic_sum(19), 3.547739657143682, rel_tol=0.001)
+
+Correct Solution:def harmonic_sum(n):
+  if n < 2:
+    return 1
+  else:
+    return 1 / n + (harmonic_sum(n - 1)) ",0.0,0.0
+"Write a python function to count the number of positive numbers in a list.
+
+def pos_count(list):","def pos_count(list):
+    count = 0
+    for num in list:
+        if num > 0:
+            count += 1
+    return count","The solution passed all test cases.
+Correct Solution:def pos_count(list):
+  pos_count= 0
+  for num in list: 
+    if num >= 0: 
+      pos_count += 1
+  return pos_count ",1.0,0.0
+"Write a python function to check whether the given two integers have opposite sign or not.
+
+def opposite_Signs(x,y): ","def opposite_Signs(x, y):
+    return x * y < 0","The solution passed all test cases.
+Correct Solution:def opposite_Signs(x,y): 
+    return ((x ^ y) < 0); ",1.0,0.0

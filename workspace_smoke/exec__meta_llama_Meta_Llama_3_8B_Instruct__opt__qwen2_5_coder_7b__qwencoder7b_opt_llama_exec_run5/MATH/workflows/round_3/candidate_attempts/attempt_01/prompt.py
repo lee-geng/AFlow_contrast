@@ -1,0 +1,1 @@
+XXX_PROMPT = """Solve it. Ensure your answer matches the expected format and revise if necessary."""

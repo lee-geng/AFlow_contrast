@@ -1,0 +1,4 @@
+- Added fallback handling in the `test` operator by incorporating a `ScEnsemble` step to refine the solution before testing, based on the candidate memory suggestion.
+- This change is focused on the `b2:test` node while preserving the validated `b1:custom_code_generate` and `b2:test` subworkflow.
+- The fallback mechanism uses `ScEnsemble` to improve the solution before testing, which helps address the `answer_mismatch` failures by refining the generated code.
+- This is a minimal patch that avoids repeating previous failed strategies and aligns with the guidance to apply a small targeted fix.

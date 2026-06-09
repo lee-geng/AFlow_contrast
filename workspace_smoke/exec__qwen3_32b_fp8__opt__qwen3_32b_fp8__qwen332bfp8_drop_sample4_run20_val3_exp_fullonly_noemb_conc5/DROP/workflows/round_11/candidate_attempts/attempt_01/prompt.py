@@ -1,0 +1,1 @@
+XXX_PROMPT = """Extract the relevant numerical information from the passage and use it to solve the problem. Provide a clear explanation of your reasoning. Then, put your final answer within **.** """

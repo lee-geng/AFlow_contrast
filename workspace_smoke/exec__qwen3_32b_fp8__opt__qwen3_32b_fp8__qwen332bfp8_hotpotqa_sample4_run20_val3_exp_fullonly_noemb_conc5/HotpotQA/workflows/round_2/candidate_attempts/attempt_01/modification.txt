@@ -1,0 +1,2 @@
+- Updated the `XXX_PROMPT` in `prompt_custom.py` to guide the `b1:custom` node to produce answers in a concise, direct format aligned with the expected ground-truth format.
+- No changes were made to the `graph.py` file since the current workflow is valid and only a prompt refinement is needed.

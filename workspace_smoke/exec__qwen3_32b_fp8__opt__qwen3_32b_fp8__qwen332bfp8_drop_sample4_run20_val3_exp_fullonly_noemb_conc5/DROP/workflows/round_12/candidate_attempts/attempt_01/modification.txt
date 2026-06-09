@@ -1,0 +1,1 @@
+Refine the prompt for the `custom` operator to ensure numerical answers are formatted consistently with the expected format (e.g., avoiding unnecessary decimal places or percentage signs when not required). This addresses the `answer_mismatch` failures in the evidence, where the model's output format diverged from the ground truth (e.g., "20" vs "19|7", "74.60%" vs "74.6").

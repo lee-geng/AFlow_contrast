@@ -1,0 +1,1 @@
+Introduce a post-refinement step using the `Custom` operator to explicitly ensure the final solution includes a correct test function and is syntactically complete. This addresses the `answer_mismatch` failures by refining the solution before testing, while avoiding previously failed strategies.

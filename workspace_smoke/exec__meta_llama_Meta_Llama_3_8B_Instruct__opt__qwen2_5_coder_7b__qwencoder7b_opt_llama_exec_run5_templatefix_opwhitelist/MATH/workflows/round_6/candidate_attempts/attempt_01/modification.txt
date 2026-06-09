@@ -1,0 +1,1 @@
+Reduce blind rewriting and make b1:plan revise against ground-truth format.

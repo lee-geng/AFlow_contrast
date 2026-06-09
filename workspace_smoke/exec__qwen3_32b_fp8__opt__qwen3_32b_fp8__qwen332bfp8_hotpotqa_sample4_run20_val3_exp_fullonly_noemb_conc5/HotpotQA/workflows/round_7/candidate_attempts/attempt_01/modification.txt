@@ -1,0 +1,1 @@
+Modified the prompt to ensure the model produces only the final answer in the expected format, addressing the mismatch between extracted and expected answers.

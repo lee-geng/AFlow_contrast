@@ -1,0 +1,1 @@
+ANSWER_PROMPT = """Provide only the final answer, in the format expected by the question. Do not include extra explanation or context."""

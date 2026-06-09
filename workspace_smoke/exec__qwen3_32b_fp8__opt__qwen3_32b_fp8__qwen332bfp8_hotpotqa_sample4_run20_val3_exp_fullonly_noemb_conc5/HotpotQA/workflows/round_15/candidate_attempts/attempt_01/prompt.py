@@ -1,0 +1,3 @@
+XXX_PROMPT = """Answer the question directly and concisely. Provide only the final answer in the format expected by the question. For yes/no questions, respond with "Yes" or "No". For questions asking for an entity, provide the entity name directly. Avoid any additional text, explanations, or formatting."""
+
+XXX_PROMPT_REFINED = """Provide only the most specific and accurate answer to the question. If the question asks for a character, return the character's name. If it asks for an entity with specific attributes, return the full description. Do not add any extra text or explanation."""

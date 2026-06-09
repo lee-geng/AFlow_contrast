@@ -1,0 +1,1 @@
+EXTRACT_ANSWER_PROMPT = "Extract the final answer from the following text. The answer should be concise and in the format expected by the question. Do not add any extra explanation. Final answer: "

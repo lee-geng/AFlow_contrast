@@ -1,0 +1,1 @@
+Added a second call to `custom` with a refined instruction to extract the final answer explicitly, ensuring alignment with expected answer formats. This addresses the mismatch in extracted answers (e.g., "Poland" vs "Polish independence", "2015" vs "2010 NCAA Division") by prompting for a more precise final answer.

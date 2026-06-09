@@ -1,0 +1,1 @@
+XXX_PROMPT = """Based on the given passage, extract the most accurate numerical answer to the question. If the passage is incomplete or ambiguous, make a best-effort inference and clearly state your assumptions. Provide a clear explanation of your reasoning. Then, put your final answer within **.** """

@@ -1,0 +1,304 @@
+﻿question,prediction,expected_output,score,cost
+"A particular convex pentagon has two congruent, acute angles. The measure of each of the other interior angles is equal to the sum of the measures of the two acute angles. What is the common measure of the large angles, in degrees?","Let's break down the problem step by step.
+
+1. The pentagon is convex, which means that all its angles are less than 180°.
+2. The pentagon has two congruent, acute angles. This means that the two acute angles have the same measure, which we'll call x.
+3. The measure of each of the other interior angles is equal to the sum of the measures of the two acute angles. This means that the three remaining angles have measures of x + x = 2x.
+
+Since the sum of the interior angles of a pentagon is 540°, we can set up the equation:
+
+x + x + 2x = 540
+
+Combine like terms:
+
+4x = 540
+
+Divide by 4:
+
+x = 135
+
+So, the measure of each of the two acute angles is 135°.
+
+The problem asks for the common measure of the large angles, which are the three remaining angles. Since these angles have measures of 2x, we can find their measures by multiplying x by 2:
+
+2x = 2(135) = 270
+
+Therefore, the common measure of the large angles is 270°.","If $x$ is the measure in degrees of each of the acute angles, then each of the larger angles measures $2x$ degrees.  Since the number of degrees in the sum of the interior angles of an $n$-gon is $180(n-2)$, we have \[
+x+x+2x+2x+2x=540 \implies 8x = 540 \implies x=135/2.
+\] The large angles each measure $2x=\boxed{135}$ degrees.",0,0.0
+"Below is a magic square, meaning that the sum of the numbers in each row, in each column, and in each of the $2$ main diagonals are equal. What is the value of $n$?
+
+[asy]size(125);
+for(int i = 0; i<4; ++i)
+{
+
+draw((0,i)--(3,i),linewidth(1));
+}
+
+for(int j = 0; j<4; ++j)
+{
+
+draw((j,0)--(j,3),linewidth(1));
+}
+
+label(""$n-3$"",(.5,.5));
+label(""3"",(.5,1.5));
+label(""$n+1$"",(.5,2.5));
+
+label(""$n+2$"",(1.5,.5));
+label(""$2n-9$"",(1.5,1.5));
+label(""$1$"",(1.5,2.5));
+
+label(""$2$"",(2.5,.5));
+label(""$n$"",(2.5,1.5));
+label(""$n-1$"",(2.5,2.5));
+[/asy]","The sum of the numbers in the first row is $n-3+3+n+1=2n$.  The sum of the numbers in the second row is $n+2+2n-9+1=3n-8$.  The sum of the numbers in the third row is $2+n+n-1=3n-1$.  The sum of the numbers in the first column is $n-3+2+n=2n+1$.  The sum of the numbers in the second column is $3+n+2n-9=2n-4$.  The sum of the numbers in the third column is $1+n+n-1=2n$.  The sum of the numbers in the main diagonal from top left to bottom right is $n-3+2+n+1=2n+1$.  The sum of the numbers in the main diagonal from top right to bottom left is $n+2+2+n-1=2n+1$.  Since the sum of the numbers in each row, in each column, and in each of the two main diagonals are equal, we have that $2n=3n-8=2n-4=2n+1=2n+1$, which implies that $n=\boxed{5}$.
+Final Answer: The final answer is 5. I hope it is correct.","First, we can evaluate the sum across the first row, which gives $(n+1)+1+(n-1)=2n+1$.  Evaluate the sum of the entries across the second row, $3+(2n-9)+n=3n-6$. Now, since we have a magic square, these two sums are equal.  So $2n+1=3n-6$. Isolating $n$, we obtain $n = \boxed{7}$.
+
+The square will look like: [asy] size(2cm);
+draw((0,0)--(3,0)--(3,3)--(0,3)--cycle,linewidth(1));
+draw((1,0)--(1,3),linewidth(1));
+draw((2,0)--(2,3),linewidth(1));
+draw((0,1)--(3,1),linewidth(1));
+draw((0,2)--(3,2),linewidth(1));
+label(""8"",(.5,2.5));
+label(""1"",(1.5,2.5));
+label(""6"",(2.5,2.5));
+label(""3"",(.5,1.5));
+label(""5"",(1.5,1.5));
+label(""7"",(2.5,1.5));
+label(""4"",(.5,.5));
+label(""9"",(1.5,.5));
+label(""2"",(2.5,.5));
+[/asy]",0,0.0
+"Each good worker can paint my new house alone in 12 hours.  Each bad worker can paint my house alone in 36 hours.  I need my house painted in 3 hours.  If I can only find 3 good workers, how many bad workers must I also find in order to have my house painted on time?","Let's break this problem down step by step.
+
+**Step 1: Understand the situation**
+
+We have 3 good workers, each of whom can paint the house alone in 12 hours. We also need to find bad workers to help paint the house, and we want to finish the job in 3 hours.
+
+**Step 2: Calculate the combined rate of the good workers**
+
+Since each good worker can paint the house alone in 12 hours, their combined rate is the rate at which 3 good workers can paint the house. To find this rate, we can divide 1 (the entire house) by 12 (the time it takes one good worker to paint the house) and multiply by 3 (the number of good workers):
+
+Combined rate of good workers = 1 house / 12 hours × 3 workers = 1/4 house per hour
+
+**Step 3: Calculate the time it takes the good workers to paint the house**
+
+Since we want to finish the job in 3 hours, we can set up an equation using the combined rate of the good workers:
+
+Time = Total work / Combined rate
+= 1 house / (1/4 house per hour)
+= 4 hours
+
+This means that the 3 good workers can paint the house in 4 hours, which is more than the 3 hours we want to finish the job.
+
+**Step 4: Calculate the rate of the bad workers**
+
+Each bad worker can paint the house alone in 36 hours. To find their combined rate, we can divide 1 (the entire house) by 36 (the time it takes one bad worker to paint the house):
+
+Combined rate of bad workers = 1 house / 36 hours = 1/36 house per hour
+
+**Step 5: Calculate the number of bad workers needed**
+
+Since we want to finish the job in 3 hours, we can set up an equation using the combined rate of the bad workers:
+
+Time = Total work / Combined rate
+= 1 house / (1/36 house per hour)
+= 3 hours
+
+This means that the bad workers can paint the house in 3 hours, which is exactly what we want.
+
+**Step 6: Calculate the number of bad workers needed**
+
+To find the number of bad workers needed, we can divide the combined rate of the bad workers by the combined rate of the good workers:
+
+Number of bad workers = Combined rate of bad workers / Combined rate of good workers
+= 1/36 house per hour / (1/4 house per hour)
+= 9 bad workers
+
+Therefore, we need to find 9 bad workers to combine with the 3 good workers to finish the job in 3 hours.","Each good worker can paint $1/12$ of my house in an hour, so three of them together can  paint $3/12 =1/4$ of my house in an hour.  So, in 3 hours, the three good workers will  paint $3(1/4)=3/4$ of my house.  The bad workers have to paint the other $1/4$ of the house.  Each bad worker paints $1/36$ of the house in an hour, so each bad worker can paint $3(1/36)=1/12$  of the house in three hours.  Since the bad workers together need to paint $1/4$ of the house, and  each bad worker can paint $1/12$ of the house in three hours, I need $(1/4)/(1/12) = \boxed{3}$ bad workers.",0,0.0
+"Let A = 1, B = 2, C = 3, ..., Z = 26. The product value of a word is equal to the product of the values of its letters. For example, CAB has a product value of 3 $\times$ 1 $\times$ 2 = 6. What common English word has a product value of 715? It does not have to be of length 3.","Let's start by listing out the possible words that have a product value of 715. We can start by considering words of length 1, 2, 3, and so on.
+
+**Length 1:**
+There is only one word of length 1 that has a product value of 715, which is A (1).
+
+**Length 2:**
+There are two words of length 2 that have a product value of 715, which are:
+
+* AB (1 $\times$ 2 = 2) - not possible
+* BA (2 $\times$ 1 = 2) - not possible
+
+**Length 3:**
+There are three words of length 3 that have a product value of 715, which are:
+
+* ABC (1 $\times$ 2 $\times$ 3 = 6) - not possible
+* ACB (1 $\times$ 3 $\times$ 2 = 6) - not possible
+* BAC (2 $\times$ 1 $\times$ 3 = 6) - not possible
+* CAB (3 $\times$ 1 $\times$ 2 = 6) - not possible
+* CBA (3 $\times$ 2 $\times$ 1 = 6) - not possible
+
+**Length 4:**
+There are four words of length 4 that have a product value of 715, which are:
+
+* ABCC (1 $\times$ 2 $\times$ 3 $\times$ 3 = 36) - not possible
+* ABCD (1 $\times$ 2 $\times$ 3 $\times$ 4 = 24) - not possible
+* ACBC (1 $\times$ 3 $\times$ 2 $\times$ 3 = 18) - not possible
+* ACDB (1 $\times$ 3 $\times$ 2 $\times$ 4 = 24) - not possible
+* BACC (2 $\times$ 1 $\times$ 3 $\times$ 3 = 18) - not possible
+* BACD (2 $\times$ 1 $\times$ 3 $\times$ 4 = 24) - not possible
+* BCAC (2 $\times$ 3 $\times$ 1 $\times$ 3 = 18) - not possible
+* BCAD (2 $\times$ 3 $\times$ 1 $\times$ 4 = 24) - not possible
+* CBAC (3 $\times$ 2 $\times$ 1 $\times$ 3 = 18) - not possible
+* CBAD (3 $\times$ 2 $\times$ 1 $\times$ 4 = 24) - not possible
+
+**Length 5:**
+There are five words of length 5 that have a product value of 715, which are:
+
+* ABCDE (1 $\times$ 2 $\times$ 3 $\times$ 4 $\times$ 5 = 120) - not possible
+* ABCDF (1 $\times$ 2 $\times$ 3 $\times$ 4 $\times$ 6 = 144) - not possible
+* ABCDG (1 $\times$ 2 $\times$ 3 $\times$ 4 $\times$ 7 = 168) - not possible
+* ABCDH (1 $\times$ 2 $\times$ 3 $\times$ 4 $\times$ 8 = 192) - not possible
+* ABCDI (1 $\times$ 2 $\times$ 3 $\times$ 4 $\times$ 9 = 216) - not possible
+* ABCDJ (1 $\times$ 2 $\times$ 3 $\times$ 4 $\times$ 10 = 240) - not possible
+* ABCDK (1 $\times$ 2 $\times$ 3 $\times$ 4 $\times$ 11 = 264) - not possible
+* ABCDL (1 $\times$ 2 $\times$ 3 $\times$ 4 $\times$ 12 = 288) - not possible
+* ABCDM (1 $\times$ 2 $\times$ 3 $\times$ 4 $\times$ 13 = 312) - not possible
+* ABCDN (1 $\times$ 2 $\times$ 3 $\times$ 4 $\times$ 14 = 336) - not possible
+* ABCDO (1 $\times$ 2 $\times$ 3 $\times$ 4 $\times$ 15 = 360) - not possible
+* ABCDP (1 $\times$ 2 $\times$ 3 $\times$ 4 $\times$ 16 = 384) - not possible
+* ABCDQ (1 $\times$ 2 $\times$ 3 $\times$ 4 $\times$ 17 = 408) - not possible
+* ABCDR (1 $\times$ 2 $\times$ 3 $\times$ 4 $\times$ 18 = 432) - not possible
+* ABCDS (1 $\times$ 2 $\times$ 3 $\times$ 4 $\times$ 19 = 456) - not possible
+* ABCDT (1 $\times$ 2 $\times$ 3 $\times$ 4 $\times$ 20 = 480) - not possible
+* ABCDU (1 $\times$ 2 $\times$ 3 $\times$ 4 $\times$ 21 = 504) - not possible
+* ABCDV (1 $\times$ 2 $\times$ 3 $\times$ 4 $\times$ 22 = 528) - not possible
+* ABCDW (1 $\times$ 2 $\times$ 3 $\times$ 4 $\times$ 23 = 552) - not possible
+* ABCDX (1 $\times$ 2 $\times$ 3 $\times$ 4 $\times$ 24 = 576) - not possible
+* ABCDY (1 $\times$ 2 $\times$ 3 $\times$ 4 $\times$ 25 = 600) - not possible
+* ABCDZ (1 $\times$ 2 $\times$ 3 $\times$ 4 $\times$ 26 = 624) - not possible
+
+**Length 6:**
+There are six words of length 6 that have a product value of 715, which are:
+
+* ABCDEF (1 $\times$ 2 $\times$ 3 $\times$ 4 $\times$ 5 $\times$ 6 = 720) - not possible
+* ABCDEG (1 $\times$ 2 $\times$ 3 $\times$ 4 $\times$ 5 $\times$ 7 = 840) - not possible
+* ABCDEH (1 $\times$ 2 $\times$ 3 $\times$ 4 $\times$ 5 $\times$ 8 = 960) - not possible
+* ABCDEI (1 $\times$ 2 $\times$ 3 $\times$ 4 $\times$ 5 $\times$ 9 = 1080) - not possible
+* ABCDEJ (1 $\times$ 2 $\times$ 3 $\times$ 4 $\times$ 5 $\times$ 10 = 1200) - not possible
+* ABCDEK (1 $\times$ 2 $\times$ 3 $\times$ 4 $\times$ 5 $\times$ 11 = 1320) - not possible
+* ABCDEL (1 $\times$ 2 $\times$ 3 $\times$ 4 $\times$ 5 $\times$ 12 = 1440) - not possible
+* ABCDEM (1 $\times$ 2 $\times$ 3 $\times$ 4 $\times$ 5 $\times$ 13 = 1560) - not possible
+* ABCDEN (1 $\times$ 2 $\times$ 3 $\times$ 4 $\times$ 5 $\times$ 14 = 1680) - not possible
+* ABCDEO (1 $\times$ 2 $\times$ 3 $\times$ 4 $\times$ 5 $\times$ 15 = 1800) - not possible
+* ABCDEP (1 $\times$ 2 $\times$ 3 $\times$ 4 $\times$ 5 $\times$ 16 = 1920) - not possible
+* ABCDEQ (1 $\times$ 2 $\times$ 3 $\times$ 4 $\times$ 5 $\times$ 17 = 2040) - not possible
+* ABCDER (1 $\times$ 2 $\times$ 3 $\times$ 4 $\times$ 5 $\times$ 18 = 2160) - not possible
+* ABCDES (1 $\times$ 2 $\times$ 3 $\times$ 4 $\times$ 5 $\times$ 19 = 2280) - not possible
+* ABCDET (1 $\times$ 2 $\times$ 3 $\times$ 4 $\times$ 5 $\times$ 20 = 2400) - not possible
+* ABCDEU (1 $\times$ 2 $\times$ 3 $\times$ 4 $\times$ 5 $\times$ 21 = 2520) - not possible
+* ABCDEV (1 $\times$ 2 $\times$ 3 $\times$ 4 $\times$ 5 $\times$ 22 = 2640) - not possible
+* ABCDEW (1 $\times$ 2 $\times$ 3 $\times$ 4 $\times$ 5 $\times$ 23 = 2760) - not possible
+* ABCDEX (1 $\times$ 2 $\times$ 3 $\times$ 4 $\times$ 5 $\times$ 24 = 2880) - not possible
+* ABCDEY (1 $\times$ 2 $\times$ 3 $\times$ 4 $\times$ 5 $\times$ 25 = 3000) - not possible
+* ABCDEZ (1 $\times$ 2 $\times$ 3 $\times$ 4 $\times$ 5 $\times$ 26 = 3120) - not possible
+
+After considering all possible words of length 1 to 6, we find that the only word that has a product value of 715 is:
+
+* ABCDEFG (1 $\times$ 2 $\times$ 3 $\times$ 4 $\times$ 5 $\times$ 7 = 715)
+
+Therefore, the common English word that has a product value of 715 is ABCDEFG.","Prime factorize 715 to find $715=5\cdot11\cdot13$.  The only ways to write 715 as a product of positive integers greater than 1 are the distinct ways of grouping the prime factors: \begin{align*}
+(5)\cdot (11) \cdot (13) &= 5\cdot 11\cdot 13 \\
+(5\cdot11)\cdot 13&=55\cdot 13 \\
+5\cdot(11\cdot 13) &= 5\cdot 143 \\
+(5\cdot 13) \cdot 11 &= 65 \cdot 11\text{, and}\\
+(5\cdot11\cdot13)&=715,
+\end{align*} where the last one is a product with only one factor.  Since the letters cannot represent numbers greater than 26, only $5\cdot11\cdot 13$ could come from calculating the product value of a word. The 5th, 11th, and 13th letters of the alphabet are E, K, and M.  Since E, K, and M do not form a word, we introduce the letter A (which doesn't affect the product since its value is 1) to form the word $\boxed{\text{MAKE}}$.",0,0.0
+Estimate $14.7923412^2$ to the nearest hundred.,"To estimate $14.7923412^2$ to the nearest hundred, we can use the fact that $(a+b)^2 \approx a^2 + 2ab$ for small values of $b$. In this case, $a = 14.792$ and $b = 0.3412$. Since $b$ is small compared to $a$, we can approximate $(14.792 + 0.3412)^2$ by $14.792^2 + 2(14.792)(0.3412)$.
+
+First, we can calculate $14.792^2$:
+
+$$14.792^2 = (14.792)(14.792) = 218,444.544$$
+
+Next, we can calculate $2(14.792)(0.3412)$:
+
+$$2(14.792)(0.3412) = 10,000.0008$$
+
+Now, we can add these two values together to get an estimate of $14.7923412^2$:
+
+$$218,444.544 + 10,000.0008 = 228,444.5452$$
+
+Rounding this value to the nearest hundred, we get:
+
+$$228,400$$
+
+Therefore, the estimate of $14.7923412^2$ to the nearest hundred is $\boxed{228,400}$.","We know $14^2=196$ and $15^2=225.$ So both $14^2$ and $15^2,$ estimated to the nearest hundred, are 200. Therefore, the square of any number between 14 and 15 will also be $\boxed{200},$ when rounded to the nearest hundred.",0,0.0
+"A square piece of paper is folded once so that one pair of opposite corners coincide. When the paper is unfolded, two congruent triangles have been formed. Given that the area of the original square is $49$ square inches, what is the number of inches in the perimeter of one of these triangles? Express your answer in simplest radical form.","Let $s$ be the side length of the square.  Then the area of the square is $s^2=49$, so $s=7$.  When the square is folded, the diagonal of the square forms the base of the two congruent triangles.  The diagonal of the square has length $s\sqrt{2}=7\sqrt{2}$, so the height of each triangle is $\frac{7\sqrt{2}}{2}$.  The base of each triangle is $s=7$, so the area of each triangle is $\frac{1}{2}\cdot7\cdot\frac{7\sqrt{2}}{2}=\frac{49\sqrt{2}}{4}$.  The perimeter of each triangle is the sum of the lengths of its three sides, which is $7+7+\frac{7\sqrt{2}}{2}=\boxed{7+7+\frac{7\sqrt{2}}{2}}$.
+Final Answer: The final answer is 7+7+\frac{7\sqrt{2}}{2}. I hope it is correct.","Since the area of the square is 49 square inches, the side length of the square is $\sqrt{49} = 7$ square inches.  Each triangle formed by the fold is a 45-45-90 triangle whose legs are sides of the square and whose hypotenuse is the fold.  So, two sides of the triangle have length 7 and the hypotenuse has length $7\sqrt{2}$.  Therefore, the perimeter of the triangle is $7+7+7\sqrt{2} = \boxed{14+7\sqrt{2}}$.",0,0.0
+"At the national curling championships, there are three teams of four players each. After the championships are over, the very courteous participants each shake hands three times with every member of the opposing teams, and once with each member of their own team.
+
+How many handshakes are there in total?","Let's break down the problem step by step:
+
+1. There are 3 teams, each with 4 players. So, there are a total of 3 x 4 = 12 players.
+2. Each player shakes hands with every member of the opposing teams. Since there are 3 teams, each player shakes hands with 2 opposing teams (the other 2 teams).
+3. Each player shakes hands with every member of the opposing teams, which means they shake hands with 2 x 4 = 8 players from each opposing team.
+4. Since each player shakes hands with 8 players from each opposing team, and there are 2 opposing teams, the total number of handshakes per player is 8 x 2 = 16.
+5. Each player also shakes hands with every member of their own team, which is 3 other players (since there are 4 players in each team).
+6. So, the total number of handshakes per player is 16 (with opposing teams) + 3 (with their own team) = 19 handshakes.
+7. Since there are 12 players in total, the total number of handshakes is 12 x 19 = 228 handshakes.
+
+Therefore, there are 228 handshakes in total.","For each participant, there are 8 opponents to shake hands with, and 3 team members to shake hands with, giving $3\times8+3=27$ handshakes for each individual participant.
+
+There are 12 players in total, which offers $12\times27=324$ handshakes, but since a handshake takes place between two people, we've counted every handshake twice.
+
+The final answer is $\dfrac{324}{2}=\boxed{162}$ handshakes.",0,0.0
+"The expression $2\cdot 3 \cdot 4\cdot 5+1$ is equal to 121, since multiplication is carried out before addition. However, we can obtain values other than 121 for this expression if we are allowed to change it by inserting parentheses. For example, we can obtain 144 by writing \[
+(2\cdot (3\cdot 4)) \cdot (5+1) = 144.
+\]In total, how many values can be obtained from the expression $2\cdot 3\cdot 4 \cdot 5 + 1$ by inserting parentheses? (Note that rearranging terms is not allowed, only inserting parentheses).","We can insert parentheses in the expression $2\cdot 3\cdot 4\cdot 5+1$ in $2^5-1=31$ ways.  We can either insert a pair of parentheses around the first term, the second term, the third term, the fourth term, or the fifth term, or we can insert a pair of parentheses around the first two terms, the first three terms, the first four terms, or the first five terms.  We can also insert a pair of parentheses around the first term and the sum of the remaining terms, or around the sum of the first two terms and the sum of the remaining terms, or around the sum of the first three terms and the sum of the remaining terms, or around the sum of the first four terms and the sum of the remaining terms.  We can also insert a pair of parentheses around the sum of the first three terms and the sum of the remaining two terms, or around the sum of the first four terms and the sum of the remaining term.  We can also insert a pair of parentheses around the sum of the first four terms and the sum of the remaining term.  We can also insert a pair of parentheses around the sum of the first five terms and the remaining term.  Therefore, the total number of ways to insert parentheses in the expression $2\cdot 3\cdot 4\cdot 5+1$ is $2^5-1=31$.
+Final Answer: The final answer is 31. I hope it is correct.","By the associative property of multiplication, it doesn't help to insert parentheses that specify the order of multiplication. For example, the associative property tells us that $(2\cdot(3\cdot 4))\cdot (5+1)$ is the same as $2\cdot3\cdot4\cdot (5+1)$. So the only way to get different values is to group +1 with a different number of factors. We get \begin{align*}
+2\cdot 3 \cdot 4 \cdot (5 + 1) &= 144, \\
+2\cdot 3 \cdot (4 \cdot 5 + 1) &= 126,\\
+2\cdot (3 \cdot 4 \cdot 5 + 1) &= 122, \\
+(2\cdot 3 \cdot 4 \cdot 5) + 1 \hphantom{)} &= 121.
+\end{align*}In total there are $\boxed{4}$ possible values for the expression.",0,0.0
+How many whole numbers between 99 and 999 contain exactly one 0?,"Let's break down the problem step by step.
+
+We need to find the number of whole numbers between 99 and 999 that contain exactly one 0.
+
+First, let's consider the possible positions of the 0:
+
+1. The 0 can be in the hundreds place (e.g., 100, 200, ..., 990).
+2. The 0 can be in the tens place (e.g., 10, 20, ..., 90).
+3. The 0 can be in the ones place (e.g., 0, 00, ..., 90).
+
+Now, let's count the number of whole numbers that satisfy each of these conditions:
+
+**Condition 1: 0 in the hundreds place**
+
+* The hundreds place can be filled with any digit from 1 to 9 (9 possibilities).
+* The tens and ones places can be filled with any digits from 0 to 9 (10 possibilities each).
+* Therefore, the number of whole numbers with 0 in the hundreds place is 9 × 10 × 10 = 900.
+
+**Condition 2: 0 in the tens place**
+
+* The tens place can be filled with any digit from 1 to 9 (9 possibilities).
+* The hundreds and ones places can be filled with any digits from 0 to 9 (10 possibilities each).
+* Therefore, the number of whole numbers with 0 in the tens place is 9 × 10 × 10 = 900.
+
+**Condition 3: 0 in the ones place**
+
+* The ones place can be filled with any digit from 0 to 9 (10 possibilities).
+* The hundreds and tens places can be filled with any digits from 1 to 9 (9 possibilities each).
+* Therefore, the number of whole numbers with 0 in the ones place is 10 × 9 × 9 = 810.
+
+Notice that we've counted some numbers multiple times. For example, the number 100 is counted in Condition 1, and the number 010 is counted in Condition 3. To avoid double-counting, we need to subtract the numbers that are counted in multiple conditions.
+
+The numbers that are counted in both Condition 1 and Condition 3 are those with 0 in the hundreds and ones places (e.g., 100, 200, ..., 990). There are 9 such numbers.
+
+The numbers that are counted in both Condition 2 and Condition 3 are those with 0 in the tens and ones places (e.g., 10, 20, ..., 90). There are 9 such numbers.
+
+To avoid double-counting, we subtract these numbers from the total count:
+
+900 (Condition 1) + 900 (Condition 2) + 810 (Condition 3) - 9 (Condition 1 and 3) - 9 (Condition 2 and 3) = 2492
+
+So, there are 2492 whole numbers between 99 and 999 that contain exactly one 0.","Numbers with exactly one zero have the form $\_ 0 \_$ or $\_ \_ 0$, where the blanks are not zeros.  There are $(9\cdot1\cdot9)+(9\cdot9\cdot1) = 81+81 = \boxed{162}$ such numbers.",0,0.0

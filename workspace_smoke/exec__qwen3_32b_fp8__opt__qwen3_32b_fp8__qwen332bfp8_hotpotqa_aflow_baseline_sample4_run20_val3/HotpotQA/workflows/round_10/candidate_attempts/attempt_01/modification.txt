@@ -1,0 +1,3 @@
+- Replaced the final `ScEnsemble` step with a `Custom` operator using a new prompt `ANSWER_ALIGNMENT_PROMPT` to align the extracted answer with the expected format and content.
+- This change is motivated by the observed `answer_mismatch` failures, where the extracted answer did not match the expected concise format or content.
+- The new prompt explicitly instructs the model to align the answer with the expected format and content, ensuring it matches the ground truth more closely.

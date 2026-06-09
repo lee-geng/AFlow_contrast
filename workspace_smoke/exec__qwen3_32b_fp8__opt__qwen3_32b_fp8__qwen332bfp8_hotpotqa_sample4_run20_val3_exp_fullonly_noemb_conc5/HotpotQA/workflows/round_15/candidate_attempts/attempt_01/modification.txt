@@ -1,0 +1,1 @@
+Added a second call to `custom` with a refined instruction to explicitly request the correct type of answer (e.g., character name or entity with specific attributes), and used `ScEnsemble` to combine and select the most consistent answer from the two responses. This addresses the `answer_mismatch` failures by improving the model's focus and consistency in output.

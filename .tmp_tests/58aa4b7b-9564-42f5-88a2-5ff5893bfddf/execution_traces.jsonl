@@ -1,0 +1,1 @@
+{"task_id": "1", "workflow_id": "wf_1", "workflow_version": "1", "task_pattern": "geometry", "node_execution_sequence": ["b1:custom"], "node_summaries": [], "final_output": "42", "ground_truth": "24", "score": 0.0, "outcome": "failure", "token_cost": 0.01, "runtime_seconds": 0.5, "evaluator_feedback": {}}

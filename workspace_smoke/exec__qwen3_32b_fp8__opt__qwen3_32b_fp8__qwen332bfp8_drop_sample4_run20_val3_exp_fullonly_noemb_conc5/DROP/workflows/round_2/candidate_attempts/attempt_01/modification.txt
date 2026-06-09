@@ -1,0 +1,5 @@
+- Added a new `AnswerGenerate` operator to enforce structured step-by-step reasoning and final answer extraction.
+- Preserved the existing `Custom` operator as per constraints.
+- Updated the prompt to guide the model to produce both a thought process and a final answer.
+- This change is motivated by the `answer_mismatch` failures, where the model's output lacked alignment with expected answers.
+- The new prompt ensures the model is explicitly instructed to provide a structured response with a final boxed answer.

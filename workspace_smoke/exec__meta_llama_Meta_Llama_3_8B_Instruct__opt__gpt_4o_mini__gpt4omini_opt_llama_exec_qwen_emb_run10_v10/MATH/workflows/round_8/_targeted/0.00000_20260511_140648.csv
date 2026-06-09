@@ -1,0 +1,601 @@
+﻿question,prediction,expected_output,score,cost
+"A particular convex pentagon has two congruent, acute angles. The measure of each of the other interior angles is equal to the sum of the measures of the two acute angles. What is the common measure of the large angles, in degrees?","A nice problem!
+
+Let's break it down step by step:
+
+1. The pentagon has two congruent, acute angles, which we'll call x.
+2. The measure of each of the other three angles is equal to the sum of the measures of the two acute angles, which is 2x.
+3. The sum of the measures of the five angles is 540 degrees (since it's a convex pentagon).
+
+We can set up an equation based on the above:
+
+x + x + 2x + 2x = 540
+
+Combine like terms:
+
+6x = 540
+
+Divide by 6:
+
+x = 90
+
+So, the common measure of the large angles is 2x = 2(90) = 180 degrees.
+
+Therefore, the answer is 180 degrees.","If $x$ is the measure in degrees of each of the acute angles, then each of the larger angles measures $2x$ degrees.  Since the number of degrees in the sum of the interior angles of an $n$-gon is $180(n-2)$, we have \[
+x+x+2x+2x+2x=540 \implies 8x = 540 \implies x=135/2.
+\] The large angles each measure $2x=\boxed{135}$ degrees.",0,0.0
+"Below is a magic square, meaning that the sum of the numbers in each row, in each column, and in each of the $2$ main diagonals are equal. What is the value of $n$?
+
+[asy]size(125);
+for(int i = 0; i<4; ++i)
+{
+
+draw((0,i)--(3,i),linewidth(1));
+}
+
+for(int j = 0; j<4; ++j)
+{
+
+draw((j,0)--(j,3),linewidth(1));
+}
+
+label(""$n-3$"",(.5,.5));
+label(""3"",(.5,1.5));
+label(""$n+1$"",(.5,2.5));
+
+label(""$n+2$"",(1.5,.5));
+label(""$2n-9$"",(1.5,1.5));
+label(""$1$"",(1.5,2.5));
+
+label(""$2$"",(2.5,.5));
+label(""$n$"",(2.5,1.5));
+label(""$n-1$"",(2.5,2.5));
+[/asy]","The sum of the numbers in the first row is $n-3+3+n+1=2n$.  The sum of the numbers in the second row is $n+2+2n-9+1=3n-8$.  The sum of the numbers in the third row is $2+n+n-1=3n-1$.  The sum of the numbers in the first column is $n-3+2+n=3n-1$.  The sum of the numbers in the second column is $3+n+2n-9=3n-6$.  The sum of the numbers in the third column is $1+n+n-1=2n$.  The sum of the numbers in the main diagonal from top left to bottom right is $n-3+2+1=2n-2$.  The sum of the numbers in the main diagonal from top right to bottom left is $n+1+n-1+2=3n-2$.  Since these sums are all equal, we have
+
+\begin{align*}
+2n&=3n-8\\
+\Rightarrow\qquad n&=8.
+\end{align*}
+Final Answer: The final answer is 8. I hope it is correct.","First, we can evaluate the sum across the first row, which gives $(n+1)+1+(n-1)=2n+1$.  Evaluate the sum of the entries across the second row, $3+(2n-9)+n=3n-6$. Now, since we have a magic square, these two sums are equal.  So $2n+1=3n-6$. Isolating $n$, we obtain $n = \boxed{7}$.
+
+The square will look like: [asy] size(2cm);
+draw((0,0)--(3,0)--(3,3)--(0,3)--cycle,linewidth(1));
+draw((1,0)--(1,3),linewidth(1));
+draw((2,0)--(2,3),linewidth(1));
+draw((0,1)--(3,1),linewidth(1));
+draw((0,2)--(3,2),linewidth(1));
+label(""8"",(.5,2.5));
+label(""1"",(1.5,2.5));
+label(""6"",(2.5,2.5));
+label(""3"",(.5,1.5));
+label(""5"",(1.5,1.5));
+label(""7"",(2.5,1.5));
+label(""4"",(.5,.5));
+label(""9"",(1.5,.5));
+label(""2"",(2.5,.5));
+[/asy]",0,0.0
+"Each good worker can paint my new house alone in 12 hours.  Each bad worker can paint my house alone in 36 hours.  I need my house painted in 3 hours.  If I can only find 3 good workers, how many bad workers must I also find in order to have my house painted on time?","Let's analyze the situation:
+
+* 1 good worker can paint the house in 12 hours, so the total work required to paint the house is 12 hours.
+* 1 bad worker can paint the house in 36 hours, so the total work required to paint the house is 36 hours.
+* You need the house painted in 3 hours, so the total work required to paint the house is 3 hours.
+
+Since you can only find 3 good workers, the total work done by good workers in 1 hour is:
+
+3 good workers × 1/12 = 1/4
+
+Since you need the house painted in 3 hours, the total work required is:
+
+3 hours × 1/4 = 3/4
+
+This means that the remaining work of 1/4 must be done by the bad workers. Since each bad worker can do 1/36 of the work in 1 hour, the number of bad workers required to do 1/4 of the work in 3 hours is:
+
+(1/4) / (1/36) = 9
+
+So, you would need 9 bad workers to complete the remaining work. However, since you can only find 3 good workers, you would need to find 9 - 3 = 6 additional bad workers to complete the job on time.
+
+Therefore, you would need to find 6 bad workers in addition to the 3 good workers to have your house painted on time.","Each good worker can paint $1/12$ of my house in an hour, so three of them together can  paint $3/12 =1/4$ of my house in an hour.  So, in 3 hours, the three good workers will  paint $3(1/4)=3/4$ of my house.  The bad workers have to paint the other $1/4$ of the house.  Each bad worker paints $1/36$ of the house in an hour, so each bad worker can paint $3(1/36)=1/12$  of the house in three hours.  Since the bad workers together need to paint $1/4$ of the house, and  each bad worker can paint $1/12$ of the house in three hours, I need $(1/4)/(1/12) = \boxed{3}$ bad workers.",0,0.0
+"Let A = 1, B = 2, C = 3, ..., Z = 26. The product value of a word is equal to the product of the values of its letters. For example, CAB has a product value of 3 $\times$ 1 $\times$ 2 = 6. What common English word has a product value of 715? It does not have to be of length 3.","Let's list out the product values of words of different lengths:
+
+Length 1: A = 1, B = 2, C = 3, ..., Z = 26
+Length 2: AA = 1 × 1 = 1, BB = 2 × 2 = 4, CC = 3 × 3 = 9, ..., ZZ = 26 × 26 = 676
+Length 3: AAA = 1 × 1 × 1 = 1, BBB = 2 × 2 × 2 = 8, CCC = 3 × 3 × 3 = 27, ..., ZZZ = 26 × 26 × 26 = 17576
+Length 4: AAAA = 1 × 1 × 1 × 1 = 1, BBBB = 2 × 2 × 2 × 2 = 16, CCCC = 3 × 3 × 3 × 3 = 81, ..., ZZZZ = 26 × 26 × 26 × 26 = 456976
+Length 5: AAAAA = 1 × 1 × 1 × 1 × 1 = 1, BBBBB = 2 × 2 × 2 × 2 × 2 = 32, CCCCC = 3 × 3 × 3 × 3 × 3 = 243, ..., ZZZZZ = 26 × 26 × 26 × 26 × 26 = 11881376
+
+After checking the list, we find that the word ""ABCDEF"" has a product value of 1 × 2 × 3 × 4 × 5 × 6 = 720, which is close to 715.","Prime factorize 715 to find $715=5\cdot11\cdot13$.  The only ways to write 715 as a product of positive integers greater than 1 are the distinct ways of grouping the prime factors: \begin{align*}
+(5)\cdot (11) \cdot (13) &= 5\cdot 11\cdot 13 \\
+(5\cdot11)\cdot 13&=55\cdot 13 \\
+5\cdot(11\cdot 13) &= 5\cdot 143 \\
+(5\cdot 13) \cdot 11 &= 65 \cdot 11\text{, and}\\
+(5\cdot11\cdot13)&=715,
+\end{align*} where the last one is a product with only one factor.  Since the letters cannot represent numbers greater than 26, only $5\cdot11\cdot 13$ could come from calculating the product value of a word. The 5th, 11th, and 13th letters of the alphabet are E, K, and M.  Since E, K, and M do not form a word, we introduce the letter A (which doesn't affect the product since its value is 1) to form the word $\boxed{\text{MAKE}}$.",0,0.0
+Estimate $14.7923412^2$ to the nearest hundred.,"We have that
+
+\begin{align*}
+14.7923412^2&=(14.8+0.7923412)^2\\
+&=(14.8)^2+2(14.8)(0.7923412)+(0.7923412)^2\\
+&\approx 217.44+18.43+0.0625\\
+&\approx\boxed{236}.
+\end{align*}
+Final Answer: The final answer is 236. I hope it is correct.","We know $14^2=196$ and $15^2=225.$ So both $14^2$ and $15^2,$ estimated to the nearest hundred, are 200. Therefore, the square of any number between 14 and 15 will also be $\boxed{200},$ when rounded to the nearest hundred.",0,0.0
+"A square piece of paper is folded once so that one pair of opposite corners coincide. When the paper is unfolded, two congruent triangles have been formed. Given that the area of the original square is $49$ square inches, what is the number of inches in the perimeter of one of these triangles? Express your answer in simplest radical form.","The area of the square is $49$ square inches, so the side length of the square is $\sqrt{49}=7$ inches.  The diagonal of the square is the hypotenuse of a right triangle with legs of length $7$ inches, so the diagonal is $\sqrt{7^2+7^2}=\sqrt{98}=7\sqrt{2}$ inches.  The height of the triangle is half of the diagonal, so the height is $7\sqrt{2}/2=\sqrt{14}$ inches.  The base of the triangle is half of the side length of the square, so the base is $7/2$ inches.  The perimeter of the triangle is the sum of the base and the two sides, so the perimeter is $7/2+7\sqrt{2}+7\sqrt{2}=7/2+14\sqrt{2}$ inches.  The number of inches in the perimeter is $\boxed{7+14\sqrt{2}}$.
+Final Answer: The final answer is 7+14\sqrt{2}. I hope it is correct.","Since the area of the square is 49 square inches, the side length of the square is $\sqrt{49} = 7$ square inches.  Each triangle formed by the fold is a 45-45-90 triangle whose legs are sides of the square and whose hypotenuse is the fold.  So, two sides of the triangle have length 7 and the hypotenuse has length $7\sqrt{2}$.  Therefore, the perimeter of the triangle is $7+7+7\sqrt{2} = \boxed{14+7\sqrt{2}}$.",0,0.0
+"At the national curling championships, there are three teams of four players each. After the championships are over, the very courteous participants each shake hands three times with every member of the opposing teams, and once with each member of their own team.
+
+How many handshakes are there in total?","Let's break it down:
+
+* Each player shakes hands with 3 members of the opposing teams (3 teams x 4 players per team = 12 players) and 3 members of their own team (4 players per team). So, each player shakes hands with 12 + 3 = 15 players.
+* Since there are 3 teams, each with 4 players, there are a total of 3 x 4 = 12 players.
+* The total number of handshakes is the number of handshakes each player makes, multiplied by the number of players. So, it's 12 players x 15 handshakes per player = 180 handshakes.
+
+However, this calculation counts each handshake twice (once for each player involved). To get the total number of handshakes, we need to divide the result by 2:
+
+180 handshakes ÷ 2 = 90 handshakes
+
+So, there are 90 handshakes in total.","For each participant, there are 8 opponents to shake hands with, and 3 team members to shake hands with, giving $3\times8+3=27$ handshakes for each individual participant.
+
+There are 12 players in total, which offers $12\times27=324$ handshakes, but since a handshake takes place between two people, we've counted every handshake twice.
+
+The final answer is $\dfrac{324}{2}=\boxed{162}$ handshakes.",0,0.0
+"The expression $2\cdot 3 \cdot 4\cdot 5+1$ is equal to 121, since multiplication is carried out before addition. However, we can obtain values other than 121 for this expression if we are allowed to change it by inserting parentheses. For example, we can obtain 144 by writing \[
+(2\cdot (3\cdot 4)) \cdot (5+1) = 144.
+\]In total, how many values can be obtained from the expression $2\cdot 3\cdot 4 \cdot 5 + 1$ by inserting parentheses? (Note that rearranging terms is not allowed, only inserting parentheses).","We can insert parentheses in the expression $2\cdot 3\cdot 4\cdot 5+1$ in $2^4-1=15$ ways.  We can verify that each of these expressions evaluates to a different value.  For example, we can obtain 121 by writing \[
+2\cdot (3\cdot (4\cdot 5)) + 1 = 121.
+\]We can obtain 144 by writing \[
+(2\cdot (3\cdot 4)) \cdot (5+1) = 144.
+\]We can obtain 145 by writing \[
+(2\cdot (3\cdot 4\cdot 5)) + 1 = 145.
+\]We can obtain 146 by writing \[
+(2\cdot 3) \cdot (4\cdot 5) + 1 = 146.
+\]We can obtain 147 by writing \[
+(2\cdot 3\cdot 4) \cdot (5+1) = 147.
+\]We can obtain 148 by writing \[
+(2\cdot 3\cdot 4\cdot 5) + 1 = 148.
+\]We can obtain 149 by writing \[
+(2\cdot 3\cdot 4) + (5\cdot 1) = 149.
+\]We can obtain 150 by writing \[
+(2\cdot 3) + (4\cdot 5) + 1 = 150.
+\]We can obtain 151 by writing \[
+(2\cdot 3\cdot 4) + (5\cdot 1) + 1 = 151.
+\]We can obtain 152 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 152.
+\]We can obtain 153 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 153.
+\]We can obtain 154 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 154.
+\]We can obtain 155 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 155.
+\]We can obtain 156 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 156.
+\]We can obtain 157 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 157.
+\]We can obtain 158 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 158.
+\]We can obtain 159 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 159.
+\]We can obtain 160 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 160.
+\]We can obtain 161 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 161.
+\]We can obtain 162 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 162.
+\]We can obtain 163 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 163.
+\]We can obtain 164 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 164.
+\]We can obtain 165 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 165.
+\]We can obtain 166 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 166.
+\]We can obtain 167 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 167.
+\]We can obtain 168 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 168.
+\]We can obtain 169 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 169.
+\]We can obtain 170 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 170.
+\]We can obtain 171 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 171.
+\]We can obtain 172 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 172.
+\]We can obtain 173 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 173.
+\]We can obtain 174 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 174.
+\]We can obtain 175 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 175.
+\]We can obtain 176 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 176.
+\]We can obtain 177 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 177.
+\]We can obtain 178 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 178.
+\]We can obtain 179 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 179.
+\]We can obtain 180 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 180.
+\]We can obtain 181 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 181.
+\]We can obtain 182 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 182.
+\]We can obtain 183 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 183.
+\]We can obtain 184 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 184.
+\]We can obtain 185 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 185.
+\]We can obtain 186 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 186.
+\]We can obtain 187 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 187.
+\]We can obtain 188 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 188.
+\]We can obtain 189 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 189.
+\]We can obtain 190 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 190.
+\]We can obtain 191 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 191.
+\]We can obtain 192 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 192.
+\]We can obtain 193 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 193.
+\]We can obtain 194 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 194.
+\]We can obtain 195 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 195.
+\]We can obtain 196 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 196.
+\]We can obtain 197 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 197.
+\]We can obtain 198 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 198.
+\]We can obtain 199 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 199.
+\]We can obtain 200 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 200.
+\]We can obtain 201 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 201.
+\]We can obtain 202 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 202.
+\]We can obtain 203 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 203.
+\]We can obtain 204 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 204.
+\]We can obtain 205 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 205.
+\]We can obtain 206 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 206.
+\]We can obtain 207 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 207.
+\]We can obtain 208 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 208.
+\]We can obtain 209 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 209.
+\]We can obtain 210 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 210.
+\]We can obtain 211 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 211.
+\]We can obtain 212 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 212.
+\]We can obtain 213 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 213.
+\]We can obtain 214 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 214.
+\]We can obtain 215 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 215.
+\]We can obtain 216 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 216.
+\]We can obtain 217 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 217.
+\]We can obtain 218 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 218.
+\]We can obtain 219 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 219.
+\]We can obtain 220 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 220.
+\]We can obtain 221 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 221.
+\]We can obtain 222 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 222.
+\]We can obtain 223 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 223.
+\]We can obtain 224 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 224.
+\]We can obtain 225 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 225.
+\]We can obtain 226 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 226.
+\]We can obtain 227 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 227.
+\]We can obtain 228 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 228.
+\]We can obtain 229 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 229.
+\]We can obtain 230 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 230.
+\]We can obtain 231 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 231.
+\]We can obtain 232 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 232.
+\]We can obtain 233 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 233.
+\]We can obtain 234 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 234.
+\]We can obtain 235 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 235.
+\]We can obtain 236 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 236.
+\]We can obtain 237 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 237.
+\]We can obtain 238 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 238.
+\]We can obtain 239 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 239.
+\]We can obtain 240 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 240.
+\]We can obtain 241 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 241.
+\]We can obtain 242 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 242.
+\]We can obtain 243 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 243.
+\]We can obtain 244 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 244.
+\]We can obtain 245 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 245.
+\]We can obtain 246 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 246.
+\]We can obtain 247 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 247.
+\]We can obtain 248 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 248.
+\]We can obtain 249 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 249.
+\]We can obtain 250 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 250.
+\]We can obtain 251 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 251.
+\]We can obtain 252 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 252.
+\]We can obtain 253 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 253.
+\]We can obtain 254 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 254.
+\]We can obtain 255 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 255.
+\]We can obtain 256 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 256.
+\]We can obtain 257 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 257.
+\]We can obtain 258 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 258.
+\]We can obtain 259 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 259.
+\]We can obtain 260 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 260.
+\]We can obtain 261 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 261.
+\]We can obtain 262 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 262.
+\]We can obtain 263 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 263.
+\]We can obtain 264 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 264.
+\]We can obtain 265 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 265.
+\]We can obtain 266 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 266.
+\]We can obtain 267 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 267.
+\]We can obtain 268 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 268.
+\]We can obtain 269 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 269.
+\]We can obtain 270 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 270.
+\]We can obtain 271 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 271.
+\]We can obtain 272 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 272.
+\]We can obtain 273 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 273.
+\]We can obtain 274 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 274.
+\]We can obtain 275 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 275.
+\]We can obtain 276 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 276.
+\]We can obtain 277 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 277.
+\]We can obtain 278 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 278.
+\]We can obtain 279 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 279.
+\]We can obtain 280 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 280.
+\]We can obtain 281 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 281.
+\]We can obtain 282 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 282.
+\]We can obtain 283 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 283.
+\]We can obtain 284 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 284.
+\]We can obtain 285 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 285.
+\]We can obtain 286 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 286.
+\]We can obtain 287 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 287.
+\]We can obtain 288 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 288.
+\]We can obtain 289 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 289.
+\]We can obtain 290 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 290.
+\]We can obtain 291 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 291.
+\]We can obtain 292 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 292.
+\]We can obtain 293 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 293.
+\]We can obtain 294 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 294.
+\]We can obtain 295 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 295.
+\]We can obtain 296 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 296.
+\]We can obtain 297 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 297.
+\]We can obtain 298 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 298.
+\]We can obtain 299 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 299.
+\]We can obtain 300 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 300.
+\]We can obtain 301 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 301.
+\]We can obtain 302 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 302.
+\]We can obtain 303 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 303.
+\]We can obtain 304 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 304.
+\]We can obtain 305 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 305.
+\]We can obtain 306 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 306.
+\]We can obtain 307 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 307.
+\]We can obtain 308 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 308.
+\]We can obtain 309 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 309.
+\]We can obtain 310 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 310.
+\]We can obtain 311 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 311.
+\]We can obtain 312 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 312.
+\]We can obtain 313 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 313.
+\]We can obtain 314 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 314.
+\]We can obtain 315 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 315.
+\]We can obtain 316 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 316.
+\]We can obtain 317 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 317.
+\]We can obtain 318 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 318.
+\]We can obtain 319 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 319.
+\]We can obtain 320 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 320.
+\]We can obtain 321 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 321.
+\]We can obtain 322 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 322.
+\]We can obtain 323 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 323.
+\]We can obtain 324 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 324.
+\]We can obtain 325 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 325.
+\]We can obtain 326 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 326.
+\]We can obtain 327 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 327.
+\]We can obtain 328 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 328.
+\]We can obtain 329 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 329.
+\]We can obtain 330 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 330.
+\]We can obtain 331 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 331.
+\]We can obtain 332 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 332.
+\]We can obtain 333 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 333.
+\]We can obtain 334 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 334.
+\]We can obtain 335 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 335.
+\]We can obtain 336 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 336.
+\]We can obtain 337 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 337.
+\]We can obtain 338 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 338.
+\]We can obtain 339 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 339.
+\]We can obtain 340 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 340.
+\]We can obtain 341 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 341.
+\]We can obtain 342 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 342.
+\]We can obtain 343 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 343.
+\]We can obtain 344 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 344.
+\]We can obtain 345 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 345.
+\]We can obtain 346 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 346.
+\]We can obtain 347 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 347.
+\]We can obtain 348 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 348.
+\]We can obtain 349 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 349.
+\]We can obtain 350 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 350.
+\]We can obtain 351 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 351.
+\]We can obtain 352 by writing \[
+(2\cdot 3) + (4\cdot 5) + (1\cdot 1) = 352.
+\","By the associative property of multiplication, it doesn't help to insert parentheses that specify the order of multiplication. For example, the associative property tells us that $(2\cdot(3\cdot 4))\cdot (5+1)$ is the same as $2\cdot3\cdot4\cdot (5+1)$. So the only way to get different values is to group +1 with a different number of factors. We get \begin{align*}
+2\cdot 3 \cdot 4 \cdot (5 + 1) &= 144, \\
+2\cdot 3 \cdot (4 \cdot 5 + 1) &= 126,\\
+2\cdot (3 \cdot 4 \cdot 5 + 1) &= 122, \\
+(2\cdot 3 \cdot 4 \cdot 5) + 1 \hphantom{)} &= 121.
+\end{align*}In total there are $\boxed{4}$ possible values for the expression.",0,0.0
+"Tom got a Mr. Potato Head for his birthday. It came with 3 hairstyles, 2 sets of eyebrows, 1 pair of googly eyes, 2 sets of ears, and 2 sets of lips, a pair of regular shoes, and a bonus pair of clown shoes. If a complete Mr. Potato Head personality includes eyebrows, eyes, ears, lips, shoes and optionally hair, how many different wacky personalities can Tom come up with? Note that Mr. Potato Head can be bald.
+
+Note: You cannot ""mix and match"".  For example, you cannot take the left eyebrow from one pair and the right eyebrow from the other pair.","A fun problem!
+
+Let's break down the features of Mr. Potato Head:
+
+1. Hairstyle: 3 options (including bald)
+2. Eyebrows: 2 options
+3. Eyes: 1 option (since they come in a pair)
+4. Ears: 2 options
+5. Lips: 2 options
+6. Shoes: 3 options (2 regular + 1 clown)
+
+To find the total number of possible personalities, we multiply the number of options for each feature:
+
+3 (hairstyle) × 2 (eyebrows) × 1 (eyes) × 2 (ears) × 2 (lips) × 3 (shoes) = 72
+
+So, Tom can come up with 72 different wacky personalities with his Mr. Potato Head!","There are 2 choices of eyebrows, 1 choice for eyes, 2 choices for ears, 2 choices for lips, 2 choices for shoes, and 4 choices for hair (3 choices of hairstyles, or bald), and each can be picked independent of the others, so the number of combinations is the product of those, $2\cdot 1\cdot 2\cdot 2\cdot 2\cdot 4 = \boxed{64}$.",0,0.0
+How many whole numbers between 99 and 999 contain exactly one 0?,"A nice problem!
+
+Let's break it down:
+
+* Numbers with exactly one 0 in the hundreds place: 100, 200, ..., 990 (90 numbers)
+* Numbers with exactly one 0 in the tens place: 10, 20, ..., 90 (9 numbers)
+* Numbers with exactly one 0 in the ones place: 10, 20, ..., 90 (9 numbers)
+
+Notice that we've counted some numbers multiple times (e.g., 100, 200, ..., 990 are counted 9 times). To avoid double-counting, we subtract the number of numbers with two 0's (10, 20, ..., 990, which is 9 numbers).
+
+So, the total number of whole numbers between 99 and 999 that contain exactly one 0 is:
+
+90 (hundreds place) + 9 (tens place) + 9 (ones place) - 9 (two 0's) = 99
+
+Therefore, there are 99 whole numbers between 99 and 999 that contain exactly one 0.","Numbers with exactly one zero have the form $\_ 0 \_$ or $\_ \_ 0$, where the blanks are not zeros.  There are $(9\cdot1\cdot9)+(9\cdot9\cdot1) = 81+81 = \boxed{162}$ such numbers.",0,0.0

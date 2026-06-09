@@ -1,0 +1,1 @@
+Add intermediate reasoning checks around b1:plan to ensure correctness.

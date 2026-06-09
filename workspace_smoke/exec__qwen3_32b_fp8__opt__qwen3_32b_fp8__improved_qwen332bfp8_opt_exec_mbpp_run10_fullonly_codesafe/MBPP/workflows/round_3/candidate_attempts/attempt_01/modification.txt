@@ -1,0 +1,4 @@
+- Added a call to the `Test` operator after `custom_code_generate` to validate and refine the generated solution using public test cases.
+- This change is based on the validated memory that testing and refining the solution improves alignment with expected outputs.
+- The `Test` operator is used to ensure the generated code passes test cases or is modified to do so.
+- The `custom` operator is preserved as per the constraints and memory guidance.

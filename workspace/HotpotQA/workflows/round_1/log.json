@@ -1,0 +1,121 @@
+[
+    {
+        "question": "The trophy given to the winner of the college football game between University of Idaho Vandals and University of Montana Grizzlies is derived from which European culture?",
+        "right_answer": "German",
+        "model_output": "The trophy, known as the Little Brown Stein, is derived from German culture, as the term \"stein\" refers to traditional beer mugs that are often associated with German beer culture.",
+        "extracted_output": "The trophy, known as the Little Brown Stein, is derived from German culture, as the term \"stein\" refers to traditional beer mugs that are often associated with German beer culture.",
+        "extract_answer_code": "None"
+    },
+    {
+        "question": "The Rome Protocols were signed by three Prime Ministers one of which was assassinated as part of what?",
+        "right_answer": "a failed coup attempt",
+        "model_output": "The Rome Protocols were signed by three Prime Ministers, one of whom was Engelbert Dollfuss, who was assassinated as part of a failed coup attempt by Nazi agents in 1934.",
+        "extracted_output": "The Rome Protocols were signed by three Prime Ministers, one of whom was Engelbert Dollfuss, who was assassinated as part of a failed coup attempt by Nazi agents in 1934.",
+        "extract_answer_code": "None"
+    },
+    {
+        "question": "What team was led to victory in 1939 by a two-time All-American basketball player nicknamed \"Scat\"?",
+        "right_answer": "Oklahoma Sooners",
+        "model_output": "The team led to victory in 1939 by the two-time All-American basketball player nicknamed \"Scat\" McNatt was the Oklahoma Sooners, as they reached the first-ever NCAA Final Four that year.",
+        "extracted_output": "The team led to victory in 1939 by the two-time All-American basketball player nicknamed \"Scat\" McNatt was the Oklahoma Sooners, as they reached the first-ever NCAA Final Four that year.",
+        "extract_answer_code": "None"
+    },
+    {
+        "question": "Are Darren Benjamin Shepherd and Rémi Lange both American?",
+        "right_answer": "no",
+        "model_output": "No, Darren Benjamin Shepherd is American, while Rémi Lange is French.",
+        "extracted_output": "No, Darren Benjamin Shepherd is American, while Rémi Lange is French.",
+        "extract_answer_code": "None"
+    },
+    {
+        "question": "The head of the Foreign Relations Department of the Rastriya Janashakti Party holds a degree that can be abbreviated MS, M.S., or ScM, in what field?",
+        "right_answer": "Engineering",
+        "model_output": "The head of the Foreign Relations Department of the Rastriya Janashakti Party holds a degree that can be abbreviated MS, M.S., or ScM in the field of Engineering.",
+        "extracted_output": "The head of the Foreign Relations Department of the Rastriya Janashakti Party holds a degree that can be abbreviated MS, M.S., or ScM in the field of Engineering.",
+        "extract_answer_code": "None"
+    },
+    {
+        "question": "Lollipop Chainsaw featured Juliet Starling, who was voiced by a Canadian-American actress who has done voice roles for what Teen Titans spinoff series?",
+        "right_answer": "Teen Titans Go!",
+        "model_output": "Lollipop Chainsaw featured Juliet Starling, who was voiced by Tara Strong, a Canadian-American actress who has done voice roles for the Teen Titans spinoff series \"Teen Titans Go!\".",
+        "extracted_output": "Lollipop Chainsaw featured Juliet Starling, who was voiced by Tara Strong, a Canadian-American actress who has done voice roles for the Teen Titans spinoff series \"Teen Titans Go!\".",
+        "extract_answer_code": "None"
+    },
+    {
+        "question": "Jaclyn Stapp is married to the former frontman of a band that disbanded in what year?",
+        "right_answer": "2004",
+        "model_output": "Jaclyn Stapp is married to Scott Stapp, the former frontman of the band Creed, which disbanded in 2004.",
+        "extracted_output": "Jaclyn Stapp is married to Scott Stapp, the former frontman of the band Creed, which disbanded in 2004.",
+        "extract_answer_code": "None"
+    },
+    {
+        "question": "Where was the first governor after the The Missouri Compromise from?",
+        "right_answer": "Bath, Maine",
+        "model_output": "The first governor after the Missouri Compromise was William King, who was from Bath, Maine.",
+        "extracted_output": "The first governor after the Missouri Compromise was William King, who was from Bath, Maine.",
+        "extract_answer_code": "None"
+    },
+    {
+        "question": "The creator of \"Wallace and Gromit\" also created what animation comedy that matched animated zoo animals with a soundtrack of people talking about their homes? ",
+        "right_answer": "Creature Comforts",
+        "model_output": "The creator of \"Wallace and Gromit,\" Nick Park, also created \"Creature Comforts,\" which is an animated comedy that matches animated zoo animals with a soundtrack of people talking about their homes.",
+        "extracted_output": "The creator of \"Wallace and Gromit,\" Nick Park, also created \"Creature Comforts,\" which is an animated comedy that matches animated zoo animals with a soundtrack of people talking about their homes.",
+        "extract_answer_code": "None"
+    },
+    {
+        "question": "When was the  Argentine former footballer which  Dutch manager Ronald Koeman replaced in  2014–15 Southampton F.C. season born",
+        "right_answer": "2 March 1972",
+        "model_output": "The Argentine former footballer that Dutch manager Ronald Koeman replaced in the 2014–15 Southampton F.C. season is Mauricio Pochettino, who was born on March 2, 1972.",
+        "extracted_output": "The Argentine former footballer that Dutch manager Ronald Koeman replaced in the 2014–15 Southampton F.C. season is Mauricio Pochettino, who was born on March 2, 1972.",
+        "extract_answer_code": "None"
+    },
+    {
+        "question": "What stadium does the team who has Kent Baer as the defensive coordinator play its home games?",
+        "right_answer": "Sam Boyd Stadium",
+        "model_output": "The UNLV Rebels, who have Kent Baer as the defensive coordinator, play their home games at Sam Boyd Stadium in Whitney, Nevada.",
+        "extracted_output": "The UNLV Rebels, who have Kent Baer as the defensive coordinator, play their home games at Sam Boyd Stadium in Whitney, Nevada.",
+        "extract_answer_code": "None"
+    },
+    {
+        "question": "Which character does this protagonist, who secretly loves and marries a member of the rival house, of William Shakespeare's tragedy that has a fictional character Benvolio slay?",
+        "right_answer": "Tybalt",
+        "model_output": "The protagonist who secretly loves and marries a member of the rival house in William Shakespeare's tragedy is Romeo Montague. In \"Romeo and Juliet,\" Benvolio does not slay anyone; rather, he is an unsuccessful peacemaker. It is Romeo who slays Tybalt, Juliet's cousin, in a duel.",
+        "extracted_output": "The protagonist who secretly loves and marries a member of the rival house in William Shakespeare's tragedy is Romeo Montague. In \"Romeo and Juliet,\" Benvolio does not slay anyone; rather, he is an unsuccessful peacemaker. It is Romeo who slays Tybalt, Juliet's cousin, in a duel.",
+        "extract_answer_code": "None"
+    },
+    {
+        "question": "Stronger Together was used for the campaign comprised of the Vice Presidential candidate who was a Senator from what state?",
+        "right_answer": "Virginia",
+        "model_output": "Stronger Together was used for the campaign comprised of the Vice Presidential candidate who was a Senator from Virginia.",
+        "extracted_output": "Stronger Together was used for the campaign comprised of the Vice Presidential candidate who was a Senator from Virginia.",
+        "extract_answer_code": "None"
+    },
+    {
+        "question": "Woman's Era and Naj are what kind of magazines?",
+        "right_answer": "fortnightly women interest magazine",
+        "model_output": "Woman's Era and Naj are both lifestyle magazines that focus on women's interests. Woman's Era is published in English in India, while Naj is published in Polish in Warsaw, Poland.",
+        "extracted_output": "Woman's Era and Naj are both lifestyle magazines that focus on women's interests. Woman's Era is published in English in India, while Naj is published in Polish in Warsaw, Poland.",
+        "extract_answer_code": "None"
+    },
+    {
+        "question": "This expansion of the 2008 magazine article \"Is Google Making Us Stoopid?\" was a finalist for what award?",
+        "right_answer": "Pulitzer Prize",
+        "model_output": "The expansion of the 2008 magazine article \"Is Google Making Us Stoopid?\" titled \"The Shallows: What the Internet Is Doing to Our Brains\" was a finalist for the 2011 Pulitzer Prize in General Nonfiction.",
+        "extracted_output": "The expansion of the 2008 magazine article \"Is Google Making Us Stoopid?\" titled \"The Shallows: What the Internet Is Doing to Our Brains\" was a finalist for the 2011 Pulitzer Prize in General Nonfiction.",
+        "extract_answer_code": "None"
+    },
+    {
+        "question": "What year did The Chronicle of Philanthropy's publishing overlap with Antic?",
+        "right_answer": "1988",
+        "model_output": "The Chronicle of Philanthropy was founded in 1988 and publishes 12 issues a year. Antic was published from April 1982 until June/July 1990. Therefore, the years during which the publishing of The Chronicle of Philanthropy overlapped with Antic are from 1988 to 1990.",
+        "extracted_output": "The Chronicle of Philanthropy was founded in 1988 and publishes 12 issues a year. Antic was published from April 1982 until June/July 1990. Therefore, the years during which the publishing of The Chronicle of Philanthropy overlapped with Antic are from 1988 to 1990.",
+        "extract_answer_code": "None"
+    },
+    {
+        "question": "Which of Jonny Craig and Pete Doherty has been a member of more bands ?",
+        "right_answer": "Jonny\" Craig",
+        "model_output": "Jonny Craig has been a member of more bands than Pete Doherty. Craig has been the lead vocalist for several bands, including Dance Gavin Dance, Emarosa, Ghost Runner on Third, Slaves, and westerHALTS, in addition to being part of the supergroup Isles & Glaciers. In contrast, Pete Doherty is primarily known for his work with The Libertines and Babyshambles, along with his solo projects.",
+        "extracted_output": "Jonny Craig has been a member of more bands than Pete Doherty. Craig has been the lead vocalist for several bands, including Dance Gavin Dance, Emarosa, Ghost Runner on Third, Slaves, and westerHALTS, in addition to being part of the supergroup Isles & Glaciers. In contrast, Pete Doherty is primarily known for his work with The Libertines and Babyshambles, along with his solo projects.",
+        "extract_answer_code": "None"
+    }
+]

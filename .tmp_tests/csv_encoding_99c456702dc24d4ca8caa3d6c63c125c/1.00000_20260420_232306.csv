@@ -1,0 +1,2 @@
+﻿question,prediction,expected_output,score,cost
+Q,value ↔ value,gold,1,0.1

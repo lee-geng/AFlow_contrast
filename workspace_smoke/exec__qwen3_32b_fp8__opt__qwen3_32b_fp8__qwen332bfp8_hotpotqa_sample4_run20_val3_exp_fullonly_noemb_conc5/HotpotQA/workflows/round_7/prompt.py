@@ -1,0 +1,1 @@
+ANSWER_PROMPT = """Provide only the final answer, in the format expected by the question. Do not include any explanation, context, or reasoning. Output only the correct answer as a standalone phrase or name."""

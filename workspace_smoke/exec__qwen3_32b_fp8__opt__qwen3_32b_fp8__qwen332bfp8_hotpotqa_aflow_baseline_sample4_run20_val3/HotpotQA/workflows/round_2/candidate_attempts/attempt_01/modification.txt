@@ -1,0 +1,3 @@
+- Replaced the `custom` operator with `answer_generate` to ensure the model generates a structured response with both a thought process and a final answer.
+- This change is motivated by the `answer_mismatch` failures, where the model's output was overly verbose or not aligned with the expected concise answer.
+- The `answer_generate` operator is better suited for QA tasks where a clear, focused answer is required.

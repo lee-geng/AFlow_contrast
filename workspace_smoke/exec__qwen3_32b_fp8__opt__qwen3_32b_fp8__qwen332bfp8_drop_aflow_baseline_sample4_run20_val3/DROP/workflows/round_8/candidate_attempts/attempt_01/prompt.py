@@ -1,0 +1,1 @@
+INPUT_PREPROCESS_PROMPT = "Extract and clarify any numerical or structured information from the input. If the input is ambiguous, rephrase it to make it unambiguous. Focus on identifying the question and the relevant data for answering it."

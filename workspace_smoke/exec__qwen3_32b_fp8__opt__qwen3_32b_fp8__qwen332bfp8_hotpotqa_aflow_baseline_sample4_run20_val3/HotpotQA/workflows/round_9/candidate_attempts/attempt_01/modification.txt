@@ -1,0 +1,1 @@
+Introduce a `custom` step to explicitly extract the final answer from the generated solution before passing it to `sc_ensemble`. This ensures the model focuses on the correct part of the output, addressing the mismatch in answer extraction.

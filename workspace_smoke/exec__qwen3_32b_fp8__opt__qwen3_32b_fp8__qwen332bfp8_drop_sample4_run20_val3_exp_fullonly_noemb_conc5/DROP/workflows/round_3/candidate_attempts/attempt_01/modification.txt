@@ -1,0 +1,1 @@
+Refine the instruction in the custom operator to explicitly request the final answer to be boxed, aligning with the expected format and addressing the mismatch in answer extraction.

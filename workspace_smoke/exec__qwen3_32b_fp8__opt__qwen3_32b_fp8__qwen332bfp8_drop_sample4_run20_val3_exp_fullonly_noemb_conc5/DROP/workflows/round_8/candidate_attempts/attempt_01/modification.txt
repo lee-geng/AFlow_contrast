@@ -1,0 +1,1 @@
+Refine the prompt for the `custom` operator to better guide the model to extract numerical answers from ambiguous or incomplete text, addressing the `answer_mismatch` failures in the evidence. This change is small, targeted, and preserves the validated subworkflow structure.

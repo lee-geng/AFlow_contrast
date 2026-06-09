@@ -9,7 +9,10 @@ import traceback
 from enum import Enum
 from typing import Dict, Generator, List, Optional, Set, Tuple
 
-from tree_sitter import Node
+try:
+    from tree_sitter import Node  # type: ignore
+except Exception:
+    Node = object  # type: ignore
 
 
 class NodeType(Enum):

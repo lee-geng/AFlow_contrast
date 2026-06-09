@@ -1,0 +1,1 @@
+XXX_PROMPT = """Solve the problem. Write a correct and complete Python function as the solution."""

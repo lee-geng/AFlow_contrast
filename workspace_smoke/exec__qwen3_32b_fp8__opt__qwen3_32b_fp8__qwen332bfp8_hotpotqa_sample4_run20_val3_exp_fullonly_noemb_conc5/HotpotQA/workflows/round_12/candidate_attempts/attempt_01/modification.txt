@@ -1,0 +1,3 @@
+- Updated the prompt to explicitly request a boxed final answer to align with expected output format.
+- Ensured the instruction is more precise to avoid ambiguity in the model's response.
+- No changes to the graph structure or additional operators were needed.

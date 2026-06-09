@@ -1,0 +1,3 @@
+- Updated the prompt to enforce stricter final answer extraction by explicitly requesting a concise, boxed answer.
+- No changes to the graph structure or operators used.
+- Modification is minimal and focused on improving alignment with expected answers.

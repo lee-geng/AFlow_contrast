@@ -1,0 +1,1 @@
+Introduce a `custom` operator to explicitly extract the answer from the passage when the model's generated answer mismatches the ground truth. This addresses the `answer_mismatch` failures by refining the final answer selection using a focused instruction to extract the correct answer from the input passage.

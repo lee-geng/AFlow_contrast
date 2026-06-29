@@ -16,6 +16,8 @@ from tenacity import retry, stop_after_attempt, wait_fixed
 from scripts.async_llm import AsyncLLM
 from scripts.logs import logger
 from scripts.formatter import BaseFormatter, FormatError, XmlFormatter, TextFormatter, CodeFormatter
+from contrastive_experience.trace_context import record_operator_call
+from patch_evolution.guarded_runtime import guarded_apply_operator_output
 from scripts.operator_an import (
     AnswerGenerateOp,
     CodeGenerateOp,
@@ -64,13 +66,34 @@ class Operator:
                 response = await self.llm(prompt)
                 
             # Convert to expected format based on the original implementation
-            if isinstance(response, dict):
-                return response
-            else:
-                return {"response": response}
+            normalized = response if isinstance(response, dict) else {"response": response}
+            patched = await guarded_apply_operator_output(
+                self.name,
+                prompt,
+                normalized,
+                metadata={"parse_status": "ok", "formatter_mode": mode},
+            )
+            record_operator_call(self.name, prompt, patched, mode=mode)
+            return patched
         except FormatError as e:
-            print(f"Format error in {self.name}: {str(e)}")
-            return {"error": str(e)}
+            error_message = str(e)
+            print(f"Format error in {self.name}: {error_message}")
+            error_output = {"error": error_message}
+            raw_marker = ". Raw response: "
+            if raw_marker in error_message:
+                error_output["raw_response"] = error_message.split(raw_marker, 1)[1]
+            patched = await guarded_apply_operator_output(
+                self.name,
+                prompt,
+                error_output,
+                metadata={
+                    "parse_status": "failed",
+                    "formatter_mode": mode,
+                    "error_message": error_message,
+                },
+            )
+            record_operator_call(self.name, prompt, patched, mode=mode, error_type=type(e).__name__)
+            return patched
     
     def _create_formatter(self, op_class, mode=None, **extra_kwargs) -> Optional[BaseFormatter]:
         """Create appropriate formatter based on operation class and mode"""

@@ -1,0 +1,141 @@
+You are diagnosing an AFlow workflow using success/failure contrastive operator traces.
+Use the candidate bottleneck language; do not claim root cause until edit verification succeeds.
+Recommend one scoped workflow edit that repairs the failure pattern while preserving the success pattern.
+
+TRACE_DIAGNOSIS_CONTEXT:
+{
+  "candidate_bottleneck": {
+    "operator_id": "Custom#0",
+    "operator_type": "Custom",
+    "bottleneck_score": 0.0,
+    "input_div": 0.0,
+    "output_div": 0.0,
+    "amplification": 0.0,
+    "schema_div": 0.0,
+    "output_style_div": 0.0,
+    "error_div": 0.0,
+    "error_gap": 0.0,
+    "main_signal": "weak divergence",
+    "success_pattern": {
+      "output_style_top": "json_answer",
+      "schema_type_top": "json_dict",
+      "parse_ok_rate": 1.0
+    },
+    "failure_pattern": {
+      "output_style_top": "json_answer",
+      "schema_type_top": "json_dict",
+      "parse_ok_rate": 1.0
+    },
+    "divergence_jump": 0.0
+  },
+  "success_prototypes": [
+    {
+      "sample_id": "5074",
+      "prediction": "The father of Inés Peraza was **Hernán Peraza The Elder**.",
+      "expected": "Hernán Peraza The Elder|Hernán Peraza",
+      "sample_score": 0.5454545454545454,
+      "operator_output": "{\"response\": \"The father of Inés Peraza was **Hernán Peraza The Elder**.\"}",
+      "operator_input": "Passage: The Bethencourt era ended in 1418 when Maciot sold his holdings and the rights to subjugate the remaining islands to Enrique Pérez de Guzmán. From this point on the intervention of the King of Castile increased. Between 1418 and 1445 dominion over the islands changed hands on a number of occasions. Finally, control over the conquered islands and the right to further conquests fell to Hernán Peraza The Elder and his children Guillén Peraza and Inés Peraza. The death of Guillén Peraza in the attac...",
+      "features": {
+        "answer_type": "unknown",
+        "output_style": "json_answer",
+        "schema_type": "json_dict",
+        "parse_status": "ok"
+      }
+    },
+    {
+      "sample_id": "2273",
+      "prediction": "The 49ers quarterback mentioned in the passage is **Alex Smith**.",
+      "expected": "Alex Smith",
+      "sample_score": 0.4,
+      "operator_output": "{\"response\": \"The 49ers quarterback mentioned in the passage is **Alex Smith**.\"}",
+      "operator_input": "Passage: Coming off their win over the Raiders the 49ers flew to Bank of America Stadium for an NFC duel with the Panthers. In the first quarter the 49ers took the lead as QB Alex Smith got a 1-yard TD pass to TE Vernon Davis. The lead was cut when kicker John Kasay nailed a 47-yard field goal. The 49ers scored with kicker Joe Nedney making a 24-yard field goal. The Panthers tied the game with QB Matt Moore completing an 18-yard TD pass to WR David Gettis. The 49ers fell behind in the third quarter with ...",
+      "features": {
+        "answer_type": "unknown",
+        "output_style": "json_answer",
+        "schema_type": "json_dict",
+        "parse_status": "ok"
+      }
+    },
+    {
+      "sample_id": "2531",
+      "prediction": "The Allies took the towns of **Venlo, Roermond, Liège, Bonn, and Huy**.",
+      "expected": "Venlo and Roermond and Liège and Bonn and Huy|Limburg and Liège and Bonn and Huy|Venlo and Roermond",
+      "sample_score": 0.631578947368421,
+      "operator_output": "{\"response\": \"The Allies took the towns of **Venlo, Roermond, Liège, Bonn, and Huy**.\"}",
+      "operator_input": "Passage: Instead, the Allies spent 1702 and 1703 taking towns such as Venlo and Roermond in the modern Dutch province of Limburg, as well as Liège, Bonn and Huy. Failure to take Antwerp in May 1703 ended hopes of a quick victory while a Dutch army under Slangenburg was surrounded by a French force several times their size at Ekeren on 30 June and only just escaped. Recriminations were considerable, with Slangenburg blaming his commander Obdam but also Marlborough and Van Coehoorn for failing to support h...",
+      "features": {
+        "answer_type": "unknown",
+        "output_style": "json_answer",
+        "schema_type": "json_dict",
+        "parse_status": "ok"
+      }
+    }
+  ],
+  "failure_prototypes": [
+    {
+      "sample_id": "4477",
+      "prediction": "The longest touchdown pass was **26 yards**, when Collins found Drew Bennett on a 26-yard completion.",
+      "expected": "12",
+      "sample_score": 0.0,
+      "operator_output": "{\"response\": \"The longest touchdown pass was **26 yards**, when Collins found Drew Bennett on a 26-yard completion.\"}",
+      "operator_input": "Passage: After the teams traded punts on the first four possessions of the game, Pennington led the Jets on a 9-play, 76-yard drive, aided by a pass-interference call on Titans linebacker Peter Sirmon that negated an interception by defensive back Reynaldo Hill, capped off by a 1-yard touchdown run from Kevan Barlow. After another Titans punt, Tennessee head coach Jeff Fisher grew impatient with starting quarterback Kerry Collins, pulling him in favor of rookie quarterback Vince Young. Young drove the Ti...",
+      "features": {
+        "answer_type": "unknown",
+        "output_style": "json_answer",
+        "schema_type": "json_dict",
+        "parse_status": "ok"
+      }
+    },
+    {
+      "sample_id": "8416",
+      "prediction": "The answer is: **Venice**.\n\nPolin tried to convince Venice to join the Franco-Ottoman alliance, but was unsuccessful.",
+      "expected": "Venice",
+      "sample_score": 0.125,
+      "operator_output": "{\"response\": \"The answer is: **Venice**.\\n\\nPolin tried to convince Venice to join the Franco-Ottoman alliance, but was unsuccessful.\"}",
+      "operator_input": "Passage: Polin succeeded ambassador Antoine de Rincon  in Constantinople. In early 1542, Polin successfully negotiated the details of a Franco-Ottoman alliance for the Italian War of 1542-1546, with the Ottoman Empire promising to send 27,500 troops against the territories of the Spanish king Ferdinand, as well as 110 galleys against Charles, while France promised to attack Flanders, harass the coasts of Spain with a naval force, and send 40 galleys to assist the Turks for operations in the Levant. Polin...",
+      "features": {
+        "answer_type": "unknown",
+        "output_style": "json_answer",
+        "schema_type": "json_dict",
+        "parse_status": "ok"
+      }
+    },
+    {
+      "sample_id": "2245",
+      "prediction": "Kerry Collins completed a **16-yard** touchdown pass to wide receiver Justin Gage. \n\n**Answer: 16 yards.**",
+      "expected": "16",
+      "sample_score": 0.13333333333333333,
+      "operator_output": "{\"response\": \"Kerry Collins completed a **16-yard** touchdown pass to wide receiver Justin Gage. \\n\\n**Answer: 16 yards.**\"}",
+      "operator_input": "Passage: The Titans began their season at Heinz Field for the annual kickoff game against the defending Super Bowl champions, the Pittsburgh Steelers.  After a scoreless first quarter, Tennessee trailed near the end of the second quarter as Steelers quarterback Ben Roethlisberger completed a 34-yard touchdown pass to wide receiver Santonio Holmes.  Afterwards, the Titans would tie the game as quarterback Kerry Collins completed a 16-yard touchdown pass to wide receiver Justin Gage. After a scoreless thir...",
+      "features": {
+        "answer_type": "unknown",
+        "output_style": "json_answer",
+        "schema_type": "json_dict",
+        "parse_status": "ok"
+      }
+    }
+  ],
+  "matching_criteria": [
+    "same candidate operator",
+    "similar answer_type when available",
+    "stable success parse_status/output_style",
+    "dominant failure signature contrast"
+  ],
+  "relevant_experience": {},
+  "forbidden_edits": [],
+  "required_success_guard": "Any edit must be checked against the selected success prototypes before acceptance."
+}
+
+Return strict JSON with this schema:
+{
+  "diagnosis": "...",
+  "recommended_edit_level": "prompt | operator | graph | control",
+  "recommended_edits": ["..."],
+  "forbidden_edits": ["..."],
+  "success_guard": "...",
+  "verification_plan": {
+    "target_failure_samples": ["..."],
+    "success_guard_samples": ["..."]
+  }
+}

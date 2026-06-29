@@ -1,0 +1,98 @@
+You are diagnosing an AFlow workflow using success/failure contrastive operator traces.
+Use the candidate bottleneck language; do not claim root cause until edit verification succeeds.
+Recommend one scoped workflow edit that repairs the failure pattern while preserving the success pattern.
+
+TRACE_DIAGNOSIS_CONTEXT:
+{
+  "candidate_bottleneck": {
+    "operator_id": "AnswerGenerate#0",
+    "operator_type": "AnswerGenerate",
+    "bottleneck_score": 0.5,
+    "input_div": 0.5,
+    "output_div": 0.5,
+    "amplification": 0.0,
+    "schema_div": 0.5,
+    "output_style_div": 0.5,
+    "error_div": 0.5,
+    "error_gap": 0.0,
+    "main_signal": "output_style divergence/schema divergence/parse/error divergence",
+    "success_pattern": {
+      "output_style_top": "unknown",
+      "schema_type_top": "unknown",
+      "parse_ok_rate": 0.0
+    },
+    "failure_pattern": {
+      "output_style_top": "json_answer",
+      "schema_type_top": "json_dict",
+      "parse_ok_rate": 1.0
+    },
+    "divergence_jump": 0.5
+  },
+  "success_prototypes": [],
+  "failure_prototypes": [
+    {
+      "sample_id": "6496",
+      "prediction": "The shortest field goal of the game was 27 yards.",
+      "expected": "27",
+      "sample_score": 0.2222222222222222,
+      "operator_output": "{\"answer\": \"30\", \"thought\": \"First, I need to identify all the field goals mentioned in the passage and their respective yardages. The field goals in the passage are: 44-yard, 33-yard, 30-yard, and 49-yard. Next, I compare the yardages to determine the shortest one. The shortest field goal is the 30-yard field goal.\"}",
+      "operator_input": "\nThink step by step and solve the problem.\n1. In the \"thought\" field, explain your thinking process in detail.\n2. In the \"answer\" field, provide the final answer concisely and clearly. The answer should be a direct response to the question, without including explanations or reasoning.\nYour task: Passage: The Chargers began their 2008 campaign at home against the Carolina Panthers.  After a scoreless first quarter, the Panthers pounced first as kicker John Kasay got a 44-yard field goal.  The Chargers wou...",
+      "features": {
+        "answer_type": "unknown",
+        "output_style": "json_answer",
+        "schema_type": "json_dict",
+        "parse_status": "ok"
+      }
+    },
+    {
+      "sample_id": "2483",
+      "prediction": "The first touchdown of the game was a **21-yard** touchdown by Jordan Howard. \n\nAnswer: **21**",
+      "expected": "21",
+      "sample_score": 0.15384615384615385,
+      "operator_output": "{\"answer\": \"21\", \"thought\": \"First, I need to identify the first touchdown of the game. The passage states that the Bears took an early lead in the first quarter when Jordan Howard ran for a 21-yard touchdown. This is the first touchdown mentioned in the passage. The question asks for the number of yards for this touchdown, which is clearly stated as 21 yards.\"}",
+      "operator_input": "\nThink step by step and solve the problem.\n1. In the \"thought\" field, explain your thinking process in detail.\n2. In the \"answer\" field, provide the final answer concisely and clearly. The answer should be a direct response to the question, without including explanations or reasoning.\nYour task: Passage: After a tough loss at home, the Bengals would remain at home for a game against the Bears.  In the first quarter, the Bears took an early lead when Jordan Howard ran for a 21-yard touchdown (with a faile...",
+      "features": {
+        "answer_type": "unknown",
+        "output_style": "json_answer",
+        "schema_type": "json_dict",
+        "parse_status": "ok"
+      }
+    },
+    {
+      "sample_id": "8416",
+      "prediction": "To calculate the difference between the percentage of assets of foreigners aged 10+ years and those aged 15-64 years:\n\n- Percentage of assets of foreigners aged 10+ years = **27.40%**\n- Percentage of assets of people aged 15-64 years = **26.40%**\n\n**Difference** = 27.40% - 26.40% = **1.00%**\n\n**Answer:** 1.00",
+      "expected": "Venice",
+      "sample_score": 0.0,
+      "operator_output": "{\"answer\": \"Venice\", \"thought\": \"First, I identify the key information in the passage: Polin tried to convince Venice to join the alliance but was unsuccessful. The question asks who did not join the alliance at Polin's request. Based on the passage, the answer is clearly Venice.\"}",
+      "operator_input": "\nThink step by step and solve the problem.\n1. In the \"thought\" field, explain your thinking process in detail.\n2. In the \"answer\" field, provide the final answer concisely and clearly. The answer should be a direct response to the question, without including explanations or reasoning.\nYour task: Passage: Polin succeeded ambassador Antoine de Rincon  in Constantinople. In early 1542, Polin successfully negotiated the details of a Franco-Ottoman alliance for the Italian War of 1542-1546, with the Ottoman E...",
+      "features": {
+        "answer_type": "unknown",
+        "output_style": "json_answer",
+        "schema_type": "json_dict",
+        "parse_status": "ok"
+      }
+    }
+  ],
+  "matching_criteria": [
+    "same candidate operator",
+    "similar answer_type when available",
+    "stable success parse_status/output_style",
+    "dominant failure signature contrast"
+  ],
+  "relevant_experience": {},
+  "forbidden_edits": [],
+  "required_success_guard": "Any edit must be checked against the selected success prototypes before acceptance."
+}
+
+Return strict JSON with this schema:
+{
+  "diagnosis": "...",
+  "recommended_edit_level": "prompt | operator | graph | control",
+  "recommended_edits": ["..."],
+  "forbidden_edits": ["..."],
+  "success_guard": "...",
+  "verification_plan": {
+    "target_failure_samples": ["..."],
+    "success_guard_samples": ["..."]
+  }
+}

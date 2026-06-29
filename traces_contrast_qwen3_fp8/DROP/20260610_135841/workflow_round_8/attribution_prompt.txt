@@ -1,0 +1,141 @@
+You are diagnosing an AFlow workflow using success/failure contrastive operator traces.
+Use the candidate bottleneck language; do not claim root cause until edit verification succeeds.
+Recommend one scoped workflow edit that repairs the failure pattern while preserving the success pattern.
+
+TRACE_DIAGNOSIS_CONTEXT:
+{
+  "candidate_bottleneck": {
+    "operator_id": "ScEnsemble#12",
+    "operator_type": "ScEnsemble",
+    "bottleneck_score": 0.8,
+    "input_div": 0.5,
+    "output_div": 0.5,
+    "amplification": 0.0,
+    "schema_div": 0.5,
+    "output_style_div": 0.5,
+    "error_div": 0.5,
+    "error_gap": 1.0,
+    "main_signal": "output_style divergence/schema divergence/parse/error divergence",
+    "success_pattern": {
+      "output_style_top": "json_answer",
+      "schema_type_top": "json_dict",
+      "parse_ok_rate": 1.0
+    },
+    "failure_pattern": {
+      "output_style_top": "unknown",
+      "schema_type_top": "unknown",
+      "parse_ok_rate": 0.0
+    },
+    "divergence_jump": 0.5
+  },
+  "success_prototypes": [
+    {
+      "sample_id": "2245",
+      "prediction": "16",
+      "expected": "16",
+      "sample_score": 1.0,
+      "operator_output": null,
+      "operator_input": null,
+      "features": {
+        "answer_type": null,
+        "output_style": null,
+        "schema_type": null,
+        "parse_status": null
+      }
+    },
+    {
+      "sample_id": "2835",
+      "prediction": "22",
+      "expected": "22",
+      "sample_score": 1.0,
+      "operator_output": null,
+      "operator_input": null,
+      "features": {
+        "answer_type": null,
+        "output_style": null,
+        "schema_type": null,
+        "parse_status": null
+      }
+    },
+    {
+      "sample_id": "3529",
+      "prediction": "Ben Roethlisberger",
+      "expected": "Roethlisberger",
+      "sample_score": 0.6666666666666666,
+      "operator_output": null,
+      "operator_input": null,
+      "features": {
+        "answer_type": null,
+        "output_style": null,
+        "schema_type": null,
+        "parse_status": null
+      }
+    }
+  ],
+  "failure_prototypes": [
+    {
+      "sample_id": "4464",
+      "prediction": "Insufficient information to determine the answer.",
+      "expected": "Minnesota trailed early|Detroit Lions|Minnesota|Detroit",
+      "sample_score": 0.0,
+      "operator_output": null,
+      "operator_input": null,
+      "features": {
+        "answer_type": null,
+        "output_style": null,
+        "schema_type": null,
+        "parse_status": null
+      }
+    },
+    {
+      "sample_id": "131",
+      "prediction": "Insufficient data to determine the answer.",
+      "expected": "under the age of 18",
+      "sample_score": 0.0,
+      "operator_output": null,
+      "operator_input": null,
+      "features": {
+        "answer_type": null,
+        "output_style": null,
+        "schema_type": null,
+        "parse_status": null
+      }
+    },
+    {
+      "sample_id": "8773",
+      "prediction": "Insufficient data to determine the answer.",
+      "expected": "18 to 24",
+      "sample_score": 0.25,
+      "operator_output": null,
+      "operator_input": null,
+      "features": {
+        "answer_type": null,
+        "output_style": null,
+        "schema_type": null,
+        "parse_status": null
+      }
+    }
+  ],
+  "matching_criteria": [
+    "same candidate operator",
+    "similar answer_type when available",
+    "stable success parse_status/output_style",
+    "dominant failure signature contrast"
+  ],
+  "relevant_experience": {},
+  "forbidden_edits": [],
+  "required_success_guard": "Any edit must be checked against the selected success prototypes before acceptance."
+}
+
+Return strict JSON with this schema:
+{
+  "diagnosis": "...",
+  "recommended_edit_level": "prompt | operator | graph | control",
+  "recommended_edits": ["..."],
+  "forbidden_edits": ["..."],
+  "success_guard": "...",
+  "verification_plan": {
+    "target_failure_samples": ["..."],
+    "success_guard_samples": ["..."]
+  }
+}

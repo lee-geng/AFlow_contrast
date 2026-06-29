@@ -1,0 +1,141 @@
+You are diagnosing an AFlow workflow using success/failure contrastive operator traces.
+Use the candidate bottleneck language; do not claim root cause until edit verification succeeds.
+Recommend one scoped workflow edit that repairs the failure pattern while preserving the success pattern.
+
+TRACE_DIAGNOSIS_CONTEXT:
+{
+  "candidate_bottleneck": {
+    "operator_id": "ScEnsemble#6",
+    "operator_type": "ScEnsemble",
+    "bottleneck_score": 0.8,
+    "input_div": 0.5,
+    "output_div": 0.5,
+    "amplification": 0.0,
+    "schema_div": 0.5,
+    "output_style_div": 0.5,
+    "error_div": 0.5,
+    "error_gap": 1.0,
+    "main_signal": "output_style divergence/schema divergence/parse/error divergence",
+    "success_pattern": {
+      "output_style_top": "json_answer",
+      "schema_type_top": "json_dict",
+      "parse_ok_rate": 1.0
+    },
+    "failure_pattern": {
+      "output_style_top": "unknown",
+      "schema_type_top": "unknown",
+      "parse_ok_rate": 0.0
+    },
+    "divergence_jump": 0.5
+  },
+  "success_prototypes": [
+    {
+      "sample_id": "8969",
+      "prediction": "4",
+      "expected": "3|four seasons|4",
+      "sample_score": 1.0,
+      "operator_output": null,
+      "operator_input": null,
+      "features": {
+        "answer_type": null,
+        "output_style": null,
+        "schema_type": null,
+        "parse_status": null
+      }
+    },
+    {
+      "sample_id": "3295",
+      "prediction": "2",
+      "expected": "2",
+      "sample_score": 1.0,
+      "operator_output": null,
+      "operator_input": null,
+      "features": {
+        "answer_type": null,
+        "output_style": null,
+        "schema_type": null,
+        "parse_status": null
+      }
+    },
+    {
+      "sample_id": "7610",
+      "prediction": "3",
+      "expected": "3",
+      "sample_score": 1.0,
+      "operator_output": null,
+      "operator_input": null,
+      "features": {
+        "answer_type": null,
+        "output_style": null,
+        "schema_type": null,
+        "parse_status": null
+      }
+    }
+  ],
+  "failure_prototypes": [
+    {
+      "sample_id": "1318",
+      "prediction": "9.20%",
+      "expected": "9.2|10.7",
+      "sample_score": 0.0,
+      "operator_output": null,
+      "operator_input": null,
+      "features": {
+        "answer_type": null,
+        "output_style": null,
+        "schema_type": null,
+        "parse_status": null
+      }
+    },
+    {
+      "sample_id": "970",
+      "prediction": "Three tanks, at least 20 armoured, and 32 non-armoured vehicles.",
+      "expected": "55",
+      "sample_score": 0.0,
+      "operator_output": null,
+      "operator_input": null,
+      "features": {
+        "answer_type": null,
+        "output_style": null,
+        "schema_type": null,
+        "parse_status": null
+      }
+    },
+    {
+      "sample_id": "106",
+      "prediction": "1.00",
+      "expected": "1|1.0",
+      "sample_score": 0.0,
+      "operator_output": null,
+      "operator_input": null,
+      "features": {
+        "answer_type": null,
+        "output_style": null,
+        "schema_type": null,
+        "parse_status": null
+      }
+    }
+  ],
+  "matching_criteria": [
+    "same candidate operator",
+    "similar answer_type when available",
+    "stable success parse_status/output_style",
+    "dominant failure signature contrast"
+  ],
+  "relevant_experience": {},
+  "forbidden_edits": [],
+  "required_success_guard": "Any edit must be checked against the selected success prototypes before acceptance."
+}
+
+Return strict JSON with this schema:
+{
+  "diagnosis": "...",
+  "recommended_edit_level": "prompt | operator | graph | control",
+  "recommended_edits": ["..."],
+  "forbidden_edits": ["..."],
+  "success_guard": "...",
+  "verification_plan": {
+    "target_failure_samples": ["..."],
+    "success_guard_samples": ["..."]
+  }
+}

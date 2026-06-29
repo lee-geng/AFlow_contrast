@@ -1,0 +1,141 @@
+You are diagnosing an AFlow workflow using success/failure contrastive operator traces.
+Use the candidate bottleneck language; do not claim root cause until edit verification succeeds.
+Recommend one scoped workflow edit that repairs the failure pattern while preserving the success pattern.
+
+TRACE_DIAGNOSIS_CONTEXT:
+{
+  "candidate_bottleneck": {
+    "operator_id": "AnswerGenerate#6",
+    "operator_type": "AnswerGenerate",
+    "bottleneck_score": 0.5,
+    "input_div": 0.5,
+    "output_div": 0.5,
+    "amplification": 0.0,
+    "schema_div": 0.5,
+    "output_style_div": 0.5,
+    "error_div": 0.5,
+    "error_gap": 0.0,
+    "main_signal": "output_style divergence/schema divergence/parse/error divergence",
+    "success_pattern": {
+      "output_style_top": "unknown",
+      "schema_type_top": "unknown",
+      "parse_ok_rate": 0.0
+    },
+    "failure_pattern": {
+      "output_style_top": "json_answer",
+      "schema_type_top": "json_dict",
+      "parse_ok_rate": 1.0
+    },
+    "divergence_jump": 0.5
+  },
+  "success_prototypes": [
+    {
+      "sample_id": "7610",
+      "prediction": "3",
+      "expected": "3",
+      "sample_score": 1.0,
+      "operator_output": null,
+      "operator_input": null,
+      "features": {
+        "answer_type": null,
+        "output_style": null,
+        "schema_type": null,
+        "parse_status": null
+      }
+    },
+    {
+      "sample_id": "1355",
+      "prediction": "11",
+      "expected": "11",
+      "sample_score": 1.0,
+      "operator_output": null,
+      "operator_input": null,
+      "features": {
+        "answer_type": null,
+        "output_style": null,
+        "schema_type": null,
+        "parse_status": null
+      }
+    },
+    {
+      "sample_id": "1569",
+      "prediction": "36",
+      "expected": "36|4",
+      "sample_score": 1.0,
+      "operator_output": null,
+      "operator_input": null,
+      "features": {
+        "answer_type": null,
+        "output_style": null,
+        "schema_type": null,
+        "parse_status": null
+      }
+    }
+  ],
+  "failure_prototypes": [
+    {
+      "sample_id": "251",
+      "prediction": "Two",
+      "expected": "2",
+      "sample_score": 0.0,
+      "operator_output": null,
+      "operator_input": null,
+      "features": {
+        "answer_type": null,
+        "output_style": null,
+        "schema_type": null,
+        "parse_status": null
+      }
+    },
+    {
+      "sample_id": "9170",
+      "prediction": "0.15",
+      "expected": ".15",
+      "sample_score": 0.0,
+      "operator_output": null,
+      "operator_input": null,
+      "features": {
+        "answer_type": null,
+        "output_style": null,
+        "schema_type": null,
+        "parse_status": null
+      }
+    },
+    {
+      "sample_id": "543",
+      "prediction": "Suleiman met with Polin in Constantinople.",
+      "expected": "Jerôme Maurand and Polin|1544",
+      "sample_score": 0.2,
+      "operator_output": null,
+      "operator_input": null,
+      "features": {
+        "answer_type": null,
+        "output_style": null,
+        "schema_type": null,
+        "parse_status": null
+      }
+    }
+  ],
+  "matching_criteria": [
+    "same candidate operator",
+    "similar answer_type when available",
+    "stable success parse_status/output_style",
+    "dominant failure signature contrast"
+  ],
+  "relevant_experience": {},
+  "forbidden_edits": [],
+  "required_success_guard": "Any edit must be checked against the selected success prototypes before acceptance."
+}
+
+Return strict JSON with this schema:
+{
+  "diagnosis": "...",
+  "recommended_edit_level": "prompt | operator | graph | control",
+  "recommended_edits": ["..."],
+  "forbidden_edits": ["..."],
+  "success_guard": "...",
+  "verification_plan": {
+    "target_failure_samples": ["..."],
+    "success_guard_samples": ["..."]
+  }
+}

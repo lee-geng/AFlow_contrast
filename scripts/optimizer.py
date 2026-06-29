@@ -5,7 +5,7 @@
 
 import asyncio
 import time
-from typing import List, Literal, Dict
+from typing import List, Literal, Dict, Optional
 
 from pydantic import BaseModel, Field
 
@@ -18,6 +18,8 @@ from scripts.optimizer_utils.graph_utils import GraphUtils
 from scripts.async_llm import create_llm_instance
 from scripts.formatter import XmlFormatter, FormatError
 from scripts.logs import logger
+from scripts.path_utils import prepare_model_workspace
+from contrastive_experience.trace_logger import default_run_id
 
 QuestionType = Literal["math", "code", "qa"]
 OptimizerType = Literal["Graph", "Test"]
@@ -43,6 +45,14 @@ class Optimizer:
         initial_round: int = 1,
         max_rounds: int = 20,
         validation_rounds: int = 5,
+        trace_enabled: bool = False,
+        trace_dir: str = "traces",
+        trace_full_io: bool = False,
+        trace_preview_chars: int = 512,
+        success_threshold: Optional[float] = None,
+        trace_run_id: Optional[str] = None,
+        enable_patch_as_hypothesis: bool = False,
+        patch_registry_dir: str = "results/patch_evolution",
     ) -> None:
         self.optimize_llm_config = opt_llm_config
         self.optimize_llm = create_llm_instance(self.optimize_llm_config)
@@ -55,12 +65,26 @@ class Optimizer:
         self.graph = None
         self.operators = operators
 
-        self.root_path = f"{optimized_path}/{self.dataset}"
+        self.root_path, self.module_root = prepare_model_workspace(
+            optimized_path=optimized_path,
+            dataset=self.dataset,
+            opt_model_name=self.optimize_llm_config.model,
+            exec_model_name=self.execute_llm_config.model,
+        )
+        self.root_path = str(self.root_path)
         self.sample = sample
         self.top_scores = []
         self.round = initial_round
         self.max_rounds = max_rounds
         self.validation_rounds = validation_rounds
+        self.trace_enabled = trace_enabled
+        self.trace_dir = trace_dir
+        self.trace_full_io = trace_full_io
+        self.trace_preview_chars = trace_preview_chars
+        self.success_threshold = success_threshold
+        self.trace_run_id = trace_run_id or default_run_id()
+        self.enable_patch_as_hypothesis = enable_patch_as_hypothesis
+        self.patch_registry_dir = patch_registry_dir
 
         self.graph_utils = GraphUtils(self.root_path)
         self.data_utils = DataUtils(self.root_path)
@@ -72,21 +96,16 @@ class Optimizer:
         if mode == "Test":
             test_n = 1  # validation datasets's execution number
             for i in range(test_n):
-                loop = asyncio.new_event_loop()
-                asyncio.set_event_loop(loop)
-                score = loop.run_until_complete(self.test())
+                score = asyncio.run(self.test())
             return None
 
         for opt_round in range(self.max_rounds):
-            loop = asyncio.new_event_loop()
-            asyncio.set_event_loop(loop)
-
             retry_count = 0
             max_retries = 1
 
             while retry_count < max_retries:
                 try:
-                    score = loop.run_until_complete(self._optimize_graph())
+                    score = asyncio.run(self._optimize_graph())
                     break
                 except Exception as e:
                     retry_count += 1
@@ -97,10 +116,6 @@ class Optimizer:
 
                     wait_time = 5 * retry_count
                     time.sleep(wait_time)
-
-                if retry_count < max_retries:
-                    loop = asyncio.new_event_loop()
-                    asyncio.set_event_loop(loop)
 
             self.round += 1
             logger.info(f"Score for round {self.round}: {score}")
@@ -173,6 +188,12 @@ class Optimizer:
                     logger.error("Failed to extract fields from raw response, retrying...")
                     continue
 
+            response.setdefault("modification", "")
+            response.setdefault("graph", "")
+            response.setdefault("prompt", "")
+            if not response["prompt"]:
+                response["prompt"] = prompt
+
             # Check if the modification meets the conditions
             check = self.experience_utils.check_modification(
                 processed_experience, response["modification"], sample["round"]
@@ -183,7 +204,7 @@ class Optimizer:
                 break
 
         # Save the graph and evaluate
-        self.graph_utils.write_graph_files(directory, response, self.round + 1, self.dataset)
+        self.graph_utils.write_graph_files(directory, response, self.round + 1, self.module_root)
 
         experience = self.experience_utils.create_experience_data(sample, response["modification"])
 

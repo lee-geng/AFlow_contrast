@@ -12,6 +12,15 @@ from tqdm.asyncio import tqdm_asyncio
 
 from scripts.logs import logger
 from scripts.utils.common import write_json_file
+from contrastive_experience.grouping import dataset_success_threshold
+from contrastive_experience.trace_context import (
+    finish_sample_trace,
+    make_sample_id,
+    set_trace_config,
+    start_sample_trace,
+    reset_trace_config,
+)
+from patch_evolution.guarded_runtime import reset_patch_runtime, set_patch_runtime
 
 
 class BaseBenchmark(ABC):
@@ -84,19 +93,73 @@ class BaseBenchmark(ABC):
     def get_result_columns(self) -> List[str]:
         pass
 
-    async def evaluate_all_problems(self, data: List[dict], agent: Callable, max_concurrent_tasks: int = 50):
+    def _trace_result_from_tuple(self, result: Tuple[Any, ...], trace_config=None):
+        columns = self.get_result_columns()
+        mapped = {column: result[index] for index, column in enumerate(columns) if index < len(result)}
+        score = mapped.get("score", 0.0)
+        threshold = dataset_success_threshold(self.name, getattr(trace_config, "success_threshold", None))
+        try:
+            numeric_score = float(score)
+        except (TypeError, ValueError):
+            numeric_score = 0.0
+        return {
+            "final_result": "success" if numeric_score >= threshold else "failure",
+            "prediction": mapped.get("prediction") or mapped.get("model_output") or mapped.get("output"),
+            "expected": mapped.get("expected_output") or mapped.get("right_answer") or mapped.get("answer"),
+            "sample_score": numeric_score,
+            "cost": mapped.get("cost"),
+        }
+
+    async def evaluate_all_problems(
+        self,
+        data: List[dict],
+        agent: Callable,
+        max_concurrent_tasks: int = 50,
+        trace_config=None,
+    ):
         semaphore = asyncio.Semaphore(max_concurrent_tasks)
 
-        async def sem_evaluate(problem):
+        async def sem_evaluate(index, problem):
             async with semaphore:
-                return await self.evaluate_problem(problem, agent)
+                sample_token = start_sample_trace(make_sample_id(index, problem), problem)
+                try:
+                    result = await self.evaluate_problem(problem, agent)
+                except Exception as e:
+                    finish_sample_trace(
+                        sample_token,
+                        {
+                            "final_result": "failure",
+                            "prediction": str(e),
+                            "expected": None,
+                            "sample_score": 0.0,
+                            "cost": 0.0,
+                        },
+                    )
+                    raise
+                finish_sample_trace(sample_token, self._trace_result_from_tuple(result, trace_config=trace_config))
+                return result
 
-        tasks = [sem_evaluate(problem) for problem in data]
+        tasks = [sem_evaluate(index, problem) for index, problem in enumerate(data)]
         return await tqdm_asyncio.gather(*tasks, desc=f"Evaluating {self.name} problems", total=len(data))
 
-    async def run_evaluation(self, agent: Callable, va_list: List[int], max_concurrent_tasks: int = 50):
+    async def run_evaluation(
+        self,
+        agent: Callable,
+        va_list: List[int],
+        max_concurrent_tasks: int = 50,
+        trace_config=None,
+        patch_runtime_config=None,
+    ):
         data = await self.load_data(va_list)
-        results = await self.evaluate_all_problems(data, agent, max_concurrent_tasks)
+        token = set_trace_config(trace_config) if trace_config and trace_config.enabled else None
+        patch_token = set_patch_runtime(patch_runtime_config) if patch_runtime_config and patch_runtime_config.enabled else None
+        try:
+            results = await self.evaluate_all_problems(data, agent, max_concurrent_tasks, trace_config=trace_config)
+        finally:
+            if token is not None:
+                reset_trace_config(token)
+            if patch_token is not None:
+                reset_patch_runtime(patch_token)
         columns = self.get_result_columns()
         average_score, average_cost, total_cost = self.save_results_to_csv(results, columns)
         logger.info(f"Average score on {self.name} dataset: {average_score:.5f}")

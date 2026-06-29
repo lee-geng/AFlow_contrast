@@ -1,0 +1,141 @@
+You are diagnosing an AFlow workflow using success/failure contrastive operator traces.
+Use the candidate bottleneck language; do not claim root cause until edit verification succeeds.
+Recommend one scoped workflow edit that repairs the failure pattern while preserving the success pattern.
+
+TRACE_DIAGNOSIS_CONTEXT:
+{
+  "candidate_bottleneck": {
+    "operator_id": "AnswerGenerate#3",
+    "operator_type": "AnswerGenerate",
+    "bottleneck_score": 0.5,
+    "input_div": 0.5,
+    "output_div": 0.5,
+    "amplification": 0.0,
+    "schema_div": 0.5,
+    "output_style_div": 0.5,
+    "error_div": 0.5,
+    "error_gap": 0.0,
+    "main_signal": "output_style divergence/schema divergence/parse/error divergence",
+    "success_pattern": {
+      "output_style_top": "unknown",
+      "schema_type_top": "unknown",
+      "parse_ok_rate": 0.0
+    },
+    "failure_pattern": {
+      "output_style_top": "json_answer",
+      "schema_type_top": "json_dict",
+      "parse_ok_rate": 1.0
+    },
+    "divergence_jump": 0.5
+  },
+  "success_prototypes": [
+    {
+      "sample_id": "8286",
+      "prediction": "Mirwais died from **natural causes**.",
+      "expected": "natural causes",
+      "sample_score": 0.5714285714285715,
+      "operator_output": null,
+      "operator_input": null,
+      "features": {
+        "answer_type": null,
+        "output_style": null,
+        "schema_type": null,
+        "parse_status": null
+      }
+    },
+    {
+      "sample_id": "2273",
+      "prediction": "The 49ers quarterback is **Alex Smith**.",
+      "expected": "Alex Smith",
+      "sample_score": 0.5714285714285715,
+      "operator_output": null,
+      "operator_input": null,
+      "features": {
+        "answer_type": null,
+        "output_style": null,
+        "schema_type": null,
+        "parse_status": null
+      }
+    },
+    {
+      "sample_id": "2175",
+      "prediction": "Answer: 7",
+      "expected": "7|8",
+      "sample_score": 0.6666666666666666,
+      "operator_output": null,
+      "operator_input": null,
+      "features": {
+        "answer_type": null,
+        "output_style": null,
+        "schema_type": null,
+        "parse_status": null
+      }
+    }
+  ],
+  "failure_prototypes": [
+    {
+      "sample_id": "5685",
+      "prediction": "The team that scored first was the **Bears**.",
+      "expected": "Bears",
+      "sample_score": 0.2857142857142857,
+      "operator_output": null,
+      "operator_input": null,
+      "features": {
+        "answer_type": null,
+        "output_style": null,
+        "schema_type": null,
+        "parse_status": null
+      }
+    },
+    {
+      "sample_id": "1046",
+      "prediction": "To calculate the total number of home runs hit by Shannon Stewart and Tom Evans, we add their individual totals:\n\n- **Shannon Stewart**: 4 home runs  \n- **Tom Evans**: 13 home runs  \n\n**Total home runs** = 4 + 13 = **17**\n\n**Final Answer:** 17",
+      "expected": "17",
+      "sample_score": 0.05128205128205127,
+      "operator_output": null,
+      "operator_input": null,
+      "features": {
+        "answer_type": null,
+        "output_style": null,
+        "schema_type": null,
+        "parse_status": null
+      }
+    },
+    {
+      "sample_id": "1569",
+      "prediction": "To determine how many passes Peyton Manning threw, we can refer to the passage, which states:\n\n> \"Colts QB Peyton Manning finished the game 29 of 36 for 282 yards with four touchdowns and no interceptions.\"\n\nThis means Manning completed 29 out of 36 passes.\n\n**Answer: 36**",
+      "expected": "36|4",
+      "sample_score": 0.044444444444444446,
+      "operator_output": null,
+      "operator_input": null,
+      "features": {
+        "answer_type": null,
+        "output_style": null,
+        "schema_type": null,
+        "parse_status": null
+      }
+    }
+  ],
+  "matching_criteria": [
+    "same candidate operator",
+    "similar answer_type when available",
+    "stable success parse_status/output_style",
+    "dominant failure signature contrast"
+  ],
+  "relevant_experience": {},
+  "forbidden_edits": [],
+  "required_success_guard": "Any edit must be checked against the selected success prototypes before acceptance."
+}
+
+Return strict JSON with this schema:
+{
+  "diagnosis": "...",
+  "recommended_edit_level": "prompt | operator | graph | control",
+  "recommended_edits": ["..."],
+  "forbidden_edits": ["..."],
+  "success_guard": "...",
+  "verification_plan": {
+    "target_failure_samples": ["..."],
+    "success_guard_samples": ["..."]
+  }
+}

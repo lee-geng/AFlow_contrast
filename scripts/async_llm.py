@@ -6,6 +6,7 @@
 from openai import AsyncOpenAI
 from scripts.formatter import BaseFormatter, FormatError
 
+import os
 import yaml
 from pathlib import Path
 from typing import Dict, Optional, Any
@@ -32,16 +33,21 @@ class LLMsConfig:
     def default(cls):
         """Get or create a default configuration from YAML file"""
         if cls._default_config is None:
+            project_root = Path(__file__).resolve().parents[1]
+            env_config = os.environ.get("AFLOW_CONFIG_PATH")
             # Look for the config file in common locations
             config_paths = [
+                Path(env_config) if env_config else None,
                 Path("config/config2.yaml"),
                 Path("config2.yaml"),
-                Path("./config/config2.yaml")
+                Path("./config/config2.yaml"),
+                project_root / "config" / "config2.yaml",
+                project_root / "config2.yaml",
             ]
             
             config_file = None
             for path in config_paths:
-                if path.exists():
+                if path and path.exists():
                     config_file = path
                     break
             

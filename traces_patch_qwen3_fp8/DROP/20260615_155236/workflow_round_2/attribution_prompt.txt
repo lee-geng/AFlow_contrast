@@ -1,0 +1,98 @@
+You are diagnosing an AFlow workflow using success/failure contrastive operator traces.
+Use the candidate bottleneck language; do not claim root cause until edit verification succeeds.
+Recommend one scoped workflow edit that repairs the failure pattern while preserving the success pattern.
+
+TRACE_DIAGNOSIS_CONTEXT:
+{
+  "candidate_bottleneck": {
+    "operator_id": "AnswerGenerate#0",
+    "operator_type": "AnswerGenerate",
+    "bottleneck_score": 0.5,
+    "input_div": 0.5,
+    "output_div": 0.5,
+    "amplification": 0.0,
+    "schema_div": 0.5,
+    "output_style_div": 0.5,
+    "error_div": 0.5,
+    "error_gap": 0.0,
+    "main_signal": "output_style divergence/schema divergence/parse/error divergence",
+    "success_pattern": {
+      "output_style_top": "unknown",
+      "schema_type_top": "unknown",
+      "parse_ok_rate": 0.0
+    },
+    "failure_pattern": {
+      "output_style_top": "json_answer",
+      "schema_type_top": "json_dict",
+      "parse_ok_rate": 1.0
+    },
+    "divergence_jump": 0.5
+  },
+  "success_prototypes": [],
+  "failure_prototypes": [
+    {
+      "sample_id": "5074",
+      "prediction": "From the passage, we learn that Inés Peraza, along with her brother Guillén Peraza, inherited control over the islands and the right to further conquests from their father, Hernán Peraza The Elder. This information directly identifies the father of Inés Peraza.\n\nAnswer: Hernán Peraza The Elder",
+      "expected": "Hernán Peraza The Elder|Hernán Peraza",
+      "sample_score": 0.13953488372093023,
+      "operator_output": "{\"answer\": \"Hernán Peraza The Elder\", \"thought\": \"From the passage, we learn that Inés Peraza, along with her brother Guillén Peraza, inherited control over the islands and the right to further conquests from their father, Hernán Peraza The Elder. This information directly identifies the father of Inés Peraza.\"}",
+      "operator_input": "\nThink step by step and solve the problem.\n1. In the \"thought\" field, explain your thinking process in detail.\n2. In the \"answer\" field, provide the final answer concisely and clearly. The answer should be a direct response to the question, without including explanations or reasoning.\nYour task: Passage: The Bethencourt era ended in 1418 when Maciot sold his holdings and the rights to subjugate the remaining islands to Enrique Pérez de Guzmán. From this point on the intervention of the King of Castile in...",
+      "features": {
+        "answer_type": "unknown",
+        "output_style": "json_answer",
+        "schema_type": "json_dict",
+        "parse_status": "ok"
+      }
+    },
+    {
+      "sample_id": "2835",
+      "prediction": "First, I need to identify all of Dan Carpenter's field goals in the second quarter. According to the passage, in the second quarter, Dan Carpenter made a 22-yard field goal. Next, I sum up the total yards for the second quarter, which is 22 yards. This is the final answer to the question.\n\nAnswer: 22",
+      "expected": "22",
+      "sample_score": 0.04166666666666667,
+      "operator_output": "{\"answer\": \"22\", \"thought\": \"First, I need to identify all of Dan Carpenter's field goals in the second quarter. According to the passage, in the second quarter, Dan Carpenter made a 22-yard field goal. Next, I sum up the total yards for the second quarter, which is 22 yards. This is the final answer to the question.\"}",
+      "operator_input": "\nThink step by step and solve the problem.\n1. In the \"thought\" field, explain your thinking process in detail.\n2. In the \"answer\" field, provide the final answer concisely and clearly. The answer should be a direct response to the question, without including explanations or reasoning.\nYour task: Passage: Coming off their home win over the Browns, the Steelers flew to Sun Life Stadium for a Week 7 intraconference duel with the Miami Dolphins.  Pittsburgh trailed in the first quarter as Dolphins kicker Dan...",
+      "features": {
+        "answer_type": "unknown",
+        "output_style": "json_answer",
+        "schema_type": "json_dict",
+        "parse_status": "ok"
+      }
+    },
+    {
+      "sample_id": "6291",
+      "prediction": "First, I need to identify all the touchdown passes mentioned in the passage. The passage states that in the third quarter, quarterback Donovan McNabb and wide receiver Greg Lewis connected on two touchdown passes of 45 and 30 yards. The longest touchdown pass is the one that traveled the most distance, which is 45 yards. Therefore, the answer is 45 yards.\n\nAnswer: 45",
+      "expected": "45",
+      "sample_score": 0.03571428571428572,
+      "operator_output": "{\"answer\": \"45\", \"thought\": \"First, I need to identify all the touchdown passes mentioned in the passage. The passage states that in the third quarter, quarterback Donovan McNabb and wide receiver Greg Lewis connected on two touchdown passes of 45 and 30 yards. The longest touchdown pass is the one that traveled the most distance, which is 45 yards. Therefore, the answer is 45 yards.\"}",
+      "operator_input": "\nThink step by step and solve the problem.\n1. In the \"thought\" field, explain your thinking process in detail.\n2. In the \"answer\" field, provide the final answer concisely and clearly. The answer should be a direct response to the question, without including explanations or reasoning.\nYour task: Passage: at Lincoln Financial Field, Philadelphia|weather= 60&#160;&#176;F (Clear)Following their dominating road win over the 49ers, the Eagles returned home for a Monday Night match-up with the Green Bay Packer...",
+      "features": {
+        "answer_type": "unknown",
+        "output_style": "json_answer",
+        "schema_type": "json_dict",
+        "parse_status": "ok"
+      }
+    }
+  ],
+  "matching_criteria": [
+    "same candidate operator",
+    "similar answer_type when available",
+    "stable success parse_status/output_style",
+    "dominant failure signature contrast"
+  ],
+  "relevant_experience": {},
+  "forbidden_edits": [],
+  "required_success_guard": "Any edit must be checked against the selected success prototypes before acceptance."
+}
+
+Return strict JSON with this schema:
+{
+  "diagnosis": "...",
+  "recommended_edit_level": "prompt | operator | graph | control",
+  "recommended_edits": ["..."],
+  "forbidden_edits": ["..."],
+  "success_guard": "...",
+  "verification_plan": {
+    "target_failure_samples": ["..."],
+    "success_guard_samples": ["..."]
+  }
+}

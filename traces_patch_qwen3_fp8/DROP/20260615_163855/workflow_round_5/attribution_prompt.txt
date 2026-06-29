@@ -1,0 +1,98 @@
+You are diagnosing an AFlow workflow using success/failure contrastive operator traces.
+Use the candidate bottleneck language; do not claim root cause until edit verification succeeds.
+Recommend one scoped workflow edit that repairs the failure pattern while preserving the success pattern.
+
+TRACE_DIAGNOSIS_CONTEXT:
+{
+  "candidate_bottleneck": {
+    "operator_id": "AnswerGenerate#0",
+    "operator_type": "AnswerGenerate",
+    "bottleneck_score": 0.5,
+    "input_div": 0.5,
+    "output_div": 0.5,
+    "amplification": 0.0,
+    "schema_div": 0.5,
+    "output_style_div": 0.5,
+    "error_div": 0.5,
+    "error_gap": 0.0,
+    "main_signal": "output_style divergence/schema divergence/parse/error divergence",
+    "success_pattern": {
+      "output_style_top": "unknown",
+      "schema_type_top": "unknown",
+      "parse_ok_rate": 0.0
+    },
+    "failure_pattern": {
+      "output_style_top": "json_answer",
+      "schema_type_top": "json_dict",
+      "parse_ok_rate": 1.0
+    },
+    "divergence_jump": 0.5
+  },
+  "success_prototypes": [],
+  "failure_prototypes": [
+    {
+      "sample_id": "8416",
+      "prediction": "module 'workspace_patch_qwen3_fp8.model_runs.DROP.opt_qwen3_32b_fp8__exec_qwen3_32b_fp8.workflows.round_5.prompt' has no attribute 'ANSWER_REFINE_PROMPT'",
+      "expected": "Venice",
+      "sample_score": 0.0,
+      "operator_output": "{\"answer\": \"Venice\", \"thought\": \"First, I identify the key information in the passage: Polin tried to convince Venice to join the alliance but was unsuccessful. The question asks who did not join the alliance at Polin's request. Based on the passage, the answer is clearly Venice.\"}",
+      "operator_input": "\nThink step by step and solve the problem.\n1. In the \"thought\" field, explain your thinking process in detail.\n2. In the \"answer\" field, provide the final answer concisely and clearly. The answer should be a direct response to the question, without including explanations or reasoning.\nYour task: Passage: Polin succeeded ambassador Antoine de Rincon  in Constantinople. In early 1542, Polin successfully negotiated the details of a Franco-Ottoman alliance for the Italian War of 1542-1546, with the Ottoman E...",
+      "features": {
+        "answer_type": "unknown",
+        "output_style": "json_answer",
+        "schema_type": "json_dict",
+        "parse_status": "ok"
+      }
+    },
+    {
+      "sample_id": "6800",
+      "prediction": "'answer'",
+      "expected": "the Federales|Federales",
+      "sample_score": 0.0,
+      "operator_output": "{\"thought\": \"First, I identify the relevant information in the passage about casualties. It states that 12 US troops were killed and 23 were taken prisoner. On the Mexican side, 45 Federales were casualties, including the Mexican general Gomez. Comparing the numbers, the Federales had 45 casualties, while the Americans had 12 killed and 23 captured, totaling 35. Therefore, the Federales suffered more casualties.\"}",
+      "operator_input": "\nThink step by step and solve the problem.\n1. In the \"thought\" field, explain your thinking process in detail.\n2. In the \"answer\" field, provide the final answer concisely and clearly. The answer should be a direct response to the question, without including explanations or reasoning.\nYour task: Passage: More than 5,000 US troops of General John J. Pershing's forces, including elements of the 7th Cavalry and the African-American U.S. 10th Cavalry Regiment, entered Mexico in hot pursuit of Villa. The camp...",
+      "features": {
+        "answer_type": "unknown",
+        "output_style": "json_answer",
+        "schema_type": "json_dict",
+        "parse_status": "ok"
+      }
+    },
+    {
+      "sample_id": "3353",
+      "prediction": "module 'workspace_patch_qwen3_fp8.model_runs.DROP.opt_qwen3_32b_fp8__exec_qwen3_32b_fp8.workflows.round_5.prompt' has no attribute 'ANSWER_REFINE_PROMPT'",
+      "expected": "1",
+      "sample_score": 0.0,
+      "operator_output": "{\"answer\": \"1\", \"thought\": \"The passage states that \\\"floorball will feature in the event for the first time after being a demonstration sport in the 2013 edition.\\\" This indicates that floorball is the only sport mentioned as being an event for the first time. No other sports are explicitly stated to be making their debut. Therefore, the answer is one.\"}",
+      "operator_input": "\nThink step by step and solve the problem.\n1. In the \"thought\" field, explain your thinking process in detail.\n2. In the \"answer\" field, provide the final answer concisely and clearly. The answer should be a direct response to the question, without including explanations or reasoning.\nYour task: Passage: The first 30 sports were announced by the Singapore National Olympic Council on 10 December 2013 on the sidelines of the 27th SEA Games in Myanmar. It announced then that there was room for as many as ei...",
+      "features": {
+        "answer_type": "unknown",
+        "output_style": "json_answer",
+        "schema_type": "json_dict",
+        "parse_status": "ok"
+      }
+    }
+  ],
+  "matching_criteria": [
+    "same candidate operator",
+    "similar answer_type when available",
+    "stable success parse_status/output_style",
+    "dominant failure signature contrast"
+  ],
+  "relevant_experience": {},
+  "forbidden_edits": [],
+  "required_success_guard": "Any edit must be checked against the selected success prototypes before acceptance."
+}
+
+Return strict JSON with this schema:
+{
+  "diagnosis": "...",
+  "recommended_edit_level": "prompt | operator | graph | control",
+  "recommended_edits": ["..."],
+  "forbidden_edits": ["..."],
+  "success_guard": "...",
+  "verification_plan": {
+    "target_failure_samples": ["..."],
+    "success_guard_samples": ["..."]
+  }
+}

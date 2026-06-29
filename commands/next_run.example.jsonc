@@ -1,0 +1,50 @@
+{
+  // Save the real request as commands/next_run.json.
+  // Use a list command when possible; it avoids PowerShell escaping issues.
+  "run_id": "eval_drop_round3_generalized_v2_compiled_qwen3_fp8",
+  "enabled": true,
+  "cwd": ".",
+  "timeout_seconds": 21600,
+  "command": [
+    "conda",
+    "run",
+    "--no-capture-output",
+    "-n",
+    "aflow",
+    "python",
+    "-B",
+    "-m",
+    "patch_evolution.repair_workflow",
+    "--dataset",
+    "DROP",
+    "--workflow_dir",
+    "compiled_workflows_generalized_v2_qwen3_fp8\\DROP\\drop_round3_generalized_v2_qwen3_fp8\\round_3_compiled",
+    "--model_name",
+    "qwen3-32b-fp8",
+    "--trace_dir",
+    "traces_eval_generalized_v2_qwen3_fp8",
+    "--patch_registry_dir",
+    "results_eval_generalized_v2_qwen3_fp8",
+    "--output_dir",
+    "repair_runs_eval_generalized_v2_qwen3_fp8",
+    "--run_id",
+    "eval_drop_round3_generalized_v2_compiled_qwen3_fp8",
+    "--max_samples",
+    "200",
+    "--repair_rounds",
+    "1",
+    "--no_online_patch",
+    "--no_consolidate"
+  ],
+  "metrics_paths": [
+    "repair_runs_eval_generalized_v2_qwen3_fp8\\DROP\\eval_drop_round3_generalized_v2_compiled_qwen3_fp8\\summary.json",
+    "experiment_history\\DROP\\latest.json"
+  ],
+  "codex_after_run": {
+    // This only runs if auto_runner.py was started with --enable_codex.
+    "enabled": false,
+    "prompt": "读取 runner 输出，分析这次结果；如果需要，继续修改代码并写入下一次 commands/next_run.json。",
+    "stdout_tail_chars": 6000,
+    "stderr_tail_chars": 6000
+  }
+}

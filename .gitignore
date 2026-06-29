@@ -7,3 +7,6 @@ optimized
 *.pyc
 /workspace
 *.json
+commands/next_run.json
+commands/runner_state.json
+commands/runs/

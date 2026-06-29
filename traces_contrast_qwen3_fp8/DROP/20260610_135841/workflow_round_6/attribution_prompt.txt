@@ -1,0 +1,98 @@
+You are diagnosing an AFlow workflow using success/failure contrastive operator traces.
+Use the candidate bottleneck language; do not claim root cause until edit verification succeeds.
+Recommend one scoped workflow edit that repairs the failure pattern while preserving the success pattern.
+
+TRACE_DIAGNOSIS_CONTEXT:
+{
+  "candidate_bottleneck": {
+    "operator_id": "Custom#0",
+    "operator_type": "Custom",
+    "bottleneck_score": 0.5,
+    "input_div": 0.5,
+    "output_div": 0.5,
+    "amplification": 0.0,
+    "schema_div": 0.5,
+    "output_style_div": 0.5,
+    "error_div": 0.5,
+    "error_gap": 0.0,
+    "main_signal": "output_style divergence/schema divergence/parse/error divergence",
+    "success_pattern": {
+      "output_style_top": "unknown",
+      "schema_type_top": "unknown",
+      "parse_ok_rate": 0.0
+    },
+    "failure_pattern": {
+      "output_style_top": "full_sentence",
+      "schema_type_top": "free_text",
+      "parse_ok_rate": 1.0
+    },
+    "divergence_jump": 0.5
+  },
+  "success_prototypes": [],
+  "failure_prototypes": [
+    {
+      "sample_id": "8687",
+      "prediction": "module 'workspace_contrast_qwen3_fp8.model_runs.DROP.opt_qwen3_32b_fp8__exec_qwen3_32b_fp8.workflows.round_6.prompt' has no attribute 'FORMAT_ANSWER_PROMPT'",
+      "expected": "6",
+      "sample_score": 0.0,
+      "operator_output": "Rephrased Question: In the game between the Bills and the Jaguars, how many yards longer was Rian Lindell's longest field goal (28 yards) than his shortest (22 yards)?",
+      "operator_input": "\nAnalyze the given question and passage, and rephrase the question in a way that includes the most relevant contextual information from the passage. This will help ensure that the generated answer is accurate and directly addresses the question.\nFor example, if the input is \"How many more people were German than from the US or Danish?\", and the passage includes population percentages, rephrase the question to include the relevant percentages or numbers.\nPassage: Hoping to rebound from their loss to the T...",
+      "features": {
+        "answer_type": "unknown",
+        "output_style": "full_sentence",
+        "schema_type": "free_text",
+        "parse_status": "ok"
+      }
+    },
+    {
+      "sample_id": "36",
+      "prediction": "module 'workspace_contrast_qwen3_fp8.model_runs.DROP.opt_qwen3_32b_fp8__exec_qwen3_32b_fp8.workflows.round_6.prompt' has no attribute 'FORMAT_ANSWER_PROMPT'",
+      "expected": "44",
+      "sample_score": 0.0,
+      "operator_output": "Rephrased Question: In the game where Arizona dominated St. Louis to win the NFC West and clinch their first home playoff game since 1947, how many yards was Neil Rackers's longest field goal, considering he kicked field goals from 44 and 22 yards during the game?\n\nAnswer: Neil Rackers's longest field goal was 44 yards.",
+      "operator_input": "\nAnalyze the given question and passage, and rephrase the question in a way that includes the most relevant contextual information from the passage. This will help ensure that the generated answer is accurate and directly addresses the question.\nFor example, if the input is \"How many more people were German than from the US or Danish?\", and the passage includes population percentages, rephrase the question to include the relevant percentages or numbers.\nPassage: Arizona dominated St Louis to win the NFC ...",
+      "features": {
+        "answer_type": "unknown",
+        "output_style": "full_sentence",
+        "schema_type": "free_text",
+        "parse_status": "ok"
+      }
+    },
+    {
+      "sample_id": "5312",
+      "prediction": "module 'workspace_contrast_qwen3_fp8.model_runs.DROP.opt_qwen3_32b_fp8__exec_qwen3_32b_fp8.workflows.round_6.prompt' has no attribute 'FORMAT_ANSWER_PROMPT'",
+      "expected": "4239",
+      "sample_score": 0.0,
+      "operator_output": "Rephrased Question: According to the 2000 United States Census, how many more households were there (15,137) than families (10,898) in the city?",
+      "operator_input": "\nAnalyze the given question and passage, and rephrase the question in a way that includes the most relevant contextual information from the passage. This will help ensure that the generated answer is accurate and directly addresses the question.\nFor example, if the input is \"How many more people were German than from the US or Danish?\", and the passage includes population percentages, rephrase the question to include the relevant percentages or numbers.\nPassage: As of the 2000 United States Census of 200...",
+      "features": {
+        "answer_type": "unknown",
+        "output_style": "full_sentence",
+        "schema_type": "free_text",
+        "parse_status": "ok"
+      }
+    }
+  ],
+  "matching_criteria": [
+    "same candidate operator",
+    "similar answer_type when available",
+    "stable success parse_status/output_style",
+    "dominant failure signature contrast"
+  ],
+  "relevant_experience": {},
+  "forbidden_edits": [],
+  "required_success_guard": "Any edit must be checked against the selected success prototypes before acceptance."
+}
+
+Return strict JSON with this schema:
+{
+  "diagnosis": "...",
+  "recommended_edit_level": "prompt | operator | graph | control",
+  "recommended_edits": ["..."],
+  "forbidden_edits": ["..."],
+  "success_guard": "...",
+  "verification_plan": {
+    "target_failure_samples": ["..."],
+    "success_guard_samples": ["..."]
+  }
+}

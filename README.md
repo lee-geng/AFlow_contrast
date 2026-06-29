@@ -63,6 +63,9 @@ For custom tasks, you can reference the code in the `benchmark` folder. Inherit 
      ```
 
 3. Configure LLM parameters in `config/config2.yaml` (see `config/config2.example.yaml` for reference)
+   - The repository now includes these two ready-to-use local OpenAI-compatible model entries:
+     - `meta-llama/Meta-Llama-3-8B-Instruct`
+     - `qwen2.5-coder:7b`
 
 4. Set up operators in `run.py` and in `operator.py`, `optimized_path/template/operator.json`. You can reference our implementation to add operators for specific datasets
 
@@ -78,8 +81,140 @@ For custom tasks, you can reference the code in the `benchmark` folder. Inherit 
    python run.py --dataset MATH
    
    # Or with custom parameters
-   python run.py --dataset MATH --sample n --optimized_path xxx ...
+   python run.py --dataset MATH --sample n --optimized_path workspace ...
    ```
+
+9. Results are now isolated by model pair under:
+   ```text
+   workspace/model_runs/<DATASET>/opt_<OPT_MODEL>__exec_<EXEC_MODEL>/workflows
+   ```
+   This keeps workflows, logs, and scores from different optimization/execution model combinations separate.
+
+## Contrastive Experience-Guided Diagnosis
+
+This repository includes an optional v1 prototype for contrastive experience-guided workflow optimization. It does not change the default AFlow search path unless trace logging is explicitly enabled.
+
+### Collect operator traces
+
+Enable trace logging during a normal optimization run:
+
+```bash
+python run.py --dataset MATH --trace --auto_diagnose --trace_dir traces --trace_preview_chars 512
+```
+
+Optional flags:
+
+```text
+--trace_full_io                 Save full observable operator inputs/outputs instead of previews
+--success_threshold FLOAT       Override dataset-aware success/failure grouping
+```
+
+Trace files are written as JSONL:
+
+```text
+traces/<DATASET>/<RUN_ID>/workflow_round_<ROUND>.jsonl
+```
+
+Each sample record stores the workflow round, sample id, final score/result, prediction, expected answer, and per-operator observable I/O metadata. It does not log private hidden reasoning.
+
+When `--auto_diagnose` is enabled, AFlow automatically diagnoses every trace file generated in the current run after optimization finishes and writes the diagnosis artifacts next to the trace file.
+
+To collect traces for an existing workflow round without running a full optimization loop:
+
+```bash
+python scripts/collect_traces.py --dataset MATH --round 1 --optimized_path workspace
+```
+
+### Diagnose saved traces separately
+
+The separate diagnosis command is still available for reruns, debugging, or diagnosing old trace files:
+
+```bash
+python scripts/diagnose_traces.py traces/MATH/<RUN_ID>/workflow_round_1.jsonl
+```
+
+The script writes these files next to the trace unless `--output_dir` is provided:
+
+```text
+divergence_report.json
+prototypes.json
+attribution_prompt.txt
+```
+
+The report ranks candidate bottleneck operators using success/failure divergence over schema type, output style, parse status, and amplification from input to output features. The localization result intentionally uses the phrase "candidate bottleneck" rather than "root cause"; causality still requires edit verification.
+
+### Update structured experience
+
+After verifying a candidate child workflow, update the structured experience library:
+
+```bash
+python scripts/update_experience.py \
+  --dataset MATH \
+  --parent W7 \
+  --child W9 \
+  --edit_description "{\"edit_level\":\"operator\",\"edit_type\":\"replace_custom_with_answer_generate\"}" \
+  --verification_results "{\"target_repair_rate\":0.42,\"success_regression_rate\":0.03,\"accepted\":true}"
+```
+
+Experience is saved under:
+
+```text
+experience_library/<DATASET>/experience.json
+```
+
+### Current prototype scope
+
+Implemented: optional trace collection, rule-based trace abstraction, success/failure grouping, operator divergence scoring, bottleneck localization, prototype selection, attribution prompt generation, structured experience library updates, and utility-level edit verification metrics.
+
+Not yet implemented: automatic contrastive guidance injection into AFlow expansion prompts, full workflow re-evaluation inside `verification.py`, and experience-guided parent selection.
+
+## Patch-as-Hypothesis Workflow Repair
+
+The repository also includes a Patch-as-Hypothesis workflow repair prototype. It takes an existing initial workflow, runs validation samples, traces failures, synthesizes local guarded patches, replays the failed sample plus matched previous successes, and keeps only patches that pass the online check. AFlow can provide the initial workflow, but the repair loop has its own entrypoint.
+
+Repair an existing workflow directly:
+
+```bash
+python -m patch_evolution.repair_workflow ^
+  --dataset DROP ^
+  --workflow_dir workspace_patch_qwen3_fp8\model_runs\DROP\opt_qwen3_32b_fp8__exec_qwen3_32b_fp8\workflows\round_3 ^
+  --model_name qwen3-32b-fp8 ^
+  --trace_dir traces_repair_qwen3_fp8 ^
+  --patch_registry_dir results_repair_qwen3_fp8 ^
+  --output_dir repair_runs_qwen3_fp8 ^
+  --run_id drop_round3_repair_qwen3_fp8 ^
+  --repair_rounds 3 ^
+  --stop_when_no_new_patches
+```
+
+The repair runner uses a hybrid strategy by default: deterministic rule patches handle simple answer-style and numeric normalization, while LLM repair patches handle missing `answer` fields and verbose answers. Add `--no_llm_repair` to run only deterministic rule patches.
+
+The original AFlow path remains unchanged. If you only want AFlow to use already accepted guarded patches, enable the runtime wrapper with:
+
+```bash
+python run.py --dataset DROP --enable_patch_as_hypothesis --patch_registry_dir results/patch_evolution
+```
+
+Generate a candidate patch from a failed trace:
+
+```bash
+python -m patch_evolution.generate_patch --trace traces/DROP/<RUN_ID>/workflow_round_1.jsonl
+```
+
+Run a no-LLM toy example:
+
+```bash
+python -m patch_evolution.toy_example --output_dir logs/patch_evolution_toy
+```
+
+Validate and consolidate patches:
+
+```bash
+python -m patch_evolution.validate_patch --patch results/patch_evolution/patches/<PATCH_ID>.json
+python -m patch_evolution.consolidate --registry results/patch_evolution
+```
+
+See `docs/patch_as_hypothesis.md` for the repair loop, TraceIR, PatchSpec, guarded runtime, telemetry, and consolidation design.
 
 ## Reproduce the Results in the Paper
 1. We provide the raw data obtained from our experiments in this [link](https://drive.google.com/uc?export=download&id=1Sr5wjgKf3bN8OC7G6cO3ynzJqD4w6_Dv), including the workflows and prompts generated in each iteration, as well as their trajectories on the validation dataset. We also provide the optimal workflow for each dataset and the corresponding data on the test dataset. You can download these data using `data/download_data.py`. 

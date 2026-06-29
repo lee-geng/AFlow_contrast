@@ -1,0 +1,141 @@
+You are diagnosing an AFlow workflow using success/failure contrastive operator traces.
+Use the candidate bottleneck language; do not claim root cause until edit verification succeeds.
+Recommend one scoped workflow edit that repairs the failure pattern while preserving the success pattern.
+
+TRACE_DIAGNOSIS_CONTEXT:
+{
+  "candidate_bottleneck": {
+    "operator_id": "Custom#0",
+    "operator_type": "Custom",
+    "bottleneck_score": 0.03465309911862348,
+    "input_div": 0.0,
+    "output_div": 0.02310206607908232,
+    "amplification": 0.02310206607908232,
+    "schema_div": 0.0,
+    "output_style_div": 0.0577551651977058,
+    "error_div": 0.0,
+    "error_gap": 0.0,
+    "main_signal": "output_style divergence",
+    "success_pattern": {
+      "output_style_top": "full_sentence",
+      "schema_type_top": "free_text",
+      "parse_ok_rate": 1.0
+    },
+    "failure_pattern": {
+      "output_style_top": "full_sentence",
+      "schema_type_top": "free_text",
+      "parse_ok_rate": 1.0
+    },
+    "divergence_jump": 0.02310206607908232
+  },
+  "success_prototypes": [
+    {
+      "sample_id": "2273",
+      "prediction": "The 49ers quarterback mentioned in the passage is **Alex Smith**.",
+      "expected": "Alex Smith",
+      "sample_score": 0.4,
+      "operator_output": "The 49ers quarterback mentioned in the passage is **Alex Smith**.",
+      "operator_input": "Passage: Coming off their win over the Raiders the 49ers flew to Bank of America Stadium for an NFC duel with the Panthers. In the first quarter the 49ers took the lead as QB Alex Smith got a 1-yard TD pass to TE Vernon Davis. The lead was cut when kicker John Kasay nailed a 47-yard field goal. The 49ers scored with kicker Joe Nedney making a 24-yard field goal. The Panthers tied the game with QB Matt Moore completing an 18-yard TD pass to WR David Gettis. The 49ers fell behind in the third quarter with ...",
+      "features": {
+        "answer_type": "unknown",
+        "output_style": "full_sentence",
+        "schema_type": "free_text",
+        "parse_status": "ok"
+      }
+    },
+    {
+      "sample_id": "5074",
+      "prediction": "The father of Inés Peraza was **Hernán Peraza The Elder**.",
+      "expected": "Hernán Peraza The Elder|Hernán Peraza",
+      "sample_score": 0.5454545454545454,
+      "operator_output": "The father of Inés Peraza was **Hernán Peraza The Elder**.",
+      "operator_input": "Passage: The Bethencourt era ended in 1418 when Maciot sold his holdings and the rights to subjugate the remaining islands to Enrique Pérez de Guzmán. From this point on the intervention of the King of Castile increased. Between 1418 and 1445 dominion over the islands changed hands on a number of occasions. Finally, control over the conquered islands and the right to further conquests fell to Hernán Peraza The Elder and his children Guillén Peraza and Inés Peraza. The death of Guillén Peraza in the attac...",
+      "features": {
+        "answer_type": "unknown",
+        "output_style": "full_sentence",
+        "schema_type": "free_text",
+        "parse_status": "ok"
+      }
+    },
+    {
+      "sample_id": "8983",
+      "prediction": "Yaroslav the Wise's sons were **Grand Prince Iziaslav of Kiev**, **Prince Sviatoslav Yaroslavich of Chernigov**, and **Prince Vsevolod**.",
+      "expected": "Grand Prince Iziaslav of Kiev and Sviatoslav Yaroslavich of Chernigov and Vsevolod|Grand Prince Iziaslav of Kiev and Princes Sviatoslav Yaroslavich of Chernigov and Vsevolod",
+      "sample_score": 0.7586206896551724,
+      "operator_output": "Yaroslav the Wise's sons were **Grand Prince Iziaslav of Kiev**, **Prince Sviatoslav Yaroslavich of Chernigov**, and **Prince Vsevolod**.",
+      "operator_input": "Passage: The Kiev uprising of 1068 was a revolt against Grand Prince Iziaslav Yaroslavich of Kiev in the aftermath of a Kievan Rus' defeat at the hands of the Cumans at Battle of the Alta River near the city of Pereiaslavl, southeast of Kiev. The Polovtsy raid of 1068-1069 was only the tribe's second major raid into Rus'  in 1055, but the tribesmen broke the treaty and attacked Kievan Rus' six years later, defeating Vsevolod in battle).  In 1068-1069, the Polovtsy penetrated the earthwork defensive lines...",
+      "features": {
+        "answer_type": "unknown",
+        "output_style": "full_sentence",
+        "schema_type": "free_text",
+        "parse_status": "ok"
+      }
+    }
+  ],
+  "failure_prototypes": [
+    {
+      "sample_id": "7178",
+      "prediction": "Gostkowski kicked **1 field goal** in the first quarter.",
+      "expected": "1",
+      "sample_score": 0.2222222222222222,
+      "operator_output": "Gostkowski kicked **1 field goal** in the first quarter.",
+      "operator_input": "Passage: Coming off their divisional home win over the Browns, the Ravens flew to Gillette Stadium for a Week 4 battle with the New England Patriots.  After Patriots kicker Stephen Gostkowski got a 32-yard field goal in the first quarter, Baltimore got into the game with quarterback Joe Flacco hooking up with wide receiver Derrick Mason on a 20-yard touchdown pass.  In the second quarter, New England came back with quarterback Tom Brady's 1-yard touchdown run and running back Sammy Morris' 12-yard touchd...",
+      "features": {
+        "answer_type": "unknown",
+        "output_style": "full_sentence",
+        "schema_type": "free_text",
+        "parse_status": "ok"
+      }
+    },
+    {
+      "sample_id": "4656",
+      "prediction": "Baltimore beat the Jets by **1 point** in their first game, winning **10-9**.",
+      "expected": "1",
+      "sample_score": 0.15384615384615385,
+      "operator_output": "Baltimore beat the Jets by **1 point** in their first game, winning **10-9**.",
+      "operator_input": "Passage: Baltimore managed to beat the Jets 10-9 on the 2010 opener, but then lost a poorly-played game against Cincinnati the following week. The Ravens rebounded against the other two division teams, beating Cleveland 24-17 in Week 3 and then Pittsburgh 17-14 in Week 4. The Ravens scored a fine win (31-17) at home against Denver in Week 5. After an overtime loss to New England, they narrowly avoided losing at home to the winless Bills. Next, the Ravens hosted Miami and won 26-10, breaking that teams 4-...",
+      "features": {
+        "answer_type": "unknown",
+        "output_style": "full_sentence",
+        "schema_type": "free_text",
+        "parse_status": "ok"
+      }
+    },
+    {
+      "sample_id": "8499",
+      "prediction": "The longest touchdown pass was **49 yards**, thrown by Arizona's quarterback to Wide Receiver Anquan Boldin.",
+      "expected": "49",
+      "sample_score": 0.125,
+      "operator_output": "The longest touchdown pass was **49 yards**, thrown by Arizona's quarterback to Wide Receiver Anquan Boldin.",
+      "operator_input": "Passage: On October 8, the Chiefs traveled to Glendale, Arizona for their first game in the University of Phoenix Stadium to face the Arizona Cardinals.  Trent Green was still recovering from his concussion, and Arizona's rookie quarterback Matt Leinart made his career start.  The game was broadcast on CBS 1:15pm Arizona time. The game began with Arizona's offense dominating and catching the Chiefs' defense off-guard with a 49-yard touchdown pass to Wide receiver Anquan Boldin, putting the Cardinals on t...",
+      "features": {
+        "answer_type": "unknown",
+        "output_style": "full_sentence",
+        "schema_type": "free_text",
+        "parse_status": "ok"
+      }
+    }
+  ],
+  "matching_criteria": [
+    "same candidate operator",
+    "similar answer_type when available",
+    "stable success parse_status/output_style",
+    "dominant failure signature contrast"
+  ],
+  "relevant_experience": {},
+  "forbidden_edits": [],
+  "required_success_guard": "Any edit must be checked against the selected success prototypes before acceptance."
+}
+
+Return strict JSON with this schema:
+{
+  "diagnosis": "...",
+  "recommended_edit_level": "prompt | operator | graph | control",
+  "recommended_edits": ["..."],
+  "forbidden_edits": ["..."],
+  "success_guard": "...",
+  "verification_plan": {
+    "target_failure_samples": ["..."],
+    "success_guard_samples": ["..."]
+  }
+}

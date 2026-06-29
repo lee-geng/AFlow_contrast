@@ -9,26 +9,33 @@ import sys
 from pathlib import Path
 from typing import Optional, Tuple
 
-from scripts.evaluator import DatasetType
-from scripts.optimizer_utils.data_utils import DataUtils
-from scripts.logs import logger
 from scripts.async_llm import LLMsConfig
+from scripts.evaluator import DatasetType
+from scripts.logs import logger
+from scripts.optimizer_utils.data_utils import DataUtils
+from scripts.path_utils import get_model_run_root
 
 
-def load_best_round(dataset: str, optimized_path: str = "metagpt/ext/aflow/scripts/optimized") -> int:
-    """加载最佳表现的轮次"""
-    data_utils = DataUtils(f"{optimized_path}/{dataset}")
+def load_best_round(
+    dataset: str,
+    optimized_path: str = "workspace",
+    opt_model_name: Optional[str] = None,
+    exec_model_name: Optional[str] = None,
+) -> int:
+    if opt_model_name and exec_model_name:
+        result_root = get_model_run_root(optimized_path, dataset, opt_model_name, exec_model_name)
+    else:
+        result_root = Path(optimized_path) / dataset
 
-    # 使用get_top_rounds获取得分最高的轮次
+    data_utils = DataUtils(str(result_root))
     top_rounds = data_utils.get_top_rounds(sample=2, mode="Graph")
-    if not top_rounds[1]:
+    if len(top_rounds) < 2 or not top_rounds[1]:
         return 1
 
     return top_rounds[1]["round"]
 
 
 def load_workflow_class(graph_path: str):
-    """动态加载工作流类"""
     spec = importlib.util.spec_from_file_location("workflow_module", graph_path)
     module = importlib.util.module_from_spec(spec)
     sys.modules["workflow_module"] = module
@@ -42,45 +49,33 @@ async def aflow_inference(
     entry_point: Optional[str] = None,
     round: Optional[int] = None,
     llm_name: str = "gpt-4o-mini",
-    optimized_path: str = "metagpt/ext/aflow/scripts/optimized",
+    optimized_path: str = "workspace",
+    opt_model_name: Optional[str] = None,
+    exec_model_name: Optional[str] = None,
 ) -> Tuple[str, float]:
-    """AFLOW推理接口
-
-    Args:
-        dataset: 数据集名称
-        question: 输入问题
-        round: 指定使用的轮次，如果为None则使用最佳轮次
-        llm_name: 使用的LLM模型名称
-        optimized_path: 优化结果保存路径
-
-    Returns:
-        (答案, 成本)的元组
-    """
-    # 如果没有指定轮次，使用最佳轮次
     if round is None:
-        round = load_best_round(dataset, optimized_path)
+        round = load_best_round(dataset, optimized_path, opt_model_name, exec_model_name)
 
     logger.info(f"Using round {round} for inference")
 
-    # 构建工作流路径并加载
-    graph_path = Path(optimized_path) / dataset / "workflows" / f"round_{round}" / "graph.py"
+    if opt_model_name and exec_model_name:
+        workflow_root = get_model_run_root(optimized_path, dataset, opt_model_name, exec_model_name)
+    else:
+        workflow_root = Path(optimized_path) / dataset
+
+    graph_path = workflow_root / "workflows" / f"round_{round}" / "graph.py"
     if not graph_path.exists():
         raise FileNotFoundError(f"Workflow file not found: {graph_path}")
 
-    # 动态加载工作流类
-    WorkflowClass = load_workflow_class(str(graph_path))
-
-    # 创建工作流实例
+    workflow_class = load_workflow_class(str(graph_path))
     llm_config = LLMsConfig.default().get(llm_name)
-    workflow = WorkflowClass(
+    workflow = workflow_class(
         name=f"{dataset}_workflow",
         llm_config=llm_config,
         dataset=dataset,
     )
 
-    # 执行推理
     if dataset in ["MBPP", "HumanEval"]:
-        # 代码类任务需要额外的entry_point参数
         answer, cost = await workflow(question, entry_point=entry_point)
     else:
         answer, cost = await workflow(question)

@@ -1,4 +1,6 @@
 from scripts.evaluator import Evaluator
+from contrastive_experience.trace_context import TraceConfig
+from patch_evolution.guarded_runtime import PatchRuntimeConfig
 
 
 class EvaluationUtils:
@@ -32,15 +34,30 @@ class EvaluationUtils:
         sum_score = 0
 
         for i in range(validation_n):
+            cur_round = optimizer.round + 1 if initial is False else optimizer.round
+            trace_config = TraceConfig.create(
+                enabled=getattr(optimizer, "trace_enabled", False),
+                dataset=optimizer.dataset,
+                trace_dir=getattr(optimizer, "trace_dir", "traces"),
+                run_id=getattr(optimizer, "trace_run_id", ""),
+                round_id=cur_round,
+                trace_full_io=getattr(optimizer, "trace_full_io", False),
+                trace_preview_chars=getattr(optimizer, "trace_preview_chars", 512),
+                success_threshold=getattr(optimizer, "success_threshold", None),
+            )
+            patch_runtime_config = PatchRuntimeConfig(
+                enabled=getattr(optimizer, "enable_patch_as_hypothesis", False),
+                registry_dir=getattr(optimizer, "patch_registry_dir", "results/patch_evolution"),
+            )
             score, avg_cost, total_cost = await evaluator.graph_evaluate(
                 optimizer.dataset,
                 optimizer.graph,
                 {"dataset": optimizer.dataset, "llm_config": optimizer.execute_llm_config},
                 directory,
                 is_test=False,
+                trace_config=trace_config,
+                patch_runtime_config=patch_runtime_config,
             )
-
-            cur_round = optimizer.round + 1 if initial is False else optimizer.round
 
             new_data = optimizer.data_utils.create_result_data(cur_round, score, avg_cost, total_cost)
             data.append(new_data)
@@ -54,10 +71,26 @@ class EvaluationUtils:
 
     async def evaluate_graph_test(self, optimizer, directory, is_test=True):
         evaluator = Evaluator(eval_path=directory)
+        trace_config = TraceConfig.create(
+            enabled=getattr(optimizer, "trace_enabled", False),
+            dataset=optimizer.dataset,
+            trace_dir=getattr(optimizer, "trace_dir", "traces"),
+            run_id=getattr(optimizer, "trace_run_id", ""),
+            round_id=getattr(optimizer, "round", None),
+            trace_full_io=getattr(optimizer, "trace_full_io", False),
+            trace_preview_chars=getattr(optimizer, "trace_preview_chars", 512),
+            success_threshold=getattr(optimizer, "success_threshold", None),
+        )
+        patch_runtime_config = PatchRuntimeConfig(
+            enabled=getattr(optimizer, "enable_patch_as_hypothesis", False),
+            registry_dir=getattr(optimizer, "patch_registry_dir", "results/patch_evolution"),
+        )
         return await evaluator.graph_evaluate(
             optimizer.dataset,
             optimizer.graph,
             {"dataset": optimizer.dataset, "llm_config": optimizer.execute_llm_config},
             directory,
             is_test=is_test,
+            trace_config=trace_config,
+            patch_runtime_config=patch_runtime_config,
         )

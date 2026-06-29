@@ -1,0 +1,98 @@
+You are diagnosing an AFlow workflow using success/failure contrastive operator traces.
+Use the candidate bottleneck language; do not claim root cause until edit verification succeeds.
+Recommend one scoped workflow edit that repairs the failure pattern while preserving the success pattern.
+
+TRACE_DIAGNOSIS_CONTEXT:
+{
+  "candidate_bottleneck": {
+    "operator_id": "AnswerGenerate#0",
+    "operator_type": "AnswerGenerate",
+    "bottleneck_score": 0.5,
+    "input_div": 0.5,
+    "output_div": 0.5,
+    "amplification": 0.0,
+    "schema_div": 0.5,
+    "output_style_div": 0.5,
+    "error_div": 0.5,
+    "error_gap": 0.0,
+    "main_signal": "output_style divergence/schema divergence/parse/error divergence",
+    "success_pattern": {
+      "output_style_top": "unknown",
+      "schema_type_top": "unknown",
+      "parse_ok_rate": 0.0
+    },
+    "failure_pattern": {
+      "output_style_top": "json_answer",
+      "schema_type_top": "json_dict",
+      "parse_ok_rate": 1.0
+    },
+    "divergence_jump": 0.5
+  },
+  "success_prototypes": [],
+  "failure_prototypes": [
+    {
+      "sample_id": "251",
+      "prediction": "module 'workspace_contrast_qwen3_fp8.model_runs.DROP.opt_qwen3_32b_fp8__exec_qwen3_32b_fp8.workflows.round_4.prompt' has no attribute 'FORMAT_ANSWER_PROMPT'",
+      "expected": "2",
+      "sample_score": 0.0,
+      "operator_output": "{\"answer\": \"Two\", \"thought\": \"First, I need to identify the relevant part of the passage. The passage mentions the Second Treaty of Versailles between France and Austria. This indicates that two countries, France and Austria, signed the treaty. There is no mention of any other countries being involved in the signing of this treaty in the passage. Therefore, the answer is two countries.\"}",
+      "operator_input": "\nThink step by step and solve the problem.\n1. In the \"thought\" field, explain your thinking process in detail.\n2. In the \"answer\" field, provide the final answer concisely and clearly. The answer should be a direct response to the question, without including explanations or reasoning.\nYour task: Passage: It obtained city rights in 1163 from Count Philip of Flanders. The Battle of Nieuwpoort, between the Dutch and the Spanish, happened here in 1600. The city was a Dunkirker base. Painter Victor Boucquet m...",
+      "features": {
+        "answer_type": "unknown",
+        "output_style": "json_answer",
+        "schema_type": "json_dict",
+        "parse_status": "ok"
+      }
+    },
+    {
+      "sample_id": "782",
+      "prediction": "module 'workspace_contrast_qwen3_fp8.model_runs.DROP.opt_qwen3_32b_fp8__exec_qwen3_32b_fp8.workflows.round_4.prompt' has no attribute 'FORMAT_ANSWER_PROMPT'",
+      "expected": "Native American",
+      "sample_score": 0.0,
+      "operator_output": "{\"answer\": \"Native American\", \"thought\": \"From the passage, the percentages of African American and Native American populations in Huntington Beach from the 2010 United States Census are given as 1.0% and 0.5%, respectively. Comparing these two percentages, 0.5% is smaller than 1.0%. Therefore, the Native American group is smaller in percentage.\"}",
+      "operator_input": "\nThink step by step and solve the problem.\n1. In the \"thought\" field, explain your thinking process in detail.\n2. In the \"answer\" field, provide the final answer concisely and clearly. The answer should be a direct response to the question, without including explanations or reasoning.\nYour task: Passage: The 2010 United States Census reported that Huntington Beach had a population of 189,992. The population density was 5,959.1 people per square mile (2,300.8/km²). The racial makeup of Huntington Beach wa...",
+      "features": {
+        "answer_type": "unknown",
+        "output_style": "json_answer",
+        "schema_type": "json_dict",
+        "parse_status": "ok"
+      }
+    },
+    {
+      "sample_id": "6453",
+      "prediction": "module 'workspace_contrast_qwen3_fp8.model_runs.DROP.opt_qwen3_32b_fp8__exec_qwen3_32b_fp8.workflows.round_4.prompt' has no attribute 'FORMAT_ANSWER_PROMPT'",
+      "expected": "3",
+      "sample_score": 0.0,
+      "operator_output": "{\"answer\": \"Three\", \"thought\": \"First, I need to identify the regions where the popular uprising started. The passage mentions \\\"large areas of Lower Bavaria, the Innviertel and eastern Bavaria\\\" as the starting points of the uprising. These are three distinct regions. The passage also discusses the spread of the uprising to other areas, but the question specifically asks about the regions where the uprising started. Therefore, the answer is three regions.\"}",
+      "operator_input": "\nThink step by step and solve the problem.\n1. In the \"thought\" field, explain your thinking process in detail.\n2. In the \"answer\" field, provide the final answer concisely and clearly. The answer should be a direct response to the question, without including explanations or reasoning.\nYour task: Passage: The popular uprising included large areas of Lower Bavaria, the Innviertel and eastern Bavaria. The lands adjoining towns and strongholds were captured by the rebels and the peasant uprising spread to th...",
+      "features": {
+        "answer_type": "unknown",
+        "output_style": "json_answer",
+        "schema_type": "json_dict",
+        "parse_status": "ok"
+      }
+    }
+  ],
+  "matching_criteria": [
+    "same candidate operator",
+    "similar answer_type when available",
+    "stable success parse_status/output_style",
+    "dominant failure signature contrast"
+  ],
+  "relevant_experience": {},
+  "forbidden_edits": [],
+  "required_success_guard": "Any edit must be checked against the selected success prototypes before acceptance."
+}
+
+Return strict JSON with this schema:
+{
+  "diagnosis": "...",
+  "recommended_edit_level": "prompt | operator | graph | control",
+  "recommended_edits": ["..."],
+  "forbidden_edits": ["..."],
+  "success_guard": "...",
+  "verification_plan": {
+    "target_failure_samples": ["..."],
+    "success_guard_samples": ["..."]
+  }
+}

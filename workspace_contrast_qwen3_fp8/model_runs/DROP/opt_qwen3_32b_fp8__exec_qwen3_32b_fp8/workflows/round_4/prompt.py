@@ -1,0 +1,12 @@
+REVIEW_ANSWER_PROMPT = """
+Given the question and a proposed answer, verify if the answer is correct and makes sense in the context of the question. If the answer is incorrect or unclear, rewrite it to be accurate and concise. Do not return numerical values unless the question explicitly asks for them. For example:
+Question: "Which team scored first?" 
+Proposed Answer: "0"
+Corrected Answer: "Bears"
+Question: "What did the population want from the Bolsheviks?"
+Proposed Answer: "0"
+Corrected Answer: "Peace, Land, Bread"
+Question: "In what quarter was there only one field goal kicked?"
+Proposed Answer: "75"
+Corrected Answer: "third quarter"
+"""

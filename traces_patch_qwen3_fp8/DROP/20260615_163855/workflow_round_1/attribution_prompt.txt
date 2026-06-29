@@ -1,0 +1,141 @@
+You are diagnosing an AFlow workflow using success/failure contrastive operator traces.
+Use the candidate bottleneck language; do not claim root cause until edit verification succeeds.
+Recommend one scoped workflow edit that repairs the failure pattern while preserving the success pattern.
+
+TRACE_DIAGNOSIS_CONTEXT:
+{
+  "candidate_bottleneck": {
+    "operator_id": "Custom#0",
+    "operator_type": "Custom",
+    "bottleneck_score": 0.0,
+    "input_div": 0.0,
+    "output_div": 0.0,
+    "amplification": 0.0,
+    "schema_div": 0.0,
+    "output_style_div": 0.0,
+    "error_div": 0.0,
+    "error_gap": 0.0,
+    "main_signal": "weak divergence",
+    "success_pattern": {
+      "output_style_top": "json_answer",
+      "schema_type_top": "json_dict",
+      "parse_ok_rate": 1.0
+    },
+    "failure_pattern": {
+      "output_style_top": "json_answer",
+      "schema_type_top": "json_dict",
+      "parse_ok_rate": 1.0
+    },
+    "divergence_jump": 0.0
+  },
+  "success_prototypes": [
+    {
+      "sample_id": "543",
+      "prediction": "Suleiman met with Polin and the French fleet in Constantinople.",
+      "expected": "Jerôme Maurand and Polin|1544",
+      "sample_score": 0.30769230769230765,
+      "operator_output": "{\"response\": \"Suleiman met with Polin and the French fleet in Constantinople.\"}",
+      "operator_input": "Passage: Then, in 1544, five French galleys under Polin, including the superb Réale, accompanied Barbarossa's fleet, on a diplomatic mission to Suleiman. The French fleet accompanied Barbarossa during his attacks on the west coast of Italy on the way to Constantinople, as he laid waste to the cities of Porto Ercole, Giglio, Talamona, Lipari and took about 6,000 captives, but separated in Sicily from Barbarossa's fleet to continue alone to the Ottoman capital. Jerôme Maurand, a priest of Antibes who accom...",
+      "features": {
+        "answer_type": "unknown",
+        "output_style": "json_answer",
+        "schema_type": "json_dict",
+        "parse_status": "ok"
+      }
+    },
+    {
+      "sample_id": "2273",
+      "prediction": "The 49ers quarterback mentioned in the passage is **Alex Smith**.",
+      "expected": "Alex Smith",
+      "sample_score": 0.4,
+      "operator_output": "{\"response\": \"The 49ers quarterback mentioned in the passage is **Alex Smith**.\"}",
+      "operator_input": "Passage: Coming off their win over the Raiders the 49ers flew to Bank of America Stadium for an NFC duel with the Panthers. In the first quarter the 49ers took the lead as QB Alex Smith got a 1-yard TD pass to TE Vernon Davis. The lead was cut when kicker John Kasay nailed a 47-yard field goal. The 49ers scored with kicker Joe Nedney making a 24-yard field goal. The Panthers tied the game with QB Matt Moore completing an 18-yard TD pass to WR David Gettis. The 49ers fell behind in the third quarter with ...",
+      "features": {
+        "answer_type": "unknown",
+        "output_style": "json_answer",
+        "schema_type": "json_dict",
+        "parse_status": "ok"
+      }
+    },
+    {
+      "sample_id": "5074",
+      "prediction": "The father of Inés Peraza was **Hernán Peraza The Elder**.",
+      "expected": "Hernán Peraza The Elder|Hernán Peraza",
+      "sample_score": 0.5454545454545454,
+      "operator_output": "{\"response\": \"The father of Inés Peraza was **Hernán Peraza The Elder**.\"}",
+      "operator_input": "Passage: The Bethencourt era ended in 1418 when Maciot sold his holdings and the rights to subjugate the remaining islands to Enrique Pérez de Guzmán. From this point on the intervention of the King of Castile increased. Between 1418 and 1445 dominion over the islands changed hands on a number of occasions. Finally, control over the conquered islands and the right to further conquests fell to Hernán Peraza The Elder and his children Guillén Peraza and Inés Peraza. The death of Guillén Peraza in the attac...",
+      "features": {
+        "answer_type": "unknown",
+        "output_style": "json_answer",
+        "schema_type": "json_dict",
+        "parse_status": "ok"
+      }
+    }
+  ],
+  "failure_prototypes": [
+    {
+      "sample_id": "4035",
+      "prediction": "The British blockade of the French coastline was unable to resupply Vaudreuil and Montcalm.",
+      "expected": "French shipping|the French|François Bigot",
+      "sample_score": 0.15384615384615385,
+      "operator_output": "{\"response\": \"The British blockade of the French coastline was unable to resupply Vaudreuil and Montcalm.\"}",
+      "operator_input": "Passage: Vaudreuil and Montcalm were minimally resupplied in 1758, as the British blockade of the French coastline limited French shipping. The situation in New France was further exacerbated by a poor harvest in 1757, a difficult winter, and the allegedly corrupt machinations of François Bigot, the intendant of the territory. His schemes to supply the colony inflated prices and were believed by Montcalm to line his pockets and those of his associates. A massive outbreak of smallpox among western Indian ...",
+      "features": {
+        "answer_type": "unknown",
+        "output_style": "json_answer",
+        "schema_type": "json_dict",
+        "parse_status": "ok"
+      }
+    },
+    {
+      "sample_id": "6496",
+      "prediction": "The shortest field goal of the game was **30 yards**, made by John Kasay of the Panthers.",
+      "expected": "27",
+      "sample_score": 0.0,
+      "operator_output": "{\"response\": \"The shortest field goal of the game was **30 yards**, made by John Kasay of the Panthers.\"}",
+      "operator_input": "Passage: The Chargers began their 2008 campaign at home against the Carolina Panthers.  After a scoreless first quarter, the Panthers pounced first as kicker John Kasay got a 44-yard field goal.  The Chargers would take the lead with QB Philip Rivers completing a 44-yard TD pass to WR Chris Chambers, yet Carolina would take the halftime lead as Kasay nailed a 33-yard and a 30-yard field goal.  In the third quarter, San Diego got the lead with kicker Nate Kaeding getting a 27-yard field goal, yet the Pant...",
+      "features": {
+        "answer_type": "unknown",
+        "output_style": "json_answer",
+        "schema_type": "json_dict",
+        "parse_status": "ok"
+      }
+    },
+    {
+      "sample_id": "6291",
+      "prediction": "The longest touchdown pass was **45 yards**, which occurred when QB Donovan McNabb connected with WR Greg Lewis.",
+      "expected": "45",
+      "sample_score": 0.1111111111111111,
+      "operator_output": "{\"response\": \"The longest touchdown pass was **45 yards**, which occurred when QB Donovan McNabb connected with WR Greg Lewis.\"}",
+      "operator_input": "Passage: at Lincoln Financial Field, Philadelphia|weather= 60&#160;&#176;F (Clear)Following their dominating road win over the 49ers, the Eagles returned home for a Monday Night match-up with the Green Bay Packers.  Early in the game, the Eagles offense struggled with two goal-line fumbles being recovered by the Packers.  In the first quarter, Packers kicker Dave Rayner nailed a 23-yard field goal for the only score of the period.  In the second quarter, Philadelphia would score on QB Donovan McNabb's 6-...",
+      "features": {
+        "answer_type": "unknown",
+        "output_style": "json_answer",
+        "schema_type": "json_dict",
+        "parse_status": "ok"
+      }
+    }
+  ],
+  "matching_criteria": [
+    "same candidate operator",
+    "similar answer_type when available",
+    "stable success parse_status/output_style",
+    "dominant failure signature contrast"
+  ],
+  "relevant_experience": {},
+  "forbidden_edits": [],
+  "required_success_guard": "Any edit must be checked against the selected success prototypes before acceptance."
+}
+
+Return strict JSON with this schema:
+{
+  "diagnosis": "...",
+  "recommended_edit_level": "prompt | operator | graph | control",
+  "recommended_edits": ["..."],
+  "forbidden_edits": ["..."],
+  "success_guard": "...",
+  "verification_plan": {
+    "target_failure_samples": ["..."],
+    "success_guard_samples": ["..."]
+  }
+}

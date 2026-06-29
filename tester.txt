@@ -1,0 +1,162 @@
+test_error of string_to_tuple
+test_error of angle_complex
+test_error of harmonic_sum
+test_error of sum_div
+test_error of find_sum
+test_error of long_words
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of remove_nested
+test_error of start_withp
+test_error of find_sum
+test_error of harmonic_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of remove_nested
+test_error of start_withp
+test_error of bell_number
+test_error of find_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of harmonic_sum
+test_error of start_withp
+test_error of remove_nested
+test_error of find_sum
+test_error of bell_number
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of rgb_to_hsv
+test_error of surfacearea_cylinder
+test_error of start_withp
+test_error of remove_nested
+test_error of harmonic_sum
+test_error of extract_freq
+test_error of average_tuple
+test_error of bell_number
+test_error of surfacearea_cylinder
+test_error of extract_freq
+test_error of average_tuple
+test_error of find_length
+test_error of surfacearea_cylinder
+test_error of bell_number
+test_error of average_tuple
+test_error of find_length
+test_error of surfacearea_cylinder
+test_error of average_tuple
+test_error of find_length
+test_error of find_length
+multiply_int invalid syntax (<string>, line 2)
+Find_Max_Length invalid syntax (<string>, line 2)
+multiply_elements EOL while scanning string literal (<string>, line 2)
+_sum invalid syntax (<string>, line 2)
+sum_list invalid syntax (<string>, line 2)
+left_insertion invalid syntax (<string>, line 2)
+max_sum_list invalid syntax (<string>, line 2)
+round_and_sum EOL while scanning string literal (<string>, line 2)
+sequential_search invalid syntax (<string>, line 2)
+subject_marks EOL while scanning string literal (<string>, line 2)
+Diff invalid syntax (<string>, line 2)
+string_to_tuple invalid syntax (<string>, line 2)
+median_trapezium invalid syntax (<string>, line 2)
+freq_count invalid syntax (<string>, line 2)
+last_Digit_Factorial EOL while scanning string literal (<string>, line 2)
+surfacearea_sphere invalid syntax (<string>, line 2)
+count_X invalid syntax (<string>, line 2)
+tuple_to_dict invalid syntax (<string>, line 2)
+find_Volume EOL while scanning string literal (<string>, line 2)
+sum_digits invalid syntax (<string>, line 2)
+sum_div invalid syntax (<string>, line 2)
+number_of_substrings invalid syntax (<string>, line 2)
+is_undulating EOL while scanning string literal (<string>, line 2)
+average_tuple EOL while scanning string literal (<string>, line 2)
+sum_series EOL while scanning string literal (<string>, line 2)
+maximum invalid syntax (<string>, line 2)
+check_min_heap invalid syntax (<string>, line 2)
+max_occurrences invalid syntax (<string>, line 2)
+opposite_Signs invalid syntax (<string>, line 2)
+find_Odd_Pair EOL while scanning string literal (<string>, line 2)
+find_Parity invalid syntax (<string>, line 2)
+test_three_equal invalid syntax (<string>, line 2)
+angle_complex invalid syntax (<string>, line 2)
+validate EOL while scanning string literal (<string>, line 2)
+text_match_zero_one EOL while scanning string literal (<string>, line 2)
+test_error of Diff
+is_Diff invalid syntax (<string>, line 2)
+test_error of string_to_tuple
+find_sum invalid syntax (<string>, line 2)
+similar_elements invalid syntax (<string>, line 2)
+long_words EOL while scanning string literal (<string>, line 2)
+test_error of sum_series
+test_error of sum_div
+test_error of average_tuple
+test_error of find_Parity
+test_error of angle_complex
+test_error of text_match_zero_one
+find_length EOL while scanning string literal (<string>, line 2)
+max_run_uppercase invalid syntax (<string>, line 2)
+test_error of find_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+jacobsthal_num invalid syntax (<string>, line 2)
+remove_nested invalid syntax (<string>, line 2)
+test_error of average_tuple
+test_error of sum_div
+angle_complex can't convert complex to float
+test_error of find_sum
+test_error of find_length
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+k_smallest_pairs invalid syntax (<string>, line 2)
+test_error of remove_nested
+dif_Square invalid syntax (<string>, line 2)
+angle_complex can't convert complex to float
+test_error of average_tuple
+test_error of sum_div
+bell_number EOL while scanning string literal (<string>, line 2)
+test_error of find_sum
+similar_elements similar_elements() missing 1 required positional argument: 'test_tup2'
+test_error of remove_nested
+test_error of find_length
+rgb_to_hsv invalid syntax (<string>, line 2)
+magic_square_test invalid syntax (<string>, line 2)
+test_error of remove_nested
+is_majority invalid syntax (<string>, line 2)
+test_error of find_length
+test_error of rgb_to_hsv
+surfacearea_cylinder invalid syntax (<string>, line 2)
+rear_extract invalid syntax (<string>, line 2)
+unique_product invalid syntax (<string>, line 2)
+hexagonal_num invalid syntax (<string>, line 2)
+empty_list invalid syntax (<string>, line 2)
+area_polygon invalid syntax (<string>, line 2)
+extract_index_list invalid syntax (<string>, line 2)
+volume_cylinder invalid syntax (<string>, line 2)
+check_answer EOL while scanning string literal (<string>, line 2)
+divisible_by_digits invalid syntax (<string>, line 2)
+minimum invalid syntax (<string>, line 2)
+harmonic_sum invalid syntax (<string>, line 2)
+find_star_num invalid syntax (<string>, line 2)
+start_withp invalid syntax (<string>, line 2)
+count_rotation invalid syntax (<string>, line 2)
+max_subarray_product invalid syntax (<string>, line 2)
+second_smallest EOL while scanning string literal (<string>, line 2)
+test_error of surfacearea_cylinder
+remove_whitespaces invalid syntax (<string>, line 2)
+find_lucas invalid syntax (<string>, line 2)
+pos_count invalid syntax (<string>, line 2)
+test_error of empty_list
+left_rotate EOL while scanning string literal (<string>, line 2)
+volume_cube invalid syntax (<string>, line 2)
+max_product_tuple invalid syntax (<string>, line 2)
+get_max_sum invalid syntax (<string>, line 2)
+test_error of start_withp
+extract_freq invalid syntax (<string>, line 2)
+test_error of count_rotation
+test_error of surfacearea_cylinder
+test_error of extract_freq
+test_error of start_withp
+count_Substrings invalid syntax (<string>, line 2)
+max_Abs_Diff invalid syntax (<string>, line 2)
+test_error of surfacearea_cylinder
+eulerian_num invalid syntax (<string>, line 2)
+kth_element invalid syntax (<string>, line 2)
+reverse_vowels invalid syntax (<string>, line 2)
+is_polite EOL while scanning string literal (<string>, line 2)
+large_product invalid syntax (<string>, line 2)
+test_error of large_product
+test_error of large_product
+test_error of large_product

@@ -4,6 +4,7 @@
 # @Desc    : Entrance of AFlow.
 
 import argparse
+from pathlib import Path
 from typing import Dict, List
 
 from data.download_data import download
@@ -85,16 +86,74 @@ def parse_args():
     parser.add_argument(
         "--opt_model_name",
         type=str,
-        default="claude-3-5-sonnet-20241022",
+        default="meta-llama/Meta-Llama-3-8B-Instruct",
         help="Specifies the name of the model used for optimization tasks.",
     )
     parser.add_argument(
         "--exec_model_name",
         type=str,
-        default="gpt-4o-mini",
+        default="qwen2.5-coder:7b",
         help="Specifies the name of the model used for execution tasks.",
     )
+    parser.add_argument("--trace", action="store_true", help="Enable optional operator-level trace logging")
+    parser.add_argument("--trace_dir", type=str, default="traces", help="Directory for contrastive trace JSONL files")
+    parser.add_argument("--trace_full_io", action="store_true", help="Log full observable operator inputs/outputs")
+    parser.add_argument(
+        "--trace_preview_chars",
+        type=int,
+        default=512,
+        help="Maximum characters for trace input/output previews",
+    )
+    parser.add_argument(
+        "--success_threshold",
+        type=float,
+        default=None,
+        help="Override dataset-aware success threshold for trace success/failure grouping",
+    )
+    parser.add_argument(
+        "--auto_diagnose",
+        action="store_true",
+        help="After a traced run, automatically diagnose generated trace files",
+    )
+    parser.add_argument(
+        "--enable_patch_as_hypothesis",
+        action="store_true",
+        help="Enable guarded runtime Patch-as-Hypothesis patches",
+    )
+    parser.add_argument(
+        "--patch_registry_dir",
+        type=str,
+        default="results/patch_evolution",
+        help="Patch-as-Hypothesis registry directory",
+    )
     return parser.parse_args()
+
+
+def run_trace_diagnosis(args, optimizer) -> None:
+    if not args.trace:
+        print("--auto_diagnose was set, but --trace is disabled; no trace files were generated.")
+        return
+
+    from contrastive_experience.report import diagnose_trace_file, write_diagnosis_outputs
+
+    trace_root = Path(args.trace_dir) / args.dataset / optimizer.trace_run_id
+    trace_files = sorted(trace_root.glob("workflow_*.jsonl"))
+    if not trace_files:
+        print(f"No trace files found under {trace_root}")
+        return
+
+    print(f"Running contrastive diagnosis for {len(trace_files)} trace file(s) under {trace_root}")
+    for trace_file in trace_files:
+        report = diagnose_trace_file(trace_file, success_threshold=args.success_threshold)
+        output_dir = trace_file.parent / trace_file.stem
+        write_diagnosis_outputs(trace_file, report, output_dir=output_dir)
+        candidate = report.get("localization", {}).get("candidate_operator")
+        confidence = report.get("localization", {}).get("confidence")
+        confidence_text = f"{confidence:.3f}" if isinstance(confidence, (int, float)) else "n/a"
+        print(
+            f"Diagnosed {trace_file}: candidate_bottleneck={candidate}, "
+            f"confidence={confidence_text}, output_dir={output_dir}"
+        )
 
 
 if __name__ == "__main__":
@@ -131,10 +190,20 @@ if __name__ == "__main__":
         initial_round=args.initial_round,
         max_rounds=args.max_rounds,
         validation_rounds=args.validation_rounds,
+        trace_enabled=args.trace,
+        trace_dir=args.trace_dir,
+        trace_full_io=args.trace_full_io,
+        trace_preview_chars=args.trace_preview_chars,
+        success_threshold=args.success_threshold,
+        enable_patch_as_hypothesis=args.enable_patch_as_hypothesis,
+        patch_registry_dir=args.patch_registry_dir,
     )
 
     # Optimize workflow via setting the optimizer's mode to 'Graph'
     optimizer.optimize("Graph")
+
+    if args.auto_diagnose:
+        run_trace_diagnosis(args, optimizer)
 
     # Test workflow via setting the optimizer's mode to 'Test'
     # optimizer.optimize("Test")
